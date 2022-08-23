@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+:root {
+  --font-logo: 'Michroma', sans-serif;
+  --font-smallScreenMenu: 'Splash', cursive;
+  --font-base: 'Cinzel Decorative', cursive;
+  --font-second: 'Kelly Slab', cursive;
+  --font-inputs: 'Syne Mono', monospace;
+  
+  --color-yellow: #FAED26;
+  --color-purple: #46344E;
+  --color-dark-grey: #5A5560;
+  --color-grey: #9D8D8F;
+  --color-cream: #9B786F;
+  --color-white: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
 }
