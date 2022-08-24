@@ -6,6 +6,10 @@ import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import Blogs from './Blogs/Blogs';
 import Selection from './Selection/Selection';
+import Men from './Products/Men/Men';
+import Women from './Products/Women/Women';
+import Kids from './Products/Kids/Kids';
+import Equipment from './Products/Equipment/Equipment';
 
 export {
   Activities,
@@ -16,4 +20,8 @@ export {
   Intro,
   Blogs,
   Selection,
+  Men,
+  Women,
+  Kids,
+  Equipment
 };

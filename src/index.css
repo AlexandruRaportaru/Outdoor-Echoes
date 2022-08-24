@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Splash:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 :root {
   --font-logo: 'Michroma', sans-serif;
-  --font-smallScreenMenu: 'Splash', cursive;
+  --font-text: 'Chakra Petch', sans-serif;
   --font-base: 'Cinzel Decorative', cursive;
   --font-second: 'Kelly Slab', cursive;
   --font-inputs: 'Syne Mono', monospace;
   
   --color-yellow: #FAED26;
+  --color-blue: #007DBC;
   --color-purple: #46344E;
   --color-dark-grey: #5A5560;
   --color-grey: #9D8D8F;
