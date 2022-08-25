@@ -7,23 +7,9 @@
     background-color: var(--color-purple);
 }
 
-.app__navbar-menu {
-    align-self: stretch;
-    margin-right: 20px;
-    -webkit-box-shadow: 0.1rem 0 #eff1f3;
-    box-shadow: 0.1rem 0 #eff1f3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 4.5rem;
-    font-size: 1rem;
-    text-align: center;
-}
-
 .app__navbar-logo {
     margin-bottom: 6px;
 }
-
 
 .app__navbar-search {
     width: 100%;
@@ -36,51 +22,89 @@
     position: relative;
 }
 
-.app__navbar-search form input {
+.app__navbar-search input {
     position: relative;
     line-height: 1.2rem;
-    font-size: 1.3rem;
-    padding: 5px;
+    font-size: 1.4rem;
+    padding: 5px 10px;
     max-height: 3.6rem;
     border: 0.1rem solid var(--color-purple);
     border-right: none;
-    background: #eff1f3;
+    background: var(--color-white);
     text-transform: uppercase;
     font-weight: bold;
-    font-style: italic;
-    color: #43505c;
+
+    color: var(--color-grey);
     width: 100%;
+    font-family: var(--font-text);
 }
 
-.app__navbar-search form button {
+.app__navbar-search input:focus {
+    outline: none;
+}
+
+.app__navbar-search button {
     padding: 8px 15px;
     border: 0.1rem solid var(--color-purple);
     background: var(--color-yellow);
+    cursor: pointer;
 }
 
 .app__navbar-search__placeholder {
     position: absolute;
     pointer-events: none;
-    line-height: 2.2rem;
-    font-size: 1.9rem;
-    padding: 0 0.5rem 1rem 0;
-    max-height: 4.2rem;
-    color: #a5adb8;
-    background: transparent;
-    text-transform: uppercase;
-    font-weight: bold;
-    left: 2.7rem;
-    top: 1.1em;
-    white-space: nowrap;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transform: skewX(-7deg);
-    transform: skewX(-7deg);
-    text-align: left;
-    width: calc(100% - 9rem);
-    overflow: hidden;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    margin-top: 3px;
+    max-height: 1.9rem;
+    color: var(--color-grey);
     top: 2px;
     left: 10px;
+    display: inline-flex;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.app__navbar-search__placeholder-dynamic li {
+    list-style: none;
+    color: var(--color-blue);
+    animation: slide 21s steps(7) infinite;
+    position: relative;
+    top: 0;
+}
+
+@keyframes slide {
+    100% {
+        top: -213px;
+    }
+}
+
+.app__navbar-search__placeholder-dynamic li span,
+.app__navbar-search__placeholder-static {
+    font-family: var(--font-text);
+}
+
+.app__navbar-search__placeholder-dynamic li span {
+    position: relative;
+}
+
+.app__navbar-search__placeholder-dynamic li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: typing 3s steps(10) infinite;
+    border-left: 2px solid var(--color-blue);
+    background: var(--color-white);
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -10px 0 10px;
+    }
 }
 
 .app__navbar-icons {
@@ -99,9 +123,7 @@
     min-width: 88px;
 }
 
-.app__navbar-icons__contact a,
-.app__navbar-icons__login a,
-.app__navbar-icons__favourites a,
+.app__navbar-icons a,
 .app__navbar-cart a {
     display: flex;
     flex-direction: column;
@@ -110,27 +132,23 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     height: 100%;
+    cursor: pointer;
 }
 
-.app__navbar-icons__contact a span,
-.app__navbar-icons__login a span,
-.app__navbar-icons__favourites a span,
-.app__navbar-cart a span {
+.app__navbar-icons span,
+.app__navbar-cart span {
     margin-top: 5px;
 }
 
 .app__navbar-cart {
     align-self: stretch;
+    position: relative;
+    background: var(--color-yellow);
 }
 
 .app__navbar-cart a span {
     color: var(--color-purple);
     font-weight: bold;
-}
-
-.app__navbar-icons__favourites,
-.app__navbar-cart {
-    position: relative;
 }
 
 .app__navbar-icons__favourites-count,

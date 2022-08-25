@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 :root {
   --font-logo: 'Michroma', sans-serif;
-  --font-text: 'Chakra Petch', sans-serif;
-  --font-base: 'Cinzel Decorative', cursive;
+  --font-menu: 'Chakra Petch', sans-serif;
+  --font-text: 'Big Shoulders Display', cursive;
   --font-second: 'Kelly Slab', cursive;
   --font-inputs: 'Syne Mono', monospace;
   
   --color-yellow: #FAED26;
   --color-blue: #007DBC;
   --color-purple: #46344E;
-  --color-dark-grey: #5A5560;
-  --color-grey: #9D8D8F;
+  --color-grey: #5A5560;
   --color-cream: #9B786F;
   --color-white: #ffffff;
 }
@@ -30,4 +29,8 @@
 a {
   color: unset;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

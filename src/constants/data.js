@@ -1,82 +1,49 @@
 import images from './images';
+import { IoIosMan, IoIosWoman } from 'react-icons/io';
+import { ImManWoman, ImHome3 } from 'react-icons/im';
+import { BsTools } from 'react-icons/bs';
 
-const wines = [
-  {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
-  },
-  {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
-  },
-  {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
-  },
-  {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
-  },
-  {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
-  },
-];
+const products = [
+  'A T-SHIRT',
+  'LEGGINGS',
+  'A JACKET',
+  'SUNGLASSES',
+  'A JUMPER',
+  'SNOW BOOTS',
+  'A BACKPACK'
+]
 
-const cocktails = [
+const menus = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    title: 'Home',
+    path: '/',
+    icon: <ImHome3 />,
+    className: 'menu-category'
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    title: 'Men',
+    path: '/Men',
+    icon: <IoIosMan />,
+    className: 'menu-category'
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    title: 'Women',
+    path: '/Women',
+    icon: <IoIosWoman />,
+    className: 'menu-category'
   },
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    title: 'Kids',
+    path: '/Kids',
+    icon: <ImManWoman />,
+    className: 'menu-category'
   },
   {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
-  },
-];
+    title: 'Equipment',
+    path: '/Equipment',
+    icon: <BsTools />,
+    className: 'menu-category'
+  }
+]
 
-const awards = [
-  {
-    imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-];
-
-export default { wines, cocktails, awards };
+export default { products, menus };
