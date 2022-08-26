@@ -1,7 +1,7 @@
 import images from './images';
 import { IoIosMan, IoIosWoman } from 'react-icons/io';
 import { ImManWoman, ImHome3 } from 'react-icons/im';
-import { BsTools } from 'react-icons/bs';
+import { BsSunglasses, BsTools } from 'react-icons/bs';
 
 const products = [
   'A T-SHIRT',
@@ -39,8 +39,14 @@ const menus = [
     className: 'menu-category'
   },
   {
-    title: 'Equipment',
-    path: '/Equipment',
+    title: 'Accesories',
+    path: '/Accesories',
+    icon: <BsSunglasses />,
+    className: 'menu-category'
+  },
+  {
+    title: 'Gear',
+    path: '/Gear',
     icon: <BsTools />,
     className: 'menu-category'
   }

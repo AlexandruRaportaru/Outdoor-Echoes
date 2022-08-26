@@ -177,8 +177,26 @@
     background: var(--color-blue);
 }
 
-@media screen and (min-width: 1920px) {
-    .p__text {
-        font-size: 20px !important;
+@media screen and (max-width: 920px) {
+    .app__navbar-logo {
+        margin-bottom: 0;
+    }
+
+    .app__navbar-icons span,
+    .app__navbar-cart span {
+        display: none;
+    }
+
+    .app__navbar-icons__contact,
+    .app__navbar-icons__login,
+    .app__navbar-icons__favourites,
+    .app__navbar-cart {
+        min-width: 45px;
+    }
+
+    .app__navbar-icons__favourites-count,
+    .app__navbar-cart__count {
+        right: 0;
+        top: 10px;
     }
 }

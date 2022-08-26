@@ -75,6 +75,6 @@
 }
 
 .menu-category a:hover {
-    background: var(--color-yellow);
+    background: var(--color-blue);
     color: var(--color-purple);
 }

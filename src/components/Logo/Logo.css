@@ -4,8 +4,17 @@
     align-items: center;
 }
 
+.logo__icon {
+    color: var(--color-yellow);
+    font-size: 45px;
+}
+
 .logo__text {
     margin-left: 5px;
+}
+
+.logo__text span {
+    display: inline-flex;
 }
 
 .logo__text-letter {
@@ -16,4 +25,21 @@
     color: var(--color-yellow) !important;
     letter-spacing: 0px !important;
     margin-left: 2px;
+}
+
+@media screen and (max-width: 920px) {
+    .logo__icon {
+        font-size: 41px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .logo__icon {
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+
+    .logo__text {
+        margin-left: 2px;
+    }
 }

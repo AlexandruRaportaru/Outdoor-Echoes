@@ -9,7 +9,8 @@ import Selection from './Selection/Selection';
 import Men from './Products/Men/Men';
 import Women from './Products/Women/Women';
 import Kids from './Products/Kids/Kids';
-import Equipment from './Products/Equipment/Equipment';
+import Gear from './Products/Gear/Gear';
+import Accesories from './Products/Accesories/Accesories';
 
 export {
   Activities,
@@ -23,5 +24,6 @@ export {
   Men,
   Women,
   Kids,
-  Equipment
+  Accesories,
+  Gear
 };

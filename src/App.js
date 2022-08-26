@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Activities, FindUs, Footer, Creator, Header, Intro, Blogs, Selection, Men, Women, Kids, Equipment } from './container';
+import { Activities, FindUs, Footer, Creator, Header, Intro, Blogs, Selection, Men, Women, Kids, Accesories, Gear } from './container';
 import { Navbar } from './components';
 
 import './App.css';
@@ -13,7 +13,8 @@ const App = () => {
         <Route path='/men' element={<MenPage />} />
         <Route path='/women' element={<WomenPage />} />
         <Route path='/kids' element={<KidsPage />} />
-        <Route path='/equipment' element={<EquipmentPage />} />
+        <Route path='/accesories' element={<AccesoriesPage />} />
+        <Route path='/gear' element={<GearPage />} />
       </Routes>
     </Router>
   )
@@ -51,9 +52,15 @@ const KidsPage = () => (
 </div>
 );
 
-const EquipmentPage = () => (
+const AccesoriesPage = () => (
   <div>
-    <Equipment />
+    <Accesories />
+</div>
+);
+
+const GearPage = () => (
+  <div>
+    <Gear />
 </div>
 );
 
