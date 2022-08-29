@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { FaUserAlt, FaSearch, FaShoppingCart } from 'react-icons/fa';
-import { MdFavorite, MdOutlineContactSupport } from 'react-icons/md';
+import { MdOutlineContactSupport } from 'react-icons/md';
 import { Menu, Logo } from '../../components';
 import { data } from '../../constants';
 
@@ -11,22 +11,32 @@ const Navbar = () => {
   const placeholderRef = useRef();
 
   const handleInputChange = (e) => {
+
+    if (e.currentTarget.value === '') {
+      placeholderRef.current.style.display = 'inline-flex';
+    } else {
+      placeholderRef.current.style.display = 'none';
+    }
+  }
+
+  const handleInputClick = (e) => {
     placeholderRef.current.style.display = 'none';
   }
 
   return (
-    <nav className='app__navbar'>
+    <nav className='app__navbar box1'>
       <Menu />
 
-      <a href='/' aria-label='Go to HomePage' className='app__navbar-logo'>
+      <a href='/' aria-label='Go to HomePage' className='app__navbar-logo box2'>
         <Logo/>
       </a>
 
-      <div className='app__navbar-search flex__center'>
+      <div className='app__navbar-search flex__center box3'>
         <form method='get' action='/search'>
-          <input type='search' autoComplete='off' onClick={handleInputChange}/>
+          <input type='search' autoComplete='off' onChange={handleInputChange} onClick={handleInputClick}/>
           <div className='app__navbar-search__placeholder' ref={placeholderRef}>
             <span className='app__navbar-search__placeholder-static' style={{position: 'relative'}}>SEARCH FOR </span>
+            <span className='app__navbar-search__placeholder-dots'>...</span>
               <ul className='app__navbar-search__placeholder-dynamic' style={{marginLeft: '6px'}}>
                 {data.products.map(product => (
                   <li key={product}>
@@ -41,7 +51,7 @@ const Navbar = () => {
         </form>
       </div>
         
-      <div className='app__navbar-icons'>
+      <div className='app__navbar-icons box4'>
         <div className='app__navbar-icons__contact'>
           <a href='true'>
             <MdOutlineContactSupport style={{color: 'var(--color-yellow)'}} fontSize={24}/>
@@ -51,22 +61,17 @@ const Navbar = () => {
         <div className='app__navbar-icons__login'>
           <a href='true'>
             <FaUserAlt style={{color: 'var(--color-yellow)'}} fontSize={24}/>
-            <span className='p__text'>LOGIN</span>
-          </a>
-        </div>
-        <div className='app__navbar-icons__favourites' style={{position: 'relative'}}>
-          <a href='true'>
-            <div className='app__navbar-icons__favourites-count p__text'>0</div>
-            <MdFavorite style={{color: 'var(--color-yellow)'}} fontSize={24}/>
-            <span className='p__text'>MY FAVORITES</span>
+            <span className='p__text'>SIGN IN</span>
           </a>
         </div>
       </div>
 
-      <div className='app__navbar-cart'>
+      <div className='app__navbar-cart box5'>
         <a href='true'>
-          <div className='app__navbar-cart__count p__text'>0</div>
-          <FaShoppingCart style={{color: 'var(--color-purple)'}} fontSize={24}/>
+          <div style={{position: 'relative'}}>
+            <div className='app__navbar-cart__count p__text'>0</div>
+            <FaShoppingCart style={{color: 'var(--color-purple)'}} fontSize={24}/>
+          </div>
           <span className='p__text'>MY BASKET</span>
         </a>
       </div>

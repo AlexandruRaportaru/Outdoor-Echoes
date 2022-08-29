@@ -64,12 +64,18 @@
     font-weight: bold;
     letter-spacing: 1px;
     overflow: hidden;
+    opacity: 0.5;
+}
+
+.app__navbar-search__placeholder-dots{
+    display: none;
+    font-family: var(--font-text);
 }
 
 .app__navbar-search__placeholder-dynamic li {
     list-style: none;
-    color: var(--color-blue);
-    animation: slide 21s steps(7) infinite;
+    color: var(--color-grey);
+    animation: slide 21s steps(7, end) 0s infinite;
     position: relative;
     top: 0;
 }
@@ -115,7 +121,6 @@
 
 .app__navbar-icons__contact,
 .app__navbar-icons__login,
-.app__navbar-icons__favourites,
 .app__navbar-cart {
     display: flex;
     position: relative;
@@ -151,25 +156,19 @@
     font-weight: bold;
 }
 
-.app__navbar-icons__favourites-count,
 .app__navbar-cart__count {
     width: 1.3rem;
     height: 1.2rem;
     border-radius: 50%;
     position: absolute;
-    top: 6px;
-    right: 18px;
+    top: -10px;
+    right: -14px;
     font-size: 0.7em;
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 0 !important;
     letter-spacing: 0 !important;
-}
-
-.app__navbar-icons__favourites-count {
-    border: 2px solid var(--color-purple);
-    background: var(--color-blue);
 }
 
 .app__navbar-cart__count {
@@ -189,14 +188,63 @@
 
     .app__navbar-icons__contact,
     .app__navbar-icons__login,
-    .app__navbar-icons__favourites,
     .app__navbar-cart {
         min-width: 45px;
     }
 
-    .app__navbar-icons__favourites-count,
-    .app__navbar-cart__count {
-        right: 0;
-        top: 10px;
+    .app__navbar-cart {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .app__navbar-search__placeholder-dynamic{
+        display: none;
+    }
+
+    .app__navbar-search__placeholder-dots{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .app__navbar {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr) ;
+    }
+
+    .box2 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+    .box3 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row: 2 / 2;
+    }
+
+    .box4 {
+        display: none;
+    }
+
+    .box5 {
+        grid-column-start: 6; 
+        min-width: 0;
+        max-width: 60px;
+        padding: 0 15px;
+        justify-self: end;
+    }
+
+    .box5 a {
+        padding: 0;
+    }
+
+    .app__navbar-search__placeholder-dynamic{
+        display: block;
+    }
+
+    .app__navbar-search__placeholder-dots{
+        display: none;
     }
 }
