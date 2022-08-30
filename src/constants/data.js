@@ -52,4 +52,36 @@ const menus = [
   }
 ]
 
-export default { products, menus };
+
+const swiperImages = [
+  {
+    slideBrand: images.adidasBanner,
+    slideTitle: 'adidas-banner',
+  },
+  {
+    slideBrand: images.columbiaBanner,
+    slideTitle: 'columbia-banner',
+  },
+  {
+    slideBrand: images.diamondBanner,
+    slideTitle: 'diamond-banner',
+  },
+  {
+    slideBrand: images.mammutBanner,
+    slideTitle: 'mammut-banner',
+  },
+  {
+    slideBrand: images.northBanner,
+    slideTitle: 'north-banner',
+  },
+  {
+    slideBrand: images.ospreyBanner,
+    slideTitle: 'osprey-banner',
+  },
+  {
+    slideBrand: images.patagoniaBanner,
+    slideTitle: 'patagonia-banner',
+  },
+]
+
+export default { products, menus, swiperImages };

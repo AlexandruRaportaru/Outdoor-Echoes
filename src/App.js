@@ -4,6 +4,7 @@ import { Activities, FindUs, Footer, Creator, Header, Intro, Blogs, Selection, M
 import { Navbar } from './components';
 
 import './App.css';
+import { data } from './constants';
 
 const App = () => {
   return (
