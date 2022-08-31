@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
 
 :root {
   --font-logo: 'Michroma', sans-serif;
   --font-menu: 'Chakra Petch', sans-serif;
   --font-text: 'Big Shoulders Display', cursive;
-  --font-second: 'Kelly Slab', cursive;
-  --font-inputs: 'Syne Mono', monospace;
+  --font-anton: 'Anton', sans-serif;
+  --font-yanone: 'Yanone Kaffeesatz', sans-serif;
   
   --color-yellow: #FAED26;
   --color-blue: #007DBC;

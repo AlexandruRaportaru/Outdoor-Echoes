@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectFade } from 'swiper';
+import { Navigation } from 'swiper';
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
 import { images, data } from '../../constants';
 
 import './Header.css';
@@ -16,7 +17,7 @@ const Header = () => {
   return (
     <>
       <div className='app__header' id='home'>
-        <img src={images.headerBackground} alt='header-cover'/>
+        <img src={images.headerBackground} alt='header-cover' className='app__header-image'/>
         <div className='app__header-background'></div>
         <div className='app__header-wrapper section__padding'>
           <Swiper 
@@ -36,10 +37,14 @@ const Header = () => {
               swiper.navigation.update();
             }}
             >
-            {data.swiperImages.map((slide, index) => (
-              <SwiperSlide className='app__header-wrapper__swiper-slide'>
-                <img key={index} src={slide.slideBrand} alt='index'/>
-                <div className='background'></div>
+            {data.swiperImages.map(slide => (
+              <SwiperSlide key={slide.slideName} className='app__header-wrapper__swiper-slide'>
+                <img src={slide.slideBrand} alt={slide.slideName} className='app__header-wrapper__swiper-slide__image'/>
+                <img src={slide.slideLogo} alt={slide.slideName} className='app__header-wrapper__swiper-slide__logo' style={{width: slide.logoSize}}/>
+                <h1 className='p__headtext'>{slide.slideTitle}</h1>
+                <p className='p__yanone'>{slide.slideParagraph}</p>
+                <div className='swiper-background'></div>
+                <a href='/' className='custom__button'>VIEW MORE</a>
               </SwiperSlide>
             ))}
             <div className='swiper-left' ref={swiperPrevRef}>
@@ -49,13 +54,22 @@ const Header = () => {
               <BsChevronDoubleRight />
             </div>
           </Swiper>
+
+
           <div className='app__header-wrapper__content'>
             <div className='app__header-wrapper__content-discount'>
-
+              <img src={images.discount} alt='discount' />
+              <div className='discount-background'></div>
+              <a href='/' className='custom__button' style={{marginBottom: '20px'}}>SHOP NOW</a>
             </div>
+
             <div className='app__header-wrapper__content-facebook'>
-              <p></p>
-              <button></button>
+              <h1 className='app__header-wrapper__content-facebook__title p__headtext'>Follow us on <span style={{color: 'var(--color-blue)'}}>Facebook</span></h1>
+              <p className='app__header-wrapper__content-facebook__text p__yanone'>Show us how you play in the outdoors. Mention @outdoorechoes in your photos on Facebook.</p>
+              <a href='https://www.facebook.com/login/' className='custom__button'>
+                <FaFacebookF />
+                <p className='p__yanone' style={{marginLeft: '10px'}}>FOLLOW US</p>
+              </a>
             </div>
           </div>
         </div>
