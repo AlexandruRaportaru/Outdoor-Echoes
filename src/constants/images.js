@@ -30,6 +30,7 @@ import salomonLogo from '../assets/salomonLogo.png';
 import sportivaLogo from '../assets/sportivaLogo.png';
 import summitLogo from '../assets/summitLogo.png';
 import discount from '../assets/discount.jpg';
+import discountLogo from '../assets/discountLogo.png';
 
 
 export default {
@@ -65,4 +66,5 @@ export default {
   sportivaLogo,
   summitLogo,
   discount,
+  discountLogo,
 };

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { images, data } from '../../constants';
@@ -8,7 +8,7 @@ import { images, data } from '../../constants';
 import './Header.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/effect-fade';
+import 'swiper/css/autoplay';
 
 const Header = () => {
   const swiperPrevRef = useRef(null);
@@ -21,13 +21,14 @@ const Header = () => {
         <div className='app__header-background'></div>
         <div className='app__header-wrapper section__padding'>
           <Swiper 
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             navigation={{
               prevEl: swiperPrevRef.current,
               nextEl: swiperNextRef.current
             }}
             speed={800}
             slidesPerView={1}
+            autoplay
             loop
             className='app__header-wrapper__swiper'
             onInit={(swiper) => {
@@ -40,7 +41,7 @@ const Header = () => {
             {data.swiperImages.map(slide => (
               <SwiperSlide key={slide.slideName} className='app__header-wrapper__swiper-slide'>
                 <img src={slide.slideBrand} alt={slide.slideName} className='app__header-wrapper__swiper-slide__image'/>
-                <img src={slide.slideLogo} alt={slide.slideName} className='app__header-wrapper__swiper-slide__logo' style={{width: slide.logoSize}}/>
+                <img src={slide.slideLogo} alt={slide.slideName} className='app__header-wrapper__swiper-slide__logo' style={{width: `${slide.logoSize}%`}}/>
                 <h1 className='p__headtext'>{slide.slideTitle}</h1>
                 <p className='p__yanone'>{slide.slideParagraph}</p>
                 <div className='swiper-background'></div>
@@ -58,9 +59,10 @@ const Header = () => {
 
           <div className='app__header-wrapper__content'>
             <div className='app__header-wrapper__content-discount'>
-              <img src={images.discount} alt='discount' />
+              <img src={images.discount} alt='discount' className='app__header-wrapper__content-discount__image'/>
+              <img src={images.discountLogo} alt='discount-logo' className='app__header-wrapper__content-discount__logo'/>
               <div className='discount-background'></div>
-              <a href='/' className='custom__button' style={{marginBottom: '20px'}}>SHOP NOW</a>
+              <a href='/' className='custom__button'>SHOP NOW</a>
             </div>
 
             <div className='app__header-wrapper__content-facebook'>

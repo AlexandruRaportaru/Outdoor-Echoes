@@ -21,10 +21,6 @@
   align-items: center;
 }
 
-.w-100 {
-  width: 100%;
-}
-
 .app__bg {
   background: url('./assets/bg.png');
   background-position: center;
@@ -72,7 +68,6 @@
     border: 2px solid var(--color-purple);
     outline: none;
     cursor: pointer;
-    box-shadow: inset 0 0 0.5em 0 var(--color-black), 0 0 0.5em 0 var(--color-purple);
     transition:all 0.3s;
 }
 
@@ -81,6 +76,7 @@
   background-color: transparent;
   border: 3px solid var(--color-yellow);
   text-shadow: 1px 1px var(--color-purple);
+  box-shadow: inset 0 0 0.5em 0 var(--color-white), 0 0 1em 0 var(--color-purple);
 }
 
 .p__logo {
@@ -129,6 +125,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    opacity: 0.5;
 }
 
 .swiper-left {
@@ -146,16 +143,24 @@
 }
 
 @media screen and (max-width: 1150px) {
-  .app__wrapper {
-    flex-direction: column-reverse;
+  .swiper-left,
+  .swiper-right {
+    top: 180px;
   }
 
-  .app__wrapper_img {
-    margin: 0 0 60px 0;
+  .custom__button {
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
   }
 
-  .app__wrapper_img img {
-    width: 65%;
+  .p__headtext {
+    font-size: 35px;
+  }
+
+  .p__yanone {
+    font-size: 18px;
   }
 }
 
@@ -169,6 +174,34 @@
   .section__padding {
     padding: 4rem;
   }
+
+  .swiper-left,
+  .swiper-right {
+    top: 180px;
+  }
+
+  .swiper-left {
+    left: 15px;
+  }
+
+  .swiper-right {
+    right: 15px;
+  }
+
+  .custom__button {
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    font-size: 16px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .p__headtext {
+    font-size: 35px;
+  }
+
+  .p__yanone {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -180,7 +213,7 @@
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
   }
   
   .p__headtext {
@@ -188,8 +221,43 @@
     line-height: 35px;
   }
 
-  .p__text {
+  .p__yanone {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .swiper-left,
+  .swiper-right {
+    font-size: 30px;
+    top: 140px;
+  }
+
+  .swiper-left {
+    left: 10px;
+  }
+
+  .swiper-right {
+    right: 10px;
+  }
+
+  .p__headtext {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .p__yanone {
     font-size: 14px;
   }
 }
 
+@media screen and (max-width: 335px) {
+  .p__headtext {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .p__yanone {
+    font-size: 12px;
+  }
+}
