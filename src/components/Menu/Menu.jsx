@@ -5,6 +5,7 @@ import { FiMenu } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaUserAlt } from 'react-icons/fa';
 import { MdOutlineContactSupport } from 'react-icons/md';
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs';
 
 import './Menu.css';
 
@@ -12,22 +13,24 @@ const Menu = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const backgroundRef = useRef();
 
-  const handleMenuToggle = () => {
+  const handleMenuVisible = () => {
     setToggleMenu(true);
+    document.getElementsByTagName("html")[0].style.overflow = "hidden";
+
     setTimeout(() => {
       backgroundRef.current.style.display = 'block';
     }, 310)
-    
   }
   
-  const handleModalClose = () => {
+  const handleMenuHidden = () => {
     setToggleMenu(false);
+    document.getElementsByTagName("html")[0].style.overflow = "visible";
     backgroundRef.current.style.display = 'none';
   }
 
   return (
     <>
-      <Link to='#' className='app__navbar-menu' onClick={handleMenuToggle}>
+      <Link to='#' className='app__navbar-menu' onClick={handleMenuVisible}>
         <div>
           <FiMenu color='var(--color-yellow)' fontSize={30}/>
           <p className='p__text'>MENU</p>
@@ -37,7 +40,7 @@ const Menu = () => {
       <div className={toggleMenu ? 'app__navbar-smallMenu active' : 'app__navbar-smallMenu'}>
         <ul className='app__navbar-smallMenu_items'>
           <li className='app__navbar-toggle'>
-            <Link to='#' className='app__navbar-menu__close' onClick={handleModalClose}>
+            <Link to='#' className='app__navbar-menu__close' onClick={handleMenuHidden}>
               <AiOutlineClose color='var(--color-yellow)' fontSize={30}/>
               <p className='p__text'>CLOSE</p>
             </Link>
@@ -58,16 +61,29 @@ const Menu = () => {
             </div>
           </li>
           {data.menus.map((menu, index) => (
-            <li key={index} className={menu.className}>
-              <Link to={menu.path}>
-                {menu.icon}
-                <span className='p__text'>{menu.title}</span>
-              </Link>
-            </li>
+            <Link to={menu.path}>
+              <li key={index} className={menu.className}>
+                {menu.icon}{menu.title}
+              </li>
+            </Link>
           ))}
+          <li className='app__navbar-smallMenu_items-social'>
+            <a href='https://www.facebook.com/login/'>
+              <BsFacebook />
+            </a>
+            <a href='https://www.instagram.com/'>
+              <BsInstagram />
+            </a>
+            <a href='https://twitter.com/'>
+              <BsTwitter />
+            </a>
+            <a href='https://www.youtube.com/'>
+              <BsYoutube />
+            </a>
+          </li>
         </ul>
       </div>
-      <div className='app__navbar-menu__background' onClick={handleModalClose} ref={backgroundRef}></div>
+      <div className='app__navbar-menu__background' onClick={handleMenuHidden} ref={backgroundRef}></div>
     </> 
   )
 }

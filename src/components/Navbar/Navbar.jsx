@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { FaUserAlt, FaSearch, FaShoppingCart } from 'react-icons/fa';
 import { MdOutlineContactSupport } from 'react-icons/md';
-import { Menu, Logo } from '../../components';
+import { Menu, Logo, Cart} from '../../components';
 import { data } from '../../constants';
 
 import './Navbar.css';
@@ -38,9 +38,9 @@ const Navbar = () => {
             <span className='app__navbar-search__placeholder-static' style={{position: 'relative'}}>SEARCH FOR </span>
             <span className='app__navbar-search__placeholder-dots'>...</span>
               <ul className='app__navbar-search__placeholder-dynamic' style={{marginLeft: '6px'}}>
-                {data.products.map(product => (
-                  <li key={product}>
-                    <span>{product}</span>
+                {data.productsExamples.map(example => (
+                  <li key={example}>
+                    <span>{example}</span>
                   </li>
                 ))}
               </ul>
@@ -66,15 +66,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className='app__navbar-cart box5'>
-        <a href='true'>
-          <div style={{position: 'relative'}}>
-            <div className='app__navbar-cart__count p__text'>0</div>
-            <FaShoppingCart style={{color: 'var(--color-purple)'}} fontSize={24}/>
-          </div>
-          <span className='p__text'>MY BASKET</span>
-        </a>
-      </div>
+      <Cart className='box5'/>
     </nav>
   )
 };

@@ -66,11 +66,10 @@ const Header = () => {
             </div>
 
             <div className='app__header-wrapper__content-facebook'>
-              <h1 className='app__header-wrapper__content-facebook__title p__headtext'>Follow us on <span style={{color: 'var(--color-blue)'}}>Facebook</span></h1>
-              <p className='app__header-wrapper__content-facebook__text p__yanone'>Show us how you play in the outdoors. Mention @outdoorechoes in your photos on Facebook.</p>
+              <h1 className='app__header-wrapper__content-facebook__title'>Follow us on <span style={{color: 'var(--color-blue)'}}>Facebook</span></h1>
+              <p className='app__header-wrapper__content-facebook__text'>Show us how you play in the outdoors. Mention @outdoorechoes in your photos on Facebook.</p>
               <a href='https://www.facebook.com/login/' className='custom__button'>
-                <FaFacebookF />
-                <p className='p__yanone' style={{marginLeft: '10px'}}>FOLLOW US</p>
+                <FaFacebookF style={{marginRight: '10px'}}/>FOLLOW
               </a>
             </div>
           </div>

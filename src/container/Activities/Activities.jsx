@@ -4,7 +4,7 @@ import './Activities.css';
 
 const Activities = () => (
   <div>
-    Activities
+    
   </div>
 );
 

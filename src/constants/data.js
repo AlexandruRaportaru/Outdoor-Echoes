@@ -2,8 +2,10 @@ import images from './images';
 import { IoIosMan, IoIosWoman } from 'react-icons/io';
 import { ImManWoman, ImHome3 } from 'react-icons/im';
 import { BsSunglasses, BsTools } from 'react-icons/bs';
+import { FaAngellist } from 'react-icons/fa';
+import { TbDiscount2 } from 'react-icons/tb';
 
-const products = [
+const productsExamples = [
   'A T-SHIRT',
   'LEGGINGS',
   'A JACKET',
@@ -17,37 +19,49 @@ const menus = [
   {
     title: 'Home',
     path: '/',
-    icon: <ImHome3 />,
+    icon: <ImHome3 style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
     title: 'Men',
-    path: '/Men',
-    icon: <IoIosMan />,
+    path: '/products',
+    icon: <IoIosMan style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
     title: 'Women',
-    path: '/Women',
-    icon: <IoIosWoman />,
+    path: '/products',
+    icon: <IoIosWoman style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
     title: 'Kids',
-    path: '/Kids',
-    icon: <ImManWoman />,
+    path: '/products',
+    icon: <ImManWoman style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
     title: 'Accesories',
-    path: '/Accesories',
-    icon: <BsSunglasses />,
+    path: '/products',
+    icon: <BsSunglasses style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
     title: 'Gear',
-    path: '/Gear',
-    icon: <BsTools />,
+    path: '/products',
+    icon: <BsTools style={{margin: '0 15px 4px 0'}}/>,
+    className: 'menu-category'
+  },
+  {
+    title: 'Brands',
+    path: '/products',
+    icon: <FaAngellist style={{margin: '0 15px 4px 0'}}/>,
+    className: 'menu-category'
+  },
+  {
+    title: 'Sales',
+    path: '/',
+    icon: <TbDiscount2 style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   }
 ]
@@ -168,4 +182,4 @@ const swiperImages = [
   },
 ]
 
-export default { products, menus, swiperImages };
+export default { productsExamples, menus, swiperImages };

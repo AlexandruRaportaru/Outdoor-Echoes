@@ -6,11 +6,8 @@ import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import Blogs from './Blogs/Blogs';
 import Selection from './Selection/Selection';
-import Men from './Products/Men/Men';
-import Women from './Products/Women/Women';
-import Kids from './Products/Kids/Kids';
-import Gear from './Products/Gear/Gear';
-import Accesories from './Products/Accesories/Accesories';
+import Products from './Products/Products';
+
 
 export {
   Activities,
@@ -21,9 +18,5 @@ export {
   Intro,
   Blogs,
   Selection,
-  Men,
-  Women,
-  Kids,
-  Accesories,
-  Gear
+  Products,
 };

@@ -17,7 +17,7 @@
 
 .app__navbar-search form {
     display: flex;
-    margin: 15px;
+    margin: 14px 15px;
     width: 100%;
     position: relative;
 }
@@ -120,16 +120,14 @@
 }
 
 .app__navbar-icons__contact,
-.app__navbar-icons__login,
-.app__navbar-cart {
+.app__navbar-icons__login {
     display: flex;
     position: relative;
     flex-direction: column;
     min-width: 88px;
 }
 
-.app__navbar-icons a,
-.app__navbar-cart a {
+.app__navbar-icons a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,40 +138,8 @@
     cursor: pointer;
 }
 
-.app__navbar-icons span,
-.app__navbar-cart span {
+.app__navbar-icons span {
     margin-top: 5px;
-}
-
-.app__navbar-cart {
-    align-self: stretch;
-    position: relative;
-    background: var(--color-yellow);
-}
-
-.app__navbar-cart a span {
-    color: var(--color-purple);
-    font-weight: bold;
-}
-
-.app__navbar-cart__count {
-    width: 1.3rem;
-    height: 1.2rem;
-    border-radius: 50%;
-    position: absolute;
-    top: -10px;
-    right: -14px;
-    font-size: 0.7em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0 !important;
-    letter-spacing: 0 !important;
-}
-
-.app__navbar-cart__count {
-    border: 2px solid var(--color-yellow);
-    background: var(--color-blue);
 }
 
 @media screen and (max-width: 920px) {
@@ -181,19 +147,13 @@
         margin-bottom: 0;
     }
 
-    .app__navbar-icons span,
-    .app__navbar-cart span {
+    .app__navbar-icons span {
         display: none;
     }
 
     .app__navbar-icons__contact,
-    .app__navbar-icons__login,
-    .app__navbar-cart {
+    .app__navbar-icons__login {
         min-width: 45px;
-    }
-
-    .app__navbar-cart {
-        padding: 0 20px;
     }
 }
 
@@ -226,18 +186,6 @@
 
     .box4 {
         display: none;
-    }
-
-    .box5 {
-        grid-column-start: 6; 
-        min-width: 0;
-        max-width: 60px;
-        padding: 0 15px;
-        justify-self: end;
-    }
-
-    .box5 a {
-        padding: 0;
     }
 
     .app__navbar-search__placeholder-dynamic{
