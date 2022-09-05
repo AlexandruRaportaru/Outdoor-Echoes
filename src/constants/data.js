@@ -182,4 +182,44 @@ const swiperImages = [
   },
 ]
 
-export default { productsExamples, menus, swiperImages };
+
+
+const activitiesCards = [
+  {
+    cardActivity: images.runningCard,
+    cardName: 'running-card',
+    cardHeight: 400,
+    cardTitle: 'Running',
+    cardClass: 'card1'
+  },
+  {
+    cardActivity: images.campingCard,
+    cardName: 'camping-card',
+    cardHeight: 450,
+    cardTitle: 'Camping',
+    cardClass: 'card2'
+  },
+  {
+    cardActivity: images.hikingCard,
+    cardName: 'hiking-card',
+    cardHeight: 500,
+    cardTitle: 'Hiking',
+    cardClass: 'card3'
+  },
+  {
+    cardActivity: images.climbingCard,
+    cardName: 'climbing-card',
+    cardHeight: 450,
+    cardTitle: 'Climbing',
+    cardClass: 'card4'
+  },
+  {
+    cardActivity: images.expeditionsCard,
+    cardName: 'expeditions-card',
+    cardHeight: 400,
+    cardTitle: 'Expeditions',
+    cardClass: 'card5'
+  },
+]
+
+export default { productsExamples, menus, swiperImages, activitiesCards };

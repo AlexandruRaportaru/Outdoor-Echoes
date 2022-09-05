@@ -12,7 +12,7 @@
 }
 
 .section__padding {
-  padding: 60px 100px;
+  padding: 60px 25px;
 }
 
 .flex__center {
@@ -37,19 +37,25 @@
   min-height: 100vh;
 }
 
+.purple__bg {
+  background: var(--color-purple);
+  width: 100%;
+  position: absolute;
+}
+
 .custom__button {
-    background: var(--color-yellow);
-    color: var(--color-purple);
-    font-family: var(--font-anton);
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 20px;
-    padding: 0.5rem 1.5rem;
-    border-radius: 10px;
-    border: 1px solid var(--color-purple);
-    outline: none;
-    cursor: pointer;
-    transition:all 0.3s;
+  background: var(--color-yellow);
+  color: var(--color-purple);
+  font-family: var(--font-anton);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 20px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-purple);
+  outline: none;
+  cursor: pointer;
+  transition:all 0.3s;
 }
 
 .custom__button:hover {
@@ -97,24 +103,24 @@
 
 .swiper-left,
 .swiper-right {
-    position: absolute;
-    font-size: 40px;
-    color: var(--color-white);
-    cursor: pointer;
-    top: 275px;
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    opacity: 0.5;
+  position: absolute;
+  font-size: 40px;
+  color: var(--color-white);
+  cursor: pointer;
+  top: 275px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.5;
 }
 
 .swiper-left {
-    left: 20px;
+  left: 20px;
 }
 
 .swiper-right {
-    right: 20px;
+  right: 20px;
 }
 
 @media screen and (min-width: 1920px) {

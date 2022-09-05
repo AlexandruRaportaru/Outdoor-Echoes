@@ -61,8 +61,8 @@ const Menu = () => {
             </div>
           </li>
           {data.menus.map((menu, index) => (
-            <Link to={menu.path}>
-              <li key={index} className={menu.className}>
+            <Link key={index} to={menu.path}>
+              <li className={menu.className}>
                 {menu.icon}{menu.title}
               </li>
             </Link>

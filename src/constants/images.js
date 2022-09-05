@@ -31,6 +31,11 @@ import sportivaLogo from '../assets/sportivaLogo.png';
 import summitLogo from '../assets/summitLogo.png';
 import discount from '../assets/discount.jpg';
 import discountLogo from '../assets/discountLogo.png';
+import expeditionsCard from '../assets/expeditionsCard.jpg';
+import runningCard from '../assets/runningCard.jpg';
+import hikingCard from '../assets/hikingCard.jpg';
+import campingCard from '../assets/campingCard.jpg';
+import climbingCard from '../assets/climbingCard.jpg';
 
 
 export default {
@@ -67,4 +72,9 @@ export default {
   summitLogo,
   discount,
   discountLogo,
+  expeditionsCard,
+  runningCard,
+  hikingCard,
+  campingCard,
+  climbingCard
 };
