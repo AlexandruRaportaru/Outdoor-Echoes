@@ -2,6 +2,7 @@
     text-align: center;
     width: 100%;
     box-shadow: inset 0 0 10em var(--color-purple);
+    padding: 30px 25px !important;
 }
 
 .app__activities-title {

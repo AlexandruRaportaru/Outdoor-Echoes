@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <>
-      <div className='app__header' id='home'>
+      <div className='app__header'>
         <img src={images.headerBackground} alt='header-cover' className='app__header-image'/>
         <div className='app__header-background purple__bg'></div>
         <div className='app__header-wrapper section__padding'>
@@ -40,8 +40,17 @@ const Header = () => {
             >
             {data.swiperImages.map(slide => (
               <SwiperSlide key={slide.slideName} className='app__header-wrapper__swiper-slide'>
-                <img src={slide.slideBrand} alt={slide.slideName} className='app__header-wrapper__swiper-slide__image'/>
-                <img src={slide.slideLogo} alt={slide.slideName} className='app__header-wrapper__swiper-slide__logo' style={{width: `${slide.logoSize}%`}}/>
+                <img 
+                  src={slide.slideBrand} 
+                  alt={slide.slideName} 
+                  className='app__header-wrapper__swiper-slide__image'
+                />
+                <img 
+                  src={slide.slideLogo} 
+                  alt={slide.slideName} 
+                  className='app__header-wrapper__swiper-slide__logo' 
+                  style={{width: `${slide.logoSize}%`}}
+                />
                 <h1 className='p__headtext'>{slide.slideTitle}</h1>
                 <p className='p__yanone'>{slide.slideParagraph}</p>
                 <div className='swiper-background purple__bg'></div>

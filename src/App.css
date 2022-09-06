@@ -107,20 +107,11 @@
   font-size: 40px;
   color: var(--color-white);
   cursor: pointer;
-  top: 275px;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   opacity: 0.5;
-}
-
-.swiper-left {
-  left: 20px;
-}
-
-.swiper-right {
-  right: 20px;
 }
 
 @media screen and (min-width: 1920px) {
@@ -130,11 +121,6 @@
 }
 
 @media screen and (max-width: 1150px) {
-  .swiper-left,
-  .swiper-right {
-    top: 180px;
-  }
-
   .custom__button {
     letter-spacing: 0.5px;
     line-height: 25px;
@@ -160,19 +146,6 @@
 @media screen and (max-width: 850px) {
   .section__padding {
     padding: 3.8rem;
-  }
-
-  .swiper-left,
-  .swiper-right {
-    top: 180px;
-  }
-
-  .swiper-left {
-    left: 15px;
-  }
-
-  .swiper-right {
-    right: 15px;
   }
 
   .custom__button {
@@ -212,20 +185,6 @@
 @media screen and (max-width: 585px) {
   .section__padding {
     padding: 2rem 1rem;
-  }
-
-  .swiper-left,
-  .swiper-right {
-    font-size: 30px;
-    top: 140px;
-  }
-
-  .swiper-left {
-    left: 10px;
-  }
-
-  .swiper-right {
-    right: 10px;
   }
 
   .p__headtext {

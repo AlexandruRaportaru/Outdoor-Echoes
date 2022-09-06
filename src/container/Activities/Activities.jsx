@@ -4,7 +4,7 @@ import { data } from '../../constants';
 import './Activities.css';
 
 const Activities = () => (
-  <div className='app__activities section__padding'>
+  <div className='app__activities'>
     <h1 className='app__activities-title p__yanone'>Our activities</h1>
     <div className='app__activities-cards'>
       {data.activitiesCards.map(activity => 

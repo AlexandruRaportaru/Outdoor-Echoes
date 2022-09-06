@@ -56,6 +56,19 @@
     margin: auto auto 50px auto;
 }
 
+.app__header-wrapper__swiper .swiper-left,
+.app__header-wrapper__swiper .swiper-right {
+    top: 275px;
+}
+
+.app__header-wrapper__swiper .swiper-left {
+    left: 20px;
+}
+  
+.app__header-wrapper__swiper .swiper-right {
+    right: 20px;
+}
+
 .swiper-background {
     height: 100%;
     z-index: -1;
@@ -154,6 +167,11 @@
         width: 100%;
         height: 369px;
     }
+    
+    .app__header-wrapper__swiper .swiper-left,
+    .app__header-wrapper__swiper .swiper-right {
+        top: 180px;
+    }
 
     .app__header-wrapper__swiper-slide h1,
     .app__header-wrapper__swiper-slide p {
@@ -187,7 +205,20 @@
     .app__header-wrapper__swiper-slide h1,
     .app__header-wrapper__swiper-slide p {
         margin: 15px 70px 0 70px;
-    }    
+    }
+    
+    .app__header-wrapper__swiper .swiper-left,
+    .app__header-wrapper__swiper .swiper-right {
+        top: 180px;
+    }
+
+    .app__header-wrapper__swiper .swiper-left {
+        left: 15px;
+    }
+
+    .app__header-wrapper__swiper .swiper-right {
+        right: 15px;
+    }
 
     .app__header-wrapper__content {
         flex-direction: initial;
@@ -208,6 +239,20 @@
 @media screen and (max-width: 585px) {
     .app__header-wrapper__swiper {
         height: 315px;
+    }
+
+    .app__header-wrapper__swiper .swiper-left,
+    .app__header-wrapper__swiper .swiper-right {
+        font-size: 30px;
+        top: 140px;
+    }
+
+    .app__header-wrapper__swiper .swiper-left {
+        left: 10px;
+    }
+
+    .app__header-wrapper__swiper .swiper-right {
+        right: 10px;
     }
 
     .app__header-wrapper__swiper-slide__logo {
