@@ -90,6 +90,18 @@ import sportivaLogo from '../assets/sportiva/sportivaLogo.png';
 /* Summit */
 import summitBanner from '../assets/summit/summitBanner.jpg';
 import summitLogo from '../assets/summit/summitLogo.png';
+/* Creator */
+import creator1 from '../assets/creator/creator1.jpg';
+import creator2 from '../assets/creator/creator2.jpg';
+import creator3 from '../assets/creator/creator3.jpg';
+import creator4 from '../assets/creator/creator4.jpg';
+import creator5 from '../assets/creator/creator5.jpg';
+import creator6 from '../assets/creator/creator6.jpg';
+import creator7 from '../assets/creator/creator7.jpg';
+import creator8 from '../assets/creator/creator8.jpg';
+import creator9 from '../assets/creator/creator9.jpg';
+import creator10 from '../assets/creator/creator10.jpg';
+
 
 
 
@@ -187,4 +199,15 @@ export default {
 /* Summit */
   summitBanner,
   summitLogo,
+/* Creator */
+  creator1,
+  creator2,
+  creator3,
+  creator4,
+  creator5,
+  creator6,
+  creator7,
+  creator8,
+  creator9,
+  creator10,
 };

@@ -617,11 +617,25 @@ const brands = {
 
 /* const adidasProducts = products.filter((product) => product.productBrand === "Adidas"); */
 
+const creatorImages = [
+  images.creator1,
+  images.creator2,
+  images.creator3,
+  images.creator4,
+  images.creator5,
+  images.creator6,
+  images.creator7,
+  images.creator8,
+  images.creator9,
+  images.creator10,
+]
+
 export default { 
   productsExamples, 
   menus, 
   swiperImages, 
   activitiesCards,
   products,
-  brands
+  brands,
+  creatorImages
 };

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination} from 'swiper';
-import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
+import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from 'react-icons/bs';
 import { data } from '../../constants';
 
 import './Selection.css';
@@ -16,7 +16,7 @@ const Selection = () => {
   return (
     <>
       <div className='app__selection'>
-        <h1 className='app__selection-title p__yanone'>Our selection</h1>
+        <h1 className='app__selection-title p__yanone'>Our recommendation</h1>
         <div className='app__selection-wrapper'>
           <Swiper 
             modules={[Navigation, Pagination]}
@@ -24,49 +24,35 @@ const Selection = () => {
               prevEl: swiperPrevRef.current,
               nextEl: swiperNextRef.current
             }}
-            
-            spaceBetween={20}
-            
+            spaceBetween={25}
             speed={800}
             loopFillGroupWithBlank={true}
             loop
             className='app__selection-wrapper__swiper'
             breakpoints={{
-              // when window width is >= 640px
               280: {
                 slidesPerView: 1,
-                slidesPerGroup: 1
+                slidesPerGroup: 1,
               },
               430: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
-                spaceBetween: 14,
               },
               620: {
                 slidesPerView: 3,
                 slidesPerGroup: 3,
-                spaceBetween: 16,
-              },
-              // when window width is >= 768px
-              812: {
-                slidesPerView: 4,
-                slidesPerGroup: 4,
-                spaceBetween: 18
               },
               1150: {
                 slidesPerView: 5,
                 slidesPerGroup: 5,
-                spaceBetween: 20
               },
               1500: {
                 slidesPerView: 6,
                 slidesPerGroup: 6,
-                spaceBetween: 22
               },
               2000: {
                 slidesPerView: 7,
                 slidesPerGroup: 7,
-                spaceBetween: 24
               }
             }}
             onInit={(swiper) => {
@@ -95,14 +81,14 @@ const Selection = () => {
                   <h1 className='p__headtext'>{product.name}</h1>
                   <p>{(product.price).toFixed(2)} RON</p>
                 </div>
-                <div className='swiper-background purple__bg'></div>
+                <div className='selection__swiper-background purple__bg'></div>
               </SwiperSlide>
             ))}
             <div className='swiper-left' ref={swiperPrevRef}>
-              <BsChevronDoubleLeft />
+              <BsFillArrowLeftSquareFill />
             </div>
             <div className='swiper-right' ref={swiperNextRef}>
-              <BsChevronDoubleRight />
+              <BsFillArrowRightSquareFill />
             </div>
           </Swiper>
         </div>
