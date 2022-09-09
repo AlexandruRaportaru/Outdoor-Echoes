@@ -8,6 +8,11 @@ import runningCard from '../assets/runningCard.jpg';
 import hikingCard from '../assets/hikingCard.jpg';
 import campingCard from '../assets/campingCard.jpg';
 import climbingCard from '../assets/climbingCard.jpg';
+import rain from '../assets/rain.jpg';
+import boot from '../assets/boot.jpg';
+import weather from '../assets/weather.jpg';
+import todo from '../assets/todo.jpg';
+import night from '../assets/night.jpg';
 /* Adidas */
 import adidasBanner from '../assets/adidas/adidasBanner.jpg';
 import adidasLogo from '../assets/adidas/adidasLogo.png';
@@ -101,6 +106,15 @@ import creator7 from '../assets/creator/creator7.jpg';
 import creator8 from '../assets/creator/creator8.jpg';
 import creator9 from '../assets/creator/creator9.jpg';
 import creator10 from '../assets/creator/creator10.jpg';
+import creator11 from '../assets/creator/creator11.jpg';
+import creator12 from '../assets/creator/creator12.jpg';
+import creator13 from '../assets/creator/creator13.jpg';
+import creator14 from '../assets/creator/creator14.jpg';
+import creator15 from '../assets/creator/creator15.jpg';
+import creator16 from '../assets/creator/creator16.jpg';
+import creator17 from '../assets/creator/creator17.jpg';
+import creator18 from '../assets/creator/creator18.jpg';
+import creator19 from '../assets/creator/creator19.jpg';
 
 
 
@@ -117,6 +131,11 @@ export default {
   hikingCard,
   campingCard,
   climbingCard,
+  rain,
+  boot,
+  weather,
+  todo,
+  night,
 /* Adidas */
   adidasBanner,
   adidasLogo,
@@ -210,4 +229,13 @@ export default {
   creator8,
   creator9,
   creator10,
+  creator11,
+  creator12,
+  creator13,
+  creator14,
+  creator15,
+  creator16,
+  creator17,
+  creator18,
+  creator19,
 };

@@ -30,12 +30,12 @@ const Creator = () => (
         <h1 className='p__logo'>What We Belive In</h1>
         <div>
           <img src={images.quote} alt='quote'/>
-          <p>As a child I always liked to go hiking. My whole life is mountains. I love them and feel so alive each time I climb one. </p>
+          <p>I’m a mountain addict and I’ll always be. My whole life is mountains. I love them and feel so alive each time I climb one. </p>
         </div>
         <br />
         <p>You find deep peacefulness when spending time on a mountain. It is a unique feeling of calm and tranquility that you need to experience to understand. It filters through you, and stays with you for a time after you leave. <br /><br /> When walking on a mountain, take time to sit down and reflect for a while: appreciate the stillness, and listen to the silence. You’ll be glad you did.</p>
         <h2 className='p__logo'>Alex Raportaru</h2>
-        <span>Owner & Founder</span>
+        <span>Website Owner & Creator</span>
       </div>
     </div>
   </div>

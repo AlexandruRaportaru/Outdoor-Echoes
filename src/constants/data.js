@@ -617,6 +617,8 @@ const brands = {
 
 /* const adidasProducts = products.filter((product) => product.productBrand === "Adidas"); */
 
+
+
 const creatorImages = [
   images.creator1,
   images.creator2,
@@ -628,6 +630,23 @@ const creatorImages = [
   images.creator8,
   images.creator9,
   images.creator10,
+  images.creator11,
+  images.creator12,
+  images.creator13,
+  images.creator14,
+  images.creator15,
+  images.creator16,
+  images.creator17,
+  images.creator18,
+  images.creator19,
+]
+
+
+
+const blogs = [
+  {
+    
+  }
 ]
 
 export default { 

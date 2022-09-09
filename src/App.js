@@ -22,8 +22,8 @@ const HomePage = () => (
     <Header />
     <Activities />
     <Selection />
-    <Creator />
     <Intro />
+    <Creator />
     <Blogs />
     <FindUs />
     <Footer />

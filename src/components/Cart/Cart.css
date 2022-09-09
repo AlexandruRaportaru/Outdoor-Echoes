@@ -85,18 +85,6 @@
     font-weight: 100;
 }
 
-.app__navbar-smallCart_items-visible h1:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 2px;
-	animation: underline 2s infinite;
-}
-@keyframes underline {
-  0% { width: 0%; background-color: var(--color-yellow);}
-  100% {width: 100%; background-color: transparent;}
-}
-
 .app__navbar-cart__close {
     align-self: stretch;
     font-size: 1rem;
