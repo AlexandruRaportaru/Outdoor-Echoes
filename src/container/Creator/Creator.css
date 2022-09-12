@@ -5,9 +5,6 @@
 }
 
 .app__creator-title {
-    font-size: 50px !important;
-    font-weight: bold;
-    color: var(--color-purple) !important;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -118,10 +115,6 @@
 }
 
 @media screen and (max-width: 1150px) {
-    .app__creator-title {
-        font-size: 40px !important;
-    }
-
     .app__creator-wrapper_swiper {
         height: 400px;
         margin-left: 50px !important;
@@ -199,10 +192,6 @@
 }
 
 @media screen and (max-width: 585px) {
-    .app__creator-title {
-        font-size: 30px !important;
-    }
-
     .app__creator-wrapper {
         flex-direction: column-reverse;
     }

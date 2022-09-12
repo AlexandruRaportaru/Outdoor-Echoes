@@ -1,67 +1,61 @@
 import React from 'react';
-import { images } from '../../constants';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCube } from "swiper";
+import { data, images } from '../../constants';
 
 import './Blogs.css';
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
 
 const Blogs = () => (
   <div className='app__blogs'>
-    <h1 className='app__blogs-title p__yanone'>Useful Links</h1>
-    <div className='app__blogs-wrapper'>
-      <a href='/' className='app__blogs-wrapper_blog'>
-        <div className='app__blogs-wrapper_blog-image'>
-          <img src={images.rain} alt='rain'/>
-        </div>
-        <div className='app__blogs-wrapper_blog-text'>
-          <h3 className='p__headtext'>Waterproof buying guide</h3>
-          <p className='p__yanone'>Find out everything you need to know about this outdoor essential.</p>
-        </div>
-        <div className='blog__background purple__bg'></div>
-      </a>
-
-      <a href='/' className='app__blogs-wrapper_blog'>
-        <div className='app__blogs-wrapper_blog-image'>
-          <img src={images.boot} alt='rain'/>
-        </div>
-        <div className='app__blogs-wrapper_blog-text'>
-          <h3 className='p__headtext'>Fit your footwear</h3>
-          <p className='p__yanone'>Let our experts help you make the right boot choice.</p>
-        </div>
-        <div className='blog__background purple__bg'></div>
-      </a>
-
-      <a href='https://alexandruraportaru.github.io/Alex-s-Weather-App/' target='_blank' rel='noreferrer' className='app__blogs-wrapper_blog'>
-        <div className='app__blogs-wrapper_blog-image'>
-          <img src={images.weather} alt='rain'/>
-        </div>
-        <div className='app__blogs-wrapper_blog-text'>
-          <h3 className='p__headtext'>Best Weather App</h3>
-          <p className='p__yanone'>Check the weather forecast before making your hiking plans.</p>
-        </div>
-        <div className='blog__background purple__bg'></div>
-      </a>
-
-      <a href='https://alexandruraportaru.github.io/Alex-s-Todo-List/' target='_blank' rel='noreferrer' className='app__blogs-wrapper_blog'>
-        <div className='app__blogs-wrapper_blog-image'>
-          <img src={images.todo} alt='rain'/>
-        </div>
-        <div className='app__blogs-wrapper_blog-text'>
-          <h3 className='p__headtext'>Use the Todo App</h3>
-          <p className='p__yanone'>Make a list of things you need on the mountain. It's better to be prepared.</p>
-        </div>
-        <div className='blog__background purple__bg'></div>
-      </a>
-
-      <a href='/'className='app__blogs-wrapper_blog'>
-        <div className='app__blogs-wrapper_blog-image'>
-          <img src={images.night} alt='rain'/>
-        </div>
-        <div className='app__blogs-wrapper_blog-text'>
-          <h3 className='p__headtext'>Tips for Night Walk</h3>
-          <p className='p__yanone'>The mountains at night can be hazardous, but also wonderful. Take some notes.</p>
-        </div>
-        <div className='blog__background purple__bg'></div>
-      </a>
-    </div>
+    <h1 className='app__blogs-title title'>Useful Links</h1>
+    <div className='app__blogs-content'>
+      <div className='rotate__right'>
+        <h1 className='p__logo'>Rotate</h1>
+        <img src={images.rotateRight} alt='rotate-right'/>
+      </div>
+      <div className='app__blogs-wrapper'>
+        <Swiper 
+          effect={"cube"}
+          grabCursor={true}
+          cubeEffect={{
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 60,
+            shadowScale: 0.94,
+          }}
+          modules={[EffectCube]}
+          className='app__blogs-wrapper_swiper'
+          >
+          {data.blogs.map((blog, index) => (
+            <SwiperSlide key={index} className='app__blogs-wrapper_swiper-slide'>
+              <a 
+                href={blog.blogLink}
+                target='_blank' 
+                rel='noreferrer' 
+                className='app__blogs-wrapper_blog'
+              >
+                <div className='app__blogs-wrapper_blog-image'>
+                  <img src={blog.blogImage} alt={blog.blogHeadtext}/>
+                  <img src={images.rotate} alt='rotate' className='rotate'/>
+                </div>
+                <div className='app__blogs-wrapper_blog-text'>
+                  <h3 className='p__headtext'>{blog.blogHeadtext}</h3>
+                  <p className='p__yanone'>{blog.blogText}</p>
+                </div>
+                <div className='blog__background purple__bg'></div>
+              </a>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className='rotate__left'>
+        <h1 className='p__logo'>Rotate</h1>
+        <img src={images.rotateLeft} alt='rotate-left'/>
+      </div>
+    </div> 
   </div>
 );
 

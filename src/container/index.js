@@ -1,5 +1,4 @@
 import Activities from './Activities/Activities';
-import FindUs from './Findus/FindUs';
 import Footer from './Footer/Footer';
 import Creator from './Creator/Creator';
 import Header from './Header/Header';
@@ -11,7 +10,6 @@ import Products from './Products/Products';
 
 export {
   Activities,
-  FindUs,
   Footer,
   Creator,
   Header,

@@ -9,7 +9,7 @@ import "swiper/css/effect-cards";
 
 const Creator = () => (
   <div className='app__creator section__padding'>
-    <h1 className='app__creator-title p__yanone'>Creator's Word</h1>
+    <h1 className='app__creator-title title'>Creator's Word</h1>
     <div className='app__creator-wrapper'>
       <Swiper 
         effect={"cards"}

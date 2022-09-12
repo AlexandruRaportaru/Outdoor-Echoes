@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Activities, FindUs, Footer, Creator, Header, Intro, Blogs, Selection, Products } from './container';
+import { Activities, Footer, Creator, Header, Intro, Blogs, Selection, Products } from './container';
 import { Navbar } from './components';
 
 import './App.css';
@@ -25,7 +25,6 @@ const HomePage = () => (
     <Intro />
     <Creator />
     <Blogs />
-    <FindUs />
     <Footer />
   </div>
 );

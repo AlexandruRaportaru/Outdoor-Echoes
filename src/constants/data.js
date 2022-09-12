@@ -639,13 +639,67 @@ const creatorImages = [
   images.creator17,
   images.creator18,
   images.creator19,
+  images.creator20,
 ]
 
 
 
 const blogs = [
   {
-    
+    blogLink: 'https://www.cotswoldoutdoor.com/the-knowledge/waterproof-buying-guide.html?from=home',
+    blogImage: images.rain,
+    blogName: '',
+    blogHeadtext: 'Waterproof buying guide',
+    blogText: 'Find out everything you need to know about this outdoor essential.'
+  },
+  {
+    blogLink: 'https://www.cotswoldoutdoor.com/the-knowledge/walking/boot-fitting-guide.html?from=home',
+    blogImage: images.boot,
+    blogName: 'Boot',
+    blogHeadtext: 'Fit your footwear!',
+    blogText: 'Let our experts help you make the right boot choice. Take some notes.'
+  },
+  {
+    blogLink: 'https://alexandruraportaru.github.io/Alex-s-Weather-App/',
+    blogImage: images.weather,
+    blogName: 'Weather',
+    blogHeadtext: 'Best Weather App',
+    blogText: 'Check the weather forecast before making your hiking plans.'
+  },
+  {
+    blogLink: 'https://alexandruraportaru.github.io/Alex-s-Todo-List/',
+    blogImage: images.todo,
+    blogName: 'Todo',
+    blogHeadtext: 'Try the Todo App',
+    blogText: 'Make a list of things you need on the mountain. It´s better to be prepared.'
+  },
+  {
+    blogLink: 'https://www.thebmc.co.uk/hill-skills-how-to-go-hill-walking-at-night',
+    blogImage: images.night,
+    blogName: 'Night',
+    blogHeadtext: 'Tips for Night Walk',
+    blogText: 'The mountains at night can be hazardous, but also wonderful. Take some notes.'
+  },
+  {
+    blogLink: 'https://muntii-nostri.ro/',
+    blogImage: images.trail,
+    blogName: 'Trail',
+    blogHeadtext: 'Use the Trail App',
+    blogText: 'Even the most experienced ones use it and it´s free. Check the maps before you leave!'
+  },
+  {
+    blogLink: 'https://www.big4.com.au/tips-and-inspiration/tips-advice/camping/buying-a-tent-10-handy-tips-to-help-you-make-the-b',
+    blogImage: images.tent,
+    blogName: 'Tent',
+    blogHeadtext: 'Grab some tent tips',
+    blogText: 'Buying a tent? 10 handy tips to help you make the best purchase. Enjoy!'
+  },
+  {
+    blogLink: 'https://bearfoottheory.com/benefits-of-hiking/',
+    blogImage: images.benefits,
+    blogName: 'Benefits',
+    blogHeadtext: 'Benefits of hiking',
+    blogText: 'Hiking is a good way to grow strength, build fitness, and get mental health.'
   }
 ]
 
@@ -656,5 +710,6 @@ export default {
   activitiesCards,
   products,
   brands,
-  creatorImages
+  creatorImages,
+  blogs
 };

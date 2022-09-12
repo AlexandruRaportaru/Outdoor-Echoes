@@ -16,7 +16,7 @@ const Selection = () => {
   return (
     <>
       <div className='app__selection'>
-        <h1 className='app__selection-title p__yanone'>Our recommendation</h1>
+        <h1 className='app__selection-title title'>Our recommendation</h1>
         <div className='app__selection-wrapper'>
           <Swiper 
             modules={[Navigation, Pagination]}

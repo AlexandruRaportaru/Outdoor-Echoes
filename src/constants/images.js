@@ -1,4 +1,3 @@
-import bg from '../assets/bg.png';
 import quote from '../assets/quote.png';
 import headerBackground from '../assets/headerBackground.jpg';
 import discount from '../assets/discount.jpg';
@@ -13,6 +12,12 @@ import boot from '../assets/boot.jpg';
 import weather from '../assets/weather.jpg';
 import todo from '../assets/todo.jpg';
 import night from '../assets/night.jpg';
+import trail from '../assets/trail.jpg';
+import tent from '../assets/tent.jpg';
+import benefits from '../assets/benefits.jpg';
+import rotateRight from '../assets/rotateRight.png';
+import rotateLeft from '../assets/rotateLeft.png';
+import rotate from '../assets/rotate.png';
 /* Adidas */
 import adidasBanner from '../assets/adidas/adidasBanner.jpg';
 import adidasLogo from '../assets/adidas/adidasLogo.png';
@@ -115,13 +120,13 @@ import creator16 from '../assets/creator/creator16.jpg';
 import creator17 from '../assets/creator/creator17.jpg';
 import creator18 from '../assets/creator/creator18.jpg';
 import creator19 from '../assets/creator/creator19.jpg';
+import creator20 from '../assets/creator/creator20.jpg';
 
 
 
 
 
 export default {
-  bg,
   quote,
   headerBackground,
   discount,
@@ -136,6 +141,12 @@ export default {
   weather,
   todo,
   night,
+  trail,
+  tent,
+  benefits,
+  rotateRight,
+  rotateLeft,
+  rotate,
 /* Adidas */
   adidasBanner,
   adidasLogo,
@@ -238,4 +249,5 @@ export default {
   creator17,
   creator18,
   creator19,
+  creator20,
 };
