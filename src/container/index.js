@@ -1,20 +1,19 @@
-import Activities from './Activities/Activities';
-import Footer from './Footer/Footer';
-import Creator from './Creator/Creator';
 import Header from './Header/Header';
-import Intro from './Intro/Intro';
-import Blogs from './Blogs/Blogs';
+import Activities from './Activities/Activities';
 import Selection from './Selection/Selection';
+import Intro from './Intro/Intro';
+import Creator from './Creator/Creator';
+import Blogs from './Blogs/Blogs';
+import Newsletter from './Newsletter/Newsletter';
 import Products from './Products/Products';
 
-
 export {
-  Activities,
-  Footer,
-  Creator,
   Header,
-  Intro,
-  Blogs,
+  Activities,
   Selection,
+  Intro,
+  Creator,
+  Blogs,
+  Newsletter,
   Products,
 };

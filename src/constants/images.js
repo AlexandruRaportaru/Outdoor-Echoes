@@ -18,6 +18,13 @@ import benefits from '../assets/benefits.jpg';
 import rotateRight from '../assets/rotateRight.png';
 import rotateLeft from '../assets/rotateLeft.png';
 import rotate from '../assets/rotate.png';
+import newsletter from '../assets/newsletter.jpg';
+import hiker from '../assets/hiker.gif';
+import delivery from '../assets/delivery.png';
+import spring from '../assets/spring.png';
+import paypal from '../assets/paypal.png';
+
+
 /* Adidas */
 import adidasBanner from '../assets/adidas/adidasBanner.jpg';
 import adidasLogo from '../assets/adidas/adidasLogo.png';
@@ -147,6 +154,11 @@ export default {
   rotateRight,
   rotateLeft,
   rotate,
+  newsletter,
+  hiker,
+  delivery,
+  spring,
+  paypal,
 /* Adidas */
   adidasBanner,
   adidasLogo,
