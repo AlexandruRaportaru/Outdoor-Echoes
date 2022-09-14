@@ -11,6 +11,7 @@ const Creator = () => (
   <div className='app__creator section__padding'>
     <h1 className='app__creator-title title'>Creator's Word</h1>
     <div className='app__creator-wrapper'>
+      
       <Swiper 
         effect={"cards"}
         grabCursor={true}
@@ -25,7 +26,13 @@ const Creator = () => (
             <div className='creator__swiper-background purple__bg'></div>
           </SwiperSlide>
         ))}
+        <div className='swipe__hand'>
+          <img src={images.swipe} alt='swipe'/>
+          <span className='p__yanone' style={{color: 'var(--color-blue)'}}>SWIPE</span>
+        </div>
       </Swiper>
+      
+      
       <div className='app__creator-wrapper_content'>
         <h1 className='p__logo'>What We Belive In</h1>
         <div>

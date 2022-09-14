@@ -23,6 +23,9 @@ import hiker from '../assets/hiker.gif';
 import delivery from '../assets/delivery.png';
 import spring from '../assets/spring.png';
 import paypal from '../assets/paypal.png';
+import swipe from '../assets/swipe.png';
+import click from '../assets/click.png';
+
 
 
 /* Adidas */
@@ -159,6 +162,9 @@ export default {
   delivery,
   spring,
   paypal,
+  swipe,
+  click,
+
 /* Adidas */
   adidasBanner,
   adidasLogo,

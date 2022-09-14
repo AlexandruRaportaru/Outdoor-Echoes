@@ -19,22 +19,12 @@
 }
 
 .app__blogs-wrapper {
-    width: 65%;
+    width: 55%;
     margin: 0 25px;
 }
 
 .app__blogs-wrapper_blog {
     position: relative;
-}
-
-.app__blogs-wrapper_blog .rotate {
-    position: absolute;
-    width: 50px;
-    height: 45px;
-    margin: 20px 20px;
-    display: none;
-    top: 0;
-    right: 0;
 }
 
 .app__blogs-wrapper_blog-image {
@@ -45,52 +35,95 @@
 }
 
 .app__blogs-wrapper_blog-image img {
-    height: 400px;
+    height: 350px;
     width: 100%;
     object-fit: cover;
 }
 
 .app__blogs-wrapper_blog-text {
-    margin-top: 400px;
+    margin-top: 350px;
     text-align: center;
-    padding: 10px 30px 0 30px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly ;
     height: 120px;
 }
 
+.app__blogs-wrapper_blog-text .click {
+    position: absolute;
+    width: 50px;
+    height: 38px;
+    bottom: 10px;
+    left: 10px;
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(0.9); }
+    to { transform: scale(1.05); }
+}
+
+.app__blogs-wrapper_blog-text .click img{
+    width: 100%;
+    height: 100%;
+}
+
+.app__blogs-wrapper_blog-text .rotate {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    margin: 20px 20px;
+    top: 0;
+    right: 0;
+    backface-visibility: visible !important;
+	animation: flip 3s ease infinite;
+}
+
+@keyframes flip {
+	0% {
+		transform: perspective(1000px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(1000px) translateZ(150px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(1000px) translateZ(150px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(1000px) rotateY(360deg) scale(.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(1000px) scale(1);
+		animation-timing-function: ease-in;
+	}
+}
+
+.app__blogs-wrapper_blog-text .rotate img{
+    width: 100%;
+    height: 100%;
+}
+
 .app__blogs-wrapper_blog-text h3 {
     line-height: 28px;
     color: var(--color-yellow);
     text-shadow: 0.4px 0.4px var(--color-grey);
+    padding-top: 10px;
+}
+
+.app__blogs-wrapper_blog-text p {
+    padding: 0 80px;
 }
 
 .blog__background {
-    height: 520px;
+    height: 470px;
     opacity: 0.3;
     z-index: -1;
     top: 0;
-}
-
-.rotate__right,
-.rotate__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-}
-
-.rotate__right h1,
-.rotate__left h1 {
-    font-size: 25px;
-    color: var(--color-blue);
-    margin-bottom: 20px;
-}
-
-.rotate__right img,
-.rotate__left img {
-    width: 70px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -105,16 +138,6 @@
 
     .blog__background {
         height: 410px;
-    }
-
-    .rotate__right h1,
-    .rotate__left h1 {
-        font-size: 20px;
-    }
-
-    .rotate__right img,
-    .rotate__left img {
-        width: 50px;
     }
 }
 
@@ -143,33 +166,41 @@
         margin: 0;
     }
 
+    .app__blogs-wrapper_blog-text h3 {
+        padding: 0;
+    }
+
     .app__blogs-wrapper_blog-text p {
         font-size: 18px;
-    }
-
-    .app__blogs-wrapper_blog .rotate {
-        display: block;
-    }
-
-    .rotate__right,
-    .rotate__left {
-        display: none;
     }
 }
 
 @media screen and (max-width: 585px) {
     .app__blogs-wrapper {
-        width: 70%;
+        width: 80%;
     }
 
-    .app__blogs-wrapper_blog .rotate {
+    .app__blogs-wrapper_blog-image img {
+        height: 390px;
+    }
+    
+    .app__blogs-wrapper_blog-text {
+        margin-top: 390px;
+        height: 150px;
+    }
+
+    .app__blogs-wrapper_blog-text .click {
         width: 35px;
         height: 30px;
-        margin: 15px 15px;
+    }
+
+    .app__blogs-wrapper_blog-text .rotate {
+        width: 30px;
+        height: 25px;
     }
 
     .app__blogs-wrapper_blog-text {
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 10px 10px 10px 10px;
     }
 
@@ -179,23 +210,20 @@
 
     .app__blogs-wrapper_blog-text p {
         font-size: 15px;
+        padding: 0 40px;
+    }
+
+    .blog__background {
+        height: 540px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .app__blogs-wrapper_blog-text {
-        height: 130px;
-    }
-
     .app__blogs-wrapper_blog-text h3 {
         font-size: 18px;
     }
 
     .app__blogs-wrapper_blog-text p {
         font-size: 14px;
-    }
-
-    .blog__background {
-        height: 380px;
     }
 }

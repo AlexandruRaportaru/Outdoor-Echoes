@@ -12,10 +12,6 @@ const Blogs = () => (
   <div className='app__blogs'>
     <h1 className='app__blogs-title title'>Useful Links</h1>
     <div className='app__blogs-content'>
-      <div className='rotate__right'>
-        <h1 className='p__logo'>Rotate</h1>
-        <img src={images.rotateRight} alt='rotate-right'/>
-      </div>
       <div className='app__blogs-wrapper'>
         <Swiper 
           effect={"cube"}
@@ -23,7 +19,7 @@ const Blogs = () => (
           cubeEffect={{
             shadow: true,
             slideShadows: true,
-            shadowOffset: 60,
+            shadowOffset: 70,
             shadowScale: 0.94,
           }}
           modules={[EffectCube]}
@@ -39,21 +35,22 @@ const Blogs = () => (
               >
                 <div className='app__blogs-wrapper_blog-image'>
                   <img src={blog.blogImage} alt={blog.blogHeadtext}/>
-                  <img src={images.rotate} alt='rotate' className='rotate'/>
                 </div>
                 <div className='app__blogs-wrapper_blog-text'>
+                  <div  className='click'>
+                    <img src={images.click} alt='click'/>
+                  </div>
                   <h3 className='p__headtext'>{blog.blogHeadtext}</h3>
                   <p className='p__yanone'>{blog.blogText}</p>
+                  <div  className='rotate'>
+                    <img src={images.rotate} alt='rotate'/>
+                  </div>
                 </div>
                 <div className='blog__background purple__bg'></div>
               </a>
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-      <div className='rotate__left'>
-        <h1 className='p__logo'>Rotate</h1>
-        <img src={images.rotateLeft} alt='rotate-left'/>
       </div>
     </div> 
   </div>
