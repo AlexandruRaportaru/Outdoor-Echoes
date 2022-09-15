@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     height: 350px;
-    margin-bottom: 490px;
+    margin-bottom: 500px;
 }
 
 .app__newsletter-banner {
@@ -157,7 +157,17 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .app__newsletter {
+        margin-bottom: 750px;
+    }
+}
+
 @media screen and (max-width: 585px) {
+    .app__newsletter {
+        margin-bottom: 0;
+    }
+
     .app__newsletter-content_input input {
         padding: 1.5px 5px;
         height: 30px;

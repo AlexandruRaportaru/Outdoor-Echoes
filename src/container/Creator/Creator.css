@@ -274,7 +274,8 @@
 
 @media screen and (max-width: 430px) {
     .app__creator-wrapper_swiper {
-        width: 70%;
+        width: 55%;
+        height: 320px;
     }
 
     .swipe__hand {
