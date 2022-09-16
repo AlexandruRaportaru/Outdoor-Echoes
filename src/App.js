@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header, Activities, Selection, Intro, Creator, Blogs, Newsletter, Products} from './container';
-import { Navbar, Footer, } from './components';
+import { Header, Activities, Intro, Creator, Blogs, Products} from './container';
+import { Navbar, Selection, Newsletter, Footer } from './components';
 
 import './App.css';
 
@@ -32,7 +32,11 @@ const HomePage = () => (
 
 const ProductsPage = () => (
   <div>
+    <Navbar />
     <Products />
+    <Selection />
+    <Newsletter />
+    <Footer />
 </div>
 );
 

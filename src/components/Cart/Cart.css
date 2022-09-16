@@ -8,6 +8,7 @@
     align-self: stretch;
     position: relative;
     background: var(--color-yellow);
+    border-bottom: 1px solid var(--color-purple);
 }
 
 .app__navbar-cart__icon {

@@ -141,6 +141,7 @@
 
     .app__footer-content_services {
         align-items: center;
+        text-align: center;
     }
 
     .app__footer-content_services img {
@@ -160,7 +161,7 @@
         display: grid !important;
         grid-template-rows: repeat(2);
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 30px 25px !important;
         gap: 20px;
     }
