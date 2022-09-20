@@ -225,8 +225,10 @@ const activitiesCards = [
 
 
 const products = [
+  //* -------------------------------------------------------- FOOTWEAR MEN ---------------------------------------------------------- *//
   {
     name: 'Adidas Terrex Swift R2 Hiking Shoes',
+    type: 'Footwear',
     brand: 'adidas',
     images: [
       images.swiftR2First,
@@ -254,11 +256,115 @@ const products = [
     color: 'Black',
     weight: 'Over 300g',
     features: '',
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: false,
   },
   {
+    name: 'Columbia Firecamp Fleece III Hiking Shoes',
+    type: 'Footwear',
+    brand: 'columbia',
+    images: [
+      images.firecampFleece3First,
+      images.firecampFleece3Second,
+      images.firecampFleece3Third
+    ],
+    size: [
+      '44',
+      '45',
+      '46',
+    ],
+    description: <span>
+      Crafted Protective: <br />
+      - This multi-sport shoe´s durable textile upper and toasty fleece lining keep your feet dry and comfortable. <br /><br />
+      Warmth, Too: <br />
+      - Lightweight insulation keeps heat in, so you don´t get cold feet. <br /><br />
+      Features: <br />
+      - Textile upper; <br />
+      - 100g critical insulation and fleece lining; <br /> 
+      - Techlite™ lightweight midsole for long lasting comfort, superior cushioning, and high energy return; <br />
+      - Omni-Grip™ non-marking traction rubber. <br /><br />
+    </span>,
+    price: 261.00,
+    gender: 'Men',
+    color: 'Blue',
+    weight: '300 g',
+    features: 'Thermal',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Mission XP Leather Hiking Shoes',
+    type: 'Footwear',
+    brand: 'diamond',
+    images: [
+      images.missionXPFirst,
+      images.missionXPSecond,
+      images.missionXPThird
+    ],
+    size: [
+      '41',
+      '42',
+      '43',
+    ],
+    description: <span>
+      This time BLACK DIAMOND brings you the new MISSION XP LEATHER HIKING hiking shoes, they are designed for difficult terrain and uneven climbs. Its upper part is made of suede and synthetic leather with an inner lining that is highly breathable and quick drying. It has a braided fastening system and a reinforced tongue that provides protection and stability with each step. <br /><br />
+      Features: <br />
+      - Premium and durable suede leather upper that’s lined for fit and comfort; <br />
+      - BlackLabel-Mountain rubber is high performance sticky rubber; <br />
+      - Rubber toe protection; <br />
+      - Welded TPU overlays placed for added durability and protection; <br />
+      - Gusseted tongue keeps debris out and foot locked down; <br />
+      - Dual density tuned EVA midsole with stiff forefoot shank plate for edging performance and underfoot protection; <br />
+      - Multiple webbing loops for various tagging options.
+    </span>,
+    price: 549.00,
+    gender: 'Men',
+    color: 'Green',
+    weight: '300 g',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Shadow LV Climbing Shoes',
+    type: 'Footwear',
+    brand: 'diamond',
+    images: [
+      images.shadowLVFirst,
+      images.shadowLVSecond,
+      images.shadowLVThird
+    ],
+    size: [
+      '42',
+      '43',
+      '44',
+      '45',
+      '46'
+    ],
+    description: <span>
+      Push boundaries and climb the highest peak with Black Diamond Shadow LV that offers the perfect balance while you are out there exploring! A mountaineer’s best friend, it is constructed especially for hiking approaches and is lightweight and comfortable to wear. This versatile shoe is constructed to offer technical functionality and durability in the unpredictable mountain environment. <br /><br />
+      Features: <br />
+      - LV last—for low volume feet;<br />
+      - Aggressive, downturned last for steep routes and bouldering; <br />
+      - 4.3mm BD BlackLabel-Fuse Rubber outsole is molded for superior grip, optimal consistency, and performance; <br />
+      - Engineered Knit Technology tongue provides exceptional breathability and comfort; <br />
+      - Minimalist midsole for extra sensitivity on steep terrain; <br />
+      - A combination of printed and molded high friction rubber on top of the foot maximizes durability, dexterity and grip for toe-hooking; <br />
+      - Velcro strap for fit adjustability
+    </span>,
+    price: 578.00,
+    gender: 'Men',
+    color: 'Black',
+    weight: '',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+
+  //* ----------------------------------------------------------- FOOTWEAR WOMEN --------------------------------------------------------- *//
+  {
     name: 'Adidas Terrex Free Hiker Hiking Shoes',
+    type: 'Footwear',
     brand: 'adidas',
     images: [
       images.freeHikerFirst,
@@ -286,11 +392,123 @@ const products = [
     color: 'Black',
     weight: '',
     features: 'Waterproof',
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: false,
   },
   {
+    name: 'Columbia 60 Low Outdry™ Hiking Shoes',
+    type: 'Footwear',
+    brand: 'columbia',
+    images: [
+      images.facet60First,
+      images.facet60Second,
+      images.facet60Third
+    ],
+    size: [
+      '36',
+      '37',
+      '38',
+    ],
+    description: <span>
+      Trail Performance: <br />
+      - Fuel your inner fire with this low-cut technical hiker designed for a wide range of activities. <br /><br />
+      Underfoot Comfort: <br />
+      - Featuring extra-light, responsive TechLite+™ cushioning, Navic Fit™ secure lacing system, and a gripping outsole to tackle multiple terrains. <br /><br />
+      Rain-ready: <br />
+      - Waterproof-breathable protection takes you from trail to town in any weather. <br /><br />
+      Features: <br />
+      - Seamless mesh construction with custom metal hardware provides exceptional fit and support; <br />
+      - OutDry™ breathable waterproof protection; <br /> 
+      - Navic Fit System™ delivers a natural midfoot lock down; <br /> 
+      - Fluidframe multidensity underfoot support; <br /> 
+      - Techlite+™ delivers responsive cushioning and stability, without sacrificing comfort; <br /> 
+      - Omni-Grip™ non-marking traction rubber.
+    </span>,
+    price: 416.00,
+    gender: 'Women',
+    color: 'Blue',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Mission Leather Mid WP Hiking Shoes',
+    type: 'Footwear',
+    brand: 'diamond',
+    images: [
+      images.missionFirst,
+      images.missionSecond,
+      images.missionThird
+    ],
+    size: [
+      '38',
+      '39',
+      '40',
+    ],
+    description: <span>
+      Built for the long-haul, the Mission Leather Mid WP is an approach shoe that provides ankle protection and support when heading into the hills with heavy packs and big objectives on the horizon. Featuring a waterproof/ breathable BD.dry lining combined with a high-grade Nubuck leather upper, the Mission Leather Mid WP keeps you dry while moving through stream crossings and snow fields. <br /><br />
+      Features: <br />
+      - Padded ankle provides protection from scree intrusion; <br />
+      – Lace up ankle support for security in rugged terrain; <br />
+      – Waterproof + breathable BD.dry lining; <br />
+      – Highest grade Nubuck leather upper; <br />
+      – BlackLabel-Mountain rubber is high performance sticky rubber; <br />
+      – Rubber heel rand and toe cap provide foot protection and abrasion resistance; <br />
+      – Climbing forefoot and toecap construction for precision on rock; <br />
+      – High traction lugs for mud, still include the climbing capability with added soft terrain security; <br />
+      – Heel brake and midfoot shank makes aid walls and via ferrata comfortable; <br />
+      – Fully gusseted tongue is padded for maximum comfort and keeping dirt and debris out; <br />
+      – Minimal and intentional stitch placement for minimum of exposure to wear.
+    </span>,
+    price: 632.00,
+    gender: 'Women',
+    color: 'Grey',
+    weight: '300 g',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Method Climbing Shoes',
+    type: 'Footwear',
+    brand: 'diamond',
+    images: [
+      images.methodFirst,
+      images.methodSecond,
+      images.methodThird
+    ],
+    size: [
+      '36',
+      '37',
+      '38',
+      '39',
+      '40',
+    ],
+    description: <span>
+      Built for sending sport pitches, from the blocky limestone of Rifle to the enduro sandstone of the Red. With a women’s specific last that’s lower volume and a minimal break-in period, the Method is easy on the feet out of the box, while maintaining stiff edge control for increased power for newer outdoor climbers. With a downturned last that’s not ultra-aggressive, these shoes perform well on a variety of angles, from steep to vertical, making them a one-quiver sport shoe for those who value simplicity. <br /><br />
+      Features: <br />
+      - Women’s specific last provides customized fit; <br />
+      - Moderate, downturned last for vertical to gently overhanging sport routes; <br />
+      - 3.25mm Label Fuse rubber is molded for superior grip, optimal consistency, and performance; <br />
+      - Cush, padded, microsuede lined woven tongue, which is exceptionally breathable and increases mobility; <br />
+      - 3D molded heel provides fit and protection for comfortable, powerful heel hooking; <br />
+      - Heel tension and arch rubber provide power and support; <br />
+      - Velcro straps for fit adjustability.
+    </span>,
+    price: 577.00,
+    gender: 'Women',
+    color: 'Green',
+    weight: '',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+
+  //* ---------------------------------------------------------- FOOTWEAR KIDS -------------------------------------------------------- *//
+  {
     name: 'Adidas Terrex HyperHiker Hiking Shoes',
+    type: 'Footwear',
     brand: 'adidas',
     images: [
       images.hyperHikerFirst,
@@ -318,11 +536,78 @@ const products = [
     color: 'Green',
     weight: '210g',
     features: 'Reflective accents',
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: true,
   },
   {
+    name: 'Columbia Redmond Youth Hiking Shoes',
+    type: 'Footwear',
+    brand: 'columbia',
+    images: [
+      images.redmondYouthFirst,
+      images.redmondYouthSecond,
+      images.redmondYouthThird
+    ],
+    size: [
+      '31',
+      '32',
+      '33',
+    ],
+    description: <span>
+      Outdoor Play: <br />
+      - Designed with adventures in mind, these waterproof shoes with a cushy midsole and grippy outsole make playtime more epic. <br /><br />
+      Features: <br />
+      - Upper features a combination of suede leather, mesh and webbing; <br />
+      - Waterproof seam-sealed membrane bootie construction; <br />
+      - Techlite™ lightweight midsole for long lasting comfort, superior cushioning, and high energy return; <br />
+      - Omni-Grip™ non-marking traction rubber; <br />
+      - Uses: Trail.
+    </span>,
+    price: 211.00,
+    gender: 'Kids',
+    color: 'Grey',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Momentum Climbing Shoes',
+    type: 'Footwear',
+    brand: 'diamond',
+    images: [
+      images.momentumFirst,
+      images.momentumSecond,
+      images.momentumThird
+    ],
+    size: [
+      '34',
+      '35',
+      '36',
+    ],
+    description: <span>
+      Designed to provide unparalleled comfort, the kids´ momentum is a single velcro shoe built for young crushers and combines innovative technology with a classic, flat-last design to create an entry-level shoe that excels in performance. with an upper fabric that consists entirely of our engineered knit technology, the momentum provides stretch where you need it, support where it matters and all around exceptional breathability. <br /><br />
+      Features: <br />
+      - Neutral, flat last for vertical climbing or all-day comfort; <br />
+      - Specific last provides customized fit for kids; <br />
+      - 4.3mm rubber is built for durability and molded for optimal comfort, consistency and weight; <br />
+      - Engineered Knit Technology upper provides exceptional breathability and comfort; <br />
+      - Microfabric midsole for added sensitivity and comfort; <br />
+      - Velcro strap for fit adjustability.
+    </span>,
+    price: 212.00,
+    gender: 'Kids',
+    color: 'Green',
+    weight: '',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+
+  //* --------------------------------------------------------- CLOTHING MEN ---------------------------------------------------------- *//
+  {
     name: 'Adidas Terrex MyShelter Hiking Jacket',
+    type: 'Clothing',
     brand: 'adidas',
     images: [
       images.myShelterFirst,
@@ -356,11 +641,12 @@ const products = [
       'Windproof',
       'Stretch'
     ],
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Adidas Terrex LiteFlex Hiking Pants',
+    type: 'Clothing',
     brand: 'adidas',
     images: [
       images.liteFlexFirst,
@@ -390,11 +676,12 @@ const products = [
       'Windproof',
       'Stretch'
     ],
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Adidas Terrex Tech Hiking Fleece',
+    type: 'Clothing',
     brand: 'adidas',
     images: [
       images.techFirst,
@@ -420,11 +707,14 @@ const products = [
     color: 'Black',
     weight: '',
     features: '',
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: true,
   },
+
+  //* ------------------------------------------------------------ CLOTHING WOMEN -------------------------------------------------------- *//
   {
     name: 'Adidas Terrex Xploric Hiking Jacket',
+    type: 'Clothing',
     brand: 'adidas',
     images: [
       images.xploricFirst,
@@ -451,11 +741,12 @@ const products = [
     color: 'Black',
     weight: '',
     features: 'Windproof',
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Adidas Terrex Liteflex Hiking Shorts Pants',
+    type: 'Clothing',
     brand: 'adidas',
     images: [
       images.liteflexShortsFirst,
@@ -480,18 +771,142 @@ const products = [
     color: 'Black',
     weight: '',
     features: 'Stretch',
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: true,
   },
   {
+    name: 'Columbia Adventure Hiking Pants',
+    type: 'Clothing',
+    brand: 'columbia',
+    images: [
+      images.adventureFirst,
+      images.adventureSecond,
+      images.adventureThird
+    ],
+    size: [
+      'XXS',
+      'XS',
+      'S',
+    ],
+    description: <span>
+      Adventure Hiking are hiking pants for ladies. This sports accessory offers an active fit to facilitate freedom of movement. The model offers a 4-way comfort stretch that allows freedom of movement. The structure includes a membrane with advanced water repellency and that prevents liquids from staining the garment. In addition, it includes Omni-Shade technology that prevents your skin from suffering from the effects of UVA and UVB sunrays. Its design has a detachable integrated belt. On the sides, it has pockets to maintain the body temperature of the hands. Also, it has a zippered security pocket to protect personal items. It is built in 100% polyester, material that offers greater durability. <br /><br />
+      Features: <br />
+      - Omni-Shield Tm Advanced Repellency; <br />
+      - Omni-Shade Tm Upf 50 Sun; <br />
+      - Protection; <br />
+      - 4-Way Comfort Stretch; <br />
+      - Integrated Removable Belt; <br />
+      - Zippered Hand Pockets; <br />
+      - Zip-Closed Security Pockets; <br />
+      - Drawcord Adjustable Hem; <br />
+      - Mid Rise.
+    </span>,
+    price: 230.00,
+    gender: 'Women',
+    color: 'Black',
+    weight: '',
+    features: [
+      'UV Protection',
+      'WaterProof',
+      'Windproof',
+      'Stretch'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+
+  //* ----------------------------------------------------------- CLOTHING KIDS -------------------------------------------------- *//
+
+  {
+    name: 'Columbia Ridge IV Convertible Hiking Pants',
+    type: 'Clothing',
+    brand: 'columbia',
+    images: [
+      images.silverRidge4First,
+      images.silverRidge4Second,
+      images.silverRidge4Third
+    ],
+    size: [
+      'XS',
+      'S',
+      'M',
+      'L',
+      'XL'
+    ],
+    description: <span>
+      Young adventurers can comfortably spend weekends at camp and enjoy long summer hikes with these quick-dry trousers that can be converted into shorts thanks to the zip-off legs.The high-perfomance wicking efficiently pulls moisture away from the body to accelerate evaporation. <br /><br />
+      Features: <br />
+      - Omni-Wick™; <br />
+      - Quick dry; <br />
+      - Partial elastic at waist; <br />
+      - Hand pockets; <br />
+      - Cargo pocket; <br />
+      - Zip-off legs convert pant to 5.
+    </span>,
+    price: 132.00,
+    gender: 'Kids',
+    color: 'Beige',
+    weight: '',
+    features: [
+      'UV Protection',
+      'Stretch'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Columbia Windbreaker Hiking Jacket',
+    type: 'Clothing',
+    brand: 'columbia',
+    images: [
+      images.bloomingportFirst,
+      images.bloomingportSecond,
+      images.bloomingportThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    description: <span>
+      An essential item for all your children´s outdoor adventures, this water-resistant windbreaker gives children the extra protection they need from the elements. <br /><br /> 
+      Packable: <br />
+      - It can be packed into the pocket and is thus easy to have in backpacks at all times. <br /><br />
+      Features: <br />
+      - Water resistant fabric; <br />
+      - Packable; <br />
+      - Hand pockets; <br />
+      - Elastic cuffs; <br />
+      - Elastic hem; <br />
+      - Reflective detail; <br />
+      - Uses: Hiking life.
+    </span>,
+    price: 154.00,
+    gender: 'Kids',
+    color: 'Beige',
+    weight: '',
+    features: [
+      'Compressible',
+      'Stretch',
+      'Windproof',
+      'Reflective accents'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+
+  //* ------------------------------------------------------------ ACCESORIES ----------------------------------------------------- *//
+
+  {
     name: 'Adidas Terrex Agravic Hiking Backpack 10L',
+    type: 'Accesories',
     brand: 'adidas',
     images: [
       images.agravicFirst,
       images.agravicSecond,
       images.agravicThird
     ],
-    size: '',
+    size: 'one-size',
     description: <span>
       Pack the essentials and hit the trail with this adidas lightweight trail running backpack. Multiple storage pockets ensure everything is organised and easy to find. Quick-access flask pockets keep hydration within reach on shoulder straps. Reflective details shine in low light for 360-degree reflectivity. Bungee chest straps. <br /> Features: <br />
       - Emergency whistle; <br />
@@ -505,13 +920,267 @@ const products = [
     price: 482.00,
     gender: 'Unisex',
     color: 'Black',
-    weight: '',
+    weight: 'max 10L',
     features: 'Frameless',
-    recomended: 'Hiking',
+    activity: 'Hiking',
     sustainable: false,
   },
   {
+    name: 'Columbia Maxtrail™ Hiking Backpack 20L',
+    type: 'Accesories',
+    brand: 'columbia',
+    images: [
+      images.maxtrailFirst,
+      images.maxtrailSecond,
+      images.maxtrailThird
+    ],
+    size: 'one-size',
+    description: <span>
+      Features: <br />
+      - Versatile And Customizable Twin; <br />
+      - Slot™ Webbing; <br />
+      - Includes Hydrapak® 2.5l Elite™ Lt; <br />
+      - Sl Reservoir; <br />
+      - Removable Hip Belt; <br />
+      - External Zippered Pocket; <br />
+      - Zippered Reservoir Access With Left And Right Exit; <br />
+      - Breathable 3d Eva Backpanel.
+    </span>,
+    price: 423.00,
+    gender: 'Unisex',
+    color: 'Red',
+    weight: 'max 20L',
+    features: 'Frameless',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Columbia FCT03 BB Hiking Poles',
+    type: 'Accesories',
+    brand: 'columbia',
+    images: [
+      images.fct03First,
+      images.fct03Second,
+      images.fct03Third
+    ],
+    size: '',
+    description: <span>
+      Features: <br />
+      - Ultralight foldable poles set, with height adjust, designed for hiking; <br />
+      - The four sections of this pole are made in carbon fiber, being the locking section reinforced with 7075 duraluminum; <br />
+      - The telescopic section has an easy quick blocking system; <br />
+      - Ergonomic and extra-long EVA grip with adjustable strap; <br />
+      - Tungsten tip and rubber paw for an optimal grip;
+    </span>,
+    price: 371.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '',
+    features: '',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Capitan Climbing Helmet',
+    type: 'Accesories',
+    brand: 'diamond',
+    images: [
+      images.captainFirst,
+      images.captainSecond,
+      images.captainThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    description: <span>
+      For a safe climbing BLACK DIAMOND has designed the new CAPITAN HELMET helmet, which presents a combination of materials that optimize durability and resistance to a blow . Its design provides additional coverage on the sides and back of the head. It has a low profile suspension system. It has a ventilation system that provides breathability when temperatures rise, keeping the inside of the helmet dry and cool. <br /><br />
+      Features: <br />
+      - EPP + EPS + 2-piece ABS shell combo creates ultra-durability; <br />
+      - Increased side and back protection; <br />
+      - Low-profile suspension system; <br />
+      - Integrated headlamp clips; <br />
+      - Removable / reverse Velcro pads; <br />
+      - 285 g S/M; <br />
+      - 295 g M/L; <br />
+      - Material: ABS, EPP/EPS; <br />
+      - Certifications: CE/EN, UIAA.
+    </span>,
+    price: 268.00,
+    gender: 'Unisex',
+    color: 'Red',
+    weight: '285/295 g',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Speed 50L Hiking Backpack',
+    type: 'Accesories',
+    brand: 'diamond',
+    images: [
+      images.speedFirst,
+      images.speedSecond,
+      images.speedThird
+    ],
+    size: 'one-size',
+    description: <span>
+      We present the new SPEED 50L BACKPACK backpack for climbing and mountaineering, it is made of resistant water-repellent canvas. It has a capacity of 33 liters available to protect your camping implements. It has padded and adjustable shoulder straps for unmatched comfort. It has chest and waist straps that will help you carry and distribute the weight of the backpack. <br /><br />
+      Features: <br />
+      – New BD “X-rip” 210d Nylon body fabric with UTS™ coating; <br />
+      – Welded front abrasion patch for improved protection against rock, ice and crampon spikes; <br />
+      – New custom metal dogbone ice tool attachment with micro ice-tool PickPockets™ and removable 20 mm crampon straps; <br />
+      – Top-loading, with removable lid, drawcord skirt closure and tuck-away rope strap; <br />
+      – Strippable design: removable frame sheet / bivy pad and removable hipbelt with fixed webbing belt; <br />
+      – Redesigned Shoulder Strap harness for improved comfort and durability; <br />
+      – Moisture-wicking redesigned back-panel; <br />
+      – Raincover available separately.
+    </span>,
+    price: 798.00,
+    gender: 'Unisex',
+    color: 'Yellow',
+    weight: 'max 50 L',
+    features: '',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Venom Ice Hiking Axe',
+    type: 'Accesories',
+    brand: 'diamond',
+    images: [
+      images.venomIceFirst,
+      images.venomIceSecond,
+      images.venomIceThird
+    ],
+    size: [
+      50 + 'cm',
+      51 + 'cm',
+      52 + 'cm',
+      53 + 'cm',
+    ],
+    description: <span>
+      This is the new ice pick for climbing VENOM ICE AX, it is a tool of high precision and functionality for lovers of alpine sports. Its head is made of stainless steel. Its integrated handle and uneven shaft provide safety and easy handling on the ice. It features fully adjustable FlickLock technology ideal for steep snow. <br /><br />
+      Features: <br />
+      - Climbs steep couloirs, plunges and self arrests; <br />
+      - Venom Hammer is equipped with a Tech Pick and the Venom Adze comes with the Classic Pick; <br />
+      - Comfortable, dual-density molded grip; <br />
+      - Lockdown Leash included; <br />
+      - CEN-B certified.
+    </span>,
+    price: 506.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '',
+    features: '',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Black Diamond Distance FLZ Hiking Poles',
+    type: 'Accesories',
+    brand: 'diamond',
+    images: [
+      images.distanceFirst,
+      images.distanceSecond,
+      images.distanceThird
+    ],
+    size: [
+      105-125 + 'cm',
+      125-145 + 'cm',
+    ],
+    description: <span>
+      This time we bring you the new DISTANCE FLZ POLES trekking poles, which have a super light and manageable design, made of resistant aluminum. Features an approximate length of 13 inches collapsed to 39 usable inches. Thanks to its SlideLock technology, it provides more resistance to the pole in the contraction joints.. <br /><br />
+      Features: <br />
+      - Improved joint support and stiffness; <br />
+      – Lightweight EVA foam grip and grip extension with breathable, moisture wicking strap made from recycled materials; <br />
+      – Three-section foldable shaft with speed cone deployment and FlickLock® adjustability; <br />
+      – Aluminum construction; <br />
+      – Interchangeable, non-scarring rubber Tech Tips and carbide Tech Tips; <br />
+      – Removable low-profile baskets for versatility; <br />
+      – Z-Pole Snow Basket compatible. <br />
+    </span>,
+    price: 588.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '',
+    features: '',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Black Diamond Wiz Hiking Headlight',
+    type: 'Accesories',
+    brand: 'diamond',
+    images: [
+      images.wizFirst,
+    ],
+    size: [
+      30 + 'Lumens Pwr',
+    ],
+    description: <span>
+      Our totally redesigned kid´s headlamp that now features lighting in a full-color spectrum, the Wiz gives kids the lighting they need to explore the outdoors in a variety of fun colors. Our totally redesigned kid´s headlamp that now features lighting in a full-color spectrum, the Wiz gives kids the lighting they need to explore the outdoors in a variety of fun colors. One LED provides 3 lumens of proximity lighting and strobe mode.<br /><br /> An RGB LED allows kid´s to cycle through a full rainbow spectrum of colors. Head tilts in both directions so it works even when put on upside down. Compact design uses two AAA batteries. CPSIA certified with child-safe battery compartment closure and breakaway elastic safety strap. Powers off after two hours to avoid accidental battery drain. <br /><br />Storm Proof [IPX4]: <br />
+      - Protected against rain or sleet from any angle.
+    </span>,
+    price: 81.00,
+    gender: 'Unisex',
+    color: 'Red',
+    weight: '',
+    features: '',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+
+  //* ------------------------------------------------------------ EQUIPMENT ----------------------------------------------------- *//
+
+  {
+    name: 'Columbia Ultra 2P Lightweight Hiking Tent',
+    type: 'Equipment',
+    brand: 'columbia',
+    images: [
+      images.columbiaUltraFirst,
+      images.columbiaUltraSecond,
+      images.columbiaUltraThird
+    ],
+    size: '2P',
+    description: <span>
+      Lightweight camping tent for backpacking or cyclotourism, easy to pitch up. Ultra lightweight camping tent for 2 persons with rainfly for those who need light and compact tent once packed. Thanks to design this tent is very stable with optimum inner space. Nylon ripstop outer fabric is very resistant to tears, in addition to being extremely light. The water column is 3000 mm for the roof and the floor. <br /> This tent has an easy and quick set up because you only have to assembly one preformed pole with another small one The inner tent can be used as a mosquito net independently. Inside it has pockets to store small belongings. The fastening system of the rainfly to the inner tent is made by Velcro loops,plastic hooks and aluminum buckles, which offers faster assembly and disassembly as well as less weight. For better visibility , zipper pullers are reflective as well as the guy ropes. The tent dimensions are (50+127+50) x225x92 cm and its weight is 1,65 kg. <br /><br />
+      Flysheet: <br />
+      - 20D Nylon Ripstop Single silicon; <br />
+      - PU 3000 mm. <br /><br />
+      Inner tent: <br />
+      - 40D Nylon Breathable + D33 mesh; <br />
+      - 40D Nylon Ripstop 3000 mm floor. <br /><br />
+      Features: <br />
+      - Thermo-sealed seams; <br />
+      - Inner mesh multipockets (one on side and others on top); <br />
+      - 1 hook for light; <br />
+      - 1 big side ventilation; <br />
+      - SBS zippers; <br />
+      - 2 inner doors with D33 Mesh; <br />
+      - Aluminium adjusters, hooks, buckles; <br />
+      - Dimensions:(50+127+50)x225x92(h) cm; <br />
+      - Inner tent dimensions:215x125x89(h) cm; <br />
+      - Folded size :37x17x17 cm; <br />
+      - Weight:1.65 Kg; <br />
+      - Total weight and folded dimensions of the poles:0,420 kg and 36xØ6 cm; <br />
+      - Total weight and dimensions of the pegs:0,080kg and 16xØ3 cm.
+    </span>,
+    price: 832.00,
+    gender: '',
+    color: 'Green',
+    weight: '1.65 kg',
+    features: '',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+
+  //* ------------------------------------------------------------- RUNNING -------------------------------------------------------- *//
+
+  {
     name: 'Adidas Terrex Free Hiker Goretex Trail Running',
+    type: 'Footwear',
     brand: 'adidas',
     images: [
       images.goretexFirst,
@@ -526,7 +1195,7 @@ const products = [
       '42',
     ],
     description: <span>
-      Intending to lead the hiking marketplace is no small feat, but the adidas Terrex Free Hiker GTX trail running shoes will surely achieve this as the Terrex series’ natural evolution. Combining the best features of their high-performance running shoes with the advantages of their more outdoor-oriented designs, these sneakers do not look like anything you have seen so far in the scene. <br /> adidas´ sportiest products inspired the Terrex Free Hiker GTX’s upper, with a Primeknit design that has received anti-wear reinforcements to protect you from difficult terrain. But Primeknit’s outstanding features are not lost by that, with a sock-like design that fits your feet perfectly and maintains the lightweight breathability that it is so well known for. To achieve greater weather protection, adidas has also added a thin GORE-TEX® layer to create an all-around, tight waterproofing. <br /> The already characteristic Continental™ rubber outsole in the Terrex series blends with a boost™ midsole, thus completing a package with great cushioning and responsiveness as well as outstanding traction that will not be deterred by any obstacle. Various TPU reinforcements on the heel and toecap serve as additional protection against injuries and accidents. Move and explore. <br /> These lightweight hiking shoes deliver next-generation comfort and freedom of movement for hikes both long and short. The adidas Primeknit upper hugs your foot for flexible, all-terrain stability, while the Boost midsole delivers endless energy to keep you moving up or down the trail. A GORE-TEX membrane sheds water while letting your feet breathe for all-conditions wear. <br /> Features: <br />
+      Intending to lead the hiking marketplace is no small feat, but the adidas Terrex Free Hiker GTX trail running shoes will surely achieve this as the Terrex series’ natural evolution. Combining the best features of their high-performance running shoes with the advantages of their more outdoor-oriented designs, these sneakers do not look like anything you have seen so far in the scene. <br /> adidas´ sportiest products inspired the Terrex Free Hiker GTX’s upper, with a Primeknit design that has received anti-wear reinforcements to protect you from difficult terrain. But Primeknit’s outstanding features are not lost by that, with a sock-like design that fits your feet perfectly and maintains the lightweight breathability that it is so well known for. To achieve greater weather protection, adidas has also added a thin GORE-TEX® layer to create an all-around, tight waterproofing. <br /> The already characteristic Continental™ rubber outsole in the Terrex series blends with a boost™ midsole, thus completing a package with great cushioning and responsiveness as well as outstanding traction that will not be deterred by any obstacle. Various TPU reinforcements on the heel and toecap serve as additional protection against injuries and accidents. Move and explore. <br /> These lightweight hiking shoes deliver next-generation comfort and freedom of movement for hikes both long and short. The adidas Primeknit upper hugs your foot for flexible, all-terrain stability, while the Boost midsole delivers endless energy to keep you moving up or down the trail. A GORE-TEX membrane sheds water while letting your feet breathe for all-conditions wear. <br /><br /> Features: <br />
       - Regular fit; <br />
       - Lace closure; <br />
       - adidas Primeknit textile upper; <br />
@@ -537,10 +1206,49 @@ const products = [
     color: 'Brown',
     weight: '',
     features: 'Waterproof',
-    recomended: 'Trail running',
+    activity: 'Trail running',
+    sustainable: false,
+  },
+  {
+    name: 'Columbia Summit Trail Running Gloves',
+    type: 'Accessories',
+    brand: 'columbia',
+    images: [
+      images.trailSummitRunningFirst,
+      images.trailSummitRunningSecond,
+      images.trailSummitRunningThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    description: <span>
+      Cold Trail: <br />
+      - With the lightweight warmth of our thermal reflective lining, these gloves won´t stop you from your run. <br /><br />
+      Phone Friendly: <br />
+      - A silicone palm grip keeps that precious phone secure in your hand, while the touchscreen-compatible digits let you use it without having to expose your hands. <br /><br />
+      Features: <br />
+      - Omni-Heat™ thermal reflective; <br />
+      - Silicone palm grip; <br />
+      - Touch screen compatible finger tip; <br />
+      - Reflective detail.
+    </span>,
+    price: 102.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '',
+    features: [
+      'Windproof',
+      'Reflective accents'
+    ],
+    activity: 'Trail running',
     sustainable: false,
   },
 ]
+
+
+
 
 const brands = {
   adidas: {
@@ -551,12 +1259,12 @@ const brands = {
   columbia: {
     name: 'Columbia',
     logo: images.columbiaLogo,
-    logoSize: 40
+    logoSize: 25
   },
   diamond: {
     name: 'Black Diamond',
     logo: images.diamondLogo,
-    logoSize: 35
+    logoSize: 15
   },
   haglofs: {
     name: 'Haglofs',
@@ -703,6 +1411,101 @@ const blogs = [
   }
 ]
 
+
+const genderCategory = [
+  'Men',
+  'Women',
+  'Unisex',
+  'Kids'
+]
+
+
+const activityCategory = [
+  'Hiking',
+  'Climbing',
+  'Trail running',
+  'Camping',
+  'Expeditions'
+]
+
+
+const typeCategory = [
+  'Clothing',
+  'Footwear',
+  'Accessories',
+  'Equipment'
+]
+
+
+const colorCategory = [
+  'Black',
+  'White',
+  'Brown',
+  'Grey',
+  'Beige',
+  'Blue',
+  'Green',
+  'Yellow',
+  'Red'
+]
+
+const sizeCategory = [
+  'XXS',
+  'XS',
+  'S',
+  'M',
+  'L',
+  'XL',
+  'XXL',
+  31 + ' EU',
+  32 + ' EU',
+  33 + ' EU',
+  34 + ' EU',
+  35 + ' EU',
+  36 + ' EU',
+  37 + ' EU',
+  38 + ' EU',
+  39 + ' EU',
+  40 + ' EU',
+  41 + ' EU',
+  42 + ' EU',
+  43 + ' EU',
+  44 + ' EU',
+  45 + ' EU',
+  46 + ' EU'
+]
+
+
+const featuresCategory = [
+  'Waterproof',
+  'Reflective accents',
+  'Thermal',
+  'Compressible',
+  'Windproof',
+  'Stretch',
+  'Frameless',
+  'UV Protection'
+]
+
+
+const brandsCategory = [
+  'Adidas',
+  'Black Diamond',
+  'Columbia',
+  'Haglofs',
+  'La Sportiva',
+  'Mammut',
+  'Merrell',
+  'Osprey',
+  'Patagonia',
+  'Petzl',
+  'Salewa',
+  'Salomon',
+  'Sea To Summit',
+  'The North Face'
+]
+
+
 export default { 
   productsExamples, 
   menus, 
@@ -711,5 +1514,12 @@ export default {
   products,
   brands,
   creatorImages,
-  blogs
+  blogs,
+  genderCategory,
+  activityCategory,
+  typeCategory,
+  colorCategory,
+  sizeCategory,
+  featuresCategory,
+  brandsCategory
 };

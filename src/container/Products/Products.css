@@ -1,84 +1,168 @@
 .app__products {
-    min-height: 100vh;
     background: var(--color-white);
     width: 100%;
 }
 
 .app__products-title {
     text-align: center;
-    background: var(--color-cream);
+    background: var(--color-yellow);
     width: 100%;
-    box-shadow: inset 0 0.5em 2em var(--color-purple);
 }
 
 .app__products-title h1 {
-    padding: 20px 0;
+    padding: 40px 0;
+    color: var(--color-purple);
+    font-size: 25px;
 }
 
 .app__products-content {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .app__products-content_menu {
-    min-height: 100vh;
     width: 20%;
-    border-right: 1px solid var(--color-purple);
-    border-bottom: 1px solid var(--color-purple);
-    background: var(--color-blue);
-}
-
-button {
-    background: var(--color-blue);
-    width: 100%;
-    text-align: start;
-    padding: 10px;
-    border: unset;
-    cursor: pointer;
-    border: 1px solid #dbdbdb;
-}
-
-button::after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-}
-
-button.active::after {
-    content: "\2212";
-    color: white;
-    font-weight: bold;
-    float: right;
-}
-
-.options {
-    height: 0px;
-    overflow: hidden;
-    transition: height ease 0.4s;
-    background: var(--color-white);
+    background: var(--color-purple);
 }
 
 .option {
     border: 1px solid #dbdbdb;
     padding: 10px 15px;
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.option span {
+.option input {
+    width: 16px;
+    height: 16px;
+}
+
+.option input:checked {
+    accent-color: var(--color-purple);
+}
+
+.options span {
     color: var(--color-purple);
     font-size: 16px;
     margin-left: 10px;
 }
 
+.options .price__slider {
+    width: 80%;
+    padding: 10px 15px 0 15px;
+    margin: 15px auto;
+}
 
+.options .price__slider .rc-slider-rail {
+    background-color: var(--color-purple);
+}
 
+.options .price__slider .rc-slider-track {
+    background-color: var(--color-yellow);
+}
 
+.options .price__slider .rc-slider-handle {
+    background-color: var(--color-blue);
+    border: none;
+    opacity: 1;
+}
+
+.options .price__range {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options .price__range span {
+    margin: 0;
+}
 
 .app__products-content_results {
-    height: 100%;
     width: 80%;
-    box-shadow: inset 0 0 2em var(--color-purple);
+    box-shadow: inset 0 0 10em var(--color-purple);
+    background: var(--color-white);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-content: flex-start;
 }
+
+.app__products-content_results-card {
+    height: 350px;
+    width: 22%;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0.5em 0 var(--color-white), 0 0 1.5em 0 var(--color-purple);
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    margin: 16.5px;
+}
+
+.app__products-content_results-card:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+    box-shadow: inset 0 0 1em 0 var(--color-white), 0 0 2.1em 0 var(--color-purple);
+}
+
+.app__products-content_results-card_sustainable {
+    width: 100%;
+}
+
+.app__products-content_results-card_sustainable p {
+    background-color: rgb(62, 147, 9);
+    font-family: var(--font-menu);
+    text-align: left;
+    margin: 10px;
+    text-shadow: 0.5px 0.5px var(--color-purple);
+    font-size: 10px;
+    position: absolute;
+    color: var(--color-yellow);
+    padding: 5px;
+}
+
+.app__products-content_results-card_image {
+    width: 100%;
+    z-index: -2;
+    margin-bottom: 10px;
+}
+
+.app__products-content_results-card_image img {
+    width: 100%;
+}
+
+.app__products-content_results-card_text {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.app__products-content_results-card_text h1 {
+    margin: 0 auto 0 auto;
+    font-size: 16px !important;
+    line-height: 20px;
+    color: var(--color-purple);
+    font-weight: lighter;
+    text-align: center;
+}
+
+.app__products-content_results-card_text p {
+    font-family: var(--font-menu);
+    margin: 10px auto 20px auto;
+    font-size: 18px !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--color-yellow);
+    text-shadow: 0.5px 0.5px var(--color-purple);
+}    

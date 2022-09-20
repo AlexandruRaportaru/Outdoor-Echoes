@@ -74,9 +74,87 @@ import goretexThird from '../assets/adidas/goretexThird.jpg';
 /* Columbia */
 import columbiaBanner from '../assets/columbia/columbiaBanner.jpeg';
 import columbiaLogo from '../assets/columbia/columbiaLogo.png';
+
+import firecampFleece3First from '../assets/columbia/firecampFleece3First.jpg';
+import firecampFleece3Second from '../assets/columbia/firecampFleece3Second.jpg';
+import firecampFleece3Third from '../assets/columbia/firecampFleece3Third.jpg';
+
+import facet60First from '../assets/columbia/facet60First.jpg';
+import facet60Second from '../assets/columbia/facet60Second.jpg';
+import facet60Third from '../assets/columbia/facet60Third.jpg';
+
+import redmondYouthFirst from '../assets/columbia/redmondYouthFirst.jpg';
+import redmondYouthSecond from '../assets/columbia/redmondYouthSecond.jpg';
+import redmondYouthThird from '../assets/columbia/redmondYouthThird.jpg';
+
+import adventureFirst from '../assets/columbia/adventureFirst.jpg';
+import adventureSecond from '../assets/columbia/adventureSecond.jpg';
+import adventureThird from '../assets/columbia/adventureThird.jpg';
+
+import silverRidge4First from '../assets/columbia/silverRidge4First.jpg';
+import silverRidge4Second from '../assets/columbia/silverRidge4Second.jpg';
+import silverRidge4Third from '../assets/columbia/silverRidge4Third.jpg';
+
+import bloomingportFirst from '../assets/columbia/bloomingportFirst.jpg';
+import bloomingportSecond from '../assets/columbia/bloomingportSecond.jpg';
+import bloomingportThird from '../assets/columbia/bloomingportThird.jpg';
+
+import maxtrailFirst from '../assets/columbia/maxtrailFirst.jpg';
+import maxtrailSecond from '../assets/columbia/maxtrailSecond.jpg';
+import maxtrailThird from '../assets/columbia/maxtrailThird.jpg';
+
+import trailSummitRunningFirst from '../assets/columbia/trailSummitRunningFirst.jpg';
+import trailSummitRunningSecond from '../assets/columbia/trailSummitRunningSecond.jpg';
+import trailSummitRunningThird from '../assets/columbia/trailSummitRunningThird.jpg';
+
+import columbiaUltraFirst from '../assets/columbia/columbiaUltraFirst.jpg';
+import columbiaUltraSecond from '../assets/columbia/columbiaUltraSecond.jpg';
+import columbiaUltraThird from '../assets/columbia/columbiaUltraThird.jpg';
+
+import fct03First from '../assets/columbia/fct03First.jpg';
+import fct03Second from '../assets/columbia/fct03Second.jpg';
+import fct03Third from '../assets/columbia/fct03Third.jpg';
 /* Diamond */
 import diamondBanner from '../assets/diamond/diamondBanner.jpg';
 import diamondLogo from '../assets/diamond/diamondLogo.png';
+
+import missionXPFirst from '../assets/diamond/missionXPFirst.jpg';
+import missionXPSecond from '../assets/diamond/missionXPSecond.jpg';
+import missionXPThird from '../assets/diamond/missionXPThird.jpg';
+
+import missionFirst from '../assets/diamond/missionFirst.jpg';
+import missionSecond from '../assets/diamond/missionSecond.jpg';
+import missionThird from '../assets/diamond/missionThird.jpg';
+
+import methodFirst from '../assets/diamond/methodFirst.jpg';
+import methodSecond from '../assets/diamond/methodSecond.jpg';
+import methodThird from '../assets/diamond/methodThird.jpg';
+
+import shadowLVFirst from '../assets/diamond/shadowLVFirst.jpg';
+import shadowLVSecond from '../assets/diamond/shadowLVSecond.jpg';
+import shadowLVThird from '../assets/diamond/shadowLVThird.jpg';
+
+import captainFirst from '../assets/diamond/captainFirst.jpg';
+import captainSecond from '../assets/diamond/captainSecond.jpg';
+import captainThird from '../assets/diamond/captainThird.jpg';
+
+import momentumFirst from '../assets/diamond/momentumFirst.jpg';
+import momentumSecond from '../assets/diamond/momentumSecond.jpg';
+import momentumThird from '../assets/diamond/momentumThird.jpg';
+
+import speedFirst from '../assets/diamond/speedFirst.jpg';
+import speedSecond from '../assets/diamond/speedSecond.jpg';
+import speedThird from '../assets/diamond/speedThird.jpg';
+
+import venomIceFirst from '../assets/diamond/venomIceFirst.jpg';
+import venomIceSecond from '../assets/diamond/venomIceSecond.jpg';
+import venomIceThird from '../assets/diamond/venomIceThird.jpg';
+
+import distanceFirst from '../assets/diamond/distanceFirst.jpg';
+import distanceSecond from '../assets/diamond/distanceSecond.jpg';
+import distanceThird from '../assets/diamond/distanceThird.jpg';
+
+import wizFirst from '../assets/diamond/wizFirst.jpg';
 /* Haglofs */
 import haglofsBanner from '../assets/haglofs/haglofsBanner.jpg';
 import haglofsLogo from '../assets/haglofs/haglofsLogo.png';
@@ -211,9 +289,87 @@ export default {
 /* Columbia */
   columbiaBanner,
   columbiaLogo,
+
+  firecampFleece3First,
+  firecampFleece3Second,
+  firecampFleece3Third,
+
+  facet60First,
+  facet60Second,
+  facet60Third,
+
+  redmondYouthFirst,
+  redmondYouthSecond,
+  redmondYouthThird,
+
+  adventureFirst,
+  adventureSecond,
+  adventureThird,
+
+  silverRidge4First,
+  silverRidge4Second,
+  silverRidge4Third,
+
+  bloomingportFirst,
+  bloomingportSecond,
+  bloomingportThird,
+
+  maxtrailFirst,
+  maxtrailSecond,
+  maxtrailThird,
+
+  trailSummitRunningFirst,
+  trailSummitRunningSecond,
+  trailSummitRunningThird,
+
+  columbiaUltraFirst,
+  columbiaUltraSecond,
+  columbiaUltraThird,
+
+  fct03First,
+  fct03Second,
+  fct03Third,
 /* Diamond */
   diamondBanner,
   diamondLogo,
+
+  missionXPFirst,
+  missionXPSecond,
+  missionXPThird,
+
+  missionFirst,
+  missionSecond,
+  missionThird,
+
+  methodFirst,
+  methodSecond,
+  methodThird,
+
+  shadowLVFirst,
+  shadowLVSecond,
+  shadowLVThird,
+
+  captainFirst,
+  captainSecond,
+  captainThird,
+
+  momentumFirst,
+  momentumSecond,
+  momentumThird,
+
+  speedFirst,
+  speedSecond,
+  speedThird,
+
+  venomIceFirst,
+  venomIceSecond,
+  venomIceThird,
+
+  distanceFirst,
+  distanceSecond,
+  distanceThird,
+
+  wizFirst,
 /* Haglofs */
   haglofsBanner,
   haglofsLogo,

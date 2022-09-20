@@ -5,6 +5,7 @@ import Cart from './Cart/Cart';
 import Selection from './Selection/Selection';
 import Newsletter from './Newsletter/Newsletter';
 import Footer from './Footer/Footer';
+import Collapsible from './Collapsible/Collapsible';
 
 
 export {
@@ -14,5 +15,6 @@ export {
   Cart,
   Selection,
   Newsletter,
-  Footer
+  Footer,
+  Collapsible
 };

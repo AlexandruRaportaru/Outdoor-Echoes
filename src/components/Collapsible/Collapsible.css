@@ -1,0 +1,34 @@
+.collapsible .collapse {
+    background: var(--color-purple);
+    width: 100%;
+    padding: 10px 20px;
+    border: unset;
+    border-bottom: 1px solid #dbdbdb;
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible .collapse h3 {
+    background: var(--color-purple);
+    text-align: start;
+    color: var(--color-white);
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.collapsible .collapse__button {
+    background: var(--color-purple);
+    border: unset;
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 18px;
+}
+
+.options {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.4s;
+    background: var(--color-white);
+}
