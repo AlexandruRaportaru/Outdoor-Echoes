@@ -158,9 +158,86 @@ import wizFirst from '../assets/diamond/wizFirst.jpg';
 /* Haglofs */
 import haglofsBanner from '../assets/haglofs/haglofsBanner.jpg';
 import haglofsLogo from '../assets/haglofs/haglofsLogo.png';
+
+import dualityat1First from '../assets/haglofs/dualityat1First.jpg';
+import dualityat1Second from '../assets/haglofs/dualityat1Second.jpg';
+import dualityat1Third from '../assets/haglofs/dualityat1Third.jpg';
+
+import skutaecoFirst from '../assets/haglofs/skutaecoFirst.jpg';
+import skutaecoSecond from '../assets/haglofs/skutaecoSecond.jpg';
+import skutaecoThird from '../assets/haglofs/skutaecoThird.jpg';
+
+import limfhFirst from '../assets/haglofs/limfhFirst.jpg';
+import limfhSecond from '../assets/haglofs/limfhSecond.jpg';
+import limfhThird from '../assets/haglofs/limfhThird.jpg';
+
+import kummelecoFirst from '../assets/haglofs/kummelecoFirst.jpg';
+import kummelecoSecond from '../assets/haglofs/kummelecoSecond.jpg';
+import kummelecoThird from '../assets/haglofs/kummelecoThird.jpg';
+
+import limlowFirst from '../assets/haglofs/limlowFirst.jpg';
+import limlowSecond from '../assets/haglofs/limlowSecond.jpg';
+import limlowThird from '../assets/haglofs/limlowThird.jpg';
+
+import ridgemidFirst from '../assets/haglofs/ridgemidFirst.jpg';
+import ridgemidSecond from '../assets/haglofs/ridgemidSecond.jpg';
+import ridgemidThird from '../assets/haglofs/ridgemidThird.jpg';
+
+import vina40lFirst from '../assets/haglofs/vina40lFirst.jpg';
+import vina40lSecond from '../assets/haglofs/vina40lSecond.jpg';
+import vina40lThird from '../assets/haglofs/vina40lThird.jpg';
+
+import lim35lFirst from '../assets/haglofs/lim35lFirst.jpg';
+import lim35lSecond from '../assets/haglofs/lim35lSecond.jpg';
+import lim35lThird from '../assets/haglofs/lim35lThird.jpg';
+
+import angd60lFirst from '../assets/haglofs/angd60lFirst.jpg';
+import angd60lSecond from '../assets/haglofs/angd60lSecond.jpg';
+
+import vide20lFirst from '../assets/haglofs/vide20lFirst.jpg';
+import vide20lSecond from '../assets/haglofs/vide20lSecond.jpg';
+import vide20lThird from '../assets/haglofs/vide20lThird.jpg';
 /* Mammut */
 import mammutBanner from '../assets/mammut/mammutBanner.jpg';
 import mammutLogo from '../assets/mammut/mammutLogo.png';
+
+import comfortfastFirst from '../assets/mammut/comfortfastFirst.jpg';
+import comfortfastSecond from '../assets/mammut/comfortfastSecond.jpg';
+
+import senderwireFirst from '../assets/mammut/senderwireFirst.jpg';
+import senderwireSecond from '../assets/mammut/senderwireSecond.jpg';
+import senderwireThird from '../assets/mammut/senderwireThird.jpg';
+
+import cragsenderFirst from '../assets/mammut/cragsenderFirst.jpg';
+import cragsenderSecond from '../assets/mammut/cragsenderSecond.jpg';
+import cragsenderThird from '../assets/mammut/cragsenderThird.jpg';
+
+import rgFirst from '../assets/mammut/rgFirst.jpg';
+import rgSecond from '../assets/mammut/rgSecond.jpg';
+import rgThird from '../assets/mammut/rgThird.jpg';
+
+import trion75lFirst from '../assets/mammut/trion75lFirst.jpg';
+import trion75lSecond from '../assets/mammut/trion75lSecond.jpg';
+
+import nordwandFirst from '../assets/mammut/nordwandFirst.jpg';
+import nordwandSecond from '../assets/mammut/nordwandSecond.jpg';
+import nordwandThird from '../assets/mammut/nordwandThird.jpg';
+
+import mercuryFirst from '../assets/mammut/mercuryFirst.jpg';
+import mercurySecond from '../assets/mammut/mercurySecond.jpg';
+import mercuryThird from '../assets/mammut/mercuryThird.jpg';
+
+import nordwandhighFirst from '../assets/mammut/nordwandhighFirst.jpg';
+import nordwandhighSecond from '../assets/mammut/nordwandhighSecond.jpg';
+import nordwandhighThird from '../assets/mammut/nordwandhighThird.jpg';
+
+import sapuenFirst from '../assets/mammut/sapuenFirst.jpg';
+import sapuenSecond from '../assets/mammut/sapuenSecond.jpg';
+import sapuenThird from '../assets/mammut/sapuenThird.jpg';
+
+import shortsFirst from '../assets/mammut/shortsFirst.jpg';
+import shortsSecond from '../assets/mammut/shortsSecond.jpg';
+import shortsThird from '../assets/mammut/shortsThird.jpg';
 /* Merrell */
 import merrellBanner from '../assets/merrell/merrellBanner.jpg';
 import merrellLogo from '../assets/merrell/merrellLogo.png';
@@ -185,6 +262,45 @@ import salomonLogo from '../assets/salomon/salomonLogo.png';
 /* Sportiva */
 import sportivaBanner from '../assets/sportiva/sportivaBanner.jpg';
 import sportivaLogo from '../assets/sportiva/sportivaLogo.png';
+
+import blizzardFirst from '../assets/sportiva/blizzardFirst.jpg';
+import blizzardSecond from '../assets/sportiva/blizzardSecond.jpg';
+import blizzardThird from '../assets/sportiva/blizzardThird.jpg';
+
+import ultraraptorFirst from '../assets/sportiva/ultraraptorFirst.jpg';
+import ultraraptorSecond from '../assets/sportiva/ultraraptorSecond.jpg';
+import ultraraptorThird from '../assets/sportiva/ultraraptorThird.jpg';
+
+import jynxFirst from '../assets/sportiva/jynxFirst.jpg';
+import jynxSecond from '../assets/sportiva/jynxSecond.jpg';
+import jynxThird from '../assets/sportiva/jynxThird.jpg';
+
+import xcursion28lFirst from '../assets/sportiva/xcursion28lFirst.jpg';
+import xcursion28lSecond from '../assets/sportiva/xcursion28lSecond.jpg';
+
+import trangopolesFirst from '../assets/sportiva/trangopolesFirst.jpg';
+import trangopolesSecond from '../assets/sportiva/trangopolesSecond.jpg';
+import trangopolesThird from '../assets/sportiva/trangopolesThird.jpg';
+
+import gripitFirst from '../assets/sportiva/gripitFirst.jpg';
+import gripitSecond from '../assets/sportiva/gripitSecond.jpg';
+import gripitThird from '../assets/sportiva/gripitThird.jpg';
+
+import mythosFirst from '../assets/sportiva/mythosFirst.jpg';
+import mythosSecond from '../assets/sportiva/mythosSecond.jpg';
+import mythosThird from '../assets/sportiva/mythosThird.jpg';
+
+import katanaFirst from '../assets/sportiva/katanaFirst.jpg';
+import katanaSecond from '../assets/sportiva/katanaSecond.jpg';
+import katanaThird from '../assets/sportiva/katanaThird.jpg';
+
+import nepalcubeFirst from '../assets/sportiva/nepalcubeFirst.jpg';
+import nepalcubeSecond from '../assets/sportiva/nepalcubeSecond.jpg';
+import nepalcubeThird from '../assets/sportiva/nepalcubeThird.jpg';
+
+import trangoicecubeFirst from '../assets/sportiva/trangoicecubeFirst.jpg';
+import trangoicecubeSecond from '../assets/sportiva/trangoicecubeSecond.jpg';
+import trangoicecubeThird from '../assets/sportiva/trangoicecubeThird.jpg';
 /* Summit */
 import summitBanner from '../assets/summit/summitBanner.jpg';
 import summitLogo from '../assets/summit/summitLogo.png';
@@ -373,9 +489,86 @@ export default {
 /* Haglofs */
   haglofsBanner,
   haglofsLogo,
+
+  dualityat1First,
+  dualityat1Second,
+  dualityat1Third,
+
+  skutaecoFirst,
+  skutaecoSecond,
+  skutaecoThird,
+
+  limfhFirst,
+  limfhSecond,
+  limfhThird,
+
+  kummelecoFirst,
+  kummelecoSecond,
+  kummelecoThird,
+
+  limlowFirst,
+  limlowSecond,
+  limlowThird,
+
+  ridgemidFirst,
+  ridgemidSecond,
+  ridgemidThird,
+
+  vina40lFirst,
+  vina40lSecond,
+  vina40lThird,
+
+  lim35lFirst,
+  lim35lSecond,
+  lim35lThird,
+
+  angd60lFirst,
+  angd60lSecond,
+
+  vide20lFirst,
+  vide20lSecond,
+  vide20lThird,
 /* Mammut */
   mammutBanner,
   mammutLogo,
+
+  comfortfastFirst,
+  comfortfastSecond,
+
+  senderwireFirst,
+  senderwireSecond,
+  senderwireThird,
+
+  cragsenderFirst,
+  cragsenderSecond,
+  cragsenderThird,
+
+  rgFirst,
+  rgSecond,
+  rgThird,
+
+  trion75lFirst,
+  trion75lSecond,
+
+  nordwandFirst,
+  nordwandSecond,
+  nordwandThird,
+
+  mercuryFirst,
+  mercurySecond,
+  mercuryThird,
+
+  nordwandhighFirst,
+  nordwandhighSecond,
+  nordwandhighThird,
+
+  sapuenFirst,
+  sapuenSecond,
+  sapuenThird,
+
+  shortsFirst,
+  shortsSecond,
+  shortsThird,
 /* Merrell */
   merrellBanner,
   merrellLogo,
@@ -400,6 +593,45 @@ export default {
 /* Sportiva */
   sportivaBanner,
   sportivaLogo,
+
+  blizzardFirst,
+  blizzardSecond,
+  blizzardThird,
+
+  ultraraptorFirst,
+  ultraraptorSecond,
+  ultraraptorThird,
+
+  jynxFirst,
+  jynxSecond,
+  jynxThird,
+
+  xcursion28lFirst,
+  xcursion28lSecond,
+
+  trangopolesFirst,
+  trangopolesSecond,
+  trangopolesThird,
+
+  gripitFirst,
+  gripitSecond,
+  gripitThird,
+
+  mythosFirst,
+  mythosSecond,
+  mythosThird,
+
+  katanaFirst,
+  katanaSecond,
+  katanaThird,
+
+  nepalcubeFirst,
+  nepalcubeSecond,
+  nepalcubeThird,
+
+  trangoicecubeFirst,
+  trangoicecubeSecond,
+  trangoicecubeThird,
 /* Summit */
   summitBanner,
   summitLogo,

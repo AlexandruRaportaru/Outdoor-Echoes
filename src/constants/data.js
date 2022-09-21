@@ -350,7 +350,7 @@ const products = [
       - Engineered Knit Technology tongue provides exceptional breathability and comfort; <br />
       - Minimalist midsole for extra sensitivity on steep terrain; <br />
       - A combination of printed and molded high friction rubber on top of the foot maximizes durability, dexterity and grip for toe-hooking; <br />
-      - Velcro strap for fit adjustability
+      - Velcro strap for fit adjustability.
     </span>,
     price: 578.00,
     gender: 'Men',
@@ -358,6 +358,283 @@ const products = [
     weight: '',
     features: '',
     activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'Haglöfs Duality AT1 Goretex Hiking Boots',
+    type: 'Footwear',
+    brand: 'haglofs',
+    images: [
+      images.dualityat1First,
+      images.dualityat1Second,
+      images.dualityat1Third
+    ],
+    size: [
+      '41',
+      '43',
+      '46',
+    ],
+    description: <span>
+      These are the new boots for climbing and mountaineering DUALITY AT1 GORETEX, its innovative and resistant design guarantees you a comfortable and pleasant day, thanks to the incorporation of GORETEX technology it gives you great elasticity and coupling to your foot. They are made with recycled and water repellent fabrics to keep you cool at all times. <br /><br />
+      Features: <br />
+      - GORE-TEX® Extended Comfort with stretch offers ideal breathable waterproofing; <br />
+      - Extensive heel support and toe protection for stability and durability; <br />
+      - Premium leather from a tannery audited by the Leather Working Group; <br />
+      - Fluorocarbon free DWR-treated surfaces help repel water & dirt; <br />
+      - Engineered patterned outsole provides high traction and stability; <br />
+      - AHAR™ Plus (ASICS® High Abrasion Resistance Rubber) on the outsole heel adds durability; <br />
+      - Algae-based BLOOM FOAM™ in midsoles for excellent comfort, saving fresh water and CO2; <br />
+      - Knitted upper with sock comfort, made from 100% recycled polyester; <br />
+      - Finger loop webbing on heel and tongue for easy use; <br />
+      - Webbing and laces made from 100% recycled polyester; <br />
+      - Waterproof flex test:200,000 steps; <br />
+      - Upper:Fluorocarbon free water repellent 1.4 -1.6 mm nubuck from LWG audited tannery (Gold/Silver rated) with lower environmental footprint; <br />
+      - Recycled polyester (knitting and laces); <br />
+      - Lining:GORE-TEX® Extended Comfort; <br />
+      - Midsole:Bloom Foam; <br />
+      - Heel encounter:Bio TPU; <br />
+      - Outsole:WET GRIP Rubber™ / AHAR™ Plus on heel area.
+    </span>,
+    price: 913.00,
+    gender: 'Men',
+    color: 'Green',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Haglöfs Skuta Mid Proof Eco Hiking Boots',
+    type: 'Footwear',
+    brand: 'haglofs',
+    images: [
+      images.skutaecoFirst,
+      images.skutaecoSecond,
+      images.skutaecoThird
+    ],
+    size: [
+      '42',
+      '44',
+      '45',
+    ],
+    description: <span>
+      The Skuta Mid Proof hiking boots with waterproof fabric and PROOF ECO membrane without fluorocarbon will become your ideal choice for mountain adventure. These boots are built with a rear cushioning of the highest quality GEL foot. They offer excellent shock absorption for the ideal step. <br /><br /> The molded EVA midsole provides good cushioning and comfort. In addition, these mountaineering boots are made of high quality organic leather from a tannery audited by Leather Working Group. Welcome to modern hiking. This is a supportive and tough trekking shoe with a wide forefoot fit for extra comfort. Upper protection and AHAR+ rubber on outsole adds to the durability. It´s completely fluorocarbon free, down to the waterproof the PROOF™ ECO. A mid-cut silhouette adds stability and protection. <br /><br /> Waterproof with fluorocarbon free PROOF™ ECO membrane. GEL™ rearfoot cushioning offers excellent shock absorption for the ideal stride. Moulded EVA midsole gives good cushioning and comfort. Premium eco-friendly leather from a tannery audited by the Leather Working Group. Fluorocarbon free DWR-treated surfaces help repel water & dirt. Engineered patterned outsole provides high traction and stability. <br /><br /> AHAR™ Plus (ASICS® High Abrasion Resistance Rubber) on the outsole heel adds durability. Suede reinforced toe and heel give increased protection and durability. Tongue gusset prevents water and sand from entering the shoe. Fabrics: Upper: Fluorocarbon free water repellent 1.4 -1.6 mm suede from LWG audited tannery (Gold/Silver rated) with lower environmental footprint. Lining: PROOF™ ECO, fluorocarbon free and bluesign® approved membrane, with recycled lining. Midsole: Moulded EVA + Gel. Footbed: Moulded EVA. Outsole: AHAR™ Plus.
+    </span>,
+    price: 515.00,
+    gender: 'Men',
+    color: 'Brown',
+    weight: '400 g',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Haglöfs L.I.M FH Goretex Low Hiking Boots',
+    type: 'Footwear',
+    brand: 'haglofs',
+    images: [
+      images.limfhFirst,
+      images.limfhSecond,
+      images.limfhThird
+    ],
+    size: [
+      '41',
+      '42',
+      '45',
+    ],
+    description: <span>
+      Haglöfs L.I.M FH Goretex Low Hiking Boots present us with a low-cut model of this durable, waterproof, breathable design with maximum grip on any terrain, so you can enjoy hiking with all protection against unexpectable weather changes. <br /><br /> These trekking boots are made with a resistant outsole that provides excellent traction in various types of surfaces and a FlyteFoam midsole that gives superior cushioning. Besides, they include a supported heel and ankle strap with padded Cordura fabric that offers greater softness in each step. <br /><br />
+      Features: <br />
+      - Super lightweight low cut design; <br />
+      - Made with GORE-TEX for durable weather protection; <br />
+      - High performance-to-weight ratio; <br />
+      - FlyteFoam high impact cushioning for big distances; <br />
+      - Wet grip traction sole; <br />
+      - TPU performance protection; <br />
+      - Ripstop vamp for lightweight durability; <br />
+      - Securely encased instep for security and comfort; <br />
+      - Folding external tongue; <br />
+      - Supportive heel cup; <br />
+      - Easy fix lacing system; <br />
+      - Sublimation print echoes Zenith line; <br />
+      - TPU protection on lateral and medial sides.
+    </span>,
+    price: 518.00,
+    gender: 'Men',
+    color: 'Blue',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'La Sportiva Blizzard Goretex Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'sportiva',
+    images: [
+      images.blizzardFirst,
+      images.blizzardSecond,
+      images.blizzardThird
+    ],
+    size: [
+      '42',
+      '45',
+      '46',
+    ],
+    description: <span>
+      When winter running sessions are long and difficult La Sportiva Blizzard Gore-tex is an ideal running shoe for all round mountaineering activities. This versatile shoe offers technical functionality and comfort in the unpredictable mountain environment. <br /><br /> The sure-grip Frixion AT 2.0 outsole which enables the boots to penetrate into the ground and creates a good traction against the wet rocks while you are trail running. The Gore-tex Extended Comfort lining provides optimized breathability and waterproofing even in wet and slippery surfaces. It works exceptionally well in all sorts of trails. Thanks to the integrated 4-way stretch gaiter keep out trail debris, such as grit and leaves. <br /><br /> It is an ultimate mountaineering shoes designed especially for all adventure-sport junkies. La Sportiva Blizzard Gore-tex is the answer if you are looking for perfect trail running shoe that provides protection, traction and comfort. Winter Running Shoe with Gore-Tex® membrane and waterproofable leg-repellent leggings It includes nails integrated in the sole for a maximum grip. <br /><br /> Designed for extreme uses in frozen and sliding terrain.
+    </span>,
+    price: 1007.00,
+    gender: 'Men',
+    color: 'Black',
+    weight: '300 g',
+    features: 'Waterproof',
+    activity: 'Trail running',
+    sustainable: false,
+  },
+  {
+    name: 'La Sportiva Mythos Climbing Shoes',
+    type: 'Footwear',
+    brand: 'sportiva',
+    images: [
+      images.mythosFirst,
+      images.mythosSecond,
+      images.mythosThird
+    ],
+    size: [
+      '41',
+      '43',
+      '46',
+    ],
+    description: <span>
+      A climber’s best friend La Sportiva Mythos is typically a slipper with a twist that is lightweight and comfortable to wear. This versatile shoe is constructed to offer technical functionality and durability in the unpredictable mountain environment as well as in your gym. <br /><br /> Features: <br /> 
+      - Perfect synthesis of technology, comfort and performance. It is the most versatile model of the entire range, because it is suitable for all kinds of rock. The tested lacing system and the perfect stiffness of the midsole offer the best compromise between sensitivity and friction; <br />
+      - Upper:Suede leather, slip lasted; <br />
+      - Lining:None; <br />
+      - Fit:Medium; <br />
+      - Sole:Vibram XS Edge de 4mm; <br />
+      - Patent:Lacing system; <br />
+      - Weight:Gr. 450 per pair.
+    </span>,
+    price: 516.00,
+    gender: 'Men',
+    color: 'Brown',
+    weight: '450 g',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'La Sportiva Nepal Cube Goretex Hiking Boots',
+    type: 'Footwear',
+    brand: 'sportiva',
+    images: [
+      images.nepalcubeFirst,
+      images.nepalcubeSecond,
+      images.nepalcubeThird
+    ],
+    size: [
+      '41',
+      '42',
+      '45',
+      '46',
+    ],
+    description: <span>
+      The ultralight Gore-tex boots in the market La Sportiva Nepal Cube Gore-tex is ideal for high intensity via ferrata or mountain hiking. This versatile boot always offers technical functionality and comfort in the wild mountain environment. <br /><br /> Thanks to the innovative carbon tech honeycomb that is lightweight and stiff offers maximum comfort and support in the wild rugged terrains. Also, the insulated Comfort Gore-tex membrane provides waterproof breathability with insulation. The addition of 3D flex system to the ankle provides support and control on the rugged terrains. Also, the removable and adjustable tongue liner offers a secure and precise fit to your fit that makes it ideal for mixed climbing, winter mountaineering and other mountain activities. <br /><br /> Without a doubt, it is an ultimate mountaineering boots designed especially for all adventure-sport junkies. La Sportiva Nepal CubeGore-tex is the answer if you are looking for perfect boots that provides protection, traction and comfort. Nepal Cube, as the name suggests, is a new starting point for defining technical mountaineering boots thanks to the exceptional lightweight and thermal properties (a mere 825g per half pair). <br /><br /> Features: <br /> 
+      - Uppers: 3+ mm Hydro Perwanger Leather waterproof; <br />
+      - Lining: Insulated Comfort Gore-Tex; <br />
+      - Insole: Carbon Tech honeycomb isolation; <br />
+      - Midsole: 2mm Polyurethane graded for crampon attachment; <br />
+      - Sole: Re soleable Vibram with Impact Brake System, fully crampon compatible; <br />- Patents: Registered design; <br />
+      - Sizes: 36 – 48 (including half sizes); <br />
+      - Weight: 1780 g (pair, size 42); <br />
+      - Reduced weight mini steel parts reduce the overall weight of the boot; <br />
+      - 3D Flex System promotes ease of walk and supports the ankle on steep ground; <br />- All-round rubber rand protects against knocks and abrasion; <br />
+      - EZ Out removeable tongue allows a more precise regulation of the fit and helps to eliminate sweat via a mess fabric which draws humidity to the outside of the boot.
+    </span>,
+    price: 2354.00,
+    gender: 'Men',
+    color: 'Yellow',
+    weight: '1780 g',
+    features: [
+      'Windproof',
+      'Thermal'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    name: 'Mammut Nordwand 6000 Hiking Boots',
+    type: 'Footwear',
+    brand: 'mammut',
+    images: [
+      images.nordwandFirst,
+      images.nordwandSecond,
+      images.nordwandThird
+    ],
+    size: [
+      '42',
+      '44',
+      '46',
+    ],
+    description: <span>
+      A Gaiter Boot With Removable Liner For Demanding High-Altitude Mountaineering, Ice And Mixed Climbing. The Rigid Vibram Litebase Sole Scores With Low Weight And Excellent Cushioning. Thanks To The Boa® Fit System, Fast And Precise Adjustment Is Possible, Even With Gloves. This High Alpine Boot Is Made With Abrasion-Proof Materials, Aluminia Insulation And Has A Double-Insulated Midsole For Extreme Durability And Insulation. On Your Next Adventure, The Nordwand 6000 Will Redefine The True Meaning Of Stability And Lightness. <br /><br /> Features: <br />
+      - Raised Rubber Rand; <br />
+      - Suitable For C3 Automatic Crampons With A Heel Lever And Metal Toe Bail; <br />
+      - Easy Resoling; <br />
+      - Waterproof Zipper; <br />
+      - Boa® Fit System: Delivers Dialed In Performance And A Micro-Adjustable, Precision Fit. Can Be Operated While Wearing Gloves; <br />
+      - Board Lasting; <br />
+      - Insulated Carbon Insole: Patented, Double-Insulated Carbon Insole Allows Maximum Weight Reduction While Providing Rigidity And Excellent Insulation; <br />
+      - Separate Shoe Liner; <br />
+      - Elastic Knitted Sock Construction; <br />
+      - Vibram Litebase; <br />
+      - Flex Index: B3; <br />
+      - Lace System: Boa® Fit System; <br />
+      - Soles: Insulated Carbon Insole; <br />
+      - Material: Pu Protection' <br />
+      - Lining: Aluminia Insulation.
+    </span>,
+    price: 3589.00,
+    gender: 'Men',
+    color: 'Black',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    name: 'Mammut Mercury IV Low Goretex Hiking Shoes',
+    type: 'Footwear',
+    brand: 'mammut',
+    images: [
+      images.mercuryFirst,
+      images.mercurySecond,
+      images.mercuryThird
+    ],
+    size: [
+      '41',
+      '45',
+      '46',
+    ],
+    description: <span>
+      The new and improved version of our bestseller combines all the features hikers are looking for on their tours. The Mercury IV Low GTX has a flexible and grippy Vibram sole for optimum sure-footedness on day hikes. Damping 3D Memo Foam in the lining and insole as well as a breathable, waterproof GORE-TEX membrane ensure superlative comfort. High-quality terracare® nubuck leather gives the shoe stability and durability. The terracare® leather, sustainably produced in Germany, and GORE-TEX footwear 3L are bluesign®-certified to protect our environment. <br /><br /> Features: <br />
+      - Flex index: A6; <br />
+      - Lace system: Standard lacing; <br />
+      - Soles: High rebound EVA wedge; <br />
+      - Material: Nubuk leather; <br />
+      - Lining: GORE-TEX Footwear; <br />
+      - Board lasting; <br />
+      - 3D Memo Foam: cushioning adapts to your foot shape for exceptional comfort, support, and blister prevention; <br />
+      - Vibram sole; <br />
+      - Weight (UK 8.5): 490 g.
+    </span>,
+    price: 718.00,
+    gender: 'Men',
+    color: 'Brown',
+    weight: '490 g',
+    features: 'Waterproof',
+    activity: 'Hiking',
     sustainable: false,
   },
 
@@ -504,6 +781,323 @@ const products = [
     activity: 'Climbing',
     sustainable: false,
   },
+  {
+    name: 'Haglöfs Kummel Proof ECO Hiking Boots',
+    type: 'Footwear',
+    brand: 'haglofs',
+    images: [
+      images.kummelecoFirst,
+      images.kummelecoSecond,
+      images.kummelecoThird
+    ],
+    size: [
+      '36',
+      '37',
+      '38',
+    ],
+    description: <span>
+      The Krummel Low Proof hiking boots with waterproof fabric and PROOF ECO membrane without fluorocarbon will become your ideal choice for mountain adventure. These boots are built with a rear cushioning of the highest quality GEL foot. They offer excellent shock absorption for the ideal step. <br /><br />
+      Features: <br />
+      - Waterproof with fluorocarbon free PROOF™ ECO membrane GEL™ rearfoot cushioning offers excellent shock absorption for the ideal stride SpevaFoam™ midsole improves cushioning and a comfortable bounce-back feeling Premium eco-friendly leather from a tannery audited by the Leather Working Group Fluorocarbon free DWR-treated surfaces help repel water & dirt Engineered patterned outsole provides high traction and stability AHAR™ Plus (ASICS® High Abrasion Resistance Rubber) on the outsole heel adds durability Tongue gusset prevents water and sand from entering the shoe; <br />
+      - Waterproof flex test: 100 000 steps.
+    </span>,
+    price: 518.00,
+    gender: 'Women',
+    color: 'Brown',
+    weight: '420 g',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Haglöfs LIM Low Hiking Shoes',
+    type: 'Footwear',
+    brand: 'haglofs',
+    images: [
+      images.limlowFirst,
+      images.limlowSecond,
+      images.limlowThird
+    ],
+    size: [
+      '38',
+      '39',
+      '40',
+    ],
+    description: <span>
+      This is the first shoe we´ve made with a monosock construction, giving it a foot-hugging fit that makes it an extra-light choice for great performance on shorter hikes. As a result, it´s right at home in our L.I.M range - where every extra ounce is discarded, but all of the functionality and durability remains. <br /><br />
+      Features: <br />
+      - It´s built from tough, breathable mesh, making it a good choice on the trail; <br />
+      - Reinforcements are provided by a tough rubber counter and synthetic leather to stabilize.
+    </span>,
+    price: 416.00,
+    gender: 'Women',
+    color: 'Blue',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Haglöfs Ridge Mid GT Hiking Boots',
+    type: 'Footwear',
+    brand: 'haglofs',
+    images: [
+      images.ridgemidFirst,
+      images.ridgemidSecond,
+      images.ridgemidThird
+    ],
+    size: [
+      '36',
+      '38',
+      '40',
+    ],
+    description: <span>
+      The Rigged GT shoes is another great company boot for longer trips, and one that uses the excellent Asics FluidRide technology for a natural and balanced movement. GEL technology provides cushioning. Waterproofed with GORE TEX. <br /><br />
+      Features: <br />
+      - GEL™ rear foot cushioning for excellent shock absorption; <br />
+      - WET GRIP Rubber™ compound provides extraordinary traction, even in wet conditions; <br />
+      - SpEVA™ midsole that improves cushioning and bounce back; <br />
+      - I.G.S Impact Guidance System allows the foot to perform in a more natural motion; <br />
+      - AHAR™ Plus ( ASICS® High Abrasion Resistance Rubber) on outsole heel for excellent durability; <br />
+      - GORE-TEX®® Extended Comfort offers ideal breathable waterproofing; <br />
+      - Trusstic chassis to provide stability, torsion control; <br />
+      - Moulded rubber reinforced toe and Rubber heel for increased protection; <br />
+      - Ecsaine® heel collar lining for comfort and best durability; <br />
+      - Tongue gusset to prevent water and sand from entering the footwear; <br />
+      - Mid cut profile for extra ankle support, stability and protection.
+    </span>,
+    price: 677.00,
+    gender: 'Women',
+    color: 'Black',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'La Sportiva Ultra Raptor II Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'sportiva',
+    images: [
+      images.ultraraptorFirst,
+      images.ultraraptorSecond,
+      images.ultraraptorThird
+    ],
+    size: [
+      '37',
+      '38',
+      '39',
+    ],
+    description: <span>
+      The Ultra Raptor Ii Women´s Is An All-Terrain Mountain Running® Shoe Perfect For Long Distance Runs And Ventures Off The Beaten Path. A Full-Length Rock Guard And An Ultra Sticky Rubber Outsole Offers Maximum Protection And Stability, While The Wicking Airmesh Mesh Upper Keeps You Cool, Dry, And Comfortable So You Can Continue To Focus On The Trail Ahead Of You. <br /><br />
+      Features: <br />
+      - Aggressive Lugs Combined With Frixion® Rubber And Trail Bite™ Heel Provide All-Terrain Traction And Maximum Grip; <br />
+      - Tpu Lacing Harness Provides A Secure, Snug And Supportive Fit; <br />
+      - Compression-Molded Eva Midsoles Absorbs Shock And Offers Ample Cushioning While The Endurance Platform Eva Inserts Keep Your Feet Protected; <br />
+      - Transkinetic Heel Stabilizer Is Designed To Keep Your Heel Snug For An Enhanced Fit And Increased Stability; <br />
+      - Endurance Platform Eva Rock Guard Balances Load And Shock Forces And Protects Your Feet From Sharp Rocks.
+    </span>,
+    price: 756.00,
+    gender: 'Women',
+    color: 'Green',
+    weight: '295 g',
+    features: 'Reflective accents',
+    activity: 'Trail running',
+    sustainable: true,
+  },
+  {
+    name: 'La Sportiva Katana Laces Climbing Shoes',
+    type: 'Footwear',
+    brand: 'sportiva',
+    images: [
+      images.katanaFirst,
+      images.katanaSecond,
+      images.katanaThird
+    ],
+    size: [
+      '36',
+      '37',
+      '39',
+    ],
+    description: <span>
+      The Katana Lace, Despite Its Downturned Shape, Is A Comfortable All-Day Climbing Workhorse That Performs Well On Slabs And Can Easily Twist Into Thin Cracks But Excels Outside On Steep Single Or Multi-Pitch Routes. The Slightly Downturned Toe And Subtle Asymmetry Ensures You Can Hook Into Pockets Or Exploit The Tiniest Edges While Providing Unrivaled Comfort For The Level That It Performs At. The Katana Lace Is A Veritable Edging Machine Now Available In Men’S And Women’S Styles. <br /><br />
+      Features: <br />
+      - Revolutionary Tubular Construction With P3® Technology Provides Ultimate Comfort And Performance; <br />
+      - Highly Breathable Tongue Works In Conjunction With The Shoe Lining For Moisture Management; <br />
+      - Outsole Design Varies Between The Katana Lace Men´s (Full-Length) And The Katana Lace Women´s (Half-Length) To Support Climbers Of All Weights And Sizes; <br />
+      - Updated Heel Pattern With Increased Rubber Coverage Improves Grip While Heel Hooking; <br />
+      - Narrower Heel Sole Design Improves Heel Hooking Precision While Maintaining The Same Known Fit And Feel.
+    </span>,
+    price: 711.00,
+    gender: 'Women',
+    color: 'White',
+    weight: '250 g',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'La Sportiva Trango Ice Cube Goretex Hiking Boots',
+    type: 'Footwear',
+    brand: 'sportiva',
+    images: [
+      images.trangoicecubeFirst,
+      images.trangoicecubeSecond,
+      images.trangoicecubeThird
+    ],
+    size: [
+      '36',
+      '37',
+      '39',
+      '40'
+    ],
+    description: <span>
+      A shoe with an integrated gaiter, the ideal choice for technical use in the mountains, on ice climbs and mixed terrain. Extremely lightweight and comfortable thanks to the seamless construction methods of the uppers made using the Thermo Tech Injection™ technology. The protective, integrated snow gaiter with the water repellent zip makes the product even more waterproof while maintaining unaltered the breathability properties thanks to the use of the Gore-Tex Performance Comfort lining. <br /><br /> The HoneyComb Tech carbon footbed guarantees a firm grip and contained weigh. The all-around PU TechLite™ rand contributes to keeping volumes compact without compromising protection. Trango Ice Cube is fully crampon compatible and resolable: ideal for more technical mountaineering and both summer and winter climbs. Similar to other products in the Trango range the 3D Flex System helps to increase ankle movement thereby enhancing control and precision even on steep terrain. <br /><br />
+      Features: <br />
+      - Gaiter: water-resistant, stretch Schoeller fabric heat-sealed, water repellent zip; <br />
+      - Uppers: Abrasion resistant fabric Thermo Tech Injection™; <br />
+      - a thermo plastic injection coating protective expanded polyurethane rand; <br />
+      - Lining : Gore-Tex Insulated Comfort; <br />
+      - Underfoot: insulated carbon Honeycomb Tech 3mm; <br />
+      - Midsole: shock absorbing polyurethane toe and heel - EVA in the central zone and heel insert crampon compatible TPU inserts (back and front areas); <br />
+      - Sole: La Sportiva Cube by Vibram with Impact Brake System lugs on the heel and climbing zone at the toe; <br />
+      - Reduced weight and contained volume thanks to the thermo plastic coating on of the uppers; <br />
+      - Protective integrated snow shield gaiter with water repellent zip; <br />
+      - HoneyComb Tech Foot bed in carbon fibre: lightweight, rigid and un-deformable; <br />
+      - Fully crampon compatible shoe, can be resoled; <br />
+      - 3D Flex System facilitates ankle movement by increasing the control and the precision on steep terrain.
+    </span>,
+    price: 2177.00,
+    gender: 'Women',
+    color: 'Black',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    name: 'Mammut Nordwand High Goretex Hiking Boots',
+    type: 'Footwear',
+    brand: 'mammut',
+    images: [
+      images.nordwandhighFirst,
+      images.nordwandhighSecond,
+      images.nordwandhighThird
+    ],
+    size: [
+      '36',
+      '39',
+      '40'
+    ],
+    description: <span>
+      The Nordwand Knit High GTX takes all kinds of alpine terrain in its stride. This first fully crampon-compatible shoe with a knitted shaft is the result of three years of development work, expressed in material, performance and technology. The Nordwand Knit High GTX conquers demanding technical terrain thanks to an elasticated 3D knitted upper with a seamless design that avoids pressure points. <br /><br /> Its benefits also include a lighter weight. Contact Control ensures an optimum sure-footed step and makes the Nordwand Knit High GTX a companion that is ready for any challenge in the mountains.
+    </span>,
+    price: 2355.00,
+    gender: 'Women',
+    color: 'Black',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    name: 'Mammut Sapuen High Goretex Hiking Boots',
+    type: 'Footwear',
+    brand: 'mammut',
+    images: [
+      images.sapuenFirst,
+      images.sapuenSecond,
+      images.sapuenThird
+    ],
+    size: [
+      '37',
+      '38',
+      '40'
+    ],
+    description: <span>
+      The SAPUEN HIGH GORE-TEX® is the correct choice on all types of land. Mammut® Flextron Technology ™ supports natural foot movement and, therefore, a more efficient use of energy in hiking and mountaineering, while Mammut Georganic 3D Technology technology guarantees maximum comfort. <br /><br /> All components in contact with the foot have a high precision anatomical form, while the classic construction of the tongue offers an easy entrance. Optimized for hiking: A vibram® rubber mix for a secure grip on outer surfaces and a sole design that allows self-cleaning. Gore-Tex® waterproof membrane guarantees a dry foot.
+    </span>,
+    price: 845.00,
+    gender: 'Women',
+    color: 'Brown',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  
+
+  //* ---------------------------------------------------------- FOOTWEAR UNISEX ------------------------------------------------------ *//
+
+
+  {
+    name: 'Adidas Terrex Free Hiker Goretex Trail Running',
+    type: 'Footwear',
+    brand: 'adidas',
+    images: [
+      images.goretexFirst,
+      images.goretexSecond,
+      images.goretexThird
+    ],
+    size: [
+      '38',
+      '39',
+      '40',
+      '41',
+      '42',
+    ],
+    description: <span>
+      Intending to lead the hiking marketplace is no small feat, but the adidas Terrex Free Hiker GTX trail running shoes will surely achieve this as the Terrex series’ natural evolution. Combining the best features of their high-performance running shoes with the advantages of their more outdoor-oriented designs, these sneakers do not look like anything you have seen so far in the scene. <br /> adidas´ sportiest products inspired the Terrex Free Hiker GTX’s upper, with a Primeknit design that has received anti-wear reinforcements to protect you from difficult terrain. But Primeknit’s outstanding features are not lost by that, with a sock-like design that fits your feet perfectly and maintains the lightweight breathability that it is so well known for. To achieve greater weather protection, adidas has also added a thin GORE-TEX® layer to create an all-around, tight waterproofing. <br /> The already characteristic Continental™ rubber outsole in the Terrex series blends with a boost™ midsole, thus completing a package with great cushioning and responsiveness as well as outstanding traction that will not be deterred by any obstacle. Various TPU reinforcements on the heel and toecap serve as additional protection against injuries and accidents. Move and explore. <br /> These lightweight hiking shoes deliver next-generation comfort and freedom of movement for hikes both long and short. The adidas Primeknit upper hugs your foot for flexible, all-terrain stability, while the Boost midsole delivers endless energy to keep you moving up or down the trail. A GORE-TEX membrane sheds water while letting your feet breathe for all-conditions wear. <br /><br /> Features: <br />
+      - Regular fit; <br />
+      - Lace closure; <br />
+      - adidas Primeknit textile upper; <br />
+      - Continental™ Rubber outsole for extraordinary grip even in wet conditions.
+    </span>,
+    price: 689.00,
+    gender: 'Unisex',
+    color: 'Brown',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Trail running',
+    sustainable: false,
+  },
+  {
+    name: 'Columbia Summit Trail Running Gloves',
+    type: 'Accessories',
+    brand: 'columbia',
+    images: [
+      images.trailSummitRunningFirst,
+      images.trailSummitRunningSecond,
+      images.trailSummitRunningThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    description: <span>
+      Cold Trail: <br />
+      - With the lightweight warmth of our thermal reflective lining, these gloves won´t stop you from your run. <br /><br />
+      Phone Friendly: <br />
+      - A silicone palm grip keeps that precious phone secure in your hand, while the touchscreen-compatible digits let you use it without having to expose your hands. <br /><br />
+      Features: <br />
+      - Omni-Heat™ thermal reflective; <br />
+      - Silicone palm grip; <br />
+      - Touch screen compatible finger tip; <br />
+      - Reflective detail.
+    </span>,
+    price: 102.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '',
+    features: [
+      'Windproof',
+      'Reflective accents'
+    ],
+    activity: 'Trail running',
+    sustainable: false,
+  },
+
 
   //* ---------------------------------------------------------- FOOTWEAR KIDS -------------------------------------------------------- *//
   {
@@ -599,6 +1193,60 @@ const products = [
     gender: 'Kids',
     color: 'Green',
     weight: '',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'La Sportiva Jynx Hiking Shoes',
+    type: 'Footwear',
+    brand: 'sportiva',
+    images: [
+      images.jynxFirst,
+      images.jynxSecond,
+      images.jynxThird
+    ],
+    size: [
+      '32',
+      '34',
+      '36',
+    ],
+    description: <span>
+      When winter running sessions are long and difficult La Sportiva JYNK is an ideal running shoe for all round mountaineering activities. This versatile shoe offers technical functionality and comfort in the unpredictable mountain environment. <br /><br /> Thanks to the 3-layer construction that adds to the high quality and excellent performance of this running shoe. The seamless construction has a waterproof upper mesh that provides flexibility with utmost comfort. The sure-grip Trail Rocker sole which enables the boots to penetrate into the ground and creates a good traction against the wet rocks while you are trail running. Thanks to the Frixion rubber and Trail Bite that works exceptionally well in all sorts of trails and provides maximum grip on every sort of trail. <br /><br /> It is an ultimate mountaineering shoes designed especially for all adventure-sport junkies. La Sportiva JYNK is the answer if you are looking for a perfect trail running shoe that provides protection, traction and comfort. <br /><br /> Mountain Running® shoe for kids, Jynx is ideal for everyday use and for the first off-road running sessions. Derived from the Akasha, the Jynx takes its cushioning and comfort. The protective abrasion resistant side panels make the product long lasting and secure.
+    </span>,
+    price: 456.00,
+    gender: 'Kids',
+    color: 'Blue',
+    weight: '',
+    features: 'Waterproof',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'La Sportiva Gripit Climbing Shoes',
+    type: 'Footwear',
+    brand: 'sportiva',
+    images: [
+      images.gripitFirst,
+      images.gripitSecond,
+      images.gripitThird
+    ],
+    size: [
+      '31',
+      '34',
+      '35',
+    ],
+    description: <span>
+      Be it high intensity via ferrata or hiking excursions in the wild mountain environment La Sportiva Gripit is a perfect lightweight, comfortable shoe. This versatile climbing shoe offers technical functionality and comfort during all your mountaineering activities. <br /><br /> Features: <br />
+      - The Zero-Press Construction last is designed to eliminate pressure points in the growth plate area of the foot: avoiding pressure on the metatarsal, essential for growth; <br />
+      - Applied to a kid´s shoe the No-Edge Technology promotes sensory development and proprioceptive thanks to the sensitivity on the support points; <br />
+      - The Fast Lacing System allows for customization of the fit: by acting on the closure, the heel narrows or widens depending on the need; <br />
+      - Eco leather uppers made produced with metal-free tanning methods.
+    </span>,
+    price: 338.00,
+    gender: 'Kids',
+    color: 'Yellow',
+    weight: '200 g',
     features: '',
     activity: 'Climbing',
     sustainable: false,
@@ -710,6 +1358,43 @@ const products = [
     activity: 'Hiking',
     sustainable: true,
   },
+  {
+    name: 'Mammut RG Hiking Pants',
+    type: 'Clothing',
+    brand: 'mammut',
+    images: [
+      images.rgFirst,
+      images.rgSecond,
+      images.rgThird
+    ],
+    size: [
+      'L',
+      'XL',
+      'XXL',
+    ],
+    description: <span>
+      You can look forward to a relaxed hike in the Hiking Pants Men, with their lightweight, stretch material for optimum comfort. The PFC-free DWR treatment on the outer material reliably repels water to protect you from sudden rain showers. The pants also impress with their quick-drying properties - ideal for changeable weather in the mountains. <br /><br /> Features: <br />
+      - Seat pocket with zipper; <br />
+      - Quick-drying; <br />
+      - 2 slit pockets with zipper; <br />
+      - Pre-shaped knee section; <br />
+      - Water-repellent thanks to DWR treatment on outer material; <br />
+      - With PFC-free DWR treatment; <br />
+      - Lightweight, stretchable material for optimum comfort; <br />
+      - Weight: 240 g; <br />
+      - Cut: Regular Fit.
+    </span>,
+    price: 391.00,
+    gender: 'Men',
+    color: 'Black',
+    weight: '240 g',
+    features: [
+      'Windproof',
+      'Stretch'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
 
   //* ------------------------------------------------------------ CLOTHING WOMEN -------------------------------------------------------- *//
   {
@@ -808,6 +1493,45 @@ const products = [
     features: [
       'UV Protection',
       'WaterProof',
+      'Windproof',
+      'Stretch'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Mammut Hiking Shorts Pants',
+    type: 'Clothing',
+    brand: 'mammut',
+    images: [
+      images.shortsFirst,
+      images.shortsSecond,
+      images.shortsThird
+    ],
+    size: [
+      'XS',
+      'S',
+      'M'
+    ],
+    description: <span>
+      Equipped for your next hike: the Hiking Shorts Women are made from a lightweight, stretch material that feels very comfortable to wear. A DWR treatment makes the outer material water-repellent. The shorts’ quick-drying properties make them a practical must-have garment for long hikes. <br /><br />
+      Features: <br />
+      - Seat pocket with zipper; <br />
+      - Quick-drying; <br />
+      - Water-repellent thanks to DWR treatment on outer material; <br />
+      - 2 side pockets with concealed zippers; <br />
+      - Lightweight, stretchable material for optimum comfort; <br />
+      - Weight: 126 g; <br />
+      - Cut: Athletic Fit; <br />
+      - Lining: 100% Polyamide; <br />
+      - Main material: 94% Polyamide, 6% Spandex;
+    </span>,
+    price: 274.00,
+    gender: 'Women',
+    color: 'Beige',
+    weight: '126 g',
+    features: [
+      'UV Protection',
       'Windproof',
       'Stretch'
     ],
@@ -1131,6 +1855,346 @@ const products = [
     activity: 'Hiking',
     sustainable: true,
   },
+  {
+    name: 'Haglöfs Vina 40L Hiking Backpack',
+    type: 'Accesories',
+    brand: 'haglofs',
+    images: [
+      images.vina40lFirst,
+      images.vina40lSecond,
+      images.vina40lThird
+    ],
+    size: [
+      'one-size',
+    ],
+    description: <span>
+      The Haglofs Vina 40L Backpack has been created to be an excellent ally for your mountain equipment for one or two days and you can carry everything you need to spend one night, such as hydration, food, and clothes to protect you against any weather change, so it is prepared and can keep your items dry. <br /><br />
+      Features: <br />
+      - Airback suspension system, provides ventilation and airflow through the back contact zone; <br />
+      - Available in size S/M and M/L suspension system; <br />
+      - Ventilated harness and hip belt; <br />
+      - Full length zippered side opening for easy access to main compartment; <br />
+      - Large stretch pocket on the front; <br />
+      - Elastic side pocket with finger guide loop, reachable on the go; <br />
+      - Zippered side pocket, reachable on the go; <br />
+      - Zippered pockets on the hip belt; <br />
+      - Attachment for trekking poles and ice axe; <br />
+      - Hydration system compatible with internal sleeve with hose routers on the shoulder straps; <br />
+      - Dual side compression; <br />- Fixed lid with one spacious pocket and key holder; <br />
+      - Dimensions (height × depth × width):70x23x32 cm.
+    </span>,
+    price: 711.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: 'max 40L',
+    features: 'Frameless',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Haglöfs L.I.M 35L Hiking Backpack',
+    type: 'Accesories',
+    brand: 'haglofs',
+    images: [
+      images.lim35lFirst,
+      images.lim35lSecond,
+      images.lim35lThird
+    ],
+    size: [
+      'one-size',
+    ],
+    description: <span>
+      The Haglöfs L.I.M 35L Backpack has been designed for mountain excursions for one or two days when you need to carry the essentials, such as hydration, food, and clothes, in an organized, light, and safe way. <br /><br />
+      Features: <br />
+      - Airback suspension system:provides ventilation and airflow through the back contact zone; <br />
+      - Elastic side pockets; <br />
+      - Zippered elastic hip belt pockets; <br />
+      - Hydration system compatible; <br />
+      - Elastic cord for compression and gear attachment; <br />
+      - Fixed top lid with pocket; <br />
+      - Adjustable sternum strap Padded hip belt; <br />
+      - Load lifters; <br />
+      - Dimensions (height × depth × width):59x31x25 cm.
+    </span>,
+    price: 630.00,
+    gender: 'Unisex',
+    color: 'White',
+    weight: 'max 35L',
+    features: 'Frameless',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Haglöfs Ängd 60L Hiking Backpack',
+    type: 'Accesories',
+    brand: 'haglofs',
+    images: [
+      images.angd60lFirst,
+      images.angd60lSecond,
+    ],
+    size: [
+      'one-size',
+    ],
+    description: <span>
+      Haglofs has developed the trekking backpack ideal for long trips. It offers a large capacity of space, in fact, it is one of the best equipped backpacks from Haglofs, designed especially for women. <br /><br />
+      Features: <br />
+      - With features galore, and space for everything you need, Ängd W is our best-equipped backpack specifically designed for women; <br />
+      - Smart storage and roomy compartments give plenty of room for all your gear, while a large front opening lets you access it with ease; <br />
+      - It contains a multitude of pockets to keep your gear organized, it´s loaded with features, and it´s equipped with our updated Instant W+ Adjustable suspension system.
+    </span>,
+    price: 630.00,
+    gender: 'Women',
+    color: 'Red',
+    weight: 'max 60L',
+    features: '',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Haglöfs Vide 20L Hiking Backpack',
+    type: 'Accesories',
+    brand: 'haglofs',
+    images: [
+      images.vide20lFirst,
+      images.vide20lSecond,
+      images.vide20lThird
+    ],
+    size: [
+      'one-size',
+    ],
+    description: <span>
+      VIDE 20L the new backpack for camping and hiking from HAGLOFS , is made of polyamide with Oxford technology providing great resistance and durability, combined with an elegant finish. It has a capacity of approximately 20 liters, perfect for your outdoor activities. <br /><br />
+      Features: <br />
+      - 100% recycled main fabric, weather-resistant and highly durable; <br />
+      - Semi-ventilated back panel; <br />
+      - Internal hydration bladder sleeve that doubles as computer sleeve for laptops up to 15´´; <br />
+      - Two elastic side pockets for water bottles or extra gear; <br />
+      - External cord for ease of access to items such as clothing; <br />
+      - Easily-accessible zippered front pocket; <br />
+      - One zippered top pocket; <br />
+      - Compression side straps to secure internal contents; <br />
+      - Adjustable waist belt, removable; <br />
+      - Adjustable chest strap for enhanced comfort when walking; <br />
+      - Easy-grab top handle; <br />
+      - Key holder; <br />
+      - Fluorocarbon free DWR-treated surfaces:helps repel water & dirt; <br />
+      - Fabrics:100% Recycled Polyamide 200D Rip Stop, bluesign® approved; <br />
+      - Origin Country:Vietnam.
+    </span>,
+    price: 340.00,
+    gender: 'Unisex',
+    color: 'Green',
+    weight: 'max 20L',
+    features: 'Frameless',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'La Sportiva X-Cursion 28L Hiking Backpack',
+    type: 'Accesories',
+    brand: 'sportiva',
+    images: [
+      images.xcursion28lFirst,
+      images.xcursion28lSecond,
+    ],
+    size: [
+      'one-size',
+    ],
+    description: <span>
+      An essential sport gear for all backpack enthusiasts, La Sportiva X-Cursion 28L is a ideal, sleek, lightweight backpack designed for your hiking, trekking and everyday use. It can very well adapt from trail to urban use, as it is compatible with hydration systems and is durable and comfortable to carry. <br /><br /> The two front pockets have zippers on the side and the top pocket on the backpack has a key clip which ensures protection and the small compartment provides storage capacity for small items like pens. The two side pockets provides the adequate space for holding water bottles or containers. The internal pockets inside a large volume main compartment has enough space for clothes and equipment, while the outside small pockets have space for eatables like enerybars. <br /><br /> The padded back panel with contoured shoulder straps and adjustable sternum strap makes it easy and accessible to grab and go. The ventral belt can be adjusted or can be removed as per your wish, also thanks to the back opening with zipper that you now have space for an extra pair of shoes. Also, the elastic holder outside is easy to use and can carry extra jacket or any clothing item safely. <br /><br /> With lots of space and pockets, La Sportiva X-Cursion 28L is a very high quality and durable backpack for all globetrotters. Backpacks are the only true companion on your trekking or hiking trips. So, choose wisely! Ultra-lightweight mesh-reinforced nylon backpack, drop pocket, adjustable elastic outer organizer, non-padded shoulder straps and minimal hip belt. Predisposition for hydration systems. <br /><br /> Hose construction, ample top opening with zipper and upper outer pocket, large secondary opening on the back with zip allowing access to the interior of the backpack throughout its length.
+    </span>,
+    price: 480.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: 'max 28L',
+    features: 'Frameless',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'La Sportiva Trango Hiking Poles',
+    type: 'Accesories',
+    brand: 'sportiva',
+    images: [
+      images.trangopolesFirst,
+      images.trangopolesSecond,
+      images.trangopolesThird
+    ],
+    size: [
+      64-140 + 'cm',
+    ],
+    description: <span>
+      Strong and heavy duty poles. Aluminium structure and design guarantees that they will hold the entire weight of the user even during the most challenging downhill hikes. <br /><br /> Specifications: <br />
+      - Materials: Aluminium alloy 6013, Eva Grip with Neoprene strap, E-basket with Carbide tip. Tip rubber protection, 50 mm basket; <br />
+      - Structure: 3 Sections telescopic, Flexy Locking System; <br />
+      - Weight: 230gr.
+    </span>,
+    price: 267.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '230 g',
+    features: '',
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Mammut Comfort Fast Adjust Harness Climbing',
+    type: 'Accesories',
+    brand: 'mammut',
+    images: [
+      images.comfortfastFirst,
+      images.comfortfastSecond,
+    ],
+    size: [
+      'M',
+      'L'
+    ],
+    description: <span>
+      Comfort Fast Adjust Harness Men. A comfortable and breathable climbing harness. Laser-cut material for greater breathability and robustness. Optimum weight distribution. The anatomically optimized shape in combination with the soft edge of the hip belt give the Comfort Fast Adjust Harness Men unparalleled comfort for long climbs. <br /><br /> Features: <br />
+      - MAMMUT CONNECT inside; <br />
+      - Laser-cut fabric for breathability and robustness; <br />
+      - Splitt Webbing Technology for optimal weight distribution; <br />
+      - 4 large pre-formed material loops for easy attachment; <br />
+      - Quickly adjustable leg loops thanks to Fast Adjust buckles; <br />
+      - Protection of the binding loop by high-quality plastic to avoid abrasive wear and to prolongthe service life; <br />
+      - Fastening for magnesium bags; <br />
+      - Maximum comfort thanks to the particularly soft upper edge of the hip belt; <br />
+      - Storage bag included; <br />
+      - Certification: CE EN 12277 Type C, UIAA; <br />
+      - Strong Haul loop (2 kN); <br />
+      - Indicator in the binding loop indicates when the harness needs to be replaced; <br />
+      - 4 fastening loops for ice screws; <br />
+      - Easily slidable, hot forged aluminium buckle; <br />
+      - Drop Seat Function; <br />
+      - Cut: Basic.
+    </span>,
+    price: 682.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'Mammut Climbing Sender Wire Quickdraw',
+    type: 'Accesories',
+    brand: 'mammut',
+    images: [
+      images.senderwireFirst,
+      images.senderwireSecond,
+      images.senderwireThird
+    ],
+    size: [
+      17 + 'cm',
+      60 + 'cm'
+    ],
+    description: <span>
+      Sender keylock quickdraws are designed for alpine climbing and high-performance sport. The combination of extremely light, compact carabiners with wire gates and Dyneema® slings delivers an ideal balance of weight and performance. The weight-saving wire gates, designed for year-round use, are fully functional even in snow and ice and have less gate flutter and shutter. <br /><br /> The thin sling provides a firm grip; a robust sling protector keeps the lower carabiner in place and reduces wear. The bright indicator shows that the sling and protector are attached correctly to the carabiner. For climbers looking for the lightest keylock quickdraws for long routes and hard sends. <br /><br /> Features: <br />
+      - Excellent weight-to-breaking load ratio thanks to the simple carabiner design; <br />
+      - Protector with indicator for correct attachment; <br />
+      - Lightweight and resilient Dyneema sling; <br />
+      - Protector keeps the lower carabiner in position and reduces wear on the sling; <br />
+      - Weight-saving wire gate for year-round use; <br />
+      - The lower inertia of wire gates means less flutter and shutter; <br />
+      - Height: 90 mm; <br />
+      - Width: 54 mm; <br />
+      - Size: 17 cm; <br />
+      - Vertical breaking load: 21 kN; <br />
+      - Open breaking load: 8 kN; <br />
+      - Horizontal breaking load: 7 kN; <br />
+      - Weight: 68 g.
+    </span>,
+    price: 105.00,
+    gender: 'Unisex',
+    color: 'White',
+    weight: '68 g',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'Mammut Crag Sender Climbing Helmet',
+    type: 'Accesories',
+    brand: 'mammut',
+    images: [
+      images.cragsenderFirst,
+      images.cragsenderSecond,
+      images.cragsenderThird
+    ],
+    size: [
+      52-57 + 'cm',
+      56-61 + 'cm'
+    ],
+    description: <span>
+      For any outdoor activity, keeping your head protected is essential. And if you´re an experienced mountaineer or climber, you know that you need the greatest protection available while keeping the weight as low as possible. If you can relate to this, the Mammut Crag Sender helmet is for you. Lightweight, well-ventilated, and built with the highest quality materials in the marketplace, this helmet from the Swiss brand will provide you with unwavering security on any cliff or slope. <br /><br /> Features: <br />
+      - Certification: CE EN 12492; <br />
+      - Extended MAMMUT safety test tests helmet with regard to robustness especially after side impact; <br />
+      - In-mold construction with EPS core and Kevlar reinforcements; <br />
+      - Additional protection on front and back as well as on the sides; <br />
+      - Flat profile; <br />
+      - Large ventilation openings and integrated air duct; <br />
+      - Additional padding for perfect fit; <br />
+      - Easy mounting of a headlamp with front bracket and elastic loops on the backside; <br />
+      - Fully adjustable chin strap for optimum fit; <br />
+      - Includes bag for convenient transport; <br />
+      - Cut: Basic; <br />
+      - Weight: 199 gr 52-67 / 219 gr 56-61.
+    </span>,
+    price: 105.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '199~219 g',
+    features: '',
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'Mammut Trion Spine 75L Hiking Backpack',
+    type: 'Accesories',
+    brand: 'mammut',
+    images: [
+      images.trion75lFirst,
+      images.trion75lSecond,
+    ],
+    size: [
+      'one-size'
+    ],
+    description: <span>
+      If you´re looking for a luxury mountain climbing experience, the Mammut Trion Spine 75 backpack will be your best companion. Featuring several improvements designed to give you the best possible comfort, this bag is ideal for long hikes and demanding trips into the wilderness. <br /><br /> Features: <br />
+      - High-density, 2-layer Eva back padding; hip belt and shoulder straps with stretch fabric cover; <br />
+      - Internal zipper compartment for valuables; <br />
+      - Rope fixing strap under the flap; <br />
+      - Height adjustable flap with internal and external pocket; <br />
+      - Trekking pole carrier; <br />
+      - Daisy chain loop; <br />
+      - Lateral compression straps, can also be tensioned at front to carry gear; <br />
+      - 2 strong ice axe attachments; <br />
+      - Gear loop on hip belt; <br />
+      - Hydration system-compatible; <br />
+      - Huge front zipper access to main compartment; <br />
+      - Zipper pocket on hip belt; <br />
+      - Reinforced side ski attachment; <br />
+      - Suspension system with patented Active Spine Technology to support a natural gait; <br />
+      - Height of the suspension system can be adjusted with a simple movement; <br />
+      - Large internal pocket in the front opening; <br />
+      - Large pocket on the shoulder strap; <br />
+      - Bottle holder on side; <br />
+      - Actual volume: 75 L; <br />
+      - Length: 33 cm; <br />
+      - Height: 74 cm; <br />
+      - Width: 34 cm; <br />
+      - Weight: 2640 g.
+    </span>,
+    price: 1726.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: '2640 g',
+    features: 'Frameless',
+    activity: 'Hiking',
+    sustainable: true,
+  },
+
 
   //* ------------------------------------------------------------ EQUIPMENT ----------------------------------------------------- *//
 
@@ -1172,79 +2236,9 @@ const products = [
     color: 'Green',
     weight: '1.65 kg',
     features: '',
-    activity: 'Hiking',
+    activity: 'Camping',
     sustainable: false,
-  },
-
-  //* ------------------------------------------------------------- RUNNING -------------------------------------------------------- *//
-
-  {
-    name: 'Adidas Terrex Free Hiker Goretex Trail Running',
-    type: 'Footwear',
-    brand: 'adidas',
-    images: [
-      images.goretexFirst,
-      images.goretexSecond,
-      images.goretexThird
-    ],
-    size: [
-      '38',
-      '39',
-      '40',
-      '41',
-      '42',
-    ],
-    description: <span>
-      Intending to lead the hiking marketplace is no small feat, but the adidas Terrex Free Hiker GTX trail running shoes will surely achieve this as the Terrex series’ natural evolution. Combining the best features of their high-performance running shoes with the advantages of their more outdoor-oriented designs, these sneakers do not look like anything you have seen so far in the scene. <br /> adidas´ sportiest products inspired the Terrex Free Hiker GTX’s upper, with a Primeknit design that has received anti-wear reinforcements to protect you from difficult terrain. But Primeknit’s outstanding features are not lost by that, with a sock-like design that fits your feet perfectly and maintains the lightweight breathability that it is so well known for. To achieve greater weather protection, adidas has also added a thin GORE-TEX® layer to create an all-around, tight waterproofing. <br /> The already characteristic Continental™ rubber outsole in the Terrex series blends with a boost™ midsole, thus completing a package with great cushioning and responsiveness as well as outstanding traction that will not be deterred by any obstacle. Various TPU reinforcements on the heel and toecap serve as additional protection against injuries and accidents. Move and explore. <br /> These lightweight hiking shoes deliver next-generation comfort and freedom of movement for hikes both long and short. The adidas Primeknit upper hugs your foot for flexible, all-terrain stability, while the Boost midsole delivers endless energy to keep you moving up or down the trail. A GORE-TEX membrane sheds water while letting your feet breathe for all-conditions wear. <br /><br /> Features: <br />
-      - Regular fit; <br />
-      - Lace closure; <br />
-      - adidas Primeknit textile upper; <br />
-      - Continental™ Rubber outsole for extraordinary grip even in wet conditions.
-    </span>,
-    price: 689.00,
-    gender: 'Unisex',
-    color: 'Brown',
-    weight: '',
-    features: 'Waterproof',
-    activity: 'Trail running',
-    sustainable: false,
-  },
-  {
-    name: 'Columbia Summit Trail Running Gloves',
-    type: 'Accessories',
-    brand: 'columbia',
-    images: [
-      images.trailSummitRunningFirst,
-      images.trailSummitRunningSecond,
-      images.trailSummitRunningThird
-    ],
-    size: [
-      'S',
-      'M',
-      'L',
-    ],
-    description: <span>
-      Cold Trail: <br />
-      - With the lightweight warmth of our thermal reflective lining, these gloves won´t stop you from your run. <br /><br />
-      Phone Friendly: <br />
-      - A silicone palm grip keeps that precious phone secure in your hand, while the touchscreen-compatible digits let you use it without having to expose your hands. <br /><br />
-      Features: <br />
-      - Omni-Heat™ thermal reflective; <br />
-      - Silicone palm grip; <br />
-      - Touch screen compatible finger tip; <br />
-      - Reflective detail.
-    </span>,
-    price: 102.00,
-    gender: 'Unisex',
-    color: 'Black',
-    weight: '',
-    features: [
-      'Windproof',
-      'Reflective accents'
-    ],
-    activity: 'Trail running',
-    sustainable: false,
-  },
+  }, 
 ]
 
 
@@ -1269,12 +2263,12 @@ const brands = {
   haglofs: {
     name: 'Haglofs',
     logo: images.haglofsLogo,
-    logoSize: 40
+    logoSize: 25
   },
   mammut: {
     name: 'Mammut',
     logo: images.mammutLogo,
-    logoSize: 40
+    logoSize: 22
   },
   merrell: {
     name: 'Merrell',
@@ -1314,7 +2308,7 @@ const brands = {
   sportiva: {
     name: 'La Sportiva',
     logo: images.sportivaLogo,
-    logoSize: 35
+    logoSize: 15
   },
   summit: {
     name: 'Sea To Summit',
