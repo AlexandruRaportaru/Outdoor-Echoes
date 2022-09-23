@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { data } from '../../constants';
+import { onDisableScroll, onEnableScroll } from '../../utils';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -12,7 +13,7 @@ const Cart = () => {
   
     const handleCartVisible = () => {
         setToggleCart(true);
-        document.getElementsByTagName("html")[0].style.overflow = "hidden";
+        onDisableScroll();
   
         setTimeout(() => {
             backgroundRef.current.style.display = 'block';
@@ -21,7 +22,7 @@ const Cart = () => {
     
     const handleCartHidden = () => {
         setToggleCart(false);
-        document.getElementsByTagName("html")[0].style.overflow = "visible";
+        onEnableScroll();
         backgroundRef.current.style.display = 'none';
     }
   

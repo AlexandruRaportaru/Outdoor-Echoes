@@ -96,7 +96,7 @@
 .app__navbar-menu__background {
     background: var(--color-purple);
     opacity: 0.5;
-    width: calc(100vw - 280px);
+    width: calc(100% - 280px);
     position: absolute;
     left: 280px;
     top: 0;

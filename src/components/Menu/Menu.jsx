@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { data } from '../../constants';
+import { onDisableScroll, onEnableScroll } from '../../utils'
 import { Link } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -15,19 +16,19 @@ const Menu = () => {
 
   const handleMenuVisible = () => {
     setToggleMenu(true);
-    document.getElementsByTagName("html")[0].style.overflow = "hidden";
+    onDisableScroll();
 
     setTimeout(() => {
       backgroundRef.current.style.display = 'block';
     }, 310)
   }
-  
+
   const handleMenuHidden = () => {
     setToggleMenu(false);
-    document.getElementsByTagName("html")[0].style.overflow = "visible";
+    onEnableScroll();
     backgroundRef.current.style.display = 'none';
   }
-
+  
   return (
     <>
       <Link to='#' className='app__navbar-menu' onClick={handleMenuVisible}>
@@ -61,7 +62,7 @@ const Menu = () => {
             </div>
           </li>
           {data.menus.map((menu, index) => (
-            <Link key={index} to={menu.path}>
+            <Link key={index} to={menu.path} onClick={handleMenuHidden}>
               <li className={menu.className}>
                 {menu.icon}{menu.title}
               </li>

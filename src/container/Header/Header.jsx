@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper';
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import { images, data } from '../../constants';
 
 import './Header.css';
@@ -54,7 +55,7 @@ const Header = () => {
                 <h1 className='p__headtext'>{slide.slideTitle}</h1>
                 <p className='p__yanone'>{slide.slideParagraph}</p>
                 <div className='swiper-background purple__bg'></div>
-                <a href='/' className='custom__button'>VIEW MORE</a>
+                <Link to={`/products/brand_${slide.path}`} className='custom__button'>VIEW MORE</Link>
               </SwiperSlide>
             ))}
             <div className='swiper-left' ref={swiperPrevRef}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { data } from '../../constants';
 
 import './Activities.css';
@@ -17,7 +18,7 @@ const Activities = () => (
           <div className='app__activities-cards_content-background purple__bg'></div>
           <div className='app__activities-cards_content-text'>
             <h1 className='p__headtext'>{activity.cardTitle}</h1>
-            <a href='/'className='custom__button'>Shop Now</a>
+            <Link to={`/products/activity_${activity.path}`} className='custom__button'>Shop Now</Link>
           </div>
         </div>
       )}

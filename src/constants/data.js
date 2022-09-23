@@ -2,8 +2,7 @@ import images from './images';
 import { IoIosMan, IoIosWoman } from 'react-icons/io';
 import { ImManWoman, ImHome3 } from 'react-icons/im';
 import { BsSunglasses, BsTools } from 'react-icons/bs';
-import { FaAngellist } from 'react-icons/fa';
-import { TbDiscount2 } from 'react-icons/tb';
+import { GrProjects } from 'react-icons/gr';
 
 const productsExamples = [
   'A T-SHIRT',
@@ -23,45 +22,39 @@ const menus = [
     className: 'menu-category'
   },
   {
-    title: 'Men',
+    title: 'Products',
     path: '/products',
+    icon: <GrProjects style={{margin: '0 15px 4px 0'}}/>,
+    className: 'menu-category'
+  },
+  {
+    title: 'Men',
+    path: '/products/gender_Men',
     icon: <IoIosMan style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
     title: 'Women',
-    path: '/products',
+    path: '/products/gender_Women',
     icon: <IoIosWoman style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
     title: 'Kids',
-    path: '/products',
+    path: '/products/gender_Kids',
     icon: <ImManWoman style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
-    title: 'Accesories',
-    path: '/products',
+    title: 'Accessories',
+    path: '/products/type_Accessories',
     icon: <BsSunglasses style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   },
   {
-    title: 'Gear',
-    path: '/products',
+    title: 'Equipment',
+    path: '/products/type_Equipment',
     icon: <BsTools style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
-  },
-  {
-    title: 'Brands',
-    path: '/products',
-    icon: <FaAngellist style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
-  },
-  {
-    title: 'Sales',
-    path: '/',
-    icon: <TbDiscount2 style={{margin: '0 15px 4px 0'}}/>,
     className: 'menu-category'
   }
 ]
@@ -74,6 +67,7 @@ const swiperImages = [
     slideLogo: images.adidasLogo,
     logoSize: 20,
     slideTitle: 'HIKE IN STYLE',
+    path: 'Adidas',
     slideParagraph: <span>Adventure awaits. Hit the trail with gusto in adidas <br/> hiking shoes and boots for adults and kids. Count on <br/>all-weather performance and comfort on any terrain.</span>
   },
   {
@@ -82,6 +76,7 @@ const swiperImages = [
     slideLogo: images.columbiaLogo,
     logoSize: 20,
     slideTitle: <span>“Nature isn't the only <br/> mother of invention.”</span>,
+    path: 'Columbia',
     slideParagraph: <span>Gert Boyle - Founder of Columbia Sportswear</span>
   },
   {
@@ -90,6 +85,7 @@ const swiperImages = [
     slideLogo: images.diamondLogo,
     logoSize: 15,
     slideTitle: 'HIKING & TREKKING',
+    path: 'Black Diamond',
     slideParagraph: <span>From quick jaunts on your favorite local trail to multi-day <br/> adventures in remote mountains, this is the gear to take you there.</span>
   },
   {
@@ -98,6 +94,7 @@ const swiperImages = [
     slideLogo: images.haglofsLogo,
     logoSize: 20,
     slideTitle: <span>Keep the heat, <br/> lose the moisture</span>,
+    path: 'Haglofs',
     slideParagraph: <span>We try to make the most sustainable products <br/> we can at Haglöfs because we love the outdoors.</span>
   },
   {
@@ -106,6 +103,7 @@ const swiperImages = [
     slideLogo: images.mammutLogo,
     logoSize: 20,
     slideTitle: 'EXPLORE THE PEAKS',
+    path: 'Mammut',
     slideParagraph: <span>Get the best possible outdoor experience with <br/> best-selling gear backed by 160 years <br/> of passion and know-how.</span>
   },
   {
@@ -114,6 +112,7 @@ const swiperImages = [
     slideLogo: images.merrellLogo,
     logoSize: 20,
     slideTitle: 'HIKE IT BABY!',
+    path: 'Merrell',
     slideParagraph: <span>Once your little one has learned to walk, gear up for <br/> all the adventures in store with a great pair <br/> of kids’ shoes from Merrell.</span>
   },
   {
@@ -122,6 +121,7 @@ const swiperImages = [
     slideLogo: images.northLogo,
     logoSize: 14,
     slideTitle: 'STEP INTO YOUR STORY',
+    path: 'The North Face',
     slideParagraph: <span>To break records, or break down barrers. Everyone goes there <br/> for a different reason. Only you can discover your trail.</span>
   },
   {
@@ -130,6 +130,7 @@ const swiperImages = [
     slideLogo: images.ospreyLogo,
     logoSize: 14,
     slideTitle: 'BEST BACKPACK OF 2022',
+    path: 'Osprey',
     slideParagraph: <span>The Osprey Anti-Gravity Suspension System <br/> makes even heavy loads seem lightweight.</span>
   },
   {
@@ -138,6 +139,7 @@ const swiperImages = [
     slideLogo: images.patagoniaLogo,
     logoSize: 15,
     slideTitle: 'QUALITY GUARANTEE',
+    path: 'Patagonia',
     slideParagraph: <span>Because we know prioritizing durability results <br/> in consuming less energy, wasting less <br/> water and creating less trash.</span>
   },
   {
@@ -146,6 +148,7 @@ const swiperImages = [
     slideLogo: images.petzlLogo,
     logoSize: 14,
     slideTitle: 'Access the inaccessible',
+    path: 'Petzl',
     slideParagraph: <span>Petzl headlamps have been in constant <br/> evolution for over 40 years. <br/> Grab one for your gear.</span>
   },
   {
@@ -154,6 +157,7 @@ const swiperImages = [
     slideLogo: images.salewaLogo,
     logoSize: 14,
     slideTitle: 'Hike & camp',
+    path: 'Salewa',
     slideParagraph: <span>Mountains are our mentors, never judging yet <br/> offering endless possibilities. Mountains connect <br/> us to one another. They are the bond that <br/> unites our community.</span>
   },
   {
@@ -162,6 +166,7 @@ const swiperImages = [
     slideLogo: images.salomonLogo,
     logoSize: 20,
     slideTitle: <span>New season, <br/> new adventures</span>,
+    path: 'Salomon',
     slideParagraph: <span>Time to play in the wild. Come with us and explore <br/> new lands without fear. Join us.</span>
   },
   {
@@ -170,6 +175,7 @@ const swiperImages = [
     slideLogo: images.sportivaLogo,
     logoSize: 15,
     slideTitle: 'Mountain running boots',
+    path: 'La Sportiva',
     slideParagraph: <span>Gore-Tex membranes and La Sportiva technologies guarantee, <br/> snug fit, lightweight and waterproofing combined with <br/> technical performance and durability.</span>
   },
   {
@@ -178,6 +184,7 @@ const swiperImages = [
     slideLogo: images.summitLogo,
     logoSize: 20,
     slideTitle: <span>Live the luxury <br/> in the wild</span>,
+    path: 'Sea To Summit',
     slideParagraph: <span>The Telos two-person freestanding tent will radically change your <br/> perception of what an ultralight backpacking tent can be.</span>
   },
 ]
@@ -190,35 +197,40 @@ const activitiesCards = [
     cardName: 'running-card',
     cardHeight: 400,
     cardTitle: 'Running',
-    cardClass: 'card1'
+    cardClass: 'card1',
+    path: 'Trail running',
   },
   {
     cardActivity: images.campingCard,
     cardName: 'camping-card',
     cardHeight: 450,
     cardTitle: 'Camping',
-    cardClass: 'card2'
+    cardClass: 'card2',
+    path: 'Camping',
   },
   {
     cardActivity: images.hikingCard,
     cardName: 'hiking-card',
     cardHeight: 500,
     cardTitle: 'Hiking',
-    cardClass: 'card3'
+    cardClass: 'card3',
+    path: 'Hiking',
   },
   {
     cardActivity: images.climbingCard,
     cardName: 'climbing-card',
     cardHeight: 450,
     cardTitle: 'Climbing',
-    cardClass: 'card4'
+    cardClass: 'card4',
+    path: 'Climbing',
   },
   {
     cardActivity: images.expeditionsCard,
     cardName: 'expeditions-card',
     cardHeight: 400,
     cardTitle: 'Expeditions',
-    cardClass: 'card5'
+    cardClass: 'card5',
+    path: 'Expeditions',
   },
 ]
 
@@ -229,19 +241,18 @@ const products = [
   {
     name: 'Adidas Terrex Swift R2 Hiking Shoes',
     type: 'Footwear',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.swiftR2First,
       images.swiftR2Second,
       images.swiftR2Third
     ],
     size: [
-      '41',
-      '42',
-      '43',
-      '44',
-      '45',
-      '46',
+      41 + 'EU',
+      42 + 'EU',
+      44 + 'EU',
+      45 + 'EU',
+      46 + 'EU',
     ],
     description: <span>
       Moving quickly and smoothly all over the mountain has always been the goal of adidas’s beloved Terrex series. If you have been asking yourself why hiking practitioners around the world love these sneakers, look no further than the adidas Terrex Swift R2 trail running shoes. <br /> Terrex is widely recognized for the durability and adaptability of its products and the Swift R2 is no exception, with a ripstop mesh upper specially designed to keep your foot safe thanks to the delightful interaction between TPU reinforcements and a molded TPU toecap. Putting on these shoes is faster and easier than ever thanks to the Lace Bungee, which automatically fastens cables just by touching a button and pulling the safety device around them. <br /> In the sole unit, the legendary Traxion outsole, made of Continental™ compound rubber, provides phenomenal grip on steep terrain no matter how wet or difficult to get through. Thanks to a lightweight, soft EVA midsole, cushioning is of paramount importance in the Swift R2, providing greater comfort when speeding through complex terrain and climbing angled hills. Move swiftly through the mountains in these mens hiking shoes. The lightweight, breathable build features a speed lacing system. A rugged Traxion outsole with grippy Continental Rubber supports travel over any terrain, wet or dry.<br />Features: <br />
@@ -255,14 +266,14 @@ const products = [
     gender: 'Men',
     color: 'Black',
     weight: 'Over 300g',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Columbia Firecamp Fleece III Hiking Shoes',
     type: 'Footwear',
-    brand: 'columbia',
+    brand: 'Columbia',
     images: [
       images.firecampFleece3First,
       images.firecampFleece3Second,
@@ -288,14 +299,16 @@ const products = [
     gender: 'Men',
     color: 'Blue',
     weight: '300 g',
-    features: 'Thermal',
+    features: [
+      'Thermal'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Black Diamond Mission XP Leather Hiking Shoes',
     type: 'Footwear',
-    brand: 'diamond',
+    brand: 'Black Diamond',
     images: [
       images.missionXPFirst,
       images.missionXPSecond,
@@ -321,14 +334,16 @@ const products = [
     gender: 'Men',
     color: 'Green',
     weight: '300 g',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Black Diamond Shadow LV Climbing Shoes',
     type: 'Footwear',
-    brand: 'diamond',
+    brand: 'Black Diamond',
     images: [
       images.shadowLVFirst,
       images.shadowLVSecond,
@@ -356,14 +371,14 @@ const products = [
     gender: 'Men',
     color: 'Black',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'Haglöfs Duality AT1 Goretex Hiking Boots',
     type: 'Footwear',
-    brand: 'haglofs',
+    brand: 'Haglofs',
     images: [
       images.dualityat1First,
       images.dualityat1Second,
@@ -399,14 +414,16 @@ const products = [
     gender: 'Men',
     color: 'Green',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Haglöfs Skuta Mid Proof Eco Hiking Boots',
     type: 'Footwear',
-    brand: 'haglofs',
+    brand: 'Haglofs',
     images: [
       images.skutaecoFirst,
       images.skutaecoSecond,
@@ -424,14 +441,16 @@ const products = [
     gender: 'Men',
     color: 'Brown',
     weight: '400 g',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Haglöfs L.I.M FH Goretex Low Hiking Boots',
     type: 'Footwear',
-    brand: 'haglofs',
+    brand: 'Haglofs',
     images: [
       images.limfhFirst,
       images.limfhSecond,
@@ -463,14 +482,16 @@ const products = [
     gender: 'Men',
     color: 'Blue',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'La Sportiva Blizzard Goretex Trail Running Shoes',
     type: 'Footwear',
-    brand: 'sportiva',
+    brand: 'La Sportiva',
     images: [
       images.blizzardFirst,
       images.blizzardSecond,
@@ -488,14 +509,16 @@ const products = [
     gender: 'Men',
     color: 'Black',
     weight: '300 g',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Trail running',
     sustainable: false,
   },
   {
     name: 'La Sportiva Mythos Climbing Shoes',
     type: 'Footwear',
-    brand: 'sportiva',
+    brand: 'La Sportiva',
     images: [
       images.mythosFirst,
       images.mythosSecond,
@@ -520,14 +543,14 @@ const products = [
     gender: 'Men',
     color: 'Brown',
     weight: '450 g',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'La Sportiva Nepal Cube Goretex Hiking Boots',
     type: 'Footwear',
-    brand: 'sportiva',
+    brand: 'La Sportiva',
     images: [
       images.nepalcubeFirst,
       images.nepalcubeSecond,
@@ -566,7 +589,7 @@ const products = [
   {
     name: 'Mammut Nordwand 6000 Hiking Boots',
     type: 'Footwear',
-    brand: 'mammut',
+    brand: 'Mammut',
     images: [
       images.nordwandFirst,
       images.nordwandSecond,
@@ -599,14 +622,16 @@ const products = [
     gender: 'Men',
     color: 'Black',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Expeditions',
     sustainable: false,
   },
   {
     name: 'Mammut Mercury IV Low Goretex Hiking Shoes',
     type: 'Footwear',
-    brand: 'mammut',
+    brand: 'Mammut',
     images: [
       images.mercuryFirst,
       images.mercurySecond,
@@ -633,7 +658,125 @@ const products = [
     gender: 'Men',
     color: 'Brown',
     weight: '490 g',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Merrell Moab Flight Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.moabflightFirst,
+      images.moabflightSecond,
+      images.moabflightThird
+    ],
+    size: [
+      '41',
+      '42',
+      '46',
+    ],
+    description: <span>
+      MOAB FLIGHT TRAIL RUNNING are the new MERRELL running shoes, featuring an upper made of fully breathable recycled mesh. It has a very practical and comfortable braided fastening system with a padded tongue. It has a midsole made with Float Pro Foam technology that provides a light footprint and optimal cushioning. <br /><br /> Features: <br />
+      - 70% recycled mesh upper; <br />
+      - 100% recycled laces; <br />
+      - Breathable mesh lining; <br />
+      - EVA foam insole with 50% recycled top sheet; <br />
+      - Removable PU foam insole; <br />
+      - FloatPro Foam™ midsole for a lightweight ride that lasts; <br />
+      - Vibram® EcoDura is 30% recycled rubber; <br />
+      - Weight:540g; <br />
+      - Lug:3mm.
+    </span>,
+    price: 430.00,
+    gender: 'Men',
+    color: 'Blue',
+    weight: '540 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: true,
+  },
+  {
+    name: 'Merrell Nova II Mid Goretex Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.nova2midFirst,
+      images.nova2midSecond,
+      images.nova2midThird
+    ],
+    size: [
+      '42',
+      '44',
+      '46',
+    ],
+    description: <span>
+      Merrell Nova II Mid Goretex Trail Running Shoes are the perfect companion to explore the most complex terrains of the mountains since they offer maximum grip, stability, cushioning, breathability, and waterproof protection so you can be prepared in the event of rain or to cross puddles. <br /><br /> Features: <br />
+      - Mesh and TPU upper; <br />
+      - Traditional lace closure; <br />
+      - Padded collar; <br />
+      - External rear sling locks in the heel; <br />
+      - Breathable mesh lining; <br />
+      - Removable EVA insole; <br />
+      - Rock plate for protection; <br />
+      - Merrell Air Cushion in the heel absorbs shock and adds stability; <br />
+      - Forefoot and heel cushioning pods; <br />
+      - Lightweight EVA foam midsole for stability and comfort; <br />
+      - Vibram® TC5+ rubber sole; <br />
+      - Weight:680g; <br />
+      - Lug depth:5mm; <br />
+      - GORE-TEX® InvisibleFit; <br />
+      - Merrell Air Cushion; <br />
+      - Vibram® TC5+; <br />
+      - Vegan friendly; <br />
+      - Recycled.
+    </span>,
+    price: 430.00,
+    gender: 'Men',
+    color: 'Black',
+    weight: '680 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: true,
+  },
+  {
+    name: 'Merrell Intercept Hiking Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.interceptFirst,
+      images.interceptSecond,
+      images.interceptThird
+    ],
+    size: [
+      '41',
+      '43',
+      '45',
+    ],
+    description: <span>
+      Merrell Intercept Hiking Shoes are all-terrain footwear that provides excellent protection, maximum grip, cushioning, stability, breathability, and comfort during your outdoor activities, such as hiking, with a robust design that speaks for itself. <br /><br /> Features: <br />
+      - Full grain leather upper; <br />
+      - Breathable mesh lining wicks to keep feet dry; <br />
+      - Bellows tongue keeps debris out; <br />
+      - Abrasion resistant toe cap; <br />
+      - Molded nylon arch shank; <br />
+      - Merrell In-Board ™ compression molded EVA footframe provides cushioning; <br />
+      - Merrell Air Cushion ™ in the heel absorbs shock and adds stability; <br />
+      - Vibram® TC5+ outsole for traction in all weather and temperature conditions.
+    </span>,
+    price: 426.00,
+    gender: 'Men',
+    color: 'Green',
+    weight: '',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
@@ -642,7 +785,7 @@ const products = [
   {
     name: 'Adidas Terrex Free Hiker Hiking Shoes',
     type: 'Footwear',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.freeHikerFirst,
       images.freeHikerSecond,
@@ -668,14 +811,16 @@ const products = [
     gender: 'Women',
     color: 'Black',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Columbia 60 Low Outdry™ Hiking Shoes',
     type: 'Footwear',
-    brand: 'columbia',
+    brand: 'Columbia',
     images: [
       images.facet60First,
       images.facet60Second,
@@ -705,14 +850,16 @@ const products = [
     gender: 'Women',
     color: 'Blue',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Black Diamond Mission Leather Mid WP Hiking Shoes',
     type: 'Footwear',
-    brand: 'diamond',
+    brand: 'Black Diamond',
     images: [
       images.missionFirst,
       images.missionSecond,
@@ -742,14 +889,16 @@ const products = [
     gender: 'Women',
     color: 'Grey',
     weight: '300 g',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Black Diamond Method Climbing Shoes',
     type: 'Footwear',
-    brand: 'diamond',
+    brand: 'Black Diamond',
     images: [
       images.methodFirst,
       images.methodSecond,
@@ -777,14 +926,14 @@ const products = [
     gender: 'Women',
     color: 'Green',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'Haglöfs Kummel Proof ECO Hiking Boots',
     type: 'Footwear',
-    brand: 'haglofs',
+    brand: 'Haglofs',
     images: [
       images.kummelecoFirst,
       images.kummelecoSecond,
@@ -805,14 +954,16 @@ const products = [
     gender: 'Women',
     color: 'Brown',
     weight: '420 g',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Haglöfs LIM Low Hiking Shoes',
     type: 'Footwear',
-    brand: 'haglofs',
+    brand: 'Haglofs',
     images: [
       images.limlowFirst,
       images.limlowSecond,
@@ -833,14 +984,16 @@ const products = [
     gender: 'Women',
     color: 'Blue',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Haglöfs Ridge Mid GT Hiking Boots',
     type: 'Footwear',
-    brand: 'haglofs',
+    brand: 'Haglofs',
     images: [
       images.ridgemidFirst,
       images.ridgemidSecond,
@@ -870,14 +1023,16 @@ const products = [
     gender: 'Women',
     color: 'Black',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'La Sportiva Ultra Raptor II Trail Running Shoes',
     type: 'Footwear',
-    brand: 'sportiva',
+    brand: 'La Sportiva',
     images: [
       images.ultraraptorFirst,
       images.ultraraptorSecond,
@@ -901,14 +1056,16 @@ const products = [
     gender: 'Women',
     color: 'Green',
     weight: '295 g',
-    features: 'Reflective accents',
+    features: [
+      'Reflective accents'
+    ],
     activity: 'Trail running',
     sustainable: true,
   },
   {
     name: 'La Sportiva Katana Laces Climbing Shoes',
     type: 'Footwear',
-    brand: 'sportiva',
+    brand: 'La Sportiva',
     images: [
       images.katanaFirst,
       images.katanaSecond,
@@ -932,14 +1089,14 @@ const products = [
     gender: 'Women',
     color: 'White',
     weight: '250 g',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'La Sportiva Trango Ice Cube Goretex Hiking Boots',
     type: 'Footwear',
-    brand: 'sportiva',
+    brand: 'La Sportiva',
     images: [
       images.trangoicecubeFirst,
       images.trangoicecubeSecond,
@@ -971,14 +1128,16 @@ const products = [
     gender: 'Women',
     color: 'Black',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Expeditions',
     sustainable: false,
   },
   {
     name: 'Mammut Nordwand High Goretex Hiking Boots',
     type: 'Footwear',
-    brand: 'mammut',
+    brand: 'Mammut',
     images: [
       images.nordwandhighFirst,
       images.nordwandhighSecond,
@@ -996,14 +1155,16 @@ const products = [
     gender: 'Women',
     color: 'Black',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Expeditions',
     sustainable: false,
   },
   {
     name: 'Mammut Sapuen High Goretex Hiking Boots',
     type: 'Footwear',
-    brand: 'mammut',
+    brand: 'Mammut',
     images: [
       images.sapuenFirst,
       images.sapuenSecond,
@@ -1021,7 +1182,132 @@ const products = [
     gender: 'Women',
     color: 'Brown',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    name: 'Merrell Bravada WP Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.bravadaFirst,
+      images.bravadaSecond,
+      images.bravadaThird
+    ],
+    size: [
+      '36',
+      '39',
+      '40'
+    ],
+    description: <span>
+      This female-focused hiker features the fit and feel of a sneaker with the traction and performance of a hiker. And with a comfort achilles collar, it reduces common hot spot zones. <br /><br /> Features: <br />
+      - M Select™ dry barrier impermeable membrane seals out water and lets moisture escape; <br />
+      - Waterproof mesh upper; <br />
+      - Attached tongue keeps debris out; <br />
+      - Comfort collar reduces hot spots; <br />
+      - Kinetic Fit™ BASE removable contoured insole for flexible support; <br />
+      - Merrell Air Cushion in the heel absorbs shock and adds stability; <br />
+      - EVA foam midsole for stability and comfort; <br />
+      - Merrell mountain-grade Quantum Grip™ rubber outsole; <br />
+      - Vegan-friendly; <br />
+      - 5mm Lug Depth; <br />
+      - Weight: 1lbs 6oz / 620g.
+    </span>,
+    price: 411.00,
+    gender: 'Women',
+    color: 'Purple',
+    weight: '620 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: true,
+  },
+  {
+    name: 'Merrell Rubato Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.rubatoFirst,
+      images.rubatoSecond,
+      images.rubatoThird
+    ],
+    size: [
+      '37',
+      '38',
+      '39'
+    ],
+    description: <span>
+      Merrell Rubato Trail Running Shoes have been designed for hiking, running or trail running thanks to its resistant, light, and comfortable materials that will make you fly through the road or the mountains. These running shoes are made with a Vibram Megagrip outsole that offers excellent traction in wet or dry terrains. The FloatPro midsole is light and durable, while the FlexConnect slots improve the sensation of the ground. <br /><br /> Features: <br />
+      - Jacquard and TPU upper; <br />
+      - Traditional lace closure; <br />
+      - Internal bootie for locked-in fit; <br />
+      - External rear sling locks in the heel; <br />
+      - Breathable mesh lining; <br />
+      - EVA foam insole with 100% recycled top sheet; <br />
+      - Removable EVA insole; <br />
+      - FLEXconnect® dual-directional flex-grooves in the midsole for enhanced ground connection; <br />
+      - FloatPro Foam™ midsole for a lightweight ride that lasts; <br />
+      - Vibram® MegaGrip® for the best combination of traction and durability on wet or dry surfaces; <br />
+      - Weight:450g; <br />
+      - Lug depth:4mm; <br />
+      - FLEXconnect®; <br />
+      - FloatPro®; <br />
+      - Vibram® MegaGrip®; <br />
+      - Vegan friendly.
+    </span>,
+    price: 420.00,
+    gender: 'Women',
+    color: 'Grey',
+    weight: '450 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: true,
+  },
+  {
+    name: 'Merrell Siren Traveller Hiking Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.sirentravellerFirst,
+      images.sirentravellerSecond,
+      images.sirentravellerThird
+    ],
+    size: [
+      '37',
+      '38',
+      '39',
+      '40'
+    ],
+    description: <span>
+      This waterproof leather trail shoe is designed around the unique shape of a woman´s foot and features an extremely sticky Vibram® sole for traction even when it´s wet. <br /><br /> Features: <br />
+      - Waterproof membrane seals out water and lets moisture escape; <br />
+      - Full grain leather upper; <br />
+      - Metal hook traditional lace closure; <br />
+      - Bellows tongue keeps out debris; <br />
+      - Breathable mesh lining; <br />
+      - Kinetic Fit™ BASE removable contoured insole for flexible support; <br />
+      - Merrell Air Cushion in the heel absorbs shock and adds stability; <br />
+      - Lightweight EVA foam midsole with zones of softer foam may reduce pronation; <br />
+      - Vibram® TC5+ rubber sole; <br />
+      - Weight: 724g; <br />
+      - Kinetic Fit™ BASE; <br />
+      - Merrell Air Cushion; <br />
+      - Q FORM™ 2; <br />
+      - Vibram® TC5+.
+    </span>,
+    price: 435.00,
+    gender: 'Women',
+    color: 'Brown',
+    weight: '724 g',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
@@ -1033,7 +1319,7 @@ const products = [
   {
     name: 'Adidas Terrex Free Hiker Goretex Trail Running',
     type: 'Footwear',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.goretexFirst,
       images.goretexSecond,
@@ -1057,14 +1343,16 @@ const products = [
     gender: 'Unisex',
     color: 'Brown',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Trail running',
     sustainable: false,
   },
   {
     name: 'Columbia Summit Trail Running Gloves',
     type: 'Accessories',
-    brand: 'columbia',
+    brand: 'Columbia',
     images: [
       images.trailSummitRunningFirst,
       images.trailSummitRunningSecond,
@@ -1103,7 +1391,7 @@ const products = [
   {
     name: 'Adidas Terrex HyperHiker Hiking Shoes',
     type: 'Footwear',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.hyperHikerFirst,
       images.hyperHikerSecond,
@@ -1129,14 +1417,16 @@ const products = [
     gender: 'Kids',
     color: 'Green',
     weight: '210g',
-    features: 'Reflective accents',
+    features: [
+      'Reflective accents'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Columbia Redmond Youth Hiking Shoes',
     type: 'Footwear',
-    brand: 'columbia',
+    brand: 'Columbia',
     images: [
       images.redmondYouthFirst,
       images.redmondYouthSecond,
@@ -1161,14 +1451,16 @@ const products = [
     gender: 'Kids',
     color: 'Grey',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Black Diamond Momentum Climbing Shoes',
     type: 'Footwear',
-    brand: 'diamond',
+    brand: 'Black Diamond',
     images: [
       images.momentumFirst,
       images.momentumSecond,
@@ -1193,14 +1485,14 @@ const products = [
     gender: 'Kids',
     color: 'Green',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'La Sportiva Jynx Hiking Shoes',
     type: 'Footwear',
-    brand: 'sportiva',
+    brand: 'La Sportiva',
     images: [
       images.jynxFirst,
       images.jynxSecond,
@@ -1218,14 +1510,16 @@ const products = [
     gender: 'Kids',
     color: 'Blue',
     weight: '',
-    features: 'Waterproof',
+    features: [
+      'Waterproof'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'La Sportiva Gripit Climbing Shoes',
     type: 'Footwear',
-    brand: 'sportiva',
+    brand: 'La Sportiva',
     images: [
       images.gripitFirst,
       images.gripitSecond,
@@ -1247,16 +1541,150 @@ const products = [
     gender: 'Kids',
     color: 'Yellow',
     weight: '200 g',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
+  },
+  {
+    name: 'Merrell Moab Speed Low WP Hiking Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.moabspeedFirst,
+      images.moabspeedSecond,
+      images.moabspeedThird
+    ],
+    size: [
+      '32',
+      '33',
+      '35',
+    ],
+    description: <span>
+      A lightweight textile upper makes this waterproof hybrid sneaker breathable, and a traditional lace closure delivers a secure and comfortable fit. Reinforcement at the toe cap ensures it will stick around for miles to come, and its non-marking rubber outsole provides extra grip when it´s needed most. You and your mini-me will be ready for your next adventure. <br /><br /> Features: <br />
+      - Waterproof construction to keep feet dry; <br />
+      - Synthetic upper; <br />
+      - Alternative closure for easy on/off; <br />
+      - Recycled PET linings; <br />
+      - Float Foam footbed for enhanced cushioning and energy return; <br />
+      - Non-marking outsole with extra grip for superior traction.
+    </span>,
+    price: 311.00,
+    gender: 'Kids',
+    color: 'Brown',
+    weight: '',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Merrell Glove 5 A/C Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.trailgloveFirst,
+      images.trailgloveSecond,
+      images.trailgloveThird
+    ],
+    size: [
+      '31',
+      '32',
+      '34',
+    ],
+    description: <span>
+      This mini-me take on an adult trainer follows the natural movement of the foot when it needs it the most. An alternative closure gets it on with ease, and a non-marking outsole with extra grip boosts traction without risking skids. <br /><br /> Features: <br />
+      - Synthetic and mesh upper for breathability and a lightweight feel; <br />
+      - Alternative closure for easy on/off; <br />
+      - Anti-bacterial properties in lining helps prevent bacteria and control odor; <br />
+      - Non-marking outsole with extra grip for superior traction.
+    </span>,
+    price: 217.00,
+    gender: 'Kids',
+    color: 'Grey',
+    weight: '',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: false,
+  },
+  {
+    name: 'Merrell Altalight Low A/C Hiking Shoes',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.altalightFirst,
+      images.altalightSecond,
+      images.altalightThird
+    ],
+    size: [
+      '31',
+      '32',
+      '33',
+      '35'
+    ],
+    description: <span>
+      Trail-approved features and all-day comfort come together in one lightweight waterproof package. Its toggle closure provides an easy but secure fit, and its lightweight upper and waterproof construction make them light on their feet. <br /><br /> Features: <br />
+      - Waterproof construction to keep feet dry; <br />
+      - Lightweight and durable ripstop upper; <br />
+      - Toggle closure for a secure fit; <br />
+      - Recycled PET linings; <br />
+      - Anti-stink lining helps reduce odors; <br />
+      - Removable EVA footbed for all day comfort; <br />
+      - Molded EVA midsole for lightweight cushioning; <br />
+      - Extremely lightweight non-marking outsole with Quantum Grip® for superior traction; <br />
+      - Quantum Grip™.
+    </span>,
+    price: 242.00,
+    gender: 'Kids',
+    color: 'Purple',
+    weight: '',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    name: 'Merrell Oakcreek Mid Lace WP Hiking Boots',
+    type: 'Footwear',
+    brand: 'Merrell',
+    images: [
+      images.oakcreekFirst,
+      images.oakcreekSecond,
+      images.oakcreekThird
+    ],
+    size: [
+      '32',
+      '33',
+      '34',
+      '35'
+    ],
+    description: <span>
+      From the trail to the playground, it is easy to step into this waterproof style. The traditional lace closure ensures a secure, adjustable fit. Its durable upper is built from soft suede and breathable mesh, and a treaded rubber outsole ensures the highest possible level of traction. <br /><br /> Features: <br />
+      - Waterproof construction to keep feet dry; <br />
+      - Suede and mesh upper for durability; <br />
+      - Traditional lace closure for a secure fit; <br />
+      - Recycled PET linings; <br />
+      - Rubber rugged outsole with lug pattern and extra grip for superior traction.
+    </span>,
+    price: 197.00,
+    gender: 'Kids',
+    color: 'Grey',
+    weight: '',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
   },
 
   //* --------------------------------------------------------- CLOTHING MEN ---------------------------------------------------------- *//
   {
     name: 'Adidas Terrex MyShelter Hiking Jacket',
     type: 'Clothing',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.myShelterFirst,
       images.myShelterSecond,
@@ -1295,7 +1723,7 @@ const products = [
   {
     name: 'Adidas Terrex LiteFlex Hiking Pants',
     type: 'Clothing',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.liteFlexFirst,
       images.liteFlexSecond,
@@ -1330,7 +1758,7 @@ const products = [
   {
     name: 'Adidas Terrex Tech Hiking Fleece',
     type: 'Clothing',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.techFirst,
       images.techSecond,
@@ -1354,14 +1782,14 @@ const products = [
     gender: 'Men',
     color: 'Black',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Mammut RG Hiking Pants',
     type: 'Clothing',
-    brand: 'mammut',
+    brand: 'Mammut',
     images: [
       images.rgFirst,
       images.rgSecond,
@@ -1400,7 +1828,7 @@ const products = [
   {
     name: 'Adidas Terrex Xploric Hiking Jacket',
     type: 'Clothing',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.xploricFirst,
       images.xploricSecond,
@@ -1425,14 +1853,16 @@ const products = [
     gender: 'Women',
     color: 'Black',
     weight: '',
-    features: 'Windproof',
+    features: [
+      'Windproof'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Adidas Terrex Liteflex Hiking Shorts Pants',
     type: 'Clothing',
-    brand: 'adidas',
+    brand: 'Adidas',
     images: [
       images.liteflexShortsFirst,
       images.liteflexShortsSecond,
@@ -1455,14 +1885,16 @@ const products = [
     gender: 'Women',
     color: 'Black',
     weight: '',
-    features: 'Stretch',
+    features: [
+      'Stretch'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Columbia Adventure Hiking Pants',
     type: 'Clothing',
-    brand: 'columbia',
+    brand: 'Columbia',
     images: [
       images.adventureFirst,
       images.adventureSecond,
@@ -1492,7 +1924,7 @@ const products = [
     weight: '',
     features: [
       'UV Protection',
-      'WaterProof',
+      'Waterproof',
       'Windproof',
       'Stretch'
     ],
@@ -1502,7 +1934,7 @@ const products = [
   {
     name: 'Mammut Hiking Shorts Pants',
     type: 'Clothing',
-    brand: 'mammut',
+    brand: 'Mammut',
     images: [
       images.shortsFirst,
       images.shortsSecond,
@@ -1544,7 +1976,7 @@ const products = [
   {
     name: 'Columbia Ridge IV Convertible Hiking Pants',
     type: 'Clothing',
-    brand: 'columbia',
+    brand: 'Columbia',
     images: [
       images.silverRidge4First,
       images.silverRidge4Second,
@@ -1581,7 +2013,7 @@ const products = [
   {
     name: 'Columbia Windbreaker Hiking Jacket',
     type: 'Clothing',
-    brand: 'columbia',
+    brand: 'Columbia',
     images: [
       images.bloomingportFirst,
       images.bloomingportSecond,
@@ -1623,14 +2055,16 @@ const products = [
 
   {
     name: 'Adidas Terrex Agravic Hiking Backpack 10L',
-    type: 'Accesories',
-    brand: 'adidas',
+    type: 'Accessories',
+    brand: 'Adidas',
     images: [
       images.agravicFirst,
       images.agravicSecond,
       images.agravicThird
     ],
-    size: 'one-size',
+    size: [
+      'one-size',
+    ],
     description: <span>
       Pack the essentials and hit the trail with this adidas lightweight trail running backpack. Multiple storage pockets ensure everything is organised and easy to find. Quick-access flask pockets keep hydration within reach on shoulder straps. Reflective details shine in low light for 360-degree reflectivity. Bungee chest straps. <br /> Features: <br />
       - Emergency whistle; <br />
@@ -1645,20 +2079,24 @@ const products = [
     gender: 'Unisex',
     color: 'Black',
     weight: 'max 10L',
-    features: 'Frameless',
+    features: [
+      'Frameless'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Columbia Maxtrail™ Hiking Backpack 20L',
-    type: 'Accesories',
-    brand: 'columbia',
+    type: 'Accessories',
+    brand: 'Columbia',
     images: [
       images.maxtrailFirst,
       images.maxtrailSecond,
       images.maxtrailThird
     ],
-    size: 'one-size',
+    size: [
+      'one-size',
+    ],
     description: <span>
       Features: <br />
       - Versatile And Customizable Twin; <br />
@@ -1674,20 +2112,24 @@ const products = [
     gender: 'Unisex',
     color: 'Red',
     weight: 'max 20L',
-    features: 'Frameless',
+    features: [
+      'Frameless'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Columbia FCT03 BB Hiking Poles',
-    type: 'Accesories',
-    brand: 'columbia',
+    type: 'Accessories',
+    brand: 'Columbia',
     images: [
       images.fct03First,
       images.fct03Second,
       images.fct03Third
     ],
-    size: '',
+    size: [
+      'one-size',
+    ],
     description: <span>
       Features: <br />
       - Ultralight foldable poles set, with height adjust, designed for hiking; <br />
@@ -1700,14 +2142,14 @@ const products = [
     gender: 'Unisex',
     color: 'Black',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Black Diamond Capitan Climbing Helmet',
-    type: 'Accesories',
-    brand: 'diamond',
+    type: 'Accessories',
+    brand: 'Black Diamond',
     images: [
       images.captainFirst,
       images.captainSecond,
@@ -1735,20 +2177,22 @@ const products = [
     gender: 'Unisex',
     color: 'Red',
     weight: '285/295 g',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'Black Diamond Speed 50L Hiking Backpack',
-    type: 'Accesories',
-    brand: 'diamond',
+    type: 'Accessories',
+    brand: 'Black Diamond',
     images: [
       images.speedFirst,
       images.speedSecond,
       images.speedThird
     ],
-    size: 'one-size',
+    size: [
+      'one-size',
+    ],
     description: <span>
       We present the new SPEED 50L BACKPACK backpack for climbing and mountaineering, it is made of resistant water-repellent canvas. It has a capacity of 33 liters available to protect your camping implements. It has padded and adjustable shoulder straps for unmatched comfort. It has chest and waist straps that will help you carry and distribute the weight of the backpack. <br /><br />
       Features: <br />
@@ -1765,14 +2209,14 @@ const products = [
     gender: 'Unisex',
     color: 'Yellow',
     weight: 'max 50 L',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Black Diamond Venom Ice Hiking Axe',
-    type: 'Accesories',
-    brand: 'diamond',
+    type: 'Accessories',
+    brand: 'Black Diamond',
     images: [
       images.venomIceFirst,
       images.venomIceSecond,
@@ -1797,14 +2241,14 @@ const products = [
     gender: 'Unisex',
     color: 'Grey',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Black Diamond Distance FLZ Hiking Poles',
-    type: 'Accesories',
-    brand: 'diamond',
+    type: 'Accessories',
+    brand: 'Black Diamond',
     images: [
       images.distanceFirst,
       images.distanceSecond,
@@ -1829,14 +2273,14 @@ const products = [
     gender: 'Unisex',
     color: 'Black',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Black Diamond Wiz Hiking Headlight',
-    type: 'Accesories',
-    brand: 'diamond',
+    type: 'Accessories',
+    brand: 'Black Diamond',
     images: [
       images.wizFirst,
     ],
@@ -1851,14 +2295,14 @@ const products = [
     gender: 'Unisex',
     color: 'Red',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Haglöfs Vina 40L Hiking Backpack',
-    type: 'Accesories',
-    brand: 'haglofs',
+    type: 'Accessories',
+    brand: 'Haglofs',
     images: [
       images.vina40lFirst,
       images.vina40lSecond,
@@ -1887,14 +2331,16 @@ const products = [
     gender: 'Unisex',
     color: 'Blue',
     weight: 'max 40L',
-    features: 'Frameless',
+    features: [
+      'Frameless'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Haglöfs L.I.M 35L Hiking Backpack',
-    type: 'Accesories',
-    brand: 'haglofs',
+    type: 'Accessories',
+    brand: 'Haglofs',
     images: [
       images.lim35lFirst,
       images.lim35lSecond,
@@ -1920,14 +2366,16 @@ const products = [
     gender: 'Unisex',
     color: 'White',
     weight: 'max 35L',
-    features: 'Frameless',
+    features: [
+      'Frameless'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'Haglöfs Ängd 60L Hiking Backpack',
-    type: 'Accesories',
-    brand: 'haglofs',
+    type: 'Accessories',
+    brand: 'Haglofs',
     images: [
       images.angd60lFirst,
       images.angd60lSecond,
@@ -1946,14 +2394,14 @@ const products = [
     gender: 'Women',
     color: 'Red',
     weight: 'max 60L',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Haglöfs Vide 20L Hiking Backpack',
-    type: 'Accesories',
-    brand: 'haglofs',
+    type: 'Accessories',
+    brand: 'Haglofs',
     images: [
       images.vide20lFirst,
       images.vide20lSecond,
@@ -1985,14 +2433,16 @@ const products = [
     gender: 'Unisex',
     color: 'Green',
     weight: 'max 20L',
-    features: 'Frameless',
+    features: [
+      'Frameless'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
   {
     name: 'La Sportiva X-Cursion 28L Hiking Backpack',
-    type: 'Accesories',
-    brand: 'sportiva',
+    type: 'Accessories',
+    brand: 'La Sportiva',
     images: [
       images.xcursion28lFirst,
       images.xcursion28lSecond,
@@ -2007,14 +2457,16 @@ const products = [
     gender: 'Unisex',
     color: 'Black',
     weight: 'max 28L',
-    features: 'Frameless',
+    features: [
+      'Frameless'
+    ],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'La Sportiva Trango Hiking Poles',
-    type: 'Accesories',
-    brand: 'sportiva',
+    type: 'Accessories',
+    brand: 'La Sportiva',
     images: [
       images.trangopolesFirst,
       images.trangopolesSecond,
@@ -2033,14 +2485,14 @@ const products = [
     gender: 'Unisex',
     color: 'Black',
     weight: '230 g',
-    features: '',
+    features: [],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     name: 'Mammut Comfort Fast Adjust Harness Climbing',
-    type: 'Accesories',
-    brand: 'mammut',
+    type: 'Accessories',
+    brand: 'Mammut',
     images: [
       images.comfortfastFirst,
       images.comfortfastSecond,
@@ -2072,14 +2524,14 @@ const products = [
     gender: 'Unisex',
     color: 'Black',
     weight: '',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'Mammut Climbing Sender Wire Quickdraw',
-    type: 'Accesories',
-    brand: 'mammut',
+    type: 'Accessories',
+    brand: 'Mammut',
     images: [
       images.senderwireFirst,
       images.senderwireSecond,
@@ -2109,14 +2561,14 @@ const products = [
     gender: 'Unisex',
     color: 'White',
     weight: '68 g',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'Mammut Crag Sender Climbing Helmet',
-    type: 'Accesories',
-    brand: 'mammut',
+    type: 'Accessories',
+    brand: 'Mammut',
     images: [
       images.cragsenderFirst,
       images.cragsenderSecond,
@@ -2145,14 +2597,14 @@ const products = [
     gender: 'Unisex',
     color: 'Grey',
     weight: '199~219 g',
-    features: '',
+    features: [],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     name: 'Mammut Trion Spine 75L Hiking Backpack',
-    type: 'Accesories',
-    brand: 'mammut',
+    type: 'Accessories',
+    brand: 'Mammut',
     images: [
       images.trion75lFirst,
       images.trion75lSecond,
@@ -2190,24 +2642,116 @@ const products = [
     gender: 'Unisex',
     color: 'Blue',
     weight: '2640 g',
-    features: 'Frameless',
+    features: [
+      'Frameless'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
-
+  {
+    name: 'Osprey Zealot Climbing Chalk Bucket 5L',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.zealotchalkFirst,
+      images.zealotchalkSecond,
+      images.zealotchalkThird
+    ],
+    size: [
+      'one-size'
+    ],
+    description: <span>
+      Features: <br />
+      - Magnetic Closure; <br />
+      - Two Zip Pockets; <br />
+      - Roll Top With Adjustable Web And Buckle For Extra Secure Closure; <br />
+      - Unlined Interior; <br />
+      - Elastic Loops For Either Vertical Or Horizontal Bouldering Brush Carry; <br />
+      - 30l & 45l: Molded-Eva Backpanel With Hdpe Framesheet.
+    </span>,
+    price: 134.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: '',
+    features: [],
+    activity: 'Climbing',
+    sustainable: true,
+  },
+  {
+    name: 'Osprey Triple Climbing Snap Hook',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.triplesnapFirst,
+      images.triplesnapSecond,
+      images.triplesnapThird
+    ],
+    size: [
+      'one-size'
+    ],
+    description: <span>
+      Osprey is a hot-forged carabiner of classic oval shape suitable for technical and bigwall climbing. It´s invaluable on working with pulleys. The utility value of this carabiner is increased by Ocún’s typical rope friendly shape of the upper profile, which makes the Osprey usable for HMS belaying in case of an emergency. If climbers owned just one carabiner, it should be the Osprey. <br /><br />
+      Features: <br />
+      - Triple twist-lock gate with keylock nose; <br />
+      - Rope friendly shape to avoid excessive wear of rope; <br />
+      - Ergonomic body; <br />
+      - Optimal weight, strength and size balance.
+    </span>,
+    price: 74.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '73 g',
+    features: [],
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    name: 'Osprey Zealot 1L Climbing Chalk Bag',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.zealot1lFirst,
+      images.zealot1lSecond,
+      images.zealot1lThird
+    ],
+    size: [
+      'one-size'
+    ],
+    description: <span>
+      Features: <br />
+      - Secure cinch closure; <br />
+      - Soft internal fleece-y liner; <br />
+      - Adjustable web belt; <br />
+      - Zip pocket; <br />
+      - 30l & 45l: Molded-Eva Backpanel With Hdpe Framesheet; <br />
+      - Cubic Inch: 61; <br />
+      - Litres: 1; <br />
+      - Weight: 0.11 Kg; <br />
+      - Dimensions: 6h x 4w x 4d in.
+    </span>,
+    price: 99.00,
+    gender: 'Unisex',
+    color: 'Green',
+    weight: '',
+    features: [],
+    activity: 'Climbing',
+    sustainable: true,
+  },
 
   //* ------------------------------------------------------------ EQUIPMENT ----------------------------------------------------- *//
 
   {
     name: 'Columbia Ultra 2P Lightweight Hiking Tent',
     type: 'Equipment',
-    brand: 'columbia',
+    brand: 'Columbia',
     images: [
       images.columbiaUltraFirst,
       images.columbiaUltraSecond,
       images.columbiaUltraThird
     ],
-    size: '2P',
+    size: [
+      '2P',
+    ],
     description: <span>
       Lightweight camping tent for backpacking or cyclotourism, easy to pitch up. Ultra lightweight camping tent for 2 persons with rainfly for those who need light and compact tent once packed. Thanks to design this tent is very stable with optimum inner space. Nylon ripstop outer fabric is very resistant to tears, in addition to being extremely light. The water column is 3000 mm for the roof and the floor. <br /> This tent has an easy and quick set up because you only have to assembly one preformed pole with another small one The inner tent can be used as a mosquito net independently. Inside it has pockets to store small belongings. The fastening system of the rainfly to the inner tent is made by Velcro loops,plastic hooks and aluminum buckles, which offers faster assembly and disassembly as well as less weight. For better visibility , zipper pullers are reflective as well as the guy ropes. The tent dimensions are (50+127+50) x225x92 cm and its weight is 1,65 kg. <br /><br />
       Flysheet: <br />
@@ -2235,7 +2779,11 @@ const products = [
     gender: '',
     color: 'Green',
     weight: '1.65 kg',
-    features: '',
+    features: [
+      'Waterproof',
+      'Windproof',
+      'Thermal'
+    ],
     activity: 'Camping',
     sustainable: false,
   }, 
@@ -2245,72 +2793,72 @@ const products = [
 
 
 const brands = {
-  adidas: {
+  Adidas: {
     name: 'Adidas',
     logo: images.adidasLogo,
     logoSize: 40
   },
-  columbia: {
+  Columbia: {
     name: 'Columbia',
     logo: images.columbiaLogo,
     logoSize: 25
   },
-  diamond: {
+  'Black Diamond': {
     name: 'Black Diamond',
     logo: images.diamondLogo,
     logoSize: 15
   },
-  haglofs: {
+  Haglofs: {
     name: 'Haglofs',
     logo: images.haglofsLogo,
     logoSize: 25
   },
-  mammut: {
+  Mammut: {
     name: 'Mammut',
     logo: images.mammutLogo,
     logoSize: 22
   },
-  merrell: {
+  Merrell: {
     name: 'Merrell',
     logo: images.merrellLogo,
     logoSize: 40
   },
-  north: {
+  'The North Face': {
     name: 'The North Face',
     logo: images.northLogo,
     logoSize: 34
   },
-  osprey: {
+  Osprey: {
     name: 'Osprey',
     logo: images.ospreyLogo,
-    logoSize: 34
+    logoSize: 13
   },
-  patagonia: {
+  Patagonia: {
     name: 'Patagonia',
     logo: images.patagoniaLogo,
     logoSize: 35
   },
-  petzl: {
+  Petzl: {
     name: 'Petzl',
     logo: images.petzlLogo,
     logoSize: 34
   },
-  salewa: {
+  Salewa: {
     name: 'Salewa',
     logo: images.salewaLogo,
     logoSize: 34
   },
-  salomon: {
+  Salomon: {
     name: 'Salomon',
     logo: images.salomonLogo,
     logoSize: 40
   },
-  sportiva: {
+  'La Sportiva': {
     name: 'La Sportiva',
     logo: images.sportivaLogo,
     logoSize: 15
   },
-  summit: {
+  'Sea To Summit': {
     name: 'Sea To Summit',
     logo: images.summitLogo,
     logoSize: 40
@@ -2440,7 +2988,8 @@ const colorCategory = [
   'Blue',
   'Green',
   'Yellow',
-  'Red'
+  'Red',
+  'Purple'
 ]
 
 const sizeCategory = [

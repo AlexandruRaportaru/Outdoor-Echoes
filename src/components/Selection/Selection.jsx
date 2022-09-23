@@ -62,8 +62,13 @@ const Selection = () => {
               swiper.navigation.update();
             }}
             >
-            {data.products.map(product => (
-              <SwiperSlide key={product.name} className='app__selection-wrapper__swiper-slide'>
+            {
+            Array(70).fill().map((idx, index) => {
+            const randomIndex = Math.floor(70 * Math.random());
+            const product = data.products[randomIndex];
+
+            return (
+              <SwiperSlide key={`product-${index}`} className='app__selection-wrapper__swiper-slide'>
                 <img 
                   src={data.brands[product.brand].logo} 
                   alt={product.name} 
@@ -83,7 +88,7 @@ const Selection = () => {
                 </div>
                 <div className='selection__swiper-background purple__bg'></div>
               </SwiperSlide>
-            ))}
+            )})}
             <div className='swiper-left' ref={swiperPrevRef}>
               <BsFillArrowLeftSquareFill />
             </div>

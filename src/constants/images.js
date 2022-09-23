@@ -241,12 +241,62 @@ import shortsThird from '../assets/mammut/shortsThird.jpg';
 /* Merrell */
 import merrellBanner from '../assets/merrell/merrellBanner.jpg';
 import merrellLogo from '../assets/merrell/merrellLogo.png';
+
+import moabspeedFirst from '../assets/merrell/moabspeedFirst.jpg';
+import moabspeedSecond from '../assets/merrell/moabspeedSecond.jpg';
+import moabspeedThird from '../assets/merrell/moabspeedThird.jpg';
+
+import trailgloveFirst from '../assets/merrell/trailgloveFirst.jpg';
+import trailgloveSecond from '../assets/merrell/trailgloveSecond.jpg';
+import trailgloveThird from '../assets/merrell/trailgloveThird.jpg';
+
+import altalightFirst from '../assets/merrell/altalightFirst.jpg';
+import altalightSecond from '../assets/merrell/altalightSecond.jpg';
+import altalightThird from '../assets/merrell/altalightThird.jpg';
+
+import oakcreekFirst from '../assets/merrell/oakcreekFirst.jpg';
+import oakcreekSecond from '../assets/merrell/oakcreekSecond.jpg';
+import oakcreekThird from '../assets/merrell/oakcreekThird.jpg';
+
+import moabflightFirst from '../assets/merrell/moabflightFirst.jpg';
+import moabflightSecond from '../assets/merrell/moabflightSecond.jpg';
+import moabflightThird from '../assets/merrell/moabflightThird.jpg';
+
+import nova2midFirst from '../assets/merrell/nova2midFirst.jpg';
+import nova2midSecond from '../assets/merrell/nova2midSecond.jpg';
+import nova2midThird from '../assets/merrell/nova2midThird.jpg';
+
+import interceptFirst from '../assets/merrell/interceptFirst.jpg';
+import interceptSecond from '../assets/merrell/interceptSecond.jpg';
+import interceptThird from '../assets/merrell/interceptThird.jpg';
+
+import bravadaFirst from '../assets/merrell/bravadaFirst.jpg';
+import bravadaSecond from '../assets/merrell/bravadaSecond.jpg';
+import bravadaThird from '../assets/merrell/bravadaThird.jpg';
+
+import rubatoFirst from '../assets/merrell/rubatoFirst.jpg';
+import rubatoSecond from '../assets/merrell/rubatoSecond.jpg';
+import rubatoThird from '../assets/merrell/rubatoThird.jpg';
+
+import sirentravellerFirst from '../assets/merrell/sirentravellerFirst.jpg';
+import sirentravellerSecond from '../assets/merrell/sirentravellerSecond.jpg';
+import sirentravellerThird from '../assets/merrell/sirentravellerThird.jpg';
 /* North */
 import northBanner from '../assets/north/northBanner.jpg';
 import northLogo from '../assets/north/northLogo.png';
 /* Osprey */
 import ospreyBanner from '../assets/osprey/ospreyBanner.jpg';
 import ospreyLogo from '../assets/osprey/ospreyLogo.png';
+
+import zealotchalkFirst from '../assets/osprey/zealotchalkFirst.jpg';
+import zealotchalkSecond from '../assets/osprey/zealotchalkSecond.jpg';
+import zealotchalkThird from '../assets/osprey/zealotchalkThird.jpg';
+
+import zealot1lFirst from '../assets/osprey/zealot1lFirst.jpg';
+import zealot1lSecond from '../assets/osprey/zealot1lSecond.jpg';
+import zealot1lThird from '../assets/osprey/zealot1lThird.jpg';
+
+import triplesnapFirst from '../assets/osprey/triplesnapFirst.jpg';
 /* Patagonia */
 import patagoniaBanner from '../assets/patagonia/patagoniaBanner.jpg';
 import patagoniaLogo from '../assets/patagonia/patagoniaLogo.png';
@@ -572,12 +622,62 @@ export default {
 /* Merrell */
   merrellBanner,
   merrellLogo,
+
+  moabspeedFirst,
+  moabspeedSecond,
+  moabspeedThird,
+
+  trailgloveFirst,
+  trailgloveSecond,
+  trailgloveThird,
+
+  altalightFirst,
+  altalightSecond,
+  altalightThird,
+
+  oakcreekFirst,
+  oakcreekSecond,
+  oakcreekThird,
+
+  moabflightFirst,
+  moabflightSecond,
+  moabflightThird,
+
+  nova2midFirst,
+  nova2midSecond,
+  nova2midThird,
+
+  interceptFirst,
+  interceptSecond,
+  interceptThird,
+
+  bravadaFirst,
+  bravadaSecond,
+  bravadaThird,
+
+  rubatoFirst,
+  rubatoSecond,
+  rubatoThird,
+
+  sirentravellerFirst,
+  sirentravellerSecond,
+  sirentravellerThird,
 /* North */
   northBanner,
   northLogo,
 /* Osprey */
   ospreyBanner,
   ospreyLogo,
+
+  zealotchalkFirst,
+  zealotchalkSecond,
+  zealotchalkThird,
+
+  zealot1lFirst,
+  zealot1lSecond,
+  zealot1lThird,
+
+  triplesnapFirst,
 /* Patagonia */
   patagoniaBanner,
   patagoniaLogo,

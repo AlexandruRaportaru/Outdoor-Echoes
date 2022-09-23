@@ -128,7 +128,7 @@
 .app__navbar-cart__background {
     background: var(--color-purple);
     opacity: 0.5;
-    width: calc(100vw - 280px);
+    width: calc(100% - 280px);
     position: absolute;
     right: 280px;
     top: 0;

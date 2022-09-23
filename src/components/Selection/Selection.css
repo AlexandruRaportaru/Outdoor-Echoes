@@ -60,7 +60,7 @@
 .app__selection-wrapper__swiper-slide__image {
     width: 100%;
     z-index: -2;
-    margin: 10px 0;
+    padding: 10px;
 }
 
 .app__selection-wrapper__swiper-slide__image img {

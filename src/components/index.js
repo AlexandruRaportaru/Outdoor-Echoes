@@ -16,5 +16,5 @@ export {
   Selection,
   Newsletter,
   Footer,
-  Collapsible
+  Collapsible,
 };
