@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { data } from '../../constants';
-import { onDisableScroll, onEnableScroll } from '../../utils'
+import { onDisableScroll, onEnableScroll } from '../../utils';
 import { Link } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';

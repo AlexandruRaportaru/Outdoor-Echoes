@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { useParams, useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination} from 'swiper';
 import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from 'react-icons/bs';
@@ -12,6 +13,11 @@ import "swiper/css/navigation";
 const Selection = () => {
   const swiperPrevRef = useRef(null);
   const swiperNextRef = useRef(null);
+
+  const navigate = useNavigate();
+  const handleOpenProduct = (productId) => {
+    navigate(`/product/${productId}`)
+  }
 
   return (
     <>
@@ -68,7 +74,7 @@ const Selection = () => {
             const product = data.products[randomIndex];
 
             return (
-              <SwiperSlide key={`product-${index}`} className='app__selection-wrapper__swiper-slide'>
+              <SwiperSlide key={`product-${index}`} className='app__selection-wrapper__swiper-slide' onClick={() => handleOpenProduct(product.id)}>
                 <img 
                   src={data.brands[product.brand].logo} 
                   alt={product.name} 

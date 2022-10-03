@@ -28,7 +28,6 @@ const Creator = () => (
         ))}
         <div className='swipe__hand'>
           <img src={images.swipe} alt='swipe'/>
-          <span className='p__yanone' style={{color: 'var(--color-blue)'}}>SWIPE</span>
         </div>
       </Swiper>
       

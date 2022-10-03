@@ -95,7 +95,7 @@
     font-size: 18px !important;
     font-weight: bold;
     letter-spacing: 1px;
-    color: var(--color-yellow);
+    color: var(--color-blue);
     text-shadow: 0.5px 0.5px var(--color-purple);
 }    
 
@@ -116,7 +116,7 @@
 @media screen and (max-width: 585px) {
     .app__selection-wrapper__swiper {
         margin-top: 10px;
-        padding: 15px;
+        padding: 15px 15px 50px 15px;
     }
 
     .app__selection-wrapper__swiper .swiper-left {

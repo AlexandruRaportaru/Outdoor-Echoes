@@ -11,6 +11,8 @@ function preventDefaultForScrollKeys(e) {
   }
 }
 
+
+
 let supportsPassive = false;
   try {
     window.addEventListener("test", null, Object.defineProperty({}, 'passive', {

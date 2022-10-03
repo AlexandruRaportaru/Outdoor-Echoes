@@ -4,6 +4,7 @@ import Intro from './Intro/Intro';
 import Creator from './Creator/Creator';
 import Blogs from './Blogs/Blogs';
 import Products from './Products/Products';
+import Product from './Product/Product';
 
 export {
   Header,
@@ -12,4 +13,5 @@ export {
   Creator,
   Blogs,
   Products,
+  Product,
 };

@@ -114,6 +114,19 @@
   opacity: 0.5;
 }
 
+.swiper-left_product,
+.swiper-right_product {
+  position: absolute;
+  font-size: 40px;
+  color: var(--color-blue);
+  cursor: pointer;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 1;
+}
+
 .title {
   font-size: 50px;
   font-family: var(--font-yanone);

@@ -15,16 +15,15 @@ import night from '../assets/night.jpg';
 import trail from '../assets/trail.jpg';
 import tent from '../assets/tent.jpg';
 import benefits from '../assets/benefits.jpg';
-import rotateRight from '../assets/rotateRight.png';
-import rotateLeft from '../assets/rotateLeft.png';
-import rotate from '../assets/rotate.png';
+import cube from '../assets/cube.gif';
 import newsletter from '../assets/newsletter.jpg';
 import hiker from '../assets/hiker.gif';
 import delivery from '../assets/delivery.png';
 import spring from '../assets/spring.png';
 import paypal from '../assets/paypal.png';
-import swipe from '../assets/swipe.png';
-import click from '../assets/click.png';
+import swipe from '../assets/swipe.gif';
+import click from '../assets/click.gif';
+
 
 
 
@@ -398,9 +397,7 @@ export default {
   trail,
   tent,
   benefits,
-  rotateRight,
-  rotateLeft,
-  rotate,
+  cube,
   newsletter,
   hiker,
   delivery,

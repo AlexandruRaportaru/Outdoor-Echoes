@@ -43,7 +43,7 @@ const Blogs = () => (
                   <h3 className='p__headtext'>{blog.blogHeadtext}</h3>
                   <p className='p__yanone'>{blog.blogText}</p>
                   <div  className='rotate'>
-                    <img src={images.rotate} alt='rotate'/>
+                    <img src={images.cube} alt='rotate'/>
                   </div>
                 </div>
                 <div className='blog__background purple__bg'></div>

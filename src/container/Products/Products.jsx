@@ -1,21 +1,57 @@
-import React, { useState } from 'react';
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect, useRef } from 'react';
+import { useParams, Link, useNavigate } from "react-router-dom";
 import Slider from 'rc-slider';
 import { data } from '../../constants';
 import { Collapsible } from '../../components';
 
 import './Products.css';
 import 'rc-slider/assets/index.css';
-import { useEffect } from 'react';
 
 const Products = () => {
   const [priceRange, setPriceRange] = useState([0, 3500]);
   const [filters, setFilters] = useState(defaultFilters);
   const [products, setProducts] = useState(data.products);
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleText, setToggleText] = useState('OPEN');
+  const sliderBackgroundRef = useRef();
+
+
+  const navigate = useNavigate();
+  const handleOpenProduct = (productId) => {
+    navigate(`/product/${productId}`)
+  }
+
+
+  useEffect(() => {
+    const heightWindow = document.querySelector('html').getClientRects();
+    sliderBackgroundRef.current.style.height = `${heightWindow[0].height}px`;
+  }, [toggleMenu, filters])
+  
+
+
+  const handleFiltersVisible = () => {
+    if(toggleMenu) {
+      setToggleMenu(false);
+      setToggleText('OPEN');
+      
+      sliderBackgroundRef.current.style.display = 'none';
+    } else {
+      setToggleMenu(true);
+      setToggleText('CLOSE');
+
+      setTimeout(() => {
+        sliderBackgroundRef.current.style.display = 'block';
+      }, 310)
+    }
+  }
+
+  const handleFiltersHidden = () => {
+    setToggleMenu(false);
+    sliderBackgroundRef.current.style.display = 'none';
+  }
 
 
   const { id } = useParams();
-
   useEffect(() => {
     if(id) {
       const category = id.split('_')[0];
@@ -43,6 +79,8 @@ const Products = () => {
     return products.filter(data => data[category] === value).length 
   }
 
+
+
   const handleFilter = (filter, value) => {
     const newFilters = filters;
     newFilters[filter][value] = !filters[filter][value];
@@ -50,6 +88,8 @@ const Products = () => {
     setFilters(newFilters);
     getFilteredData();
   }
+
+
 
   const getFilteredData = () => {
     const selectedGenders = Object.keys(filters.gender).filter(data => filters.gender[data] === true);
@@ -77,126 +117,134 @@ const Products = () => {
     setProducts(allProducts);
   }
 
+  
+
   return (
     <div className='app__products'>
       <div className='app__products-title'>
-        <h1 className='p__logo'>Products</h1>
+        <h1 className='p__logo'>
+          <Link to='/' >
+            Home
+          </Link>
+          /
+          <Link to='/products' >
+            Products
+          </Link>
+        </h1>
       </div>
+      <div className='app__products-content_filters-background' onClick={handleFiltersHidden} ref={sliderBackgroundRef}></div>
       <div className='app__products-content'>
+        <div className={toggleMenu ? 'app__products-content_filters active' : 'app__products-content_filters'}>
+          <Link to='#' className={toggleMenu ? 'app__products-content_filters-toggle active' : 'app__products-content_filters-toggle'} onClick={handleFiltersVisible}>
+            <p toggletext={toggleText} >{toggleText}</p>
+            <p style={{marginBottom: '5px'}}>FILTERS</p>
+          </Link>
+          <div className={toggleMenu ? 'app__products-content_filters-slider active' : 'app__products-content_filters-slider'}>
+            <Collapsible title='GENDER'>
+              {data.genderCategory.map(gender => {
+                return (
+                <div key={gender} className='option'>
+                  <input 
+                    checked={filters.gender[gender]} 
+                    type='checkbox' 
+                    className='input__checkbox' 
+                    onChange={() => handleFilter('gender', gender)}
+                  />
+                  <span className='p__text'>{gender} ({counted('gender', gender)})</span>
+                </div>
+                )})}
+            </Collapsible>
 
+            <Collapsible title='ACTIVITY'>
+              {data.activityCategory.map(activity => (
+                <div key={activity} className='option'>
+                  <input 
+                    checked={filters.activity[activity]} 
+                    type='checkbox' 
+                    className='input__checkbox' 
+                    onChange={() => handleFilter('activity', activity)}
+                  />
+                  <span className='p__text'>{activity} ({counted('activity', activity)})</span>
+                </div>
+              ))}
+            </Collapsible>
 
-        <div className='app__products-content_menu'>
-          <Collapsible title='GENDER'>
-            {data.genderCategory.map(gender => {
-              return (
-              <div key={gender} className='option'>
-                <input 
-                  checked={filters.gender[gender]} 
-                  type='checkbox' 
-                  className='input__checkbox' 
-                  onChange={() => handleFilter('gender', gender)}
+            <Collapsible title='TYPE'>
+              {data.typeCategory.map(type => (
+                <div key={type} className='option'>
+                  <input 
+                    checked={filters.type[type]}
+                    type='checkbox' 
+                    className='input__checkbox' 
+                    onChange={() => handleFilter('type', type)}
+                  />
+                  <span className='p__text'>{type} ({counted('type', type)})</span>
+                </div>
+              ))}
+            </Collapsible>
+
+            <Collapsible title='COLOR'>
+              {data.colorCategory.map(color => (
+                <div key={color} className='option'>
+                  <input 
+                    type='checkbox' 
+                    className='input__checkbox' 
+                    onChange={() => handleFilter('color', color)}
+                  />
+                  <span className='p__text'>{color} ({counted('color', color)})</span>
+                </div>
+              ))}
+            </Collapsible>
+
+            <Collapsible title='FEATURES'>
+              {data.featuresCategory.map(feature => (
+                <div key={feature} className='option'>
+                  <input 
+                    type='checkbox' 
+                    className='input__checkbox' 
+                    onChange={() => handleFilter('features', feature)}
+                  />
+                  <span className='p__text'>{feature} ({counted('features', feature)})</span>
+                </div>
+              ))}
+            </Collapsible>
+
+            <Collapsible title='PRICE'>
+              <div className='price__slider'>
+                <Slider 
+                  range
+                  min={0}
+                  max={3500}
+                  defaultValue={[0, 3500]}
+                  onChange={(value) => handlePriceRange(value)}
+                  className='price__slider-input'
                 />
-                <span className='p__text'>{gender} ({counted('gender', gender)})</span>
               </div>
-              )})}
-          </Collapsible>
-
-
-          <Collapsible title='ACTIVITY'>
-            {data.activityCategory.map(activity => (
-              <div key={activity} className='option'>
-                <input 
-                  checked={filters.activity[activity]} 
-                  type='checkbox' 
-                  className='input__checkbox' 
-                  onChange={() => handleFilter('activity', activity)}
-                />
-                <span className='p__text'>{activity} ({counted('activity', activity)})</span>
+              <div className='price__range'>
+                <span className='p__text'>{priceRange[0]} RON</span>
+                <span className='p__text'>{priceRange[1]} RON</span>
               </div>
-            ))}
-          </Collapsible>
+            </Collapsible>
 
-
-          <Collapsible title='TYPE'>
-            {data.typeCategory.map(type => (
-              <div key={type} className='option'>
-                <input 
-                  type='checkbox' 
-                  className='input__checkbox' 
-                  onChange={() => handleFilter('type', type)}
-                />
-                <span className='p__text'>{type} ({counted('type', type)})</span>
-              </div>
-            ))}
-          </Collapsible>
-
-
-          <Collapsible title='COLOR'>
-            {data.colorCategory.map(color => (
-              <div key={color} className='option'>
-                <input 
-                  type='checkbox' 
-                  className='input__checkbox' 
-                  onChange={() => handleFilter('color', color)}
-                />
-                <span className='p__text'>{color} ({counted('color', color)})</span>
-              </div>
-            ))}
-          </Collapsible>
-
-          
-          <Collapsible title='FEATURES'>
-            {data.featuresCategory.map(feature => (
-              <div key={feature} className='option'>
-                <input 
-                  type='checkbox' 
-                  className='input__checkbox' 
-                  onChange={() => handleFilter('features', feature)}
-                />
-                <span className='p__text'>{feature} ({counted('features', feature)})</span>
-              </div>
-            ))}
-          </Collapsible>
-
-
-          <Collapsible title='PRICE'>
-            <div className='price__slider'>
-              <Slider 
-                range
-                min={0}
-                max={3500}
-                defaultValue={[0, 3500]}
-                onChange={(value) => handlePriceRange(value)}
-                className='price__slider-input'
-              />
-            </div>
-            <div className='price__range'>
-              <span className='p__text'>{priceRange[0]} RON</span>
-              <span className='p__text'>{priceRange[1]} RON</span>
-            </div>
-          </Collapsible>
-
-
-          <Collapsible title='BRANDS'>
-            {data.brandsCategory.map(brand => (
-              <div key={brand} className='option'>
-                <input 
-                  checked={filters.brand[brand]} 
-                  type='checkbox' 
-                  className='input__checkbox' 
-                  onChange={() => handleFilter('brand', brand)}
-                />
-                <span className='p__text'>{brand} ({counted('brand', brand)})</span>
-              </div>
-            ))}
-          </Collapsible>
+            <Collapsible title='BRANDS'>
+              {data.brandsCategory.map(brand => (
+                <div key={brand} className='option'>
+                  <input 
+                    checked={filters.brand[brand]} 
+                    type='checkbox' 
+                    className='input__checkbox' 
+                    onChange={() => handleFilter('brand', brand)}
+                  />
+                  <span className='p__text'>{brand} ({counted('brand', brand)})</span>
+                </div>
+              ))}
+            </Collapsible>
+          </div>
         </div>
-
-
 
         <div className='app__products-content_results'>
           {products.map(product => (
-            <div key={product.name} className='app__products-content_results-card'>
+            <div key={product.name} className='app__products-content_results-card' onClick={() => handleOpenProduct(product.id)}>
               <div className='app__products-content_results-card_sustainable'>
                 {product.sustainable ? <p>Sustainable</p> : ''}
               </div>
@@ -206,11 +254,6 @@ const Products = () => {
               <div className='app__products-content_results-card_text'>
                 <h1 className='p__headtext'>{product.name}</h1>
                 <p>{(product.price).toFixed(2)} RON</p>
-                <div className='app__products-content_results-card_text-size'>
-                  {product.size.map((size, index) => (
-                    <p key={index}>{size}</p>
-                  ))}
-                </div>
               </div>
             </div>
           ))}

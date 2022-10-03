@@ -43,7 +43,6 @@
 .app__blogs-wrapper_blog-text {
     margin-top: 350px;
     text-align: center;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly ;
@@ -53,15 +52,10 @@
 .app__blogs-wrapper_blog-text .click {
     position: absolute;
     width: 50px;
-    height: 38px;
-    bottom: 10px;
-    left: 10px;
-    animation: pulse 1s infinite ease-in-out alternate;
-}
-
-@keyframes pulse {
-    from { transform: scale(0.9); }
-    to { transform: scale(1.05); }
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    margin: 20px 20px;
 }
 
 .app__blogs-wrapper_blog-text .click img{
@@ -71,36 +65,11 @@
 
 .app__blogs-wrapper_blog-text .rotate {
     position: absolute;
-    width: 40px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     margin: 20px 20px;
     bottom: 0;
     right: 0;
-    backface-visibility: visible !important;
-	animation: flip 3s ease infinite;
-}
-
-@keyframes flip {
-	0% {
-		transform: perspective(1000px) rotateY(0);
-		animation-timing-function: ease-out;
-	}
-	40% {
-		transform: perspective(1000px) translateZ(150px) rotateY(170deg);
-		animation-timing-function: ease-out;
-	}
-	50% {
-		transform: perspective(1000px) translateZ(150px) rotateY(190deg) scale(1);
-		animation-timing-function: ease-in;
-	}
-	80% {
-		transform: perspective(1000px) rotateY(360deg) scale(.95);
-		animation-timing-function: ease-in;
-	}
-	100% {
-		transform: perspective(1000px) scale(1);
-		animation-timing-function: ease-in;
-	}
 }
 
 .app__blogs-wrapper_blog-text .rotate img{
@@ -110,7 +79,7 @@
 
 .app__blogs-wrapper_blog-text h3 {
     line-height: 28px;
-    color: var(--color-yellow);
+    color: var(--color-purple);
     text-shadow: 0.4px 0.4px var(--color-grey);
     padding-top: 10px;
 }
@@ -190,13 +159,15 @@
     }
 
     .app__blogs-wrapper_blog-text .click {
-        width: 35px;
+        width: 25px;
         height: 30px;
+        margin: 15px 15px;
     }
 
     .app__blogs-wrapper_blog-text .rotate {
         width: 30px;
-        height: 25px;
+        height: 30px;
+        margin: 15px 15px;
     }
 
     .app__blogs-wrapper_blog-text {
