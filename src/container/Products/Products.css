@@ -263,7 +263,7 @@
         width: 30px;
         height: 190px;
         padding: 5px;
-        margin-top: 170px;
+        margin-top: 162px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -296,6 +296,10 @@
         font-size: 18px;
     }
 
+    .app__products-content_filters-toggle {
+        margin-top: 210px;
+    }
+
     .app__products-content_results {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -317,6 +321,12 @@
 
     .app__products-content_filters-toggle {
         width: 20px;
+        right: -20px;
+        margin-top: 196px;
+    }
+
+    .app__products-content_filters-toggle.active {
+        right: -20px;
     }
 
     .app__products-content_results {

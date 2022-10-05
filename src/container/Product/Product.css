@@ -14,10 +14,15 @@
     padding: 40px 0;
     color: var(--color-purple);
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 20px;
 }
 
 .app__product-content {
-    padding: 60px 200px;
+    padding: 60px 120px;
 }
 
 .app__product-content_characteristics {
@@ -29,7 +34,7 @@
 
 .app__product-content_characteristics-swiper {
     margin-right: 50px;
-    width: 600px;
+    width: 500px;
 }
 
 .app__product-content_characteristics-swiper img{
@@ -49,6 +54,8 @@
 .app__product-content_characteristics-swiper .swiper-right_product {
     right: 20px;
 }
+
+
 
 .app__product-content_characteristics-details_logo {
     display: flex;
@@ -70,7 +77,7 @@
 
 .app__product-content_characteristics-details h1 {
     color: var(--color-purple);
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     font-size: 30px;
 }
 
@@ -120,31 +127,29 @@ input[type='checkbox']:checked {
 
 .app__product-content_characteristics-details_accessibility {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 2px 0;
 }
 
-.app__product-content_characteristics-details_accessibility div {
-    background: var(--color-yellow);
-    color: var(--color-purple);
+.app__product-content_characteristics-details_accessibility-quantity {
+    background: var(--color-purple);
     width: 154px;
     height: 46px;
     border-radius: 10px;
     border: 1px solid var(--color-purple);
     outline: none;
     transition:all 0.3s;
+    margin-right: 50px;
 }
 
-.app__product-content_characteristics-details_accessibility div:hover {
-    border: 1px solid var(--color-yellow);
-    text-shadow: 1px 1px var(--color-purple);
+.app__product-content_characteristics-details_accessibility-quantity:hover {
     box-shadow: 0 0 1em 0 var(--color-purple);
 }
 
-.app__product-content_characteristics-details_accessibility div button {
+.app__product-content_characteristics-details_accessibility-quantity button {
     padding: 10px;
-    background: var(--color-yellow);
+    background: var(--color-purple);
+    color: var(--color-white);
     border: none;
     height: 100%;
     border-radius: 10px;
@@ -152,14 +157,13 @@ input[type='checkbox']:checked {
     font-weight: bold;
     font-size: 20px;
     width: 50px;
-    margin: auto;
 }
 
-.app__product-content_characteristics-details_accessibility div:hover button {
-    color: var(--color-blue);
+.app__product-content_characteristics-details_accessibility-quantity button:hover {
+    color: var(--color-yellow);
 }
 
-.app__product-content_characteristics-details_accessibility div input {
+.app__product-content_characteristics-details_accessibility-counter {
     vertical-align: middle;
     text-align: center;
     font-size: 16px;
@@ -168,15 +172,25 @@ input[type='checkbox']:checked {
     color: var(--color-purple);
     width: 34%;
     border-radius: 2px;
+    background: var(--color-white);
 }
 
-.app__product-content_characteristics-details_accessibility div:hover input {
-    border: 1px solid var(--color-blue);
-    color: var(--color-blue);
+.app__product-content_characteristics-details_accessibility-quantity:hover 
+.app__product-content_characteristics-details_accessibility-counter {
+    box-shadow: inset 0 0 0.5em var(--color-purple);
 }
 
-.app__product-content_characteristics-details_accessibility div input:focus {
-    outline: none;
+.app__product-content_characteristics-details_accessibility .custom__button {
+    background: var(--color-purple);
+    color: var(--color-white);
+}
+
+.app__product-content_characteristics-details_accessibility .custom__button:hover {
+    color: var(--color-yellow) !important;
+    text-shadow: 1px 1px var(--color-purple) !important;
+    background: var(--color-purple);
+    box-shadow: 0 0 1em 0 var(--color-purple) !important;
+    border: 1px solid var(--color-purple) !important;
 }
 
 .app__product-content_characteristics-details_info {
@@ -185,8 +199,50 @@ input[type='checkbox']:checked {
     font-size: 14px;
 }
 
+.app__product-content_characteristics-details_info .tooltip {
+    padding: 0 5px;
+    border: 1px solid var(--color-green);
+    border-radius: 50%;
+    background: var(--color-green);
+    color: var(--color-white);
+    text-align: center;
+    font-size: 9px;
+    vertical-align: super;
+    position: relative;
+    display: inline-block;
+}
+
+.app__product-content_characteristics-details_info .tooltiptext {
+    visibility: hidden;
+    width: 310px;
+    background-color: var(--color-purple);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 18px;
+}
+  
+.app__product-content_characteristics-details_info .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--color-purple) transparent;
+}
+  
+.app__product-content_characteristics-details_info .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 .app__product-content_characteristics-details_text {
-    margin: 20px 0;
+    margin: 10px 0 0 0;
     color: var(--color-purple) !important;
     font-family: var(--font-menu);
     font-size: 16px;
@@ -195,6 +251,10 @@ input[type='checkbox']:checked {
 .app__product-content_description {
     display: flex;
     justify-content: space-between;
+}
+
+.app__product-content_description-paragraph {
+    width: 65%;
 }
 
 .app__product-content_description h1 {
@@ -218,4 +278,123 @@ input[type='checkbox']:checked {
     justify-content: space-between;
     padding: 3px 0;
     border-bottom: 1px solid rgb(70, 52, 78, 0.3);
+}
+
+.app__product-content_description-details_section-features {
+    justify-content: unset !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end !important;
+    border: none !important;
+}
+
+.app__product-content_description-details_section-features p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__product-title h1 {
+        padding: 30px 0;
+        font-size: 20px;
+    }
+
+    .app__product-content {
+        padding: 60px;
+    }
+
+    .app__product-content_characteristics-swiper {
+        margin-right: 30px;
+        width: 50%;
+    }
+
+    .app__product-content_characteristics-details h1 {
+        margin: 10px 0 0 0;
+        line-height: 32px;
+    }
+    
+    .app__product-content_characteristics-details_price {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .app__product-content_characteristics-details_size div {
+        margin-right: 20px;
+    }
+
+    .app__product-content_characteristics-details_accessibility-quantity {
+        width: 123px;
+        height: 43px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .app__product-content_characteristics-details_accessibility-quantity {
+        width: 103px;
+        height: 38px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .app__product-content_characteristics,
+    .app__product-content_description {
+        flex-direction: column;
+    }
+
+    .app__product-content_characteristics-swiper {
+        margin: 0 auto 30px auto;
+        width: 350px;
+    }
+
+    .app__product-content_characteristics-swiper .swiper-left_product,
+    .app__product-content_characteristics-swiper .swiper-right_product {
+        top: 150px;
+        font-size: 30px;
+    }
+
+    .app__product-content_description-paragraph {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .app__product-title h1 {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .app__product-content {
+        padding: 20px;
+    }
+
+    .app__product-content_characteristics-swiper {
+        margin: 0 auto 20px auto;
+        width: -webkit-fill-available;
+    }
+
+    .app__product-content_characteristics-details h1 {
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    .app__product-content_characteristics-details_price {
+        font-size: 25px;
+    }
+
+    .app__product-content_characteristics-details_info {
+        font-size: 14px;
+    }
+
+    .app__product-content_characteristics-details_info .tooltip {
+        display: none;
+    }
+
+    .app__product-content_characteristics-details_text {
+        font-size: 14px;
+    }
+
+    .app__product-content_description p {
+        font-size: 14px;
+    }
 }

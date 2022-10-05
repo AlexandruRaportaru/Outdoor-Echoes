@@ -268,12 +268,12 @@ const products = [
     gender: 'Men',
     color: 'Black',
     weight: 'Over 300g',
-    features: [],
+    features: ['-'],
     activity: 'Hiking',
     sustainable: false,
   },
   {
-    id: '002',
+    id: '011',
     name: 'Columbia Firecamp Fleece III Hiking Shoes',
     type: 'Footwear',
     brand: 'Columbia',
@@ -309,7 +309,7 @@ const products = [
     sustainable: false,
   },
   {
-    id: '003',
+    id: '021',
     name: 'Black Diamond Mission XP Leather Hiking Shoes',
     type: 'Footwear',
     brand: 'Black Diamond',
@@ -345,7 +345,7 @@ const products = [
     sustainable: false,
   },
   {
-    id: '004',
+    id: '022',
     name: 'Black Diamond Shadow LV Climbing Shoes',
     type: 'Footwear',
     brand: 'Black Diamond',
@@ -374,13 +374,13 @@ const products = [
     price: 578.00,
     gender: 'Men',
     color: 'Black',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
   {
-    id: '005',
+    id: '031',
     name: 'Haglöfs Duality AT1 Goretex Hiking Boots',
     type: 'Footwear',
     brand: 'Haglofs',
@@ -418,7 +418,7 @@ const products = [
     price: 913.00,
     gender: 'Men',
     color: 'Green',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -426,7 +426,7 @@ const products = [
     sustainable: true,
   },
   {
-    id: '006',
+    id: '032',
     name: 'Haglöfs Skuta Mid Proof Eco Hiking Boots',
     type: 'Footwear',
     brand: 'Haglofs',
@@ -455,7 +455,7 @@ const products = [
     sustainable: true,
   },
   {
-    id: '007',
+    id: '033',
     name: 'Haglöfs L.I.M FH Goretex Low Hiking Boots',
     type: 'Footwear',
     brand: 'Haglofs',
@@ -469,8 +469,9 @@ const products = [
       45 + 'EU',
       46 + 'EU',
     ],
+    shortDescription: <span>These trekking boots are made with a resistant outsole that provides excellent traction in various types of surfaces and a FlyteFoam midsole that gives superior cushioning. Besides, they include a supported heel and ankle strap with padded Cordura fabric that offers greater softness in each step.</span>,
     description: <span>
-      Haglöfs L.I.M FH Goretex Low Hiking Boots present us with a low-cut model of this durable, waterproof, breathable design with maximum grip on any terrain, so you can enjoy hiking with all protection against unexpectable weather changes. <br /><br /> These trekking boots are made with a resistant outsole that provides excellent traction in various types of surfaces and a FlyteFoam midsole that gives superior cushioning. Besides, they include a supported heel and ankle strap with padded Cordura fabric that offers greater softness in each step. <br /><br />
+      Haglöfs L.I.M FH Goretex Low Hiking Boots present us with a low-cut model of this durable, waterproof, breathable design with maximum grip on any terrain, so you can enjoy hiking with all protection against unexpectable weather changes. <br /><br />
       Features: <br />
       - Super lightweight low cut design; <br />
       - Made with GORE-TEX for durable weather protection; <br />
@@ -489,7 +490,7 @@ const products = [
     price: 518.00,
     gender: 'Men',
     color: 'Blue',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -497,7 +498,7 @@ const products = [
     sustainable: false,
   },
   {
-    id: '008',
+    id: '041',
     name: 'La Sportiva Blizzard Goretex Trail Running Shoes',
     type: 'Footwear',
     brand: 'La Sportiva',
@@ -511,8 +512,9 @@ const products = [
       45 + 'EU',
       46 + 'EU',
     ],
+    shortDescription: <span>When winter running sessions are long and difficult La Sportiva Blizzard Gore-tex is an ideal running shoe for all round mountaineering activities. This versatile shoe offers technical functionality and comfort in the unpredictable mountain environment.</span>,
     description: <span>
-      When winter running sessions are long and difficult La Sportiva Blizzard Gore-tex is an ideal running shoe for all round mountaineering activities. This versatile shoe offers technical functionality and comfort in the unpredictable mountain environment. <br /><br /> The sure-grip Frixion AT 2.0 outsole which enables the boots to penetrate into the ground and creates a good traction against the wet rocks while you are trail running. The Gore-tex Extended Comfort lining provides optimized breathability and waterproofing even in wet and slippery surfaces. It works exceptionally well in all sorts of trails. Thanks to the integrated 4-way stretch gaiter keep out trail debris, such as grit and leaves. <br /><br /> It is an ultimate mountaineering shoes designed especially for all adventure-sport junkies. La Sportiva Blizzard Gore-tex is the answer if you are looking for perfect trail running shoe that provides protection, traction and comfort. Winter Running Shoe with Gore-Tex® membrane and waterproofable leg-repellent leggings It includes nails integrated in the sole for a maximum grip. <br /><br /> Designed for extreme uses in frozen and sliding terrain.
+       The sure-grip Frixion AT 2.0 outsole which enables the boots to penetrate into the ground and creates a good traction against the wet rocks while you are trail running. The Gore-tex Extended Comfort lining provides optimized breathability and waterproofing even in wet and slippery surfaces. It works exceptionally well in all sorts of trails. Thanks to the integrated 4-way stretch gaiter keep out trail debris, such as grit and leaves. <br /><br /> It is an ultimate mountaineering shoes designed especially for all adventure-sport junkies. La Sportiva Blizzard Gore-tex is the answer if you are looking for perfect trail running shoe that provides protection, traction and comfort. Winter Running Shoe with Gore-Tex® membrane and waterproofable leg-repellent leggings It includes nails integrated in the sole for a maximum grip. <br /><br /> Designed for extreme uses in frozen and sliding terrain.
     </span>,
     price: 1007.00,
     gender: 'Men',
@@ -525,7 +527,7 @@ const products = [
     sustainable: false,
   },
   {
-    id: '009',
+    id: '042',
     name: 'La Sportiva Mythos Climbing Shoes',
     type: 'Footwear',
     brand: 'La Sportiva',
@@ -539,8 +541,9 @@ const products = [
       44 + 'EU',
       46 + 'EU',
     ],
+    shortDescription: <span>A climber’s best friend La Sportiva Mythos is typically a slipper with a twist that is lightweight and comfortable to wear. This versatile shoe is constructed to offer technical functionality and durability in the unpredictable mountain environment as well as in your gym.</span>,
     description: <span>
-      A climber’s best friend La Sportiva Mythos is typically a slipper with a twist that is lightweight and comfortable to wear. This versatile shoe is constructed to offer technical functionality and durability in the unpredictable mountain environment as well as in your gym. <br /><br /> Features: <br /> 
+      Features: <br /> 
       - Perfect synthesis of technology, comfort and performance. It is the most versatile model of the entire range, because it is suitable for all kinds of rock. The tested lacing system and the perfect stiffness of the midsole offer the best compromise between sensitivity and friction; <br />
       - Upper:Suede leather, slip lasted; <br />
       - Lining:None; <br />
@@ -553,12 +556,12 @@ const products = [
     gender: 'Men',
     color: 'Brown',
     weight: '450 g',
-    features: [],
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
   {
-    id: '010',
+    id: '043',
     name: 'La Sportiva Nepal Cube Goretex Hiking Boots',
     type: 'Footwear',
     brand: 'La Sportiva',
@@ -573,8 +576,9 @@ const products = [
       44 + 'EU',
       45 + 'EU',
     ],
+    shortDescription: <span>The ultralight Gore-tex boots in the market La Sportiva Nepal Cube Gore-tex is ideal for high intensity via ferrata or mountain hiking. This versatile boot always offers technical functionality and comfort in the wild mountain environment. Thanks to the innovative carbon tech honeycomb that is lightweight and stiff offers maximum comfort and support in the wild rugged terrains.</span>,
     description: <span>
-      The ultralight Gore-tex boots in the market La Sportiva Nepal Cube Gore-tex is ideal for high intensity via ferrata or mountain hiking. This versatile boot always offers technical functionality and comfort in the wild mountain environment. <br /><br /> Thanks to the innovative carbon tech honeycomb that is lightweight and stiff offers maximum comfort and support in the wild rugged terrains. Also, the insulated Comfort Gore-tex membrane provides waterproof breathability with insulation. The addition of 3D flex system to the ankle provides support and control on the rugged terrains. Also, the removable and adjustable tongue liner offers a secure and precise fit to your fit that makes it ideal for mixed climbing, winter mountaineering and other mountain activities. <br /><br /> Without a doubt, it is an ultimate mountaineering boots designed especially for all adventure-sport junkies. La Sportiva Nepal CubeGore-tex is the answer if you are looking for perfect boots that provides protection, traction and comfort. Nepal Cube, as the name suggests, is a new starting point for defining technical mountaineering boots thanks to the exceptional lightweight and thermal properties (a mere 825g per half pair). <br /><br /> Features: <br /> 
+      The addition of 3D flex system to the ankle provides support and control on the rugged terrains. Also, the removable and adjustable tongue liner offers a secure and precise fit to your fit that makes it ideal for mixed climbing, winter mountaineering and other mountain activities. <br /><br /> Without a doubt, it is an ultimate mountaineering boots designed especially for all adventure-sport junkies. La Sportiva Nepal CubeGore-tex is the answer if you are looking for perfect boots that provides protection, traction and comfort. Nepal Cube, as the name suggests, is a new starting point for defining technical mountaineering boots thanks to the exceptional lightweight and thermal properties (a mere 825g per half pair). <br /><br /> Features: <br /> 
       - Uppers: 3+ mm Hydro Perwanger Leather waterproof; <br />
       - Lining: Insulated Comfort Gore-Tex; <br />
       - Insole: Carbon Tech honeycomb isolation; <br />
@@ -598,7 +602,7 @@ const products = [
     sustainable: false,
   },
   {
-    id: '011',
+    id: '051',
     name: 'Mammut Nordwand 6000 Hiking Boots',
     type: 'Footwear',
     brand: 'Mammut',
@@ -612,8 +616,9 @@ const products = [
       44 + 'EU',
       46 + 'EU',
     ],
+    shortDescription: <span>A Gaiter Boot With Removable Liner For Demanding High-Altitude Mountaineering, Ice And Mixed Climbing. The Rigid Vibram Litebase Sole Scores With Low Weight And Excellent Cushioning. Thanks To The Boa® Fit System, Fast And Precise Adjustment Is Possible, Even With Gloves.</span>,
     description: <span>
-      A Gaiter Boot With Removable Liner For Demanding High-Altitude Mountaineering, Ice And Mixed Climbing. The Rigid Vibram Litebase Sole Scores With Low Weight And Excellent Cushioning. Thanks To The Boa® Fit System, Fast And Precise Adjustment Is Possible, Even With Gloves. This High Alpine Boot Is Made With Abrasion-Proof Materials, Aluminia Insulation And Has A Double-Insulated Midsole For Extreme Durability And Insulation. On Your Next Adventure, The Nordwand 6000 Will Redefine The True Meaning Of Stability And Lightness. <br /><br /> Features: <br />
+       This High Alpine Boot Is Made With Abrasion-Proof Materials, Aluminia Insulation And Has A Double-Insulated Midsole For Extreme Durability And Insulation. On Your Next Adventure, The Nordwand 6000 Will Redefine The True Meaning Of Stability And Lightness. <br /><br /> Features: <br />
       - Raised Rubber Rand; <br />
       - Suitable For C3 Automatic Crampons With A Heel Lever And Metal Toe Bail; <br />
       - Easy Resoling; <br />
@@ -633,7 +638,7 @@ const products = [
     price: 3589.00,
     gender: 'Men',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -641,7 +646,7 @@ const products = [
     sustainable: false,
   },
   {
-    id: '012',
+    id: '052',
     name: 'Mammut Mercury IV Low Goretex Hiking Shoes',
     type: 'Footwear',
     brand: 'Mammut',
@@ -655,8 +660,9 @@ const products = [
       45 + 'EU',
       46 + 'EU',
     ],
+    shortDescription: <span>The new and improved version of our bestseller combines all the features hikers are looking for on their tours. The Mercury IV Low GTX has a flexible and grippy Vibram sole for optimum sure-footedness on day hikes. Damping 3D Memo Foam in the lining and insole as well as a breathable, waterproof GORE-TEX membrane ensure superlative comfort.</span>,
     description: <span>
-      The new and improved version of our bestseller combines all the features hikers are looking for on their tours. The Mercury IV Low GTX has a flexible and grippy Vibram sole for optimum sure-footedness on day hikes. Damping 3D Memo Foam in the lining and insole as well as a breathable, waterproof GORE-TEX membrane ensure superlative comfort. High-quality terracare® nubuck leather gives the shoe stability and durability. The terracare® leather, sustainably produced in Germany, and GORE-TEX footwear 3L are bluesign®-certified to protect our environment. <br /><br /> Features: <br />
+       High-quality terracare® nubuck leather gives the shoe stability and durability. The terracare® leather, sustainably produced in Germany, and GORE-TEX footwear 3L are bluesign®-certified to protect our environment. <br /><br /> Features: <br />
       - Flex index: A6; <br />
       - Lace system: Standard lacing; <br />
       - Soles: High rebound EVA wedge; <br />
@@ -678,7 +684,7 @@ const products = [
     sustainable: false,
   },
   {
-    id: '013',
+    id: '061',
     name: 'Merrell Moab Flight Trail Running Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -692,8 +698,9 @@ const products = [
       42 + 'EU',
       46 + 'EU',
     ],
+    shortDescription: <span>MOAB FLIGHT TRAIL RUNNING are the new MERRELL running shoes, featuring an upper made of fully breathable recycled mesh. It has a very practical and comfortable braided fastening system with a padded tongue. It has a midsole made with Float Pro Foam technology that provides a light footprint and optimal cushioning.</span>,
     description: <span>
-      MOAB FLIGHT TRAIL RUNNING are the new MERRELL running shoes, featuring an upper made of fully breathable recycled mesh. It has a very practical and comfortable braided fastening system with a padded tongue. It has a midsole made with Float Pro Foam technology that provides a light footprint and optimal cushioning. <br /><br /> Features: <br />
+      Features: <br />
       - 70% recycled mesh upper; <br />
       - 100% recycled laces; <br />
       - Breathable mesh lining; <br />
@@ -715,7 +722,7 @@ const products = [
     sustainable: true,
   },
   {
-    id: '014',
+    id: '062',
     name: 'Merrell Nova II Mid Goretex Trail Running Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -729,8 +736,9 @@ const products = [
       44 + 'EU',
       46 + 'EU',
     ],
+    shortDescription: <span>Merrell Nova II Mid Goretex Trail Running Shoes are the perfect companion to explore the most complex terrains of the mountains since they offer maximum grip, stability, cushioning, breathability, and waterproof protection so you can be prepared in the event of rain or to cross puddles.</span>,
     description: <span>
-      Merrell Nova II Mid Goretex Trail Running Shoes are the perfect companion to explore the most complex terrains of the mountains since they offer maximum grip, stability, cushioning, breathability, and waterproof protection so you can be prepared in the event of rain or to cross puddles. <br /><br /> Features: <br />
+      Features: <br />
       - Mesh and TPU upper; <br />
       - Traditional lace closure; <br />
       - Padded collar; <br />
@@ -761,7 +769,7 @@ const products = [
     sustainable: true,
   },
   {
-    id: '015',
+    id: '063',
     name: 'Merrell Intercept Hiking Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -775,8 +783,9 @@ const products = [
       43 + 'EU',
       45 + 'EU',
     ],
+    shortDescription: <span>Merrell Intercept Hiking Shoes are all-terrain footwear that provides excellent protection, maximum grip, cushioning, stability, breathability, and comfort during your outdoor activities, such as hiking, with a robust design that speaks for itself.</span>,
     description: <span>
-      Merrell Intercept Hiking Shoes are all-terrain footwear that provides excellent protection, maximum grip, cushioning, stability, breathability, and comfort during your outdoor activities, such as hiking, with a robust design that speaks for itself. <br /><br /> Features: <br />
+      Features: <br />
       - Full grain leather upper; <br />
       - Breathable mesh lining wicks to keep feet dry; <br />
       - Bellows tongue keeps debris out; <br />
@@ -789,7 +798,7 @@ const products = [
     price: 426.00,
     gender: 'Men',
     color: 'Green',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -799,6 +808,7 @@ const products = [
 
   //* ----------------------------------------------------------- FOOTWEAR WOMEN --------------------------------------------------------- *//
   {
+    id: '002',
     name: 'Adidas Terrex Free Hiker Hiking Shoes',
     type: 'Footwear',
     brand: 'Adidas',
@@ -813,8 +823,9 @@ const products = [
       38 + 'EU',
       39 + 'EU',
     ],
+    shortDescription: <span>The coldest months of the year demand new tools for the job, and there is no place where this is more true than on the cold mountain trails. With an upper so revamped that it could pass for a completely new product, the adidas Free Hiker C.RDY hiking boots update the Free Hiker series’ excellent performance for those days when humidity and cold hit hardest.</span>,
     description: <span>
-      The coldest months of the year demand new tools for the job, and there is no place where this is more true than on the cold mountain trails. With an upper so revamped that it could pass for a completely new product, the adidas Free Hiker C.RDY hiking boots update the Free Hiker series’ excellent performance for those days when humidity and cold hit hardest. <br />The 3-stripes brand blends a GORE-TEX® layer with an advanced high-cut design that seals the foot completely at the ankles, resulting in total insulation from cold and moisture that will keep your feet dry and safe at all times. A sealed zipper runs across the center of the instep to the high neck to ensure that wearing these boots is comfortable enough without reducing support, while abundant TPU reinforcements along the toe and midfoot increase durability and protection. <br /> The Free Hiker series fans will be pleased to know that the legendary Continental™ rubber outsole continues to provide phenomenal traction on rugged terrain. The boost™ midsole, on the other hand still has the smooth, competent cushioning that gave worldwide renown to it. Terrex Free Hiker COLD.RDY Hiking Boots. Hiking in cold or winter scenarios has never been so nice. This adidas Terrex Free Hiker shoe was specifically designed for ultimate comfort on long hikes. Its socklike Primeknit upper, paired with COLD.RDY technology and water-repellent insulation fit snugly around the foot for a comfortable, warm fit. In addition, thanks to the waterproof GORE-TEX membrane, even difficult wet conditions are no problem.<br /> Features: <br />
+       The 3-stripes brand blends a GORE-TEX® layer with an advanced high-cut design that seals the foot completely at the ankles, resulting in total insulation from cold and moisture that will keep your feet dry and safe at all times. A sealed zipper runs across the center of the instep to the high neck to ensure that wearing these boots is comfortable enough without reducing support, while abundant TPU reinforcements along the toe and midfoot increase durability and protection. <br /> The Free Hiker series fans will be pleased to know that the legendary Continental™ rubber outsole continues to provide phenomenal traction on rugged terrain. The boost™ midsole, on the other hand still has the smooth, competent cushioning that gave worldwide renown to it. Terrex Free Hiker COLD.RDY Hiking Boots. Hiking in cold or winter scenarios has never been so nice. This adidas Terrex Free Hiker shoe was specifically designed for ultimate comfort on long hikes. Its socklike Primeknit upper, paired with COLD.RDY technology and water-repellent insulation fit snugly around the foot for a comfortable, warm fit. In addition, thanks to the waterproof GORE-TEX membrane, even difficult wet conditions are no problem.<br /> Features: <br />
     - Continental™ Rubber outsole; <br />
     - External sleeve with zip; <br />
     - adidas Primeknit upper with GORE-TEX Duratherm; <br />
@@ -825,7 +836,7 @@ const products = [
     price: 903,
     gender: 'Women',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -833,6 +844,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '012',
     name: 'Columbia 60 Low Outdry™ Hiking Shoes',
     type: 'Footwear',
     brand: 'Columbia',
@@ -864,7 +876,7 @@ const products = [
     price: 416.00,
     gender: 'Women',
     color: 'Blue',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -872,6 +884,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '023',
     name: 'Black Diamond Mission Mid WP Hiking Shoes',
     type: 'Footwear',
     brand: 'Black Diamond',
@@ -885,8 +898,8 @@ const products = [
       38 + 'EU',
       40 + 'EU',
     ],
+    shortDescription: <span>Built for the long-haul, the Mission Leather Mid WP is an approach shoe that provides ankle protection and support when heading into the hills with heavy packs and big objectives on the horizon. Featuring a waterproof/ breathable BD.dry lining combined with a high-grade Nubuck leather upper, the Mission Leather Mid WP keeps you dry while moving through stream crossings and snow fields.</span>,
     description: <span>
-      Built for the long-haul, the Mission Leather Mid WP is an approach shoe that provides ankle protection and support when heading into the hills with heavy packs and big objectives on the horizon. Featuring a waterproof/ breathable BD.dry lining combined with a high-grade Nubuck leather upper, the Mission Leather Mid WP keeps you dry while moving through stream crossings and snow fields. <br /><br />
       Features: <br />
       - Padded ankle provides protection from scree intrusion; <br />
       – Lace up ankle support for security in rugged terrain; <br />
@@ -911,6 +924,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '024',
     name: 'Black Diamond Method Climbing Shoes',
     type: 'Footwear',
     brand: 'Black Diamond',
@@ -925,8 +939,9 @@ const products = [
       39 + 'EU',
       40 + 'EU',
     ],
+    shortDescription: <span>Built for sending sport pitches, from the blocky limestone of Rifle to the enduro sandstone of the Red. With a women’s specific last that’s lower volume and a minimal break-in period, the Method is easy on the feet out of the box, while maintaining stiff edge control for increased power for newer outdoor climbers.</span>,
     description: <span>
-      Built for sending sport pitches, from the blocky limestone of Rifle to the enduro sandstone of the Red. With a women’s specific last that’s lower volume and a minimal break-in period, the Method is easy on the feet out of the box, while maintaining stiff edge control for increased power for newer outdoor climbers. With a downturned last that’s not ultra-aggressive, these shoes perform well on a variety of angles, from steep to vertical, making them a one-quiver sport shoe for those who value simplicity. <br /><br />
+       With a downturned last that’s not ultra-aggressive, these shoes perform well on a variety of angles, from steep to vertical, making them a one-quiver sport shoe for those who value simplicity. <br /><br />
       Features: <br />
       - Women’s specific last provides customized fit; <br />
       - Moderate, downturned last for vertical to gently overhanging sport routes; <br />
@@ -939,12 +954,13 @@ const products = [
     price: 577.00,
     gender: 'Women',
     color: 'Green',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
   {
+    id: '034',
     name: 'Haglöfs Kummel Proof ECO Hiking Boots',
     type: 'Footwear',
     brand: 'Haglofs',
@@ -958,8 +974,8 @@ const products = [
       37 + 'EU',
       38 + 'EU',
     ],
+    shortDescription: <span>The Krummel Low Proof hiking boots with waterproof fabric and PROOF ECO membrane without fluorocarbon will become your ideal choice for mountain adventure. These boots are built with a rear cushioning of the highest quality GEL foot. They offer excellent shock absorption for the ideal step.</span>,
     description: <span>
-      The Krummel Low Proof hiking boots with waterproof fabric and PROOF ECO membrane without fluorocarbon will become your ideal choice for mountain adventure. These boots are built with a rear cushioning of the highest quality GEL foot. They offer excellent shock absorption for the ideal step. <br /><br />
       Features: <br />
       - Waterproof with fluorocarbon free PROOF™ ECO membrane GEL™ rearfoot cushioning offers excellent shock absorption for the ideal stride SpevaFoam™ midsole improves cushioning and a comfortable bounce-back feeling Premium eco-friendly leather from a tannery audited by the Leather Working Group Fluorocarbon free DWR-treated surfaces help repel water & dirt Engineered patterned outsole provides high traction and stability AHAR™ Plus (ASICS® High Abrasion Resistance Rubber) on the outsole heel adds durability Tongue gusset prevents water and sand from entering the shoe; <br />
       - Waterproof flex test: 100 000 steps.
@@ -975,6 +991,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '035',
     name: 'Haglöfs LIM Low Hiking Shoes',
     type: 'Footwear',
     brand: 'Haglofs',
@@ -988,8 +1005,8 @@ const products = [
       39 + 'EU',
       40 + 'EU',
     ],
+    shortDescription: <span>This is the first shoe we´ve made with a monosock construction, giving it a foot-hugging fit that makes it an extra-light choice for great performance on shorter hikes. As a result, it´s right at home in our L.I.M range - where every extra ounce is discarded, but all of the functionality and durability remains.</span>,
     description: <span>
-      This is the first shoe we´ve made with a monosock construction, giving it a foot-hugging fit that makes it an extra-light choice for great performance on shorter hikes. As a result, it´s right at home in our L.I.M range - where every extra ounce is discarded, but all of the functionality and durability remains. <br /><br />
       Features: <br />
       - It´s built from tough, breathable mesh, making it a good choice on the trail; <br />
       - Reinforcements are provided by a tough rubber counter and synthetic leather to stabilize.
@@ -997,7 +1014,7 @@ const products = [
     price: 416.00,
     gender: 'Women',
     color: 'Blue',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1005,6 +1022,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '036',
     name: 'Haglöfs Ridge Mid GT Hiking Boots',
     type: 'Footwear',
     brand: 'Haglofs',
@@ -1018,8 +1036,8 @@ const products = [
       38 + 'EU',
       40 + 'EU',
     ],
+    shortDescription: <span>The Rigged GT shoes is another great company boot for longer trips, and one that uses the excellent Asics FluidRide technology for a natural and balanced movement. GEL technology provides cushioning. Waterproofed with GORE TEX.</span>,
     description: <span>
-      The Rigged GT shoes is another great company boot for longer trips, and one that uses the excellent Asics FluidRide technology for a natural and balanced movement. GEL technology provides cushioning. Waterproofed with GORE TEX. <br /><br />
       Features: <br />
       - GEL™ rear foot cushioning for excellent shock absorption; <br />
       - WET GRIP Rubber™ compound provides extraordinary traction, even in wet conditions; <br />
@@ -1036,7 +1054,7 @@ const products = [
     price: 677.00,
     gender: 'Women',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1044,6 +1062,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '044',
     name: 'La Sportiva Ultra Raptor II Trail Running Shoes',
     type: 'Footwear',
     brand: 'La Sportiva',
@@ -1057,8 +1076,8 @@ const products = [
       38 + 'EU',
       39 + 'EU',
     ],
+    shortDescription: <span>The Ultra Raptor Ii Women´s Is An All-Terrain Mountain Running® Shoe Perfect For Long Distance Runs And Ventures Off The Beaten Path. A Full-Length Rock Guard And An Ultra Sticky Rubber Outsole Offers Maximum Protection And Stability, While The Wicking Airmesh Mesh Upper Keeps You Cool, Dry, And Comfortable So You Can Continue To Focus On The Trail Ahead Of You.</span>,
     description: <span>
-      The Ultra Raptor Ii Women´s Is An All-Terrain Mountain Running® Shoe Perfect For Long Distance Runs And Ventures Off The Beaten Path. A Full-Length Rock Guard And An Ultra Sticky Rubber Outsole Offers Maximum Protection And Stability, While The Wicking Airmesh Mesh Upper Keeps You Cool, Dry, And Comfortable So You Can Continue To Focus On The Trail Ahead Of You. <br /><br />
       Features: <br />
       - Aggressive Lugs Combined With Frixion® Rubber And Trail Bite™ Heel Provide All-Terrain Traction And Maximum Grip; <br />
       - Tpu Lacing Harness Provides A Secure, Snug And Supportive Fit; <br />
@@ -1077,6 +1096,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '045',
     name: 'La Sportiva Katana Laces Climbing Shoes',
     type: 'Footwear',
     brand: 'La Sportiva',
@@ -1090,8 +1110,8 @@ const products = [
       37 + 'EU',
       39 + 'EU',
     ],
+    shortDescription: <span>The Katana Lace, Despite Its Downturned Shape, Is A Comfortable All-Day Climbing Workhorse That Performs Well On Slabs And Can Easily Twist Into Thin Cracks But Excels Outside On Steep Single Or Multi-Pitch Routes. The Slightly Downturned Toe And Subtle Asymmetry Ensures You Can Hook Into Pockets Or Exploit The Tiniest Edges While Providing Unrivaled Comfort For The Level That It Performs At. The Katana Lace Is A Veritable Edging Machine Now Available In Men’S And Women’S Styles.</span>,
     description: <span>
-      The Katana Lace, Despite Its Downturned Shape, Is A Comfortable All-Day Climbing Workhorse That Performs Well On Slabs And Can Easily Twist Into Thin Cracks But Excels Outside On Steep Single Or Multi-Pitch Routes. The Slightly Downturned Toe And Subtle Asymmetry Ensures You Can Hook Into Pockets Or Exploit The Tiniest Edges While Providing Unrivaled Comfort For The Level That It Performs At. The Katana Lace Is A Veritable Edging Machine Now Available In Men’S And Women’S Styles. <br /><br />
       Features: <br />
       - Revolutionary Tubular Construction With P3® Technology Provides Ultimate Comfort And Performance; <br />
       - Highly Breathable Tongue Works In Conjunction With The Shoe Lining For Moisture Management; <br />
@@ -1103,11 +1123,12 @@ const products = [
     gender: 'Women',
     color: 'White',
     weight: '250 g',
-    features: [],
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
   {
+    id: '046',
     name: 'La Sportiva Trango Ice Cube Goretex Hiking Boots',
     type: 'Footwear',
     brand: 'La Sportiva',
@@ -1122,8 +1143,9 @@ const products = [
       39 + 'EU',
       40 + 'EU',
     ],
+    shortDescription: <span>A shoe with an integrated gaiter, the ideal choice for technical use in the mountains, on ice climbs and mixed terrain. Extremely lightweight and comfortable thanks to the seamless construction methods of the uppers made using the Thermo Tech Injection™ technology. The protective, integrated snow gaiter with the water repellent zip makes the product even more waterproof while maintaining unaltered the breathability properties thanks to the use of the Gore-Tex Performance Comfort lining.</span>,
     description: <span>
-      A shoe with an integrated gaiter, the ideal choice for technical use in the mountains, on ice climbs and mixed terrain. Extremely lightweight and comfortable thanks to the seamless construction methods of the uppers made using the Thermo Tech Injection™ technology. The protective, integrated snow gaiter with the water repellent zip makes the product even more waterproof while maintaining unaltered the breathability properties thanks to the use of the Gore-Tex Performance Comfort lining. <br /><br /> The HoneyComb Tech carbon footbed guarantees a firm grip and contained weigh. The all-around PU TechLite™ rand contributes to keeping volumes compact without compromising protection. Trango Ice Cube is fully crampon compatible and resolable: ideal for more technical mountaineering and both summer and winter climbs. Similar to other products in the Trango range the 3D Flex System helps to increase ankle movement thereby enhancing control and precision even on steep terrain. <br /><br />
+       The HoneyComb Tech carbon footbed guarantees a firm grip and contained weigh. The all-around PU TechLite™ rand contributes to keeping volumes compact without compromising protection. Trango Ice Cube is fully crampon compatible and resolable: ideal for more technical mountaineering and both summer and winter climbs. Similar to other products in the Trango range the 3D Flex System helps to increase ankle movement thereby enhancing control and precision even on steep terrain. <br /><br />
       Features: <br />
       - Gaiter: water-resistant, stretch Schoeller fabric heat-sealed, water repellent zip; <br />
       - Uppers: Abrasion resistant fabric Thermo Tech Injection™; <br />
@@ -1141,7 +1163,7 @@ const products = [
     price: 2177.00,
     gender: 'Women',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1149,6 +1171,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '053',
     name: 'Mammut Nordwand High Goretex Hiking Boots',
     type: 'Footwear',
     brand: 'Mammut',
@@ -1162,13 +1185,14 @@ const products = [
       38 + 'EU',
       39 + 'EU',
     ],
+    shortDescription: <span>The Nordwand Knit High GTX takes all kinds of alpine terrain in its stride. This first fully crampon-compatible shoe with a knitted shaft is the result of three years of development work, expressed in material, performance and technology. The Nordwand Knit High GTX conquers demanding technical terrain thanks to an elasticated 3D knitted upper with a seamless design that avoids pressure points.</span>,
     description: <span>
-      The Nordwand Knit High GTX takes all kinds of alpine terrain in its stride. This first fully crampon-compatible shoe with a knitted shaft is the result of three years of development work, expressed in material, performance and technology. The Nordwand Knit High GTX conquers demanding technical terrain thanks to an elasticated 3D knitted upper with a seamless design that avoids pressure points. <br /><br /> Its benefits also include a lighter weight. Contact Control ensures an optimum sure-footed step and makes the Nordwand Knit High GTX a companion that is ready for any challenge in the mountains.
+       Its benefits also include a lighter weight. Contact Control ensures an optimum sure-footed step and makes the Nordwand Knit High GTX a companion that is ready for any challenge in the mountains.
     </span>,
     price: 2355.00,
     gender: 'Women',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1176,6 +1200,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '054',
     name: 'Mammut Sapuen High Goretex Hiking Boots',
     type: 'Footwear',
     brand: 'Mammut',
@@ -1189,13 +1214,14 @@ const products = [
       38 + 'EU',
       40 + 'EU',
     ],
+    shortDescription: <span>The SAPUEN HIGH GORE-TEX® is the correct choice on all types of land. Mammut® Flextron Technology ™ supports natural foot movement and, therefore, a more efficient use of energy in hiking and mountaineering, while Mammut Georganic 3D Technology technology guarantees maximum comfort.</span>,
     description: <span>
-      The SAPUEN HIGH GORE-TEX® is the correct choice on all types of land. Mammut® Flextron Technology ™ supports natural foot movement and, therefore, a more efficient use of energy in hiking and mountaineering, while Mammut Georganic 3D Technology technology guarantees maximum comfort. <br /><br /> All components in contact with the foot have a high precision anatomical form, while the classic construction of the tongue offers an easy entrance. Optimized for hiking: A vibram® rubber mix for a secure grip on outer surfaces and a sole design that allows self-cleaning. Gore-Tex® waterproof membrane guarantees a dry foot.
+       All components in contact with the foot have a high precision anatomical form, while the classic construction of the tongue offers an easy entrance. Optimized for hiking: A vibram® rubber mix for a secure grip on outer surfaces and a sole design that allows self-cleaning. Gore-Tex® waterproof membrane guarantees a dry foot.
     </span>,
     price: 845.00,
     gender: 'Women',
     color: 'Brown',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1203,6 +1229,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '064',
     name: 'Merrell Bravada WP Trail Running Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -1216,8 +1243,9 @@ const products = [
       39 + 'EU',
       40 + 'EU',
     ],
+    shortDescription: <span>This female-focused hiker features the fit and feel of a sneaker with the traction and performance of a hiker. And with a comfort achilles collar, it reduces common hot spot zones.</span>,
     description: <span>
-      This female-focused hiker features the fit and feel of a sneaker with the traction and performance of a hiker. And with a comfort achilles collar, it reduces common hot spot zones. <br /><br /> Features: <br />
+      Features: <br />
       - M Select™ dry barrier impermeable membrane seals out water and lets moisture escape; <br />
       - Waterproof mesh upper; <br />
       - Attached tongue keeps debris out; <br />
@@ -1241,6 +1269,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '065',
     name: 'Merrell Rubato Trail Running Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -1254,8 +1283,9 @@ const products = [
       38 + 'EU',
       39 + 'EU',
     ],
+    shortDescription: <span>Merrell Rubato Trail Running Shoes have been designed for hiking, running or trail running thanks to its resistant, light, and comfortable materials that will make you fly through the road or the mountains. These running shoes are made with a Vibram Megagrip outsole that offers excellent traction in wet or dry terrains.</span>,
     description: <span>
-      Merrell Rubato Trail Running Shoes have been designed for hiking, running or trail running thanks to its resistant, light, and comfortable materials that will make you fly through the road or the mountains. These running shoes are made with a Vibram Megagrip outsole that offers excellent traction in wet or dry terrains. The FloatPro midsole is light and durable, while the FlexConnect slots improve the sensation of the ground. <br /><br /> Features: <br />
+       The FloatPro midsole is light and durable, while the FlexConnect slots improve the sensation of the ground. <br /><br /> Features: <br />
       - Jacquard and TPU upper; <br />
       - Traditional lace closure; <br />
       - Internal bootie for locked-in fit; <br />
@@ -1284,6 +1314,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '066',
     name: 'Merrell Siren Traveller Hiking Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -1298,8 +1329,9 @@ const products = [
       39 + 'EU',
       40 + 'EU',
     ],
+    shortDescription: <span>This waterproof leather trail shoe is designed around the unique shape of a woman´s foot and features an extremely sticky Vibram® sole for traction even when it´s wet.</span>,
     description: <span>
-      This waterproof leather trail shoe is designed around the unique shape of a woman´s foot and features an extremely sticky Vibram® sole for traction even when it´s wet. <br /><br /> Features: <br />
+      Features: <br />
       - Waterproof membrane seals out water and lets moisture escape; <br />
       - Full grain leather upper; <br />
       - Metal hook traditional lace closure; <br />
@@ -1331,6 +1363,7 @@ const products = [
 
 
   {
+    id: '003',
     name: 'Adidas Terrex Free Hiker Goretex Trail Running',
     type: 'Footwear',
     brand: 'Adidas',
@@ -1345,8 +1378,9 @@ const products = [
       42 + 'EU',
       43 + 'EU',
     ],
+    shortDescription: <span>Intending to lead the hiking marketplace is no small feat, but the adidas Terrex Free Hiker GTX trail running shoes will surely achieve this as the Terrex series’ natural evolution. Combining the best features of their high-performance running shoes with the advantages of their more outdoor-oriented designs, these sneakers do not look like anything you have seen so far in the scene.</span>,
     description: <span>
-      Intending to lead the hiking marketplace is no small feat, but the adidas Terrex Free Hiker GTX trail running shoes will surely achieve this as the Terrex series’ natural evolution. Combining the best features of their high-performance running shoes with the advantages of their more outdoor-oriented designs, these sneakers do not look like anything you have seen so far in the scene. <br /> adidas´ sportiest products inspired the Terrex Free Hiker GTX’s upper, with a Primeknit design that has received anti-wear reinforcements to protect you from difficult terrain. But Primeknit’s outstanding features are not lost by that, with a sock-like design that fits your feet perfectly and maintains the lightweight breathability that it is so well known for. To achieve greater weather protection, adidas has also added a thin GORE-TEX® layer to create an all-around, tight waterproofing. <br /> The already characteristic Continental™ rubber outsole in the Terrex series blends with a boost™ midsole, thus completing a package with great cushioning and responsiveness as well as outstanding traction that will not be deterred by any obstacle. Various TPU reinforcements on the heel and toecap serve as additional protection against injuries and accidents. Move and explore. <br /> These lightweight hiking shoes deliver next-generation comfort and freedom of movement for hikes both long and short. The adidas Primeknit upper hugs your foot for flexible, all-terrain stability, while the Boost midsole delivers endless energy to keep you moving up or down the trail. A GORE-TEX membrane sheds water while letting your feet breathe for all-conditions wear. <br /><br /> Features: <br />
+       adidas´ sportiest products inspired the Terrex Free Hiker GTX’s upper, with a Primeknit design that has received anti-wear reinforcements to protect you from difficult terrain. But Primeknit’s outstanding features are not lost by that, with a sock-like design that fits your feet perfectly and maintains the lightweight breathability that it is so well known for. To achieve greater weather protection, adidas has also added a thin GORE-TEX® layer to create an all-around, tight waterproofing. <br /> The already characteristic Continental™ rubber outsole in the Terrex series blends with a boost™ midsole, thus completing a package with great cushioning and responsiveness as well as outstanding traction that will not be deterred by any obstacle. Various TPU reinforcements on the heel and toecap serve as additional protection against injuries and accidents. Move and explore. <br /> These lightweight hiking shoes deliver next-generation comfort and freedom of movement for hikes both long and short. The adidas Primeknit upper hugs your foot for flexible, all-terrain stability, while the Boost midsole delivers endless energy to keep you moving up or down the trail. A GORE-TEX membrane sheds water while letting your feet breathe for all-conditions wear. <br /><br /> Features: <br />
       - Regular fit; <br />
       - Lace closure; <br />
       - adidas Primeknit textile upper; <br />
@@ -1355,7 +1389,7 @@ const products = [
     price: 689.00,
     gender: 'Unisex',
     color: 'Brown',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1363,6 +1397,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '013',
     name: 'Columbia Summit Trail Running Gloves',
     type: 'Accessories',
     brand: 'Columbia',
@@ -1390,7 +1425,7 @@ const products = [
     price: 102.00,
     gender: 'Unisex',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Windproof',
       'Reflective accents'
@@ -1402,6 +1437,7 @@ const products = [
 
   //* ---------------------------------------------------------- FOOTWEAR KIDS -------------------------------------------------------- *//
   {
+    id: '004',
     name: 'Adidas Terrex HyperHiker Hiking Shoes',
     type: 'Footwear',
     brand: 'Adidas',
@@ -1436,6 +1472,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '014',
     name: 'Columbia Redmond Youth Hiking Shoes',
     type: 'Footwear',
     brand: 'Columbia',
@@ -1470,6 +1507,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '025',
     name: 'Black Diamond Momentum Climbing Shoes',
     type: 'Footwear',
     brand: 'Black Diamond',
@@ -1502,6 +1540,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '047',
     name: 'La Sportiva Jynx Hiking Shoes',
     type: 'Footwear',
     brand: 'La Sportiva',
@@ -1529,6 +1568,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '048',
     name: 'La Sportiva Gripit Climbing Shoes',
     type: 'Footwear',
     brand: 'La Sportiva',
@@ -1558,6 +1598,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '067',
     name: 'Merrell Moab Speed Low WP Hiking Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -1591,6 +1632,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '068',
     name: 'Merrell Glove 5 A/C Trail Running Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -1622,6 +1664,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '069',
     name: 'Merrell Altalight Low A/C Hiking Shoes',
     type: 'Footwear',
     brand: 'Merrell',
@@ -1659,6 +1702,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '070',
     name: 'Merrell Oakcreek Mid Lace WP Hiking Boots',
     type: 'Footwear',
     brand: 'Merrell',
@@ -1694,6 +1738,7 @@ const products = [
 
   //* --------------------------------------------------------- CLOTHING MEN ---------------------------------------------------------- *//
   {
+    id: '005',
     name: 'Adidas Terrex MyShelter Hiking Jacket',
     type: 'Clothing',
     brand: 'Adidas',
@@ -1733,6 +1778,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '006',
     name: 'Adidas Terrex LiteFlex Hiking Pants',
     type: 'Clothing',
     brand: 'Adidas',
@@ -1768,6 +1814,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '007',
     name: 'Adidas Terrex Tech Hiking Fleece',
     type: 'Clothing',
     brand: 'Adidas',
@@ -1799,6 +1846,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '055',
     name: 'Mammut Beast RG Hiking Pants',
     type: 'Clothing',
     brand: 'Mammut',
@@ -1838,6 +1886,7 @@ const products = [
 
   //* ------------------------------------------------------------ CLOTHING WOMEN -------------------------------------------------------- *//
   {
+    id: '008',
     name: 'Adidas Terrex Xploric Hiking Jacket',
     type: 'Clothing',
     brand: 'Adidas',
@@ -1872,6 +1921,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '009',
     name: 'Adidas Terrex Liteflex Hiking Shorts Pants',
     type: 'Clothing',
     brand: 'Adidas',
@@ -1904,6 +1954,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '015',
     name: 'Columbia Adventure Hiking Pants',
     type: 'Clothing',
     brand: 'Columbia',
@@ -1944,6 +1995,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '056',
     name: 'Mammut Hiking Shorts Pants',
     type: 'Clothing',
     brand: 'Mammut',
@@ -1986,6 +2038,7 @@ const products = [
   //* ----------------------------------------------------------- CLOTHING KIDS -------------------------------------------------- *//
 
   {
+    id: '016',
     name: 'Columbia Ridge IV Convertible Hiking Pants',
     type: 'Clothing',
     brand: 'Columbia',
@@ -2023,6 +2076,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '017',
     name: 'Columbia Windbreaker Hiking Jacket',
     type: 'Clothing',
     brand: 'Columbia',
@@ -2066,6 +2120,7 @@ const products = [
   //* ------------------------------------------------------------ ACCESORIES ----------------------------------------------------- *//
 
   {
+    id: '010',
     name: 'Adidas Terrex Agravic Hiking Backpack 10L',
     type: 'Accessories',
     brand: 'Adidas',
@@ -2098,6 +2153,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '018',
     name: 'Columbia Maxtrail™ Hiking Backpack 20L',
     type: 'Accessories',
     brand: 'Columbia',
@@ -2131,6 +2187,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '019',
     name: 'Columbia FCT03 BB Hiking Poles',
     type: 'Accessories',
     brand: 'Columbia',
@@ -2159,6 +2216,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '026',
     name: 'Black Diamond Capitan Climbing Helmet',
     type: 'Accessories',
     brand: 'Black Diamond',
@@ -2194,6 +2252,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '027',
     name: 'Black Diamond Speed 50L Hiking Backpack',
     type: 'Accessories',
     brand: 'Black Diamond',
@@ -2226,6 +2285,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '028',
     name: 'Black Diamond Venom Ice Hiking Axe',
     type: 'Accessories',
     brand: 'Black Diamond',
@@ -2258,6 +2318,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '029',
     name: 'Black Diamond Distance FLZ Hiking Poles',
     type: 'Accessories',
     brand: 'Black Diamond',
@@ -2290,6 +2351,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '030',
     name: 'Black Diamond Wiz Hiking Headlight',
     type: 'Accessories',
     brand: 'Black Diamond',
@@ -2313,6 +2375,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '037',
     name: 'Haglöfs Vina 40L Hiking Backpack',
     type: 'Accessories',
     brand: 'Haglofs',
@@ -2351,6 +2414,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '038',
     name: 'Haglöfs L.I.M 35L Hiking Backpack',
     type: 'Accessories',
     brand: 'Haglofs',
@@ -2386,6 +2450,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '039',
     name: 'Haglöfs Ängd 60L Hiking Backpack',
     type: 'Accessories',
     brand: 'Haglofs',
@@ -2412,6 +2477,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '040',
     name: 'Haglöfs Vide 20L Hiking Backpack',
     type: 'Accessories',
     brand: 'Haglofs',
@@ -2453,6 +2519,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '049',
     name: 'La Sportiva X-Cursion 28L Hiking Backpack',
     type: 'Accessories',
     brand: 'La Sportiva',
@@ -2477,6 +2544,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '050',
     name: 'La Sportiva Trango Hiking Poles',
     type: 'Accessories',
     brand: 'La Sportiva',
@@ -2503,6 +2571,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '057',
     name: 'Mammut Comfort Fast Adjust Harness Climbing',
     type: 'Accessories',
     brand: 'Mammut',
@@ -2542,6 +2611,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '058',
     name: 'Mammut Climbing Sender Wire Quickdraw',
     type: 'Accessories',
     brand: 'Mammut',
@@ -2579,6 +2649,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '059',
     name: 'Mammut Crag Sender Climbing Helmet',
     type: 'Accessories',
     brand: 'Mammut',
@@ -2615,6 +2686,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '060',
     name: 'Mammut Trion Spine 75L Hiking Backpack',
     type: 'Accessories',
     brand: 'Mammut',
@@ -2662,6 +2734,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '071',
     name: 'Osprey Zealot Climbing Chalk Bucket 5L',
     type: 'Accessories',
     brand: 'Osprey',
@@ -2691,6 +2764,7 @@ const products = [
     sustainable: true,
   },
   {
+    id: '072',
     name: 'Osprey Triple Climbing Snap Hook',
     type: 'Accessories',
     brand: 'Osprey',
@@ -2719,6 +2793,7 @@ const products = [
     sustainable: false,
   },
   {
+    id: '073',
     name: 'Osprey Zealot 1L Climbing Chalk Bag',
     type: 'Accessories',
     brand: 'Osprey',
@@ -2754,6 +2829,7 @@ const products = [
   //* ------------------------------------------------------------ EQUIPMENT ----------------------------------------------------- *//
 
   {
+    id: '020',
     name: 'Columbia Ultra 2P Lightweight Hiking Tent',
     type: 'Equipment',
     brand: 'Columbia',

@@ -1,16 +1,19 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import { useParams, Link } from "react-router-dom";
+import { connect } from 'react-redux';
+import { addToCart } from '../../redux/Shopping/shopping-actions';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative, Navigation } from "swiper";
 import { data, images } from '../../constants';
-import { FaPlus, FaMinus } from 'react-icons/fa';
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
 
 import './Product.css';
 import "swiper/css";
 import "swiper/css/effect-creative";
 
-const Product = () => {
+const Product = ({addToCart}) => {
+    const [counter, setCounter] = useState(1);
+    const [currentSize, setCurrentSize] = useState();
     const swiperPrevRef = useRef(null);
     const swiperNextRef = useRef(null);
 
@@ -26,7 +29,7 @@ const Product = () => {
     secondDate.setDate(today + 4);
 
 
-    function handleCheckedSize(e) {
+    function handleCheckedSize(size) {
         const checkboxes = document.querySelectorAll('.app__product-content_characteristics-details_size div input');
         let limit = 0;
   
@@ -36,7 +39,7 @@ const Product = () => {
           }
         })
   
-        if(limit > 0) {
+        if (limit > 0) {
           checkboxes.forEach(checkbox => {
             if(checkbox.checked === false) {
               checkbox.setAttribute('disabled', '');
@@ -46,6 +49,13 @@ const Product = () => {
           checkboxes.forEach(checkbox => {
               checkbox.removeAttribute('disabled');
           })
+        }
+
+
+        if (currentSize === size) {
+            setCurrentSize('');
+        } else {
+            setCurrentSize(size);
         }
     }
   
@@ -69,9 +79,20 @@ const Product = () => {
     }
 
 
-    const handleFormSubmit = (e) => {
-        clearCheckboxes();
-    }
+
+
+    const handleDecrementCount = () => {
+        if(counter > 1) {
+            setCounter(prevCount => prevCount - 1);
+        }  
+    }; 
+    const handleIncrementCount = () => {    
+        if(counter < 100) {
+            setCounter(prevCount => prevCount + 1);
+        }   
+    };  
+
+    
 
 
   return (
@@ -152,7 +173,7 @@ const Product = () => {
                                 <input
                                     type='checkbox' 
                                     value={size} 
-                                    onChange={handleCheckedSize}
+                                    onChange={() => handleCheckedSize(size)}
                                     name='size'
                                     required
                                 />
@@ -161,14 +182,16 @@ const Product = () => {
                         ))}
                     </div>
                     <div className='app__product-content_characteristics-details_accessibility'>
-                        <div className='app__product-content_characteristics-details_quantity flex__center'>
-                            <button className="quantity-left">-</button>
-                            <input type="text" value="1"/>
-                            <button className="quantity-right" >+</button>
+                        <div className='app__product-content_characteristics-details_accessibility-quantity flex__center'>
+                            <button className="quantity-left flex__center" onClick={handleDecrementCount}>-</button>
+                            <div className='app__product-content_characteristics-details_accessibility-counter'>{counter}</div>
+                            <button className="quantity-right flex__center" onClick={handleIncrementCount}>+</button>
                         </div>
-                    <button className='custom__button'>ADD TO CART</button>
+                        <button type='button' className='custom__button' onClick={() => addToCart(product.id, currentSize, counter)}>ADD TO CART</button>
                     </div>
-                    <p className='app__product-content_characteristics-details_info'>Order now and it will be delivered directly to you between <b>{firstDate.toDateString()}</b> and <b>{secondDate.toDateString()}</b>.</p>
+                    <p className='app__product-content_characteristics-details_info'>
+                        Order now and it will be delivered directly to you between <b>{firstDate.toDateString()}</b> and <b>{secondDate.toDateString()}</b>. <span className='tooltip'>i<span className='tooltiptext'>The delivery date gives you an indication of how long it will take to receive the item. It´s based on the preparation time, the delivery service selected on the Shopping Basket page and when we receive cleared payment. </span></span>
+                    </p>
                     <div className='app__product-content_characteristics-details_text'>{product.shortDescription}</div>
                 </div>
             </div>
@@ -194,9 +217,11 @@ const Product = () => {
                         </div>
                         <div>
                             <span className='p__yanone'>Features:</span>
+                            <div className='app__product-content_description-details_section-features'>
                             {product.features.map(feature => (
-                                <p key={feature} className='p__text'>{feature}</p>
+                                    <p key={feature} className='p__text'>{feature}</p>   
                             ))}
+                            </div>
                         </div>
                         <div>
                             <span className='p__yanone'>Recommended use:</span>
@@ -210,4 +235,10 @@ const Product = () => {
   )
 }
 
-export default Product
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addToCart: (id, size, counter) => dispatch(addToCart(id, size, counter)),
+    };
+};
+
+export default connect(null, mapDispatchToProps)(Product);
