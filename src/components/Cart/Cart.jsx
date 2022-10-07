@@ -1,32 +1,40 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { data } from '../../constants';
-import { onDisableScroll, onEnableScroll } from '../../utils';
 import { Link } from 'react-router-dom';
 import CartItem from './CartItem';
 import { FaShoppingCart } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
+import { BsCartX } from 'react-icons/bs';
 
 import './Cart.css';
 
-const Cart = ({cartProducts}) => {
+const Cart = ({cartProducts, disableCart}) => {
     const [toggleCart, setToggleCart] = useState(false);
     const [cartCount, setCartCount] = useState(0);
     const [cartTotalPrice, setCartTotalPrice] = useState(0);
     const backgroundRef = useRef();
   
     const handleCartVisible = () => {
-        setToggleCart(true);
-        onDisableScroll();
+        const root = document.querySelector('#root');
+
+        if(!disableCart){
+            setToggleCart(true);
+
+            setTimeout(() => {
+                root.classList.add('fixed-root');
+            }, 200)
   
-        setTimeout(() => {
-            backgroundRef.current.style.display = 'block';
-        }, 310)
+            setTimeout(() => {
+                backgroundRef.current.style.display = 'block';
+            }, 310);
+        } 
     }
     
     const handleCartHidden = () => {
+        const root = document.querySelector('#root');
+
         setToggleCart(false);
-        onEnableScroll();
+        root.classList.remove('fixed-root');
         backgroundRef.current.style.display = 'none';
     }
 
@@ -43,8 +51,6 @@ const Cart = ({cartProducts}) => {
         setCartTotalPrice(totalPrice);
         setCartCount(count);
     }, [cartProducts, cartCount, cartTotalPrice])
-
-
 
 
 
@@ -69,25 +75,36 @@ const Cart = ({cartProducts}) => {
                 </li>
                 
                 <li className='app__navbar-smallCart_items-content'>
-                    {cartProducts.map(prod => (
-                        <CartItem key={prod.id} product={prod}/>
-                    ))}
+                    {cartProducts.length === 0 
+                        ? (<div className='app__navbar-smallCart_items-content_empty flex__center'>
+                            <BsCartX className='app__navbar-smallCart_items-content_empty-icon'/>
+                            <h1 className='title'>Your cart is currently empty.</h1>
+                            <p className='p__yanone'>Before proceed to checkout you must add some products to your shopping cart.
+                                <br/>You will find a lot of interesting products on our "Products" page.</p>
+                        </div>) 
+                        : cartProducts.map(prod => (
+                                <CartItem key={`${prod.id}_${prod.selectedSize}`} product={prod}/>
+                        ))
+                    }
                 </li>
+                
 
-                <li className='app__navbar-smallCart_items-total'>
-                    <p className='p__yanone'>Total:</p>
-                    <p className='p__yanone'>{cartTotalPrice.toFixed(2)} RON</p>
+                {cartProducts.length !== 0 
+                && <li className='app__navbar-smallCart_items-checkout'>
+                    <div className='app__navbar-smallCart_items-checkout_total'>
+                        <p className='p__yanone'>Subtotal:</p>
+                        <p className='p__yanone'>{cartTotalPrice.toFixed(2)} RON</p>
+                    </div>
+                    <Link to='/checkout' className='custom__button' onClick={handleCartHidden}>PROCEED TO CHECKOUT</Link>
                 </li>
-            
-                <li className='app__navbar-smallCart_items-checkout'>
-                    <Link to='#' className='custom__button'>PROCEED TO CHECKOUT</Link>
-                </li>
+                }
+
             </ul>
         </div>
         <div className='app__navbar-cart__background' onClick={handleCartHidden} ref={backgroundRef}></div>
       </> 
     )
-  }
+}
 
 
 const mapStateToProps = state => {

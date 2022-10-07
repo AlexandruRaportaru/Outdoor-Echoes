@@ -110,10 +110,7 @@
     height:20px;
 }
 
-input[type='checkbox']:checked {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    
+.app__product-content_characteristics-details_size input[type='checkbox']:checked {
     border-radius: 2px;
     background: var(--color-yellow) !important;
     border: 2px solid var(--color-purple) !important;
@@ -125,72 +122,17 @@ input[type='checkbox']:checked {
     color: var(--color-grey);
 }
 
+.app__product-content_characteristics-details_attention {
+    color: red !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    margin-top: 5px;
+}
+
 .app__product-content_characteristics-details_accessibility {
     display: flex;
     align-items: center;
     margin: 20px 0 2px 0;
-}
-
-.app__product-content_characteristics-details_accessibility-quantity {
-    background: var(--color-purple);
-    width: 154px;
-    height: 46px;
-    border-radius: 10px;
-    border: 1px solid var(--color-purple);
-    outline: none;
-    transition:all 0.3s;
-    margin-right: 50px;
-}
-
-.app__product-content_characteristics-details_accessibility-quantity:hover {
-    box-shadow: 0 0 1em 0 var(--color-purple);
-}
-
-.app__product-content_characteristics-details_accessibility-quantity button {
-    padding: 10px;
-    background: var(--color-purple);
-    color: var(--color-white);
-    border: none;
-    height: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
-    width: 50px;
-}
-
-.app__product-content_characteristics-details_accessibility-quantity button:hover {
-    color: var(--color-yellow);
-}
-
-.app__product-content_characteristics-details_accessibility-counter {
-    vertical-align: middle;
-    text-align: center;
-    font-size: 16px;
-    font-family: var(--font-anton);
-    border: 1px solid var(--color-purple);
-    color: var(--color-purple);
-    width: 34%;
-    border-radius: 2px;
-    background: var(--color-white);
-}
-
-.app__product-content_characteristics-details_accessibility-quantity:hover 
-.app__product-content_characteristics-details_accessibility-counter {
-    box-shadow: inset 0 0 0.5em var(--color-purple);
-}
-
-.app__product-content_characteristics-details_accessibility .custom__button {
-    background: var(--color-purple);
-    color: var(--color-white);
-}
-
-.app__product-content_characteristics-details_accessibility .custom__button:hover {
-    color: var(--color-yellow) !important;
-    text-shadow: 1px 1px var(--color-purple) !important;
-    background: var(--color-purple);
-    box-shadow: 0 0 1em 0 var(--color-purple) !important;
-    border: 1px solid var(--color-purple) !important;
 }
 
 .app__product-content_characteristics-details_info {
@@ -292,6 +234,69 @@ input[type='checkbox']:checked {
     margin: 5px 0;
 }
 
+.app__product-modal {
+    backdrop-filter: blur(6px);
+    display: none;
+    position: fixed;
+    padding-top: 250px;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgb(70, 52, 78, 0.7);
+}
+
+.app__product-modal_content {
+    position: relative;
+    background-color: var(--color-purple);
+    margin: auto;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(0,0,0,0.5);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-700px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.app__product-modal_content img {
+    width: 100px;
+}
+
+.app__product-modal_content h1 {
+    color: var(--color-yellow);
+    font-size: 30px;
+    margin-left: 20px;
+}
+  
+.app__product-modal_close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.app__product-modal_close-icon {
+    color: var(--color-white);
+}
+  
+.app__product-modal_close-icon:hover {
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1150px) {
     .app__product-title h1 {
         padding: 30px 0;
@@ -319,20 +324,6 @@ input[type='checkbox']:checked {
     
     .app__product-content_characteristics-details_size div {
         margin-right: 20px;
-    }
-
-    .app__product-content_characteristics-details_accessibility-quantity {
-        width: 123px;
-        height: 43px;
-        margin-right: 50px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .app__product-content_characteristics-details_accessibility-quantity {
-        width: 103px;
-        height: 38px;
-        margin-right: 30px;
     }
 }
 

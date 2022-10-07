@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { FaUserAlt, FaSearch, FaShoppingCart } from 'react-icons/fa';
+import { FaUserAlt, FaSearch } from 'react-icons/fa';
 import { MdOutlineContactSupport } from 'react-icons/md';
 import { Menu, Logo, Cart} from '../../components';
 import { data } from '../../constants';
@@ -7,7 +7,7 @@ import { data } from '../../constants';
 import './Navbar.css';
 
 
-const Navbar = () => {
+const Navbar = ({disableCart}) => {
   const placeholderRef = useRef();
 
   const handleInputChange = (e) => {
@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <Cart className='box5'/>
+      <Cart className='box5' disableCart={disableCart}/>
     </nav>
   )
 };

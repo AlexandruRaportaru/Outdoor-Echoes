@@ -23,6 +23,12 @@ import spring from '../assets/spring.png';
 import paypal from '../assets/paypal.png';
 import swipe from '../assets/swipe.gif';
 import click from '../assets/click.gif';
+import maestro from '../assets/maestro.png';
+import mastercard from '../assets/mastercard.png';
+import visa from '../assets/visa.png';
+import americanexpress from '../assets/americanexpress.png';
+import code from '../assets/code.png';
+import checked from '../assets/checked.gif';
 
 
 
@@ -405,6 +411,12 @@ export default {
   paypal,
   swipe,
   click,
+  maestro,
+  mastercard,
+  visa,
+  americanexpress,
+  code,
+  checked,
 
 /* Adidas */
   adidasBanner,

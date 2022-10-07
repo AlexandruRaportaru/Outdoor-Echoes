@@ -35,3 +35,13 @@ a {
 li {
   list-style: none;
 }
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.fixed-root {
+  width: calc(100% - 12px);
+  position: fixed;
+}

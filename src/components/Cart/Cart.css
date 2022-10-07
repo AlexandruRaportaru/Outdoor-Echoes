@@ -96,7 +96,33 @@
 .app__navbar-smallCart_items-content {
     background: var(--color-white);
     padding: 15px;
-    height: 74%;
+    height: calc(100% - 170px);
+    overflow-y: auto;
+}
+
+.app__navbar-smallCart_items-content_empty {
+    flex-direction: column;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.app__navbar-smallCart_items-content_empty-icon {
+    font-size: 90px;
+    color: rgb(128, 128, 128, 0.5);
+}
+
+.app__navbar-smallCart_items-content_empty h1 {
+    color: var(--color-purple);
+    margin: 30px 0;
+    font-size: 40px;
+    line-height: 35px;
+    
+}
+
+.app__navbar-smallCart_items-content_empty p {
+    font-size: 20px;
+    color: var(--color-purple);
+    font-weight: normal;
 }
 
 .cart__item {
@@ -110,12 +136,6 @@
 
 .cart__item-description {
     margin: 0 10px;
-}
-
-.cart__item-description h6 {
-    font-family: var(--font-anton);
-    font-size: 14px;
-    color: var(--color-purple);
 }
 
 .cart__item-description h6 {
@@ -139,35 +159,31 @@
     margin-top: 4px;
 }
 
-.app__navbar-smallCart_items-total {
+.app__navbar-smallCart_items-checkout {
+    padding: 10px 20px 40px 20px;
+    position: absolute;
+    width: 100%;
+    background: var(--color-yellow);
+    bottom: 0;
+}
+
+.app__navbar-smallCart_items-checkout_total {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    margin-bottom: 20px;
     background: var(--color-yellow);
 }
 
-.app__navbar-smallCart_items-total p{
-    font-size: 18px;
+.app__navbar-smallCart_items-checkout_total p {
+    font-size: 20px;
     color: var(--color-purple);
-}
-
-.app__navbar-smallCart_items-checkout {
-    padding: 17.5px;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    font-size: 27.5px;
-    background: var(--color-yellow);
-    color: var(--color-purple);
-    bottom: 0;
 }
 
 .app__navbar-smallCart_items-checkout .custom__button {
     background: var(--color-purple);
     color: var(--color-yellow);
     border: 1px solid var(--color-yellow);
+    width: 100%;
 }
 
 .app__navbar-smallCart_items-checkout .custom__button:hover {
@@ -180,9 +196,9 @@
 .app__navbar-cart__background {
     background: var(--color-purple);
     opacity: 0.5;
-    width: calc(100% - 280px);
+    width: calc(100% - 280px + 12px);
     position: absolute;
-    right: 280px;
+    right: calc(280px - 12px);;
     top: 0;
     height: 100vh;
     display: none;
@@ -212,5 +228,9 @@
         max-width: 60px;
         padding: 0 15px;
         justify-self: end;
+    }
+
+    .app__navbar-smallCart_items-content_empty-icon {
+        font-size: 60px;
     }
 }

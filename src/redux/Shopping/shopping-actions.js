@@ -11,21 +11,23 @@ export const addToCart = (itemID, itemSIZE, itemCOUNT) => {
     }
 }
 
-export const removeFromCart = (itemID) => {
+export const removeFromCart = (itemID, itemSIZE) => {
     return {
         type: actionTypes.REMOVE_FROM_CART,
         payload: {
-            id: itemID
+            id: itemID,
+            size: itemSIZE
         }
     }
 } 
 
-export const adjustQty = (itemID, value) => {
+export const adjustQty = (itemID, value, itemSIZE) => {
     return {
         type: actionTypes.ADJUST_QUANTITY,
         payload: {
             id: itemID,
-            quantity: value
+            quantity: value,
+            size: itemSIZE,
         }
     }
 } 

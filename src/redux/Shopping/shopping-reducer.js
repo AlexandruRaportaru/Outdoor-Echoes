@@ -30,14 +30,16 @@ const shopReducer = (state = INITIAL_STATE, action) => {
         case actionTypes.REMOVE_FROM_CART:
             return {
                 ...state,
-                cart: state.cart.filter((item) => item.id !== action.payload.id)
+                cart: state.cart.filter((item) => {
+                    return !(item.id  === action.payload.id && item.selectedSize === action.payload.size)
+                })
             };
         case actionTypes.ADJUST_QUANTITY:
             return {
                 ...state,
                 cart: state.cart.map((item) => 
-                    item.id === action.payload.id 
-                        ? {...item, qty: action.payload.qty} 
+                    item.id === action.payload.id && item.selectedSize === action.payload.size
+                        ? {...item, qty: +action.payload.quantity} 
                         : item
                 )
             };

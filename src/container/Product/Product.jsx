@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative, Navigation } from "swiper";
 import { data, images } from '../../constants';
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
+import { RiCloseCircleLine } from 'react-icons/ri';
 
 import './Product.css';
 import "swiper/css";
@@ -16,10 +17,11 @@ const Product = ({addToCart}) => {
     const [currentSize, setCurrentSize] = useState();
     const swiperPrevRef = useRef(null);
     const swiperNextRef = useRef(null);
+    const modal = document.querySelector('.app__product-modal');
 
 
     const { id } = useParams();
-    const product = data.products.find(element => element.id === id)
+    const product = data.products.find(element => element.id === id);
 
 
     const today = new Date().getDate();
@@ -57,26 +59,7 @@ const Product = ({addToCart}) => {
         } else {
             setCurrentSize(size);
         }
-    }
-  
-    const clearCheckboxes = () => {
-        const checkboxes = document.querySelectorAll('.app__product-content_characteristics-details_size div input');
-        checkboxes.forEach(checkbox => {
-        checkbox.checked = false;
-        checkbox.removeAttribute('disabled');
-        });
-    }
-  
-    const valuesCheckboxes = () => {
-        const checkboxes = document.querySelectorAll('.app__product-content_characteristics-details_size div input');
-        const size = [];
-        checkboxes.forEach(checkbox => {
-        if(checkbox.checked === true) {
-            size.push(checkbox.value);
-        }
-        });
-        return size;
-    }
+    };
 
 
 
@@ -86,14 +69,25 @@ const Product = ({addToCart}) => {
             setCounter(prevCount => prevCount - 1);
         }  
     }; 
+
     const handleIncrementCount = () => {    
         if(counter < 100) {
             setCounter(prevCount => prevCount + 1);
         }   
     };  
 
-    
 
+
+
+    const handleAddToCart = () => {
+        addToCart(product.id, currentSize, counter);
+        modal.style.display = 'block';
+    };
+
+    const handleCloseModal = () => {
+        modal.style.display = 'none';
+    };
+    
 
   return (
     <div className='app__product'>
@@ -175,19 +169,27 @@ const Product = ({addToCart}) => {
                                     value={size} 
                                     onChange={() => handleCheckedSize(size)}
                                     name='size'
-                                    required
                                 />
                                 <label className='p__labeltext' style={{marginLeft: '5px'}}>{size}</label>
                             </div>
                         ))}
                     </div>
+                    {!currentSize && (<p className='app__product-content_characteristics-details_attention p__text'>* Please choose a size!</p>)}
+                    
                     <div className='app__product-content_characteristics-details_accessibility'>
-                        <div className='app__product-content_characteristics-details_accessibility-quantity flex__center'>
-                            <button className="quantity-left flex__center" onClick={handleDecrementCount}>-</button>
-                            <div className='app__product-content_characteristics-details_accessibility-counter'>{counter}</div>
-                            <button className="quantity-right flex__center" onClick={handleIncrementCount}>+</button>
+                        <div className='custom__quantity flex__center'>
+                            <button className="flex__center" onClick={handleDecrementCount}>-</button>
+                            <div>{counter}</div>
+                            <button className="flex__center" onClick={handleIncrementCount}>+</button>
                         </div>
-                        <button type='button' className='custom__button' onClick={() => addToCart(product.id, currentSize, counter)}>ADD TO CART</button>
+                        <button 
+                            type='button' 
+                            className={`custom__button ${!currentSize && 'disabled'}`}
+                            onClick={handleAddToCart}
+                            disabled={!currentSize}
+                        >
+                            ADD TO CART
+                        </button>
                     </div>
                     <p className='app__product-content_characteristics-details_info'>
                         Order now and it will be delivered directly to you between <b>{firstDate.toDateString()}</b> and <b>{secondDate.toDateString()}</b>. <span className='tooltip'>i<span className='tooltiptext'>The delivery date gives you an indication of how long it will take to receive the item. It´s based on the preparation time, the delivery service selected on the Shopping Basket page and when we receive cleared payment. </span></span>
@@ -228,6 +230,17 @@ const Product = ({addToCart}) => {
                             <p className='p__text'>{product.activity}</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div className='app__product-modal'>
+            <div className='app__product-modal_content'>
+                <div className='app__product-modal_close'>
+                    <RiCloseCircleLine size={30} className='app__product-modal_close-icon' onClick={handleCloseModal}/>
+                </div>
+                <div className='flex__center'>
+                    <img src={images.checked} alt='Checked'/>
+                    <h1 className='title'>The product was successfully added to your shopping cart.</h1>
                 </div>
             </div>
         </div>
