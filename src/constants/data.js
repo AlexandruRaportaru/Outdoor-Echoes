@@ -1,7 +1,6 @@
 import images from './images';
 import { IoIosMan, IoIosWoman } from 'react-icons/io';
 import { ImManWoman, ImHome3 } from 'react-icons/im';
-import { BsTools } from 'react-icons/bs';
 import { FaLayerGroup } from 'react-icons/fa';
 import { GiLightBackpack, GiCampingTent } from 'react-icons/gi';
 
@@ -10,7 +9,7 @@ const productsExamples = [
   'LEGGINGS',
   'A JACKET',
   'SUNGLASSES',
-  'A JUMPER',
+  'A FLEECE',
   'SNOW BOOTS',
   'A BACKPACK'
 ]
@@ -309,42 +308,6 @@ const products = [
     sustainable: false,
   },
   {
-    id: '021',
-    name: 'Black Diamond Mission XP Leather Hiking Shoes',
-    type: 'Footwear',
-    brand: 'Black Diamond',
-    images: [
-      images.missionXPFirst,
-      images.missionXPSecond,
-      images.missionXPThird
-    ],
-    size: [
-      41 + 'EU',
-      42 + 'EU',
-      43 + 'EU',
-    ],
-    shortDescription: <span>This time BLACK DIAMOND brings you the new MISSION XP LEATHER HIKING hiking shoes, they are designed for difficult terrain and uneven climbs. Its upper part is made of suede and synthetic leather with an inner lining that is highly breathable and quick drying. It has a braided fastening system and a reinforced tongue that provides protection and stability with each step.</span>,
-    description: <span>
-      Features: <br />
-      - Premium and durable suede leather upper that’s lined for fit and comfort; <br />
-      - BlackLabel-Mountain rubber is high performance sticky rubber; <br />
-      - Rubber toe protection; <br />
-      - Welded TPU overlays placed for added durability and protection; <br />
-      - Gusseted tongue keeps debris out and foot locked down; <br />
-      - Dual density tuned EVA midsole with stiff forefoot shank plate for edging performance and underfoot protection; <br />
-      - Multiple webbing loops for various tagging options.
-    </span>,
-    price: 549.00,
-    gender: 'Men',
-    color: 'Green',
-    weight: '300 g',
-    features: [
-      'Waterproof'
-    ],
-    activity: 'Hiking',
-    sustainable: false,
-  },
-  {
     id: '022',
     name: 'Black Diamond Shadow LV Climbing Shoes',
     type: 'Footwear',
@@ -419,35 +382,6 @@ const products = [
     gender: 'Men',
     color: 'Green',
     weight: '-',
-    features: [
-      'Waterproof'
-    ],
-    activity: 'Hiking',
-    sustainable: true,
-  },
-  {
-    id: '032',
-    name: 'Haglöfs Skuta Mid Proof Eco Hiking Boots',
-    type: 'Footwear',
-    brand: 'Haglofs',
-    images: [
-      images.skutaecoFirst,
-      images.skutaecoSecond,
-      images.skutaecoThird
-    ],
-    size: [
-      42 + 'EU',
-      44 + 'EU',
-      45 + 'EU',
-    ],
-    shortDescription: <span>The Skuta Mid Proof hiking boots with waterproof fabric and PROOF ECO membrane without fluorocarbon will become your ideal choice for mountain adventure. These boots are built with a rear cushioning of the highest quality GEL foot. They offer excellent shock absorption for the ideal step.</span>, 
-    description: <span>
-       The molded EVA midsole provides good cushioning and comfort. In addition, these mountaineering boots are made of high quality organic leather from a tannery audited by Leather Working Group. Welcome to modern hiking. This is a supportive and tough trekking shoe with a wide forefoot fit for extra comfort. Upper protection and AHAR+ rubber on outsole adds to the durability. It´s completely fluorocarbon free, down to the waterproof the PROOF™ ECO. A mid-cut silhouette adds stability and protection. <br /><br /> Waterproof with fluorocarbon free PROOF™ ECO membrane. GEL™ rearfoot cushioning offers excellent shock absorption for the ideal stride. Moulded EVA midsole gives good cushioning and comfort. Premium eco-friendly leather from a tannery audited by the Leather Working Group. Fluorocarbon free DWR-treated surfaces help repel water & dirt. Engineered patterned outsole provides high traction and stability. <br /><br /> AHAR™ Plus (ASICS® High Abrasion Resistance Rubber) on the outsole heel adds durability. Suede reinforced toe and heel give increased protection and durability. Tongue gusset prevents water and sand from entering the shoe. Fabrics: Upper: Fluorocarbon free water repellent 1.4 -1.6 mm suede from LWG audited tannery (Gold/Silver rated) with lower environmental footprint. Lining: PROOF™ ECO, fluorocarbon free and bluesign® approved membrane, with recycled lining. Midsole: Moulded EVA + Gel. Footbed: Moulded EVA. Outsole: AHAR™ Plus.
-    </span>,
-    price: 515.00,
-    gender: 'Men',
-    color: 'Brown',
-    weight: '400 g',
     features: [
       'Waterproof'
     ],
@@ -562,7 +496,7 @@ const products = [
   },
   {
     id: '043',
-    name: 'La Sportiva Nepal Cube Goretex Hiking Boots',
+    name: 'La Sportiva Nepal Cube Goretex Expeditions Boots',
     type: 'Footwear',
     brand: 'La Sportiva',
     images: [
@@ -603,13 +537,13 @@ const products = [
   },
   {
     id: '051',
-    name: 'Mammut Nordwand 6000 Hiking Boots',
+    name: 'Mammut Nordwand 6000 Expeditions Boots',
     type: 'Footwear',
     brand: 'Mammut',
     images: [
-      images.nordwandFirst,
-      images.nordwandSecond,
-      images.nordwandThird
+      images.nordwand6000First,
+      images.nordwand6000Second,
+      images.nordwand6000Third
     ],
     size: [
       42 + 'EU',
@@ -960,37 +894,6 @@ const products = [
     sustainable: false,
   },
   {
-    id: '034',
-    name: 'Haglöfs Kummel Proof ECO Hiking Boots',
-    type: 'Footwear',
-    brand: 'Haglofs',
-    images: [
-      images.kummelecoFirst,
-      images.kummelecoSecond,
-      images.kummelecoThird
-    ],
-    size: [
-      36 + 'EU',
-      37 + 'EU',
-      38 + 'EU',
-    ],
-    shortDescription: <span>The Krummel Low Proof hiking boots with waterproof fabric and PROOF ECO membrane without fluorocarbon will become your ideal choice for mountain adventure. These boots are built with a rear cushioning of the highest quality GEL foot. They offer excellent shock absorption for the ideal step.</span>,
-    description: <span>
-      Features: <br />
-      - Waterproof with fluorocarbon free PROOF™ ECO membrane GEL™ rearfoot cushioning offers excellent shock absorption for the ideal stride SpevaFoam™ midsole improves cushioning and a comfortable bounce-back feeling Premium eco-friendly leather from a tannery audited by the Leather Working Group Fluorocarbon free DWR-treated surfaces help repel water & dirt Engineered patterned outsole provides high traction and stability AHAR™ Plus (ASICS® High Abrasion Resistance Rubber) on the outsole heel adds durability Tongue gusset prevents water and sand from entering the shoe; <br />
-      - Waterproof flex test: 100 000 steps.
-    </span>,
-    price: 518.00,
-    gender: 'Women',
-    color: 'Brown',
-    weight: '420 g',
-    features: [
-      'Waterproof'
-    ],
-    activity: 'Hiking',
-    sustainable: true,
-  },
-  {
     id: '035',
     name: 'Haglöfs LIM Low Hiking Shoes',
     type: 'Footwear',
@@ -1129,7 +1032,7 @@ const products = [
   },
   {
     id: '046',
-    name: 'La Sportiva Trango Ice Cube Goretex Hiking Boots',
+    name: 'La Sportiva Trango Ice Cube Goretex Expeditions Boots',
     type: 'Footwear',
     brand: 'La Sportiva',
     images: [
@@ -1172,7 +1075,7 @@ const products = [
   },
   {
     id: '053',
-    name: 'Mammut Nordwand High Goretex Hiking Boots',
+    name: 'Mammut Nordwand High Goretex Expeditions Boots',
     type: 'Footwear',
     brand: 'Mammut',
     images: [
@@ -1359,7 +1262,7 @@ const products = [
   },
   
 
-  //* ---------------------------------------------------------- FOOTWEAR UNISEX ------------------------------------------------------ *//
+  //* ---------------------------------------------------------- UNISEX ------------------------------------------------------ *//
 
 
   {
@@ -1433,7 +1336,101 @@ const products = [
     activity: 'Trail running',
     sustainable: false,
   },
-
+  {
+    id: '032',
+    name: 'Haglöfs Nordic Expeditions Down Jacket',
+    type: 'Clothing',
+    brand: 'Haglofs',
+    images: [
+      images.nordicExpFirst,
+      images.nordicExpSecond,
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>The Haglofs Nordic Expedition Down Jacket is prepared to accompany you in your mountaineering activities in the strongest conditions since it offers superior thermal insulation, breathability, impermeability, and windproof.</span>, 
+    description: <span>
+       This puffer jacket has the PROOF fabric that repels water, favors breathability, and guarantees durability, thanks to polyamide. In the interior, the Haglofs H Down Platinum insulation with 800 cuin (90% down and 10% feathers) is highly resistant to cold and keeps the body heat at its normal levels.<br /><br /> It also includes a novelty adjusted system in the chest and waist that serves such as support in long walks, fixed hood, adjustable hem, elastic cuffs, ventilation zippers in the armpits, lateral pockets, and an internal pocket to carry the smallest objects safely. You´re looking at the world´s first breathable down jacket.<br /><br />
+       Features:<br />
+       - Shell made from 3-layer PROOF™— a lightweight and breathable fabric that´s wind and waterproof, and fluorocarbon-free;<br />
+       - Insulated with a unique combination of hydrophobic, H DOWN Platinum 800 CUIN fillpower down and graphene-infused Mimic PLATINUM;<br />
+       - Adjustable hood, bottom hem, chest, and waist;<br />
+       - Zippered underarm ventilation;<br />
+       - Elastic cuffs;<br />
+       - One zippered and one open internal pocket;<br />
+       - FLUOROCARBON-FREE, RDS, DWR, PROOF, Dun, MimicPlatinum, DownPlatinum;<br />
+       - PROOF™ 3-layer 100% polyamide 40D mini ripstop laminated to an ultra thin microporous membrane, 108g/m2, bluesign® approved;<br />
+       - Hydrostatic head:15,000 mm;<br />
+       - Moisture permeability (upright cup):10,000 g/m²/24h;<br />
+       - Insulation:Haglöfs H DOWN Platinum 800 CUIN fillpower superior quality goose down (90% down/10% feathers);<br />
+       - Traceable;<br />
+       - Down weight:166 g (size L);<br />
+       - Mimic PLATINUM Insulation:Graphene mixed with polyester, a light and lofty synthetic padding;<br />
+       - Contains non-textile parts of animal origin.
+    </span>,
+    price: 3229.00,
+    gender: 'Unisex',
+    color: 'Red',
+    weight: '-',
+    features: [
+      'Thermal',
+      'Waterproof',
+      'Windproof',
+      'Stretch'
+    ],
+    activity: 'Expeditions',
+    sustainable: true,
+  },
+  {
+    id: '034',
+    name: 'Haglöfs Vassi Goretex Pro Expeditions Pants',
+    type: 'Clothing',
+    brand: 'Haglofs',
+    images: [
+      images.vassiProFirst,
+      images.vassiProSecond,
+      images.vassiProThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Haglofs Vassi Goretex Pro Pants present us with a model with integrated suspenders for a more comfortable fit and also it is easy to adjust, as well as ultra-resistant materials against the wind and water, elastic and very durable.</span>,
+    description: <span>
+      These pants for skiing, snowboarding, climbing and mountaineering have been made with a Goretex membrane that offers maximum impermeability and control of moisture inside. The polyamide provides elasticity and the reinforced instep with aramid gives greater resistance to wear.<br /><br /> They include RECCO reflective details, joined knees for greater mobility, lateral ventilation with bidirectional zippers, an adjustable hem with Velcro, high waist with adjustable suspenders, zipper with flap, rubber gaiters, two zippered pockets on the leg, and elastic back panel that gives excellent comfort and support. <br /><br />Made for the dedicated off-piste skier. Latest generation GORE-TEX Pro is used to build a highly protective, reliable and breathable suit of armour - a really durable ski pant that´ll lead to exhilarating adventures in deep powder. Featuring a high, comfortable waist with suspenders, full side ventilation, a RECCO® reflector, tough reinforcement to help your kit last longer, and handy pockets.<br /><br /> 
+      Features: <br />
+      - Made from 40D GORE-TEX Pro - highly breathable, for superior wind- and waterproofing;<br />
+      - Articulated knees and full side ventilation with 2-way water-repellent zippers;<br />
+      - Velcro adjustment straps at lower leg;<br />
+      - Two zippered thigh pockets with bellow and webbing loop for transceiver;<br />
+      - RECCO® reflector;<br />
+      - Reinforced instep and internal gaiter with rubber grip and adjustment;<br />
+      - Higher waist to keep the snow out, with integrated and adjustable suspenders for a perfect fit;<br />
+      - Zip fly under protective placket;<br />
+      - Stretch panel in back for extra comfort and moisture management;<br />
+      - The model is 188 cm tall and is wearing size L;<br />
+      - Bluesign, DWR, GoreTex, Recco;<br />
+      - GORE-TEX Pro most breathable, 3-layer 100% Polyamide, 40D semi dull, double rip stop face laminated to a ePTFE membrane and a solution-dyed grid backer, 113 g/m², bluesign® approved; <br />
+      - Hydrostatic head: 28,000 mm, RET:6;<br />
+      - Reinforcement weave:76% Polyamide, 24% Aramid, heavy duty Polyamide with a liquid crystal polymer featuring extreme strength and modulus as well as good abrasion resistance, 245 g/m².
+    </span>,
+    price: 1787.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '420 g',
+    features: [
+      'Waterproof',
+      'Windproof',
+      'Thermal',
+      'Stretch',
+      'Reflective accents'
+    ],
+    activity: 'Expeditions',
+    sustainable: true,
+  },
 
   //* ---------------------------------------------------------- FOOTWEAR KIDS -------------------------------------------------------- *//
   {
@@ -1452,8 +1449,9 @@ const products = [
       33 + 'EU',
       34 + 'EU',
     ],
+    shortDescription: <span>Get them hiking early. Hitting the trail feels great when kids have these adidas hiking shoes on their feet. They have the lightweight feel of a trail running shoe with the extra support and durability of a mid-height hiking boot to hook kids on exploring the outdoors. Reflective hits shine in low light. Their lugged rubber outsole grips all surfaces with confidence.</span>,
     description: <span>
-      Get them hiking early. Hitting the trail feels great when kids have these adidas hiking shoes on their feet. They have the lightweight feel of a trail running shoe with the extra support and durability of a mid-height hiking boot to hook kids on exploring the outdoors. Reflective hits shine in low light. Their lugged rubber outsole grips all surfaces with confidence. Made with a series of recycled materials, this upper features at least 50% recycled content. This product represents just one of our solutions to help end plastic waste. <br /> Features: <br />
+       Made with a series of recycled materials, this upper features at least 50% recycled content. This product represents just one of our solutions to help end plastic waste. <br /><br /> Features: <br />
       - Upper contains a minimum of 50% recycled content; <br /> 
       - Lace closure; <br /> 
       - Abrasion-resistant Textile upper with mud guard; <br /> 
@@ -1499,7 +1497,7 @@ const products = [
     price: 211.00,
     gender: 'Kids',
     color: 'Grey',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1521,8 +1519,8 @@ const products = [
       33 + 'EU',
       35 + 'EU',
     ],
+    shortDescription: <span>Designed to provide unparalleled comfort, the kids´ momentum is a single velcro shoe built for young crushers and combines innovative technology with a classic, flat-last design to create an entry-level shoe that excels in performance. with an upper fabric that consists entirely of our engineered knit technology, the momentum provides stretch where you need it, support where it matters and all around exceptional breathability.</span>,
     description: <span>
-      Designed to provide unparalleled comfort, the kids´ momentum is a single velcro shoe built for young crushers and combines innovative technology with a classic, flat-last design to create an entry-level shoe that excels in performance. with an upper fabric that consists entirely of our engineered knit technology, the momentum provides stretch where you need it, support where it matters and all around exceptional breathability. <br /><br />
       Features: <br />
       - Neutral, flat last for vertical climbing or all-day comfort; <br />
       - Specific last provides customized fit for kids; <br />
@@ -1534,8 +1532,8 @@ const products = [
     price: 212.00,
     gender: 'Kids',
     color: 'Green',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
@@ -1554,13 +1552,14 @@ const products = [
       33 + 'EU',
       35 + 'EU',
     ],
+    shortDescription: <span>Designed to provide unparalleled comfort, the kids´ momentum is a single velcro shoe built for young crushers and combines innovative technology with a classic, flat-last design to create an entry-level shoe that excels in performance. with an upper fabric that consists entirely of our engineered knit technology, the momentum provides stretch where you need it, support where it matters and all around exceptional breathability.</span>,
     description: <span>
       When winter running sessions are long and difficult La Sportiva JYNK is an ideal running shoe for all round mountaineering activities. This versatile shoe offers technical functionality and comfort in the unpredictable mountain environment. <br /><br /> Thanks to the 3-layer construction that adds to the high quality and excellent performance of this running shoe. The seamless construction has a waterproof upper mesh that provides flexibility with utmost comfort. The sure-grip Trail Rocker sole which enables the boots to penetrate into the ground and creates a good traction against the wet rocks while you are trail running. Thanks to the Frixion rubber and Trail Bite that works exceptionally well in all sorts of trails and provides maximum grip on every sort of trail. <br /><br /> It is an ultimate mountaineering shoes designed especially for all adventure-sport junkies. La Sportiva JYNK is the answer if you are looking for a perfect trail running shoe that provides protection, traction and comfort. <br /><br /> Mountain Running® shoe for kids, Jynx is ideal for everyday use and for the first off-road running sessions. Derived from the Akasha, the Jynx takes its cushioning and comfort. The protective abrasion resistant side panels make the product long lasting and secure.
     </span>,
     price: 456.00,
     gender: 'Kids',
     color: 'Blue',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1582,8 +1581,9 @@ const products = [
       34 + 'EU',
       35 + 'EU',
     ],
+    shortDescription: <span>Be it high intensity via ferrata or hiking excursions in the wild mountain environment La Sportiva Gripit is a perfect lightweight, comfortable shoe. This versatile climbing shoe offers technical functionality and comfort during all your mountaineering activities.</span>,
     description: <span>
-      Be it high intensity via ferrata or hiking excursions in the wild mountain environment La Sportiva Gripit is a perfect lightweight, comfortable shoe. This versatile climbing shoe offers technical functionality and comfort during all your mountaineering activities. <br /><br /> Features: <br />
+      Features: <br />
       - The Zero-Press Construction last is designed to eliminate pressure points in the growth plate area of the foot: avoiding pressure on the metatarsal, essential for growth; <br />
       - Applied to a kid´s shoe the No-Edge Technology promotes sensory development and proprioceptive thanks to the sensitivity on the support points; <br />
       - The Fast Lacing System allows for customization of the fit: by acting on the closure, the heel narrows or widens depending on the need; <br />
@@ -1593,7 +1593,7 @@ const products = [
     gender: 'Kids',
     color: 'Yellow',
     weight: '200 g',
-    features: [],
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
@@ -1612,8 +1612,9 @@ const products = [
       32 + 'EU',
       35 + 'EU',
     ],
+    shortDescription: <span>A lightweight textile upper makes this waterproof hybrid sneaker breathable, and a traditional lace closure delivers a secure and comfortable fit. Reinforcement at the toe cap ensures it will stick around for miles to come, and its non-marking rubber outsole provides extra grip when it´s needed most. You and your mini-me will be ready for your next adventure.</span>,
     description: <span>
-      A lightweight textile upper makes this waterproof hybrid sneaker breathable, and a traditional lace closure delivers a secure and comfortable fit. Reinforcement at the toe cap ensures it will stick around for miles to come, and its non-marking rubber outsole provides extra grip when it´s needed most. You and your mini-me will be ready for your next adventure. <br /><br /> Features: <br />
+      Features: <br />
       - Waterproof construction to keep feet dry; <br />
       - Synthetic upper; <br />
       - Alternative closure for easy on/off; <br />
@@ -1624,7 +1625,7 @@ const products = [
     price: 311.00,
     gender: 'Kids',
     color: 'Brown',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1646,8 +1647,9 @@ const products = [
       32 + 'EU',
       34 + 'EU',
     ],
+    shortDescription: <span>This mini-me take on an adult trainer follows the natural movement of the foot when it needs it the most. An alternative closure gets it on with ease, and a non-marking outsole with extra grip boosts traction without risking skids.</span>,
     description: <span>
-      This mini-me take on an adult trainer follows the natural movement of the foot when it needs it the most. An alternative closure gets it on with ease, and a non-marking outsole with extra grip boosts traction without risking skids. <br /><br /> Features: <br />
+      Features: <br />
       - Synthetic and mesh upper for breathability and a lightweight feel; <br />
       - Alternative closure for easy on/off; <br />
       - Anti-bacterial properties in lining helps prevent bacteria and control odor; <br />
@@ -1656,7 +1658,7 @@ const products = [
     price: 217.00,
     gender: 'Kids',
     color: 'Grey',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1679,8 +1681,9 @@ const products = [
       33 + 'EU',
       35 + 'EU',
     ],
+    shortDescription: <span>Trail-approved features and all-day comfort come together in one lightweight waterproof package. Its toggle closure provides an easy but secure fit, and its lightweight upper and waterproof construction make them light on their feet.</span>,
     description: <span>
-      Trail-approved features and all-day comfort come together in one lightweight waterproof package. Its toggle closure provides an easy but secure fit, and its lightweight upper and waterproof construction make them light on their feet. <br /><br /> Features: <br />
+      Features: <br />
       - Waterproof construction to keep feet dry; <br />
       - Lightweight and durable ripstop upper; <br />
       - Toggle closure for a secure fit; <br />
@@ -1694,7 +1697,7 @@ const products = [
     price: 242.00,
     gender: 'Kids',
     color: 'Purple',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1717,8 +1720,9 @@ const products = [
       34 + 'EU',
       35 + 'EU',
     ],
+    shortDescription: <span>From the trail to the playground, it is easy to step into this waterproof style. The traditional lace closure ensures a secure, adjustable fit. Its durable upper is built from soft suede and breathable mesh, and a treaded rubber outsole ensures the highest possible level of traction.</span>,
     description: <span>
-      From the trail to the playground, it is easy to step into this waterproof style. The traditional lace closure ensures a secure, adjustable fit. Its durable upper is built from soft suede and breathable mesh, and a treaded rubber outsole ensures the highest possible level of traction. <br /><br /> Features: <br />
+      Features: <br />
       - Waterproof construction to keep feet dry; <br />
       - Suede and mesh upper for durability; <br />
       - Traditional lace closure for a secure fit; <br />
@@ -1728,7 +1732,7 @@ const products = [
     price: 197.00,
     gender: 'Kids',
     color: 'Grey',
-    weight: '',
+    weight: '-',
     features: [
       'Waterproof'
     ],
@@ -1753,8 +1757,9 @@ const products = [
       'XL',
       'XXL',
     ],
+    shortDescription: <span>Designed for those who favor an increasingly active mountain lifestyle, the adidas Terrex MyShelter Windweave hiking jacket is ideal for quickly adapting to any weather without losing your bearings. Inspired by windbreaker jackets, this top brings outstanding durability and a groundbreaking design to the scene. Made from 100% polyester ripstop, the Terrex MyShelter Windweave easily repels water with ease thanks to a DWR-coated outer lining.</span>,
     description: <span>
-      Designed for those who favor an increasingly active mountain lifestyle, the adidas Terrex MyShelter Windweave hiking jacket is ideal for quickly adapting to any weather without losing your bearings. Inspired by windbreaker jackets, this top brings outstanding durability and a groundbreaking design to the scene. <br /> Made from 100% polyester ripstop, the Terrex MyShelter Windweave easily repels water with ease thanks to a DWR-coated outer lining. Primaloft® Next, meanwhile, keeps you cool and dry thanks to its superior insulation and breathability. But perhaps this jacket’s most revolutionary offering is its patronage, designed thanks to AI body mapping to improve its aerodynamic profile and reduce wind resistance while running. <br /> With stretch cuffs and an drawcord-adjustable hem, this jacket allows on-the-go protection adjustments. The two-way full front zip with high collar stops any water or wind seepage on its tracks, while its stretch hood covers your head when the rain tries to ruin your ride. Side zippered pockets allow you to warm your hands or carry your essentials. Terrex MYSHELTER Windweave Hooded Hiking JacketVersatility keeps you on the move. <br /> Inspired by variable conditions and active days outdoors, this adidas Terrex hiking jacket lets you do it all. Its body-mapped design maintains breathability where you need it most without compromising on durability or warmth. PrimaLoft® Next insulates and breathes to match your activity level. A durable water repellent finish sheds light rain, so there´s no need to slow down. <br /> Features: <br />
+       Primaloft® Next, meanwhile, keeps you cool and dry thanks to its superior insulation and breathability. But perhaps this jacket’s most revolutionary offering is its patronage, designed thanks to AI body mapping to improve its aerodynamic profile and reduce wind resistance while running. <br /><br /> With stretch cuffs and an drawcord-adjustable hem, this jacket allows on-the-go protection adjustments. The two-way full front zip with high collar stops any water or wind seepage on its tracks, while its stretch hood covers your head when the rain tries to ruin your ride. Side zippered pockets allow you to warm your hands or carry your essentials. Terrex MYSHELTER Windweave Hooded Hiking JacketVersatility keeps you on the move. <br /><br /> Inspired by variable conditions and active days outdoors, this adidas Terrex hiking jacket lets you do it all. Its body-mapped design maintains breathability where you need it most without compromising on durability or warmth. PrimaLoft® Next insulates and breathes to match your activity level. A durable water repellent finish sheds light rain, so there´s no need to slow down. <br /><br /> Features: <br />
       - Windweave body-mapping construction; <br />
       - Adjustable hem; <br />
       - Elastic cuffs; <br />
@@ -1767,7 +1772,7 @@ const products = [
     price: 619.00,
     gender: 'Men',
     color: 'Yellow',
-    weight: '',
+    weight: '-',
     features: [
       'Thermal',
       'Compressible',
@@ -1793,8 +1798,9 @@ const products = [
       'XL',
       'XXL',
     ],
+    shortDescription: <span>Adidas Terrex Liteflex Hiking are prepared to face the hardest explorations in the mountains since they are very resistant to wear, elastic, and light and provide wide freedom of movement so you can feel protected and safe while hiking. These tracksuit pants have a combination of fabrics, such as nylon, polyester, and elastane, which give maximum flexibility, durability, lightness, breathability, and fast drying.</span>,
     description: <span>
-      Adidas Terrex Liteflex Hiking are prepared to face the hardest explorations in the mountains since they are very resistant to wear, elastic, and light and provide wide freedom of movement so you can feel protected and safe while hiking. These tracksuit pants have a combination of fabrics, such as nylon, polyester, and elastane, which give maximum flexibility, durability, lightness, breathability, and fast drying. Its design includes a waist with elastic drawcord and silicone grip that adjusts to your sizes, zippered pockets for hands, a hem with adjustable buttons, and a relaxed cut that will give you comfort to move. <br /> Terrex Liteflex Hiking Pants. Freedom to move is the name of the game. These adidas Terrex Liteflex Hiking Pants have a wide elastic waistband with silicone grip, which is ideal if you´re layering on a backpack or hip bag. Extra stretch lets you hike and manoeuvre unhindered through uneven terrain. The water-repellent fabric gives you the peace of mind to keep moving in foul weather. Hit the trail for the long haul. <br /> Features: <br />
+       Its design includes a waist with elastic drawcord and silicone grip that adjusts to your sizes, zippered pockets for hands, a hem with adjustable buttons, and a relaxed cut that will give you comfort to move. Terrex Liteflex Hiking Pants. Freedom to move is the name of the game. These adidas Terrex Liteflex Hiking Pants have a wide elastic waistband with silicone grip, which is ideal if you´re layering on a backpack or hip bag. Extra stretch lets you hike and manoeuvre unhindered through uneven terrain. The water-repellent fabric gives you the peace of mind to keep moving in foul weather. Hit the trail for the long haul. <br /><br /> Features: <br />
       - Snap-button cuffs; <br />
       - Drawcord on elastic waist; <br />
       - 69% nylon, 19% polyester, 12% elastane plain weave; <br />
@@ -1804,7 +1810,7 @@ const products = [
     price: 277.00,
     gender: 'Men',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Reflective accents',
       'Windproof',
@@ -1829,8 +1835,9 @@ const products = [
       'XL',
       'XXL',
     ],
+    shortDescription: <span>Terrex Tech Fleece Hiking JacketLife outside isn´t always sunshine and roses. Sometimes it´s the stormy days that draw you to the mountains. For those cooler, greyer trails, this adidas Terrex jacket drapes your body in strategic comfort. Its fleece construction blends moisture-managing waffle knit with abrasion-resistant panels. The non-brushed design is inspired by adidas´ ambition to address microfibre shedding. This product is made with Primegreen, a series of high-performance recycled materials.</span>,
     description: <span>
-      Terrex Tech Fleece Hiking JacketLife outside isn´t always sunshine and roses. Sometimes it´s the stormy days that draw you to the mountains. For those cooler, greyer trails, this adidas Terrex jacket drapes your body in strategic comfort. Its fleece construction blends moisture-managing waffle knit with abrasion-resistant panels. The non-brushed design is inspired by adidas´ ambition to address microfibre shedding. This product is made with Primegreen, a series of high-performance recycled materials. <br /> Features: <br />
+      Features: <br />
       - Elastic cuffs; <br />
       - Primegreen; <br />
       - Full zip with stand-up collar; <br />
@@ -1840,8 +1847,44 @@ const products = [
     price: 228.00,
     gender: 'Men',
     color: 'Black',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '040',
+    name: 'Haglöfs Astral Full Zip Hiking Fleece',
+    type: 'Clothing',
+    brand: 'Haglofs',
+    images: [
+      images.astralFullFirst,
+      images.astralFullSecond,
+      images.astralFullThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>The Haglofs Astral Full Zip Fleece is the perfect mid-layer for your hiking or trekking activities in winter, as well as mountaineering or skiing since it offers all the warmth, freedom of movement, breathability, and lightness you need for your favorite sports.</span>,
+    description: <span>
+      This hoodie sweatshirt is made with a Polartec Power Stretch Pro fabric that combines recycled polyester and elastane to give you excellent durability, elasticity, control of moisture, and thermal insulation without adding weight to your mountain equipment. Its design includes two zippered pockets for hands, one zippered pocket on the arm, an adjustable hem, and an elastic hood.<br /><br /> Here’s the hoodie you’ll want to bring along on all your hiking adventures. Supplying outstanding freedom of movement and next-to-skin comfort, this essential mid-layer embodies a winning formula that keeps up with your needs even on the most advanced trails. It’s made from Polartec® Power Stretch® Pro™, a stretchy material with excellent moisture management properties and a great warmth-to-weight ratio. Equipped with three zippered pockets and an elastic hood. It’s the one. Put it in your pack.<br /><br /> 
+      Features: <br />
+      - Made from Polartec® Power Stretch® Pro™, a smooth and highly durable;<br />
+      - 4-way stretch fleece fabric;<br />
+      - Two zippered hand pockets and one arm pocket;<br />
+      - Adjustable hem;<br />
+      - Elastic hood;<br />
+      - Contains recycled and bluesign® approved fabric.
+    </span>,
+    price: 633.00,
+    gender: 'Men',
+    color: 'Yellow',
+    weight: '-',
+    features: [
+      '-'
+    ],
     activity: 'Hiking',
     sustainable: true,
   },
@@ -1860,8 +1903,9 @@ const products = [
       'XL',
       'XXL',
     ],
+    shortDescription: <span>You can look forward to a relaxed hike in the Hiking Pants Men, with their lightweight, stretch material for optimum comfort. The PFC-free DWR treatment on the outer material reliably repels water to protect you from sudden rain showers. The pants also impress with their quick-drying properties - ideal for changeable weather in the mountains.</span>,
     description: <span>
-      You can look forward to a relaxed hike in the Hiking Pants Men, with their lightweight, stretch material for optimum comfort. The PFC-free DWR treatment on the outer material reliably repels water to protect you from sudden rain showers. The pants also impress with their quick-drying properties - ideal for changeable weather in the mountains. <br /><br /> Features: <br />
+      Features: <br />
       - Seat pocket with zipper; <br />
       - Quick-drying; <br />
       - 2 slit pockets with zipper; <br />
@@ -1879,6 +1923,47 @@ const products = [
     features: [
       'Windproof',
       'Stretch'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '092',
+    name: 'Salewa Antelao Hiking Pants',
+    type: 'Clothing',
+    brand: 'Salewa',
+    images: [
+      images.antelaoFirst,
+      images.antelaoSecond,
+      images.antelaoThird
+    ],
+    size: [
+      'XS',
+      'M',
+      'XL',
+    ],
+    shortDescription: <span>Made with Powertex Extreme fabric that is waterproof, breathable, abrasion-resistant membrane that protects you from the exterior weather conditions and keeps you warm. The extremely thin 2-layer membrane offers extra waterproofness and moisture management as the vapor of humidity escapes elevating maximum comfort.</span>,
+    description: <span>
+      The 4-way stretch fabric provides maximum comfort and mobility. And the addition of PrimaLoft Black synthetic provides extra comfort and reduces bulk giving it an athletic-look. The Velcro-adjustable waistband provides protection to your abdominal region and gives comfortable fit. Thanks to the Roomy cut with gathers at knee that guarantee extra freedom of joint movements. Also, the thigh pockets with zippers have ample storage capacity for your devices and other essential items.<br /><br />
+      Features: <br />
+      - Waterproof finish, all seams welded; <br />
+      - Ergonomic waist;<br />
+      - Side Velcro-adjustable waistband;<br />
+      - Belt loops;<br />
+      - Flat zipped pocket on the upper thigh;<br />
+      - Roomy cut with gathers at knee allows extra freedom of joint movement;<br />
+      - Inner gaiter with elastic inserts;<br />
+      - Generous edge protection.
+    </span>,
+    price: 611.00,
+    gender: 'Men',
+    color: 'Blue',
+    weight: '543 g',
+    features: [
+      'Windproof',
+      'Stretch',
+      'Waterproof',
+      'Thermal'
     ],
     activity: 'Hiking',
     sustainable: true,
@@ -1901,8 +1986,9 @@ const products = [
       'S',
       'M',
     ],
+    shortDescription: <span>Keep all of your essentials at the ready with the Xploric jacket. An iconic and disruptive chest pocket provides on-the-fly access to all of your accessories, and additional pockets offer plenty of space to keep your electronics clear of the elements. adidas RAIN.RDY uses advanced waterproofing to channel rain away from your body, allowing you to keep moving through any downpour. A mix of fabrics puts ripstop panels where abrasion resistance is needed the most.</span>,
     description: <span>
-      Keep all of your essentials at the ready with the Xploric jacket. An iconic and disruptive chest pocket provides on-the-fly access to all of your accessories, and additional pockets offer plenty of space to keep your electronics clear of the elements. adidas RAIN.RDY uses advanced waterproofing to channel rain away from your body, allowing you to keep moving through any downpour. A mix of fabrics puts ripstop panels where abrasion resistance is needed the most. <br /> Features: <br />
+      Features: <br />
       - Regular fit; <br />
       - Full zip with fitted hood; <br /> 
       - 100% recycled polyester ripstop <br />
@@ -1913,7 +1999,7 @@ const products = [
     price: 1352.00,
     gender: 'Women',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Windproof'
     ],
@@ -1936,8 +2022,9 @@ const products = [
       'S',
       'M',
     ],
+    shortDescription: <span>Terrex Liteflex Hiking ShortsSome folks prefer slow, meandering trails. Others time themselves all the way to the top. However you prefer to hike, stay light on your feet as you move through the forest in these adidas Terrex shorts. With an adjustable, grippy waist, they can keep up with you no matter your pace. This product is made with recycled content as part of our ambition to end plastic waste.</span>,
     description: <span>
-      Terrex Liteflex Hiking ShortsSome folks prefer slow, meandering trails. Others time themselves all the way to the top. However you prefer to hike, stay light on your feet as you move through the forest in these adidas Terrex shorts. With an adjustable, grippy waist, they can keep up with you no matter your pace. This product is made with recycled content as part of our ambition to end plastic waste. Features: <br />
+      Features: <br />
       - Exposed elastic waist with drawcord and inner silicone print; <br />
       - 90% recycled polyester, 10% elastane dobby; <br />
       - Side zip pockets; <br />
@@ -1946,7 +2033,7 @@ const products = [
     price: 159.00,
     gender: 'Women',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'Stretch'
     ],
@@ -1968,8 +2055,9 @@ const products = [
       'XS',
       'S',
     ],
+    shortDescription: <span>Adventure Hiking are hiking pants for ladies. This sports accessory offers an active fit to facilitate freedom of movement. The model offers a 4-way comfort stretch that allows freedom of movement. The structure includes a membrane with advanced water repellency and that prevents liquids from staining the garment.</span>,
     description: <span>
-      Adventure Hiking are hiking pants for ladies. This sports accessory offers an active fit to facilitate freedom of movement. The model offers a 4-way comfort stretch that allows freedom of movement. The structure includes a membrane with advanced water repellency and that prevents liquids from staining the garment. In addition, it includes Omni-Shade technology that prevents your skin from suffering from the effects of UVA and UVB sunrays. Its design has a detachable integrated belt. On the sides, it has pockets to maintain the body temperature of the hands. Also, it has a zippered security pocket to protect personal items. It is built in 100% polyester, material that offers greater durability. <br /><br />
+       In addition, it includes Omni-Shade technology that prevents your skin from suffering from the effects of UVA and UVB sunrays. Its design has a detachable integrated belt. On the sides, it has pockets to maintain the body temperature of the hands. Also, it has a zippered security pocket to protect personal items. It is built in 100% polyester, material that offers greater durability. <br /><br />
       Features: <br />
       - Omni-Shield Tm Advanced Repellency; <br />
       - Omni-Shade Tm Upf 50 Sun; <br />
@@ -1984,11 +2072,49 @@ const products = [
     price: 230.00,
     gender: 'Women',
     color: 'Black',
-    weight: '',
+    weight: '-',
     features: [
       'UV Protection',
       'Waterproof',
       'Windproof',
+      'Stretch'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '038',
+    name: 'Haglöfs Mid Slim Hiking Pants',
+    type: 'Clothing',
+    brand: 'Haglofs',
+    images: [
+      images.midSlimFirst,
+      images.midSlimSecond,
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Face it, hiking is tough on pants. This technical pair is designed to handle it and keep you comfortably protected season after season. Made from heavy duty fabric sourced from recycled materials, they’re super durable and weather resistant, and supply extra stretch where you need it. They offer a slim, high rise fit, hugging your body all the way down to the ankles where you can make adjustments as needed.</span>,
+    description: <span>
+      Features: <br />
+      - Made out of recycled material;<br />
+      - Heavy duty Climatic™ Rugged fabric supplies extreme durability while still remaining flexible;<br />
+      - Fluorocarbon-free DWR treated surfaces help repel water and dirt;<br />
+      - Two zippered front pockets;<br />
+      - One zippered thigh pocket – with aa spot for your phone;<br />
+      - Elastic waist with beltloops;<br />
+      - Reinforcements where needed;<br />
+      - Slim, close fitting pant legs with ankle adjustments;<br />
+      - High waist.
+    </span>,
+    price: 630.00,
+    gender: 'Unisex',
+    color: 'Green',
+    weight: '500 g',
+    features: [
+      'Waterproof',
       'Stretch'
     ],
     activity: 'Hiking',
@@ -2009,8 +2135,8 @@ const products = [
       'S',
       'M'
     ],
+    shortDescription: <span>Equipped for your next hike: the Hiking Shorts Women are made from a lightweight, stretch material that feels very comfortable to wear. A DWR treatment makes the outer material water-repellent. The shorts’ quick-drying properties make them a practical must-have garment for long hikes.</span>,
     description: <span>
-      Equipped for your next hike: the Hiking Shorts Women are made from a lightweight, stretch material that feels very comfortable to wear. A DWR treatment makes the outer material water-repellent. The shorts’ quick-drying properties make them a practical must-have garment for long hikes. <br /><br />
       Features: <br />
       - Seat pocket with zipper; <br />
       - Quick-drying; <br />
@@ -2034,6 +2160,49 @@ const products = [
     activity: 'Hiking',
     sustainable: true,
   },
+  {
+    id: '091',
+    name: 'Salewa Brenta Hiking Jacket',
+    type: 'Clothing',
+    brand: 'Salewa',
+    images: [
+      images.brentaFirst,
+      images.brentaSecond,
+      images.brentaThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>A warm, lightweight, women’s down jacket for alpine mountaineering and ski touring.</span>,
+    description: <span>
+      Features: <br />
+      - Tailored hood with elastic binding; <br />
+      - High collar integrated into hood for maximum protection;<br />
+      - Ergonomic sleeves and shoulders for a good fit;<br />
+      - Special sleeve design (gusset) for good freedom of movement;<br />
+      - Front zip with internal full-length windproof flap;<br />
+      - 2 zipped outer pockets;<br />
+      - Lightweight, elastic bindings on cuffs and hem;<br />
+      - Ultra light downproof construction;<br />
+      - Engineered with bluesign® approved materials;<br />
+      - Body-mapping design with TirolWool® Responsive inserts.
+    </span>,
+    price: 768.00,
+    gender: 'Women',
+    color: 'Red',
+    weight: '330 g',
+    features: [
+      'Thermal',
+      'Windproof',
+      'Stretch',
+      'Compressible'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+
 
   //* ----------------------------------------------------------- CLOTHING KIDS -------------------------------------------------- *//
 
@@ -2054,8 +2223,8 @@ const products = [
       'L',
       'XL'
     ],
+    shortDescription: <span>Young adventurers can comfortably spend weekends at camp and enjoy long summer hikes with these quick-dry trousers that can be converted into shorts thanks to the zip-off legs.The high-perfomance wicking efficiently pulls moisture away from the body to accelerate evaporation.</span>,
     description: <span>
-      Young adventurers can comfortably spend weekends at camp and enjoy long summer hikes with these quick-dry trousers that can be converted into shorts thanks to the zip-off legs.The high-perfomance wicking efficiently pulls moisture away from the body to accelerate evaporation. <br /><br />
       Features: <br />
       - Omni-Wick™; <br />
       - Quick dry; <br />
@@ -2067,7 +2236,7 @@ const products = [
     price: 132.00,
     gender: 'Kids',
     color: 'Beige',
-    weight: '',
+    weight: '-',
     features: [
       'UV Protection',
       'Stretch'
@@ -2090,8 +2259,8 @@ const products = [
       'M',
       'L',
     ],
+    shortDescription: <span>An essential item for all your children´s outdoor adventures, this water-resistant windbreaker gives children the extra protection they need from the elements.</span>,
     description: <span>
-      An essential item for all your children´s outdoor adventures, this water-resistant windbreaker gives children the extra protection they need from the elements. <br /><br /> 
       Packable: <br />
       - It can be packed into the pocket and is thus easy to have in backpacks at all times. <br /><br />
       Features: <br />
@@ -2106,7 +2275,7 @@ const products = [
     price: 154.00,
     gender: 'Kids',
     color: 'Beige',
-    weight: '',
+    weight: '-',
     features: [
       'Compressible',
       'Stretch',
@@ -2115,6 +2284,40 @@ const products = [
     ],
     activity: 'Hiking',
     sustainable: false,
+  },
+  {
+    id: '093',
+    name: 'Salewa Sarner 2L Hiking Hoodie',
+    type: 'Clothing',
+    brand: 'Salewa',
+    images: [
+      images.sarnerFirst,
+      images.sarnerSecond,
+      images.sarnerThird
+    ],
+    size: [
+      'XS',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>The Sarner 2L Wool Kids Full-Zip Hoody combines South Tirolean mountain heritage with contemporary styling and performance. Made with our lightweight blended Alpine Wool Iconic, it features 100% recycled wool yarns and traditional Sarner purl knit workmanship for active alpine use.</span>,
+    description: <span>
+      Wool is the ideal insulation material for kids’ clothing: it’s sustainable, breathable, naturally thermo-regulating, works when wet and is naturally odour-resistant. Here, we blend a Sarner knit construction with its dense, warm wool stretch yarn that offers greater resistance to wind and rain with our new proprietary Alpine Wool Iconic fabric made of wool and smart textiles. On the inside, we back it with a bonded, soft and comfortable viscose liner for enhanced protection from cold mountain winds. The entire jacket, including yarns, is made in Italy and has been designed specifically with reduced environmental impact in mind.<br /><br />
+      Features: <br />
+      - Tailored hood with elastic binding;<br />
+      - 2 slash pockets;<br />
+      - Lightweight, elastic bindings on cuffs and hem;<br />
+      - Sarner Softshell: traditional knit (purl) bonded to soft Jersey.
+    </span>,
+    price: 593.00,
+    gender: 'Kids',
+    color: 'Grey',
+    weight: '-',
+    features: [
+      '-',
+    ],
+    activity: 'Hiking',
+    sustainable: true,
   },
 
   //* ------------------------------------------------------------ ACCESORIES ----------------------------------------------------- *//
@@ -2132,8 +2335,9 @@ const products = [
     size: [
       'one-size',
     ],
+    shortDescription: <span>Pack the essentials and hit the trail with this adidas lightweight trail running backpack. Multiple storage pockets ensure everything is organised and easy to find. Quick-access flask pockets keep hydration within reach on shoulder straps. Reflective details shine in low light for 360-degree reflectivity. Bungee chest straps.</span>,
     description: <span>
-      Pack the essentials and hit the trail with this adidas lightweight trail running backpack. Multiple storage pockets ensure everything is organised and easy to find. Quick-access flask pockets keep hydration within reach on shoulder straps. Reflective details shine in low light for 360-degree reflectivity. Bungee chest straps. <br /> Features: <br />
+      Features: <br />
       - Emergency whistle; <br />
       - Dimensions: 24cm x 42cm x 12cm; <br />
       - Volume: 10L; <br />
@@ -2210,8 +2414,8 @@ const products = [
     price: 371.00,
     gender: 'Unisex',
     color: 'Black',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Hiking',
     sustainable: false,
   },
@@ -2230,8 +2434,8 @@ const products = [
       'M',
       'L',
     ],
+    shortDescription: <span>For a safe climbing BLACK DIAMOND has designed the new CAPITAN HELMET helmet, which presents a combination of materials that optimize durability and resistance to a blow . Its design provides additional coverage on the sides and back of the head. It has a low profile suspension system. It has a ventilation system that provides breathability when temperatures rise, keeping the inside of the helmet dry and cool.</span>,
     description: <span>
-      For a safe climbing BLACK DIAMOND has designed the new CAPITAN HELMET helmet, which presents a combination of materials that optimize durability and resistance to a blow . Its design provides additional coverage on the sides and back of the head. It has a low profile suspension system. It has a ventilation system that provides breathability when temperatures rise, keeping the inside of the helmet dry and cool. <br /><br />
       Features: <br />
       - EPP + EPS + 2-piece ABS shell combo creates ultra-durability; <br />
       - Increased side and back protection; <br />
@@ -2247,7 +2451,7 @@ const products = [
     gender: 'Unisex',
     color: 'Red',
     weight: '285/295 g',
-    features: [],
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
@@ -2264,8 +2468,8 @@ const products = [
     size: [
       'one-size',
     ],
+    shortDescription: <span>We present the new SPEED 50L BACKPACK backpack for climbing and mountaineering, it is made of resistant water-repellent canvas. It has a capacity of 33 liters available to protect your camping implements. It has padded and adjustable shoulder straps for unmatched comfort. It has chest and waist straps that will help you carry and distribute the weight of the backpack.</span>,
     description: <span>
-      We present the new SPEED 50L BACKPACK backpack for climbing and mountaineering, it is made of resistant water-repellent canvas. It has a capacity of 33 liters available to protect your camping implements. It has padded and adjustable shoulder straps for unmatched comfort. It has chest and waist straps that will help you carry and distribute the weight of the backpack. <br /><br />
       Features: <br />
       – New BD “X-rip” 210d Nylon body fabric with UTS™ coating; <br />
       – Welded front abrasion patch for improved protection against rock, ice and crampon spikes; <br />
@@ -2280,13 +2484,13 @@ const products = [
     gender: 'Unisex',
     color: 'Yellow',
     weight: 'max 50 L',
-    features: [],
+    features: ['-'],
     activity: 'Hiking',
     sustainable: false,
   },
   {
     id: '028',
-    name: 'Black Diamond Venom Ice Hiking Axe',
+    name: 'Black Diamond Venom Ice Expeditions Axe',
     type: 'Accessories',
     brand: 'Black Diamond',
     images: [
@@ -2300,8 +2504,8 @@ const products = [
       52 + 'cm',
       53 + 'cm',
     ],
+    shortDescription: <span>This is the new ice pick for climbing VENOM ICE AX, it is a tool of high precision and functionality for lovers of alpine sports. Its head is made of stainless steel. Its integrated handle and uneven shaft provide safety and easy handling on the ice. It features fully adjustable FlickLock technology ideal for steep snow.</span>,
     description: <span>
-      This is the new ice pick for climbing VENOM ICE AX, it is a tool of high precision and functionality for lovers of alpine sports. Its head is made of stainless steel. Its integrated handle and uneven shaft provide safety and easy handling on the ice. It features fully adjustable FlickLock technology ideal for steep snow. <br /><br />
       Features: <br />
       - Climbs steep couloirs, plunges and self arrests; <br />
       - Venom Hammer is equipped with a Tech Pick and the Venom Adze comes with the Classic Pick; <br />
@@ -2312,9 +2516,9 @@ const products = [
     price: 506.00,
     gender: 'Unisex',
     color: 'Grey',
-    weight: '',
-    features: [],
-    activity: 'Hiking',
+    weight: '-',
+    features: ['-'],
+    activity: 'Expeditions',
     sustainable: false,
   },
   {
@@ -2331,8 +2535,8 @@ const products = [
       105 + '-' + 125 + 'cm',
       125 + '-' + 145 + 'cm',
     ],
+    shortDescription: <span>This time we bring you the new DISTANCE FLZ POLES trekking poles, which have a super light and manageable design, made of resistant aluminum. Features an approximate length of 13 inches collapsed to 39 usable inches. Thanks to its SlideLock technology, it provides more resistance to the pole in the contraction joints.</span>,
     description: <span>
-      This time we bring you the new DISTANCE FLZ POLES trekking poles, which have a super light and manageable design, made of resistant aluminum. Features an approximate length of 13 inches collapsed to 39 usable inches. Thanks to its SlideLock technology, it provides more resistance to the pole in the contraction joints.. <br /><br />
       Features: <br />
       - Improved joint support and stiffness; <br />
       – Lightweight EVA foam grip and grip extension with breathable, moisture wicking strap made from recycled materials; <br />
@@ -2345,8 +2549,8 @@ const products = [
     price: 588.00,
     gender: 'Unisex',
     color: 'Black',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Hiking',
     sustainable: true,
   },
@@ -2362,15 +2566,16 @@ const products = [
       30 + '-Lumens',
       50 + '-Lumens',
     ],
+    shortDescription: <span>Our totally redesigned kid´s headlamp that now features lighting in a full-color spectrum, the Wiz gives kids the lighting they need to explore the outdoors in a variety of fun colors. Our totally redesigned kid´s headlamp that now features lighting in a full-color spectrum, the Wiz gives kids the lighting they need to explore the outdoors in a variety of fun colors.</span>,
     description: <span>
-      Our totally redesigned kid´s headlamp that now features lighting in a full-color spectrum, the Wiz gives kids the lighting they need to explore the outdoors in a variety of fun colors. Our totally redesigned kid´s headlamp that now features lighting in a full-color spectrum, the Wiz gives kids the lighting they need to explore the outdoors in a variety of fun colors. One LED provides 3 lumens of proximity lighting and strobe mode.<br /><br /> An RGB LED allows kid´s to cycle through a full rainbow spectrum of colors. Head tilts in both directions so it works even when put on upside down. Compact design uses two AAA batteries. CPSIA certified with child-safe battery compartment closure and breakaway elastic safety strap. Powers off after two hours to avoid accidental battery drain. <br /><br />Storm Proof [IPX4]: <br />
+       One LED provides 3 lumens of proximity lighting and strobe mode. An RGB LED allows kid´s to cycle through a full rainbow spectrum of colors. Head tilts in both directions so it works even when put on upside down. Compact design uses two AAA batteries. CPSIA certified with child-safe battery compartment closure and breakaway elastic safety strap. Powers off after two hours to avoid accidental battery drain. <br /><br />Storm Proof [IPX4]: <br />
       - Protected against rain or sleet from any angle.
     </span>,
     price: 81.00,
-    gender: 'Unisex',
+    gender: 'Kids',
     color: 'Red',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Hiking',
     sustainable: true,
   },
@@ -2387,8 +2592,8 @@ const products = [
     size: [
       'one-size',
     ],
+    shortDescription: <span>The Haglofs Vina 40L Backpack has been created to be an excellent ally for your mountain equipment for one or two days and you can carry everything you need to spend one night, such as hydration, food, and clothes to protect you against any weather change, so it is prepared and can keep your items dry.</span>,
     description: <span>
-      The Haglofs Vina 40L Backpack has been created to be an excellent ally for your mountain equipment for one or two days and you can carry everything you need to spend one night, such as hydration, food, and clothes to protect you against any weather change, so it is prepared and can keep your items dry. <br /><br />
       Features: <br />
       - Airback suspension system, provides ventilation and airflow through the back contact zone; <br />
       - Available in size S/M and M/L suspension system; <br />
@@ -2414,108 +2619,45 @@ const products = [
     sustainable: true,
   },
   {
-    id: '038',
-    name: 'Haglöfs L.I.M 35L Hiking Backpack',
-    type: 'Accessories',
-    brand: 'Haglofs',
-    images: [
-      images.lim35lFirst,
-      images.lim35lSecond,
-      images.lim35lThird
-    ],
-    size: [
-      'one-size',
-    ],
-    description: <span>
-      The Haglöfs L.I.M 35L Backpack has been designed for mountain excursions for one or two days when you need to carry the essentials, such as hydration, food, and clothes, in an organized, light, and safe way. <br /><br />
-      Features: <br />
-      - Airback suspension system:provides ventilation and airflow through the back contact zone; <br />
-      - Elastic side pockets; <br />
-      - Zippered elastic hip belt pockets; <br />
-      - Hydration system compatible; <br />
-      - Elastic cord for compression and gear attachment; <br />
-      - Fixed top lid with pocket; <br />
-      - Adjustable sternum strap Padded hip belt; <br />
-      - Load lifters; <br />
-      - Dimensions (height × depth × width):59x31x25 cm.
-    </span>,
-    price: 630.00,
-    gender: 'Unisex',
-    color: 'White',
-    weight: 'max 35L',
-    features: [
-      'Frameless'
-    ],
-    activity: 'Hiking',
-    sustainable: true,
-  },
-  {
     id: '039',
-    name: 'Haglöfs Ängd 60L Hiking Backpack',
+    name: 'Haglöfs Tarius -18ºC Sleeping Bag',
     type: 'Accessories',
     brand: 'Haglofs',
     images: [
-      images.angd60lFirst,
-      images.angd60lSecond,
+      images.tariusFirst,
+      images.tariusSecond,
+      images.tariusThird
     ],
     size: [
-      'one-size',
+      'S',
+      'M',
+      'L'
     ],
+    shortDescription: <span>A versatile sleeping bag with the comfort, warmth and cosiness you need for a good night´s sleep and a host of features that make carrying and using it that little bit better. It´s perfect for backpacking, trekking or travelling - filled with synthetic insulation that also performs well in damp conditions. Available in a range of temperature grades, ensuring that you can find the one that suits your own individual adventure.</span>,
     description: <span>
-      Haglofs has developed the trekking backpack ideal for long trips. It offers a large capacity of space, in fact, it is one of the best equipped backpacks from Haglofs, designed especially for women. <br /><br />
-      Features: <br />
-      - With features galore, and space for everything you need, Ängd W is our best-equipped backpack specifically designed for women; <br />
-      - Smart storage and roomy compartments give plenty of room for all your gear, while a large front opening lets you access it with ease; <br />
-      - It contains a multitude of pockets to keep your gear organized, it´s loaded with features, and it´s equipped with our updated Instant W+ Adjustable suspension system.
+      The durable water repellent action of our PFC-free DWR treatments comes from a hydrocarbon based, silicone based and/or wax based technology instead of fluorinated chemical. Irrespective of the ‘active ingredient´, all PFC-free DWR treatments used are totally free from all perfluorinated chemicals (PFC) (of course including both perfluorooctanesulfonic acid (PFOS) and perfluorooctanoic acid (PFOA)), free from other halogenated substances and free from alkylphenolethoxylates, including nonylphenolethoxylates.<br /><br /> The possible drawbacks are that the oil repellency and the durability of the PFC-free DWR treatments may be slightly lower than for a PFCcontaining option and therefore re-treatment for water repellency may be necessary at an earlier point in time. In all, we use very good, environmentally friendly alternatives to PFC-containing DWR treatments. Mummy-shaped fit to maximise warmth and reduce weight.<br /><br /> 
+      Features:<br />
+      - Draft collar with elastic adjustment, helping to trap warmth inside on cold nights;<br />
+      - Ergonomic footbox construction;<br />
+      - Ergonomic hood with elastic adjustment for a snug, comfortable fit ¾ side zip with anatomically-shaped curvature for easy reach and access;<br />
+      - Left-side zipper placement;<br />
+      - Draft tube inside zipper, stopping cold air from getting in;<br />
+      - Two way YKK zipper;<br />
+      - Anti-snag tape to prevent zipper sliders from snagging the fabric;<br />
+      - Internal pillow pocket;<br />
+      - Two hang loops;<br />
+      - Four-way compression bag included;<br />
+      - Packed size in litres (uncompressed):30L (190cm) Packed size in litres (uncompressed):34L (205cm) Comfort temperature -11°C;<br />
+      - Limit temperature -18°C;<br />
+      - Extreme temperature -39°C;<br />
+      - Tested according to EN-13537 standard;<br />
     </span>,
-    price: 630.00,
-    gender: 'Women',
-    color: 'Red',
-    weight: 'max 60L',
-    features: [],
-    activity: 'Hiking',
-    sustainable: false,
-  },
-  {
-    id: '040',
-    name: 'Haglöfs Vide 20L Hiking Backpack',
-    type: 'Accessories',
-    brand: 'Haglofs',
-    images: [
-      images.vide20lFirst,
-      images.vide20lSecond,
-      images.vide20lThird
-    ],
-    size: [
-      'one-size',
-    ],
-    description: <span>
-      VIDE 20L the new backpack for camping and hiking from HAGLOFS , is made of polyamide with Oxford technology providing great resistance and durability, combined with an elegant finish. It has a capacity of approximately 20 liters, perfect for your outdoor activities. <br /><br />
-      Features: <br />
-      - 100% recycled main fabric, weather-resistant and highly durable; <br />
-      - Semi-ventilated back panel; <br />
-      - Internal hydration bladder sleeve that doubles as computer sleeve for laptops up to 15´´; <br />
-      - Two elastic side pockets for water bottles or extra gear; <br />
-      - External cord for ease of access to items such as clothing; <br />
-      - Easily-accessible zippered front pocket; <br />
-      - One zippered top pocket; <br />
-      - Compression side straps to secure internal contents; <br />
-      - Adjustable waist belt, removable; <br />
-      - Adjustable chest strap for enhanced comfort when walking; <br />
-      - Easy-grab top handle; <br />
-      - Key holder; <br />
-      - Fluorocarbon free DWR-treated surfaces:helps repel water & dirt; <br />
-      - Fabrics:100% Recycled Polyamide 200D Rip Stop, bluesign® approved; <br />
-      - Origin Country:Vietnam.
-    </span>,
-    price: 340.00,
+    price: 676.00,
     gender: 'Unisex',
-    color: 'Green',
-    weight: 'max 20L',
-    features: [
-      'Frameless'
-    ],
-    activity: 'Hiking',
+    color: 'Blue',
+    weight: '~3 kg',
+    features: ['-'],
+    activity: 'Camping',
     sustainable: true,
   },
   {
@@ -2530,8 +2672,9 @@ const products = [
     size: [
       'one-size',
     ],
+    shortDescription: <span>An essential sport gear for all backpack enthusiasts, La Sportiva X-Cursion 28L is a ideal, sleek, lightweight backpack designed for your hiking, trekking and everyday use. It can very well adapt from trail to urban use, as it is compatible with hydration systems and is durable and comfortable to carry.</span>,
     description: <span>
-      An essential sport gear for all backpack enthusiasts, La Sportiva X-Cursion 28L is a ideal, sleek, lightweight backpack designed for your hiking, trekking and everyday use. It can very well adapt from trail to urban use, as it is compatible with hydration systems and is durable and comfortable to carry. <br /><br /> The two front pockets have zippers on the side and the top pocket on the backpack has a key clip which ensures protection and the small compartment provides storage capacity for small items like pens. The two side pockets provides the adequate space for holding water bottles or containers. The internal pockets inside a large volume main compartment has enough space for clothes and equipment, while the outside small pockets have space for eatables like enerybars. <br /><br /> The padded back panel with contoured shoulder straps and adjustable sternum strap makes it easy and accessible to grab and go. The ventral belt can be adjusted or can be removed as per your wish, also thanks to the back opening with zipper that you now have space for an extra pair of shoes. Also, the elastic holder outside is easy to use and can carry extra jacket or any clothing item safely. <br /><br /> With lots of space and pockets, La Sportiva X-Cursion 28L is a very high quality and durable backpack for all globetrotters. Backpacks are the only true companion on your trekking or hiking trips. So, choose wisely! Ultra-lightweight mesh-reinforced nylon backpack, drop pocket, adjustable elastic outer organizer, non-padded shoulder straps and minimal hip belt. Predisposition for hydration systems. <br /><br /> Hose construction, ample top opening with zipper and upper outer pocket, large secondary opening on the back with zip allowing access to the interior of the backpack throughout its length.
+       The two front pockets have zippers on the side and the top pocket on the backpack has a key clip which ensures protection and the small compartment provides storage capacity for small items like pens. The two side pockets provides the adequate space for holding water bottles or containers. The internal pockets inside a large volume main compartment has enough space for clothes and equipment, while the outside small pockets have space for eatables like enerybars. <br /><br /> The padded back panel with contoured shoulder straps and adjustable sternum strap makes it easy and accessible to grab and go. The ventral belt can be adjusted or can be removed as per your wish, also thanks to the back opening with zipper that you now have space for an extra pair of shoes. Also, the elastic holder outside is easy to use and can carry extra jacket or any clothing item safely. <br /><br /> With lots of space and pockets, La Sportiva X-Cursion 28L is a very high quality and durable backpack for all globetrotters. Backpacks are the only true companion on your trekking or hiking trips. So, choose wisely! Ultra-lightweight mesh-reinforced nylon backpack, drop pocket, adjustable elastic outer organizer, non-padded shoulder straps and minimal hip belt. Predisposition for hydration systems. <br /><br /> Hose construction, ample top opening with zipper and upper outer pocket, large secondary opening on the back with zip allowing access to the interior of the backpack throughout its length.
     </span>,
     price: 480.00,
     gender: 'Unisex',
@@ -2556,8 +2699,9 @@ const products = [
     size: [
       64 + '-' + 140 + 'cm',
     ],
+    shortDescription: <span>Strong and heavy duty poles. Aluminium structure and design guarantees that they will hold the entire weight of the user even during the most challenging downhill hikes.</span>,
     description: <span>
-      Strong and heavy duty poles. Aluminium structure and design guarantees that they will hold the entire weight of the user even during the most challenging downhill hikes. <br /><br /> Specifications: <br />
+      Specifications: <br />
       - Materials: Aluminium alloy 6013, Eva Grip with Neoprene strap, E-basket with Carbide tip. Tip rubber protection, 50 mm basket; <br />
       - Structure: 3 Sections telescopic, Flexy Locking System; <br />
       - Weight: 230gr.
@@ -2566,7 +2710,7 @@ const products = [
     gender: 'Unisex',
     color: 'Black',
     weight: '230 g',
-    features: [],
+    features: ['-'],
     activity: 'Hiking',
     sustainable: false,
   },
@@ -2583,8 +2727,9 @@ const products = [
       'M',
       'L'
     ],
+    shortDescription: <span>Comfort Fast Adjust Harness Men. A comfortable and breathable climbing harness. Laser-cut material for greater breathability and robustness. Optimum weight distribution. The anatomically optimized shape in combination with the soft edge of the hip belt give the Comfort Fast Adjust Harness Men unparalleled comfort for long climbs.</span>,
     description: <span>
-      Comfort Fast Adjust Harness Men. A comfortable and breathable climbing harness. Laser-cut material for greater breathability and robustness. Optimum weight distribution. The anatomically optimized shape in combination with the soft edge of the hip belt give the Comfort Fast Adjust Harness Men unparalleled comfort for long climbs. <br /><br /> Features: <br />
+      Features: <br />
       - MAMMUT CONNECT inside; <br />
       - Laser-cut fabric for breathability and robustness; <br />
       - Splitt Webbing Technology for optimal weight distribution; <br />
@@ -2605,47 +2750,42 @@ const products = [
     price: 682.00,
     gender: 'Unisex',
     color: 'Black',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
   {
     id: '058',
-    name: 'Mammut Climbing Sender Wire Quickdraw',
+    name: 'Mammut Protect Down -21ºC Sleeping Camping Bag',
     type: 'Accessories',
     brand: 'Mammut',
     images: [
-      images.senderwireFirst,
-      images.senderwireSecond,
-      images.senderwireThird
+      images.protectDownFirst,
+      images.protectDownSecond,
+      images.protectDownThird
     ],
     size: [
-      17 + 'cm',
-      60 + 'cm'
+      'S',
+      'M',
+      'L'
     ],
+    shortDescription: <span>Extreme temperatures. Extremely good sleep. With the revolutionary Protect Down Bag -21C sleeping bag you can sleep as soundly as in your own bed. As part of the Recovery series, the sleeping bag features an optimized fit for greater comfort, a central zipper for climate regulation and special material to prevent irritating noises. The down filling optimizes both weight and packing volume. Protect Down Bag -21C for extreme performance.</span>,
     description: <span>
-      Sender keylock quickdraws are designed for alpine climbing and high-performance sport. The combination of extremely light, compact carabiners with wire gates and Dyneema® slings delivers an ideal balance of weight and performance. The weight-saving wire gates, designed for year-round use, are fully functional even in snow and ice and have less gate flutter and shutter. <br /><br /> The thin sling provides a firm grip; a robust sling protector keeps the lower carabiner in place and reduces wear. The bright indicator shows that the sling and protector are attached correctly to the carabiner. For climbers looking for the lightest keylock quickdraws for long routes and hard sends. <br /><br /> Features: <br />
-      - Excellent weight-to-breaking load ratio thanks to the simple carabiner design; <br />
-      - Protector with indicator for correct attachment; <br />
-      - Lightweight and resilient Dyneema sling; <br />
-      - Protector keeps the lower carabiner in position and reduces wear on the sling; <br />
-      - Weight-saving wire gate for year-round use; <br />
-      - The lower inertia of wire gates means less flutter and shutter; <br />
-      - Height: 90 mm; <br />
-      - Width: 54 mm; <br />
-      - Size: 17 cm; <br />
-      - Vertical breaking load: 21 kN; <br />
-      - Open breaking load: 8 kN; <br />
-      - Horizontal breaking load: 7 kN; <br />
-      - Weight: 68 g.
+       Features:<br />
+       - Membrane (B2B): 100% Polyurethane;<br />
+       - Main Fabric 2 - Face Material (B2B): 100% Polyester;<br />
+       - Main Fabric 2 (B2B): Polyester Warp Knit;<br />
+       - Main Fabric 1 - Face Material (B2B): 100% Polyamide;<br />
+       - Lining 1 - Face Material (B2B): 100% Polyester;<br />
+       - Cut: Basic.
     </span>,
-    price: 105.00,
+    price: 2534.00,
     gender: 'Unisex',
-    color: 'White',
-    weight: '68 g',
-    features: [],
-    activity: 'Climbing',
+    color: 'Blue',
+    weight: '-',
+    features: ['-'],
+    activity: 'Camping',
     sustainable: false,
   },
   {
@@ -2662,8 +2802,9 @@ const products = [
       52 + '-' + 57 + 'cm',
       56 + '-' + 61 + 'cm',
     ],
+    shortDescription: <span>For any outdoor activity, keeping your head protected is essential. And if you´re an experienced mountaineer or climber, you know that you need the greatest protection available while keeping the weight as low as possible. If you can relate to this, the Mammut Crag Sender helmet is for you. Lightweight, well-ventilated, and built with the highest quality materials in the marketplace, this helmet from the Swiss brand will provide you with unwavering security on any cliff or slope.</span>,
     description: <span>
-      For any outdoor activity, keeping your head protected is essential. And if you´re an experienced mountaineer or climber, you know that you need the greatest protection available while keeping the weight as low as possible. If you can relate to this, the Mammut Crag Sender helmet is for you. Lightweight, well-ventilated, and built with the highest quality materials in the marketplace, this helmet from the Swiss brand will provide you with unwavering security on any cliff or slope. <br /><br /> Features: <br />
+      Features: <br />
       - Certification: CE EN 12492; <br />
       - Extended MAMMUT safety test tests helmet with regard to robustness especially after side impact; <br />
       - In-mold construction with EPS core and Kevlar reinforcements; <br />
@@ -2681,7 +2822,7 @@ const products = [
     gender: 'Unisex',
     color: 'Grey',
     weight: '199~219 g',
-    features: [],
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
@@ -2697,8 +2838,9 @@ const products = [
     size: [
       'one-size'
     ],
+    shortDescription: <span>If you´re looking for a luxury mountain climbing experience, the Mammut Trion Spine 75 backpack will be your best companion. Featuring several improvements designed to give you the best possible comfort, this bag is ideal for long hikes and demanding trips into the wilderness.</span>,
     description: <span>
-      If you´re looking for a luxury mountain climbing experience, the Mammut Trion Spine 75 backpack will be your best companion. Featuring several improvements designed to give you the best possible comfort, this bag is ideal for long hikes and demanding trips into the wilderness. <br /><br /> Features: <br />
+      Features: <br />
       - High-density, 2-layer Eva back padding; hip belt and shoulder straps with stretch fabric cover; <br />
       - Internal zipper compartment for valuables; <br />
       - Rope fixing strap under the flap; <br />
@@ -2758,8 +2900,8 @@ const products = [
     price: 134.00,
     gender: 'Unisex',
     color: 'Blue',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Climbing',
     sustainable: true,
   },
@@ -2776,8 +2918,8 @@ const products = [
     size: [
       'one-size'
     ],
+    shortDescription: <span>Osprey is a hot-forged carabiner of classic oval shape suitable for technical and bigwall climbing. It´s invaluable on working with pulleys. The utility value of this carabiner is increased by Ocún’s typical rope friendly shape of the upper profile, which makes the Osprey usable for HMS belaying in case of an emergency. If climbers owned just one carabiner, it should be the Osprey.</span>,
     description: <span>
-      Osprey is a hot-forged carabiner of classic oval shape suitable for technical and bigwall climbing. It´s invaluable on working with pulleys. The utility value of this carabiner is increased by Ocún’s typical rope friendly shape of the upper profile, which makes the Osprey usable for HMS belaying in case of an emergency. If climbers owned just one carabiner, it should be the Osprey. <br /><br />
       Features: <br />
       - Triple twist-lock gate with keylock nose; <br />
       - Rope friendly shape to avoid excessive wear of rope; <br />
@@ -2788,7 +2930,7 @@ const products = [
     gender: 'Unisex',
     color: 'Grey',
     weight: '73 g',
-    features: [],
+    features: ['-'],
     activity: 'Climbing',
     sustainable: false,
   },
@@ -2820,17 +2962,893 @@ const products = [
     price: 99.00,
     gender: 'Unisex',
     color: 'Green',
-    weight: '',
-    features: [],
+    weight: '-',
+    features: ['-'],
     activity: 'Climbing',
     sustainable: true,
   },
+  {
+    id: '074',
+    name: 'Osprey Ariel Plus 85L Hiking Backpack',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.arielPlusFirst,
+      images.arielPlusSecond,
+      images.arielPlusThird
+    ],
+    size: [
+      'one-size'
+    ],
+    shortDescription: <span>The Osprey Ariel Plus 85L backpack has been created with an innovative design that is easily convertible into a small backpack for short excursions, which makes it a versatile and very useful option for hikers who visit the mountains on several occasions and different periods and need stability, comfort, impermeability, and breathability.</span>,
+    description: <span>
+      This hiking backpack is made with high tenacity nylon, so it guarantees an excellent resistance to wear even on the most technical terrains. It features a waterproof treatment that avoids your items from getting wet against unforeseen rain. The Fit-on-the-Fly system allows adapting the lumbar belt and shoulder straps to suit you, while the AirScape back favors breathability and a comfortable support thanks to an injection molded foam backrest.<br /><br /> Its design incorporates a waterproof cover, sleeping bag compartment, external access to hydration, zippered pocket on the top, pockets on the lumbar belt, large main compartment with a “U” zipper, and side mesh pockets. This 90l backpack for maximum capacity is compatible with a hydration bag and includes a silicone print on the lumbar area for better support and grip. Besides, it comes with side compression straps, removable straps for the sleeping bag, reflective details, Stow-On-The-Go hooks for poles and piolets, a sternum strap with an emergency whistle, and an internal ring for keys.<br /><br />
+      Features:<br />
+      - Removable top lid converts to DayLid daypack. <br />
+      - Included raincover made with PFC-free DWR and bluesign®-approved materials.<br />
+      - Stow-on-the-Go trekking pole attachment.<br />
+      - Floating top lid with lash points.<br />
+      - Integrated FlapJacket cover for lidless use.<br />
+      - Dual front panel zippered pockets for easy-access storage.<br />
+      - Large front panel zip access to main compartment.<br />
+      - Fabric reinforced front shove-it pocket.<br />
+      - Large dual-access stretch mesh side water bottle pockets.<br />
+      - Dual upper/lower side compression straps.<br />
+      - Dual front panel compression straps with StraightJacket compression.<br />
+      - Dual zippered hipbelt pockets.<br />
+      - Dual ice axe loops with bungee tie-offs.<br />
+      - Zippered sleeping bag compartment with removable divider.<br />
+      - Removable sleeping pad straps.<br />
+      - Internal hydration reservoir sleeve .
+    </span>,
+    price: 1328.00,
+    gender: 'Women',
+    color: 'Red',
+    weight: 'max 81~90L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '075',
+    name: 'Osprey Archeon Chest Rig Hiking Backpack',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.archeonFirst,
+      images.archeonSecond,
+      images.archeonThird
+    ],
+    size: [
+      'one-size'
+    ],
+    shortDescription: <span>Keep your most important tools and tidbits at the ready with the Archeon Chest Rig. Designed with ample room and organization for essential supplies like first aid, communication devices, digital cameras, ID and more, you´ll enjoy effortless access on the go. Plus, its low-profile harness makes the Chest Rig a comfortable solo-carry or the perfect companion to another pack.</span>,
+    description: <span>
+      Made with 100% recycled nylon. FLEXIBLE Four-buckle harness attachment for easy ambidextrous use. VERSATILE Low-profile harness can be worn under another pack. ORGANIZATION Multiple internal pockets and pouches help keep the contents where you need them. EASY ACCESS Front panel organization pocket for fast access to essentials.<br /><br />
+      Features:<br />
+      - Zippered panel access;<br />
+      - Internal organisation pocket;<br />
+      - Front zippered pocket;<br />
+      - Internal key attachment clip;<br />
+      - Reflective graphics;<br />
+      - Front panel organiser pocket;<br />
+      - Contact mesh fabric for next-to-skin comfort;<br />
+      - Internal mesh pockets;<br />
+      - Clamshell opening for easy and secure access;<br />
+      - Hook and loop front panel for patches or ID;<br />
+      - Low-profile harness can be worn under another pack;<br />
+      - Four-buckle harness attachment for easy ambidextrous use.<br /><br />
+      Specifications:<br />
+      - Dimensions (CM): 18H 29W 12D;<br />
+      - Fabric: 1880D Nylon Canvas Recycled C0.
+    </span>,
+    price: 252.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: 'max 0~10L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '076',
+    name: 'Osprey Daylite Sling 6L Hiking Backpack',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.dayliteSlingFirst,
+      images.dayliteSlingSecond,
+      images.dayliteSlingThird
+    ],
+    size: [
+      'one-size'
+    ],
+    shortDescription: <span>Throw the Daylite® Sling over your shoulder and go—to the store, school or on a quick hike. Wherever you’re headed this svelte carry solution allows you to simply and securely carry a few daily essentials. Featuring breathable and soft spacermesh material on a single anatomically shaped shoulder strap for next-to-skin comfort.</span>,
+    description: <span>
+      A front zippered mesh pocket stores smaller easy-to-access items, while the main compartment offers organization sleeves and a key-clip. Built with high-quality bluesign® approved recycled fabrics, GRS-certified recycled polyester and a PFC-free DWR coating.<br /><br />
+      Features:<br />
+      - Dual U-zip access to main compartment;<br />
+      - Interior mesh organizer and key clip;<br />
+      - Multifunctional interior sleeve;<br />
+      - Zippered front panel slash pocket;<br />
+      - Harness stretch mesh pocket;<br />
+      - Left or right over-the-shoulder ambidextrous fit and carry.
+    </span>,
+    price: 182.00,
+    gender: 'Unisex',
+    color: 'Purple',
+    weight: 'max 0~10L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '077',
+    name: 'Osprey Daylite Tote Pack 20L Hiking Backpack',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.dayliteToteFirst,
+      images.dayliteToteSecond,
+    ],
+    size: [
+      'one-size'
+    ],
+    shortDescription: <span>The Daylight® Tote Is Ready And Waiting For Your Next Day Hike, Weekend Trip To The Farmer´s Market And Study Session At Your Favorite Coffee Shop. This Pack Transitions Seamlessly From Backpack To Tote With Multiple Carry Options To Suit Your Needs. The Padded Internal Sleeve Can Hold A Laptop Or Hydration Bladder, Providing You With Multiple Options For Work And Play.</span>,
+    description: <span>
+      Features:<br />
+      - Top-Zip Access To Main Compartment With Tote Or Backpack-Style Carry;<br />
+      - Front And Back Panel Shove-It Pocket For Stashing Items On The Go Or To Tuck Away Tote Straps;<br />
+      - Elevated Padded Laptop/Reservoir Sleeve;<br />
+      - Internal Zippered Mesh Organization Pocket With Key Clip;<br />
+      - Dual Water Bottle Side Mesh Pockets;<br />
+      - Secure Front Panel Zipper Pocket;<br />
+      - Large Backpanel Luggage Pass-Thru.
+    </span>,
+    price: 272.00,
+    gender: 'Unisex',
+    color: 'Green',
+    weight: 'max 11~20L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '078',
+    name: 'Osprey Transporter 40L Hiking Backpack',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.transporter40lFirst,
+      images.transporter40lSecond,
+      images.transporter40lThird
+    ],
+    size: [
+      'one-size'
+    ],
+    shortDescription: <span>Keep your small gear or articles of clothing organized and protected with the Transporter® Duffel 40. Featuring rugged, weather-resistant fabrics that keep internal contents protected and a stowaway harness that carries comfortably. Perfect for gear storage or as a companion on a short trip—this is more than your average duffel.</span>,
+    description: <span>
+      Made from bluesign® approved recycled polyester with dual-sided TPU coating inside and out, burly hardware, stiffened main body fabric with protective accent ribs, overlapping zipper and a PFC-free DWR coating that protects your gear from the elements.<br /><br />
+      Features:<br />
+      - Zippered end pocket for quick access to smaller items;<br />
+      - Four burly webbing grab handles;<br />
+      - 8 coated webbing lash points for securing duffels;<br />
+      - Large lockable U-zip access to main compartment;<br />
+      - Weather-protected main compartment zip path with overlapping rain flap;<br />
+      - Internal zippered mesh pocket;<br />
+      - Internal pockets can accommodate most popular luggage trackers.
+    </span>,
+    price: 520.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: 'max 31~40L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '079',
+    name: 'Osprey Aether Plus 100L Hiking Backpack',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.aetherFirst,
+      images.aetherSecond,
+      images.aetherThird
+    ],
+    size: [
+      'one-size'
+    ],
+    shortDescription: <span>The Osprey Aether Plus 100L Backpack is the model with the highest capacity of this version because it has 100 liters of maximum capacity, which are ideal for an excursion of more than a week or a few days since it can be converted into a smaller backpack, so it is very useful and versatile for professional hikers who need as much space as possible to carry hydration, food, sleeping bag, clothing, and climbing tools.</span>,
+    description: <span>
+      Features:<br />
+      - Removable top lid converts to DayLid daypack;<br />
+      - Included raincover made with PFC-free DWR and bluesign®-approved materials;<br />
+      - Stow-on-the-Go trekking pole attachment;<br />
+      - Floating top lid with lash points;<br />
+      - Integrated FlapJacket cover for lidless use;<br />
+      - Dual front panel zippered pockets for easy-access storage;<br />
+      - Large front panel zip access to main compartment;<br />
+      - Fabric reinforced front shove-it pocket; <br />
+      - Large dual-access stretch mesh side water bottle pockets;<br />
+      - Dual upper/lower side compression straps;<br />
+      - Dual front panel compression straps with StraightJacket compression; <br />
+      - Dual zippered hipbelt pockets;<br />
+      - Dual ice axe loops with bungee tie-offs;<br />
+      - Zippered sleeping bag compartment with removable divider;<br />
+      - Removable sleeping pad straps;<br />
+      - Extendible Custom Fit-on-the-Fly Hipbelt offers a precise fit for varying waist sizes;<br />
+      - Incremental length and angle adjustments allow for a fine-tuned fit;<br />
+      - Custom Fit-on-the-Fly Shoulder Straps allow for a precise shoulder wrap and fit;<br />
+      - Injection-molded, die-cut foam AirScape framesheet maintains comfortable back contact with ventilated airflow channels and maximum stability for carrying heavy loads;<br />
+      - Mesh-covered foam lumbar for supportive, lightweight and comfortable contact surfaces.
+    </span>,
+    price: 1334.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: 'more than 90L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '080',
+    name: 'Osprey Raptor 10L Hydration Hiking Vest',
+    type: 'Accessories',
+    brand: 'Osprey',
+    images: [
+      images.raptor10lFirst,
+      images.raptor10lSecond,
+      images.raptor10lThird
+    ],
+    size: [
+      'one-size'
+    ],
+    shortDescription: <span>Both on the road and in the mountains, the Osprey Raptor 10L hydration backpack is the ultimate option to keep your belongings and more than enough water at hand. Offering you a premium, featureful experience, the Raptor brings the best technologies of the American brand together in an unparalleled design.</span>,
+    description: <span>
+      The combination of the AirScape™ backpanel with the outstanding BioStretch™ harness translates into an extremely comfortable feel in which neither sweat nor moisture will be a problem for you. Thanks to its improved airflow and winged shoulder straps, using the Raptor while biking is as easy as breathing.<br /><br /> The harness also includes a removable hose that allows easy access to the Hydraulics® LT 2.5 hydration reservoir-compatible pocket. This utilitarian design also shows at the Raptor’s base, where ToolWrap®, an easy-access pocket designed for carrying repair tools, gives you everything you need to keep your bike moving.<br /><br />
+      Features:<br />
+      - 3L Hydraulics Reservoir included;<br />
+      - AirScape backpanel with foam ridges for comfort and fit;<br />
+      - BioStretch hipbelt and harness;<br />
+      - Integrated roll-out ToolWrap;<br />
+      - Internal hydration sleeve;<br />
+      - Internal key attachment clip;<br />
+      - LED light attachment point;<br />
+      - LidLock bike helmet attachment;<br />
+      - Magnetic lockable bite valve to prevent leakage;<br />
+      - Reflective graphics;<br />
+      - Side compression straps;<br />
+      - Sternum strap buckle with magnet;<br />
+      - Zippered scratch-free sunglasses and electronics pocket.
+    </span>,
+    price: 548.00,
+    gender: 'Unisex',
+    color: 'Green',
+    weight: 'max 0~10L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '081',
+    name: 'Petzl Meteor Climbing Helmet',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.meteorFirst,
+      images.meteorSecond,
+      images.meteorThird
+    ],
+    size: [
+      'S-M',
+      'M-L'
+    ],
+    shortDescription: <span>Are you passionate about climbing, mountaineering, or ski touring? The METEOR helmet offers efficient protection for these three activities! Lightweight, compact, and with excellent ventilation, it’s comfortable in any season. The shape provides greater coverage for enhanced head protection and was specifically designed to be worn with ski goggles.</span>,
+    description: <span>
+      Specifications:<br />
+      - Only 240 g;<br />
+      - Low-profile design achieved using In-Mold construction with an expanded polystyrene (EPS) foam liner injected inside a lightweight polycarbonate shell;<br />
+      - Large vents offer excellent air flow;<br />
+      - Quality finish and sleek design.<br /><br />
+      Enhanced protection:<br />
+      - Designed in accordance with Petzl’s TOP AND SIDE PROTECTION label;<br />
+      - Designed for optimal protection against side, front, and rear impacts.<br /><br />
+      Suited for ski touring:<br />
+      - First CE-certified ski touring helmet;<br />
+      - Optimal ventilation on both the ascent and descent;<br />
+      - The helmet can be worn comfortably from the beginning to the end of an outing;<br />
+      - Front of helmet is specifically designed for use with ski goggles;<br />
+      - Rear elastic band is compatible with ski goggle headbands;<br />
+      - Semi-rigid headband can be easily adjusted, even with gloves on;<br />
+      - Two clips in front and a rear elastic band for securing a headlamp to the helmet.
+    </span>,
+    price: 324.00,
+    gender: 'Unisex',
+    color: 'White',
+    weight: '240g',
+    features: [
+      '-'
+    ],
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    id: '082',
+    name: 'Petzl Picchu Junior Climbing Helmet',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.picchuFirst,
+      images.picchuSecond,
+      images.picchuThird
+    ],
+    size: [
+      48 + '-' + 54 + 'cm',
+    ],
+    shortDescription: <span>Designed for children, the picchu helmet is adapted for climbing and cycling (european and american standards). it features a hard outer shell, to resist impact and scratches. head-covering design provides enhanced protection against lateral, frontal and rear impact. ventilated and made to fit a child’s head, making it comfortable to wear.</span>,
+    description: <span>
+      Helmet meets multiple climbing and cycling standards:<br />
+      - European cycling (CE EN 1078);<br />
+      - United States cycling (CPSC safety standard - cycling helmets for children 5 and older);<br />
+      - designed in accordance with petzl’s top and side protection label;<br />
+      - head-covering design for enhanced protection against lateral, frontal and rear impact.<br /><br />
+      Durable construction, made for children:<br />
+      - hard ABS outer shell is impact- and scratch-resistant for optimal durability;<br />
+      - specifically sized for children between the ages of 3 and 8 (48-54 cm headband);<br />
+      - sheet of stickers allows the helmet to be personalized;<br /><br />
+      Comfort:<br />
+      - side openings for ventilation;<br />
+      - headband and chinstrap are adjustable;<br />
+      - narrow polyester webbing straps offer improved comfort;<br />
+      - headlamp can be attached using the four optimally placed clips;<br />
+      - comfort foam is removable and washable.
+    </span>,
+    price: 191.00,
+    gender: 'Kids',
+    color: 'Blue',
+    weight: '330g',
+    features: [
+      '-'
+    ],
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    id: '083',
+    name: 'Petzl Canyon Guide Climbing Harness',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.canyonGuideFirst,
+      images.canyonGuideSecond,
+      images.canyonGuideThird
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>Comfortable, ergonomic harness with integrated protective seat, for canyoning. Designed for canyoning, the CANYON GUIDE is a comfortable, ergonomic harness designed for expert users and guides. It features a gated ventral attachment point that allows optimal integration of equipment (lanyard, ascender, cutaway sling).</span>,
+    description: <span>
+      The gear loops and secondary loops make it easy to carry gear in any situation (progressing, organizing packs, rescue...). The protective seat is durable and interchangeable, and effectively protects the wetsuit and harness webbing from abrasion. The stainless steel DOUBLEBACK buckles, the metal attachment point and the reinforced gear loops optimize durability, for intensive use. The harness’s identification panel is also reinforced, for tracking the harness throughout its lifespan.<br /><br />
+      Comfortable, ergonomic canyoning harness designed for expert users and guides:<br />
+      - ergonomic ventral attachment point is positioned high, facilitating connection of the descender and optimizing comfort during rappels. The attachment point is gated, for optimal integration of the DUAL CANYON GUIDE lanyard, a cutaway sling or a CROLL S or L chest ascender;<br />
+      - wide, semi-rigid waistbelt provides comfort and support;<br />
+      - adjustment with DOUBLEBACK buckles for quick, fluid tightening;<br />
+      - the color coding is identical to that of the CANYON CLUB, to simplify demonstrations;<br />
+      - marking area on outside of waistbelt for easy identification of harness;<br /><br />
+      Facilitates the carrying and organization of equipment:;<br />
+      - four pre-shaped gear loops, two horizontal and two vertical, for easy transport of equipment;<br />
+      - four secondary loops, for attaching light bags and stowing the PIRANA descender;<br />
+      - the loop under the ventral attachment point is ideal for attaching a heavier bag or for installing a deviation. It can also be used to transfer a person during rescue;<br /><br />
+      Excellent durability, for intensive use:<br />
+      - optimal durability of metal attachment point;<br />
+      - protective seat is durable and interchangeable, designed to protect the wetsuit and harness webbing from abrasion. Two additional colors are available as accessories;<br />
+      - stainless steel DOUBLEBACK buckles are very durable, even in salty environments;<br />
+      - webbing designed for intensive use and smooth adjustment;<br />
+      - reinforced gear loops with protective sheath;<br />
+      - identification panel is integrated in the harness, for tracking the equipment throughout its lifespan;<br />
+      - easy to clean.<br /><br />
+      Specifications:<br />
+      - Material(s): high-strength polyester webbing, closed-cell foam, thermoplastic polyurethane (TPU) seat, stainless steel buckles;<br />
+      - Certification(s): CE, EN 12277 type C, UIAA;<br />
+      - Waist size: 65-95 cm;<br />
+      - Leg loops: 40-65 cm;<br />
+      - Weight: 870 g.
+    </span>,
+    price: 640.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '870g',
+    features: [
+      '-'
+    ],
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    id: '084',
+    name: 'Petzl Crevasse Climbing Rescue Kit',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.crevasseRescueFirst,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>The CREVASSE RESCUE KIT contains everything needed for setting up a hauling system or a rope ascent in case of a fall into a crevasse. This kit is essential for glacier travel (on skis or on foot).</span>,
+    description: <span>
+      Features:<br />
+      - 1 MICRO TRAXION pulley;<br />
+      - 2 OK SCREW-LOCK carabiners;<br />
+      - 1 TIBLOC;<br />
+      - 1 PARTNER pulley;<br />
+      - 1 ST’ANNEAU 120 cm sling.<br /><br />
+      SPECIFICATIONS:<br />
+      - Weight: 370 g;<br />
+      - Rope compatibility: 8 to 11 mm;<br />
+      - Certification(s): CE, UIAA.
+    </span>,
+    price: 603.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '370g',
+    features: [
+      '-'
+    ],
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    id: '085',
+    name: 'Petzl Sum´Tec Expeditions Adze',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.sumtecFirst,
+      images.sumtecSecond,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>The SUMTEC ice axe represents versatility: it adapts easily to any mountaineering activity, from classic to technical. It is completely modular, allowing it to be optimized for the objective. The TRIGREST handrest, adjustable without tools, and the compatibility of the ice axe with most Petzl accessories (PURICE and DRY picks, MASSELOTTES...) ensure the efficiency required for difficult sections.</span>,
+    description: <span>
+      Technical:<br />
+      - ICE pick is tapered at the tip for easy penetration in any ice;<br />
+      - the TRIGREST handrest allows the position of the hand or the index finger to be adjusted into climbing mode quickly and without tools;<br />
+      - shaft has steel spike for solid support in piolet-canne mode<br /><br />
+      Versatile:<br />
+      - curved shaft for efficient anchoring, while protecting the hand;<br />
+      - shaft is straight enough for efficient planting into snow and walking comfortably.<br /><br />
+      Completely modular ice axe:<br />
+      - Interchangeable picks adapt to different objectives;<br />
+      - Adze and hammer are interchangeable;<br />
+      - Adding weights (optional) improves anchoring qualities;<br />
+      - Compatible with Petzl accessories for QUARK, NOMIC and ERGO ice axes;<br />
+      - Available in two versions: adze or hammer.
+    </span>,
+    price: 638.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '470g',
+    features: [
+      '-'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    id: '086',
+    name: 'Petzl Nao 2 Expeditions Headlight',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.nao2First,
+      images.nao2Second,
+      images.nao2Third,
+    ],
+    size: [
+      700 + ' Lumens',
+    ],
+    shortDescription: <span>With 700 lumens of power, NAO sets the standard for night trails! It is intelligent, and entirely devoted to performance. During activity, with REACTIVE LIGHTING technology, NAO analyzes ambient light and instantly adjusts the brightness to the needs of the athlete. With energy optimized and manipulations reduced to a minimum, the trail runner can concentrate on the race!</span>,
+    description: <span>
+      Features:<br />
+      - the light sensor automatically adjusts brightness and beam pattern, optimizing battery use;<br />
+      - depending on the chosen burn time (6h30 or 12 h), brightness automatically self-regulates in two modes: MAX POWER and MAX AUTONOMY;<br />
+      - Multi-beam lighting: combines a wide beam for proximity lighting with a focused beam for long-range vision;<br />
+      - LOCK function to avoid accidentally turning it on during transit or storage.<br /><br />
+      Rechargeable 2600 mAh Lithium-Ion battery:<br />
+      - universal charging with micro USB port;<br />
+      - battery charge indicator.<br /><br />
+      Headlamp is very stable on the head:<br />
+      - adjustable headband is very comfortable;<br />
+      - additional top strap for technical activities;<br />
+      - Accessory belt kit for NAO allows the rechargeable battery to be moved to the belt to reduce the weight worn on the head, or to keep it warm in winter.<br /><br />
+      Specifications:<br />
+      - Weight: 185 g;<br />
+      - Technology: REACTIVE LIGHTING or CONSTANT LIGHTING;<br />
+      - Beam pattern: wide, mixed or focused;<br />
+      - Energy: 2600 mAh Lithium-Ion rechargeable battery (included);<br />
+      - Recharge time: 6 h;<br />
+      - Battery compatibility: LR03;<br />
+      - Watertightness: IP X4 (water resistant);<br />
+      - Certification(s): CE.
+    </span>,
+    price: 620.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '185g',
+    features: [
+      '-'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    id: '087',
+    name: 'Petzl Sirocco Expeditions Helmet',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.siroccoFirst,
+    ],
+    size: [
+      48 + '-' + 54 + 'cm',
+      53 + '-' + 61 + 'cm'
+    ],
+    shortDescription: <span>Ultra-lightweight climbing and mountaineering helmet with reinforced protection. The SIROCCO is designed to respond to the needs of climbers and mountaineers for reduced weight and for protection. Its head-covering shape, lower in the rear, offers reinforced protection. Optimized volume on the head, along with excellent ventilation, provide maximum comfort.</span>,
+    description: <span>
+      Features:<br />
+      - Ultra-light design: Only 170 g. Hybrid construction with a shell in EPP (expanded polypropylene) foam and rigid crown injected with EPS (expanded polystyrene) foam; <br />
+      - Head-covering design for optimal protection against lateral and rear impact;<br />
+      - Maximum comfort in action: - Wide holes, for excellent ventilation;<br />
+      - Completely adjustable, thanks to the adjustable headband and chinstrap;<br />
+      - Magnetic buckle;<br />
+      - Facilitates fastening the chinstrap (Petzl patent);<br />
+      - Compatible with the VIZION eye shield;<br />
+      - Two hooks and rear elastic for attaching a headlamp.
+    </span>,
+    price: 414.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '170g',
+    features: [
+      '-'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    id: '088',
+    name: 'Petzl Expeditions Dart',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.dartFirst,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>Technical and lightweight, DART crampons are designed for ice climbing, mixed climbing and dry tooling. With modular front points (long or short mono-point, dual-point or asymmetrical dual-point), they adapt to difficult climbs,snow couloirs and dry tooling. Stable support on any type of ice (cauliflower, hoarfrost), thanks to the lateral secondary points.</span>,
+    description: <span>
+      Features:<br />
+      - Asymmetrical front sections for technical mountaineering boots;<br />
+      - Toothed front points offer excellent penetration;<br />
+      - Stable support on any type of ice (cauliflower, hoarfrost), thanks to the lateral secondary points, also on the mono-point;<br />
+      - Precise, efficient placements, thanks to the configuration of the points;<br />
+      - ANTISNOW system limits snow buildup in any snow conditions.<br /><br />
+      Modular:<br />
+      - Vome with four modular front points, to adapt to different activities. Mono-point (short or long), for ice climbing and dry tooling, asymmetrical dual-point for pure ice, or dual point for snow couloirs and gullies length of front points can be modified with one screw;<br />
+      - LEVERLOCK FIL bindings: system for all technical mountaineering and ice climbing boots with front and rear welts;<br />
+      - Compatible with FIL SMALL toe bail, to adapt them to narrow boots with toe welts;<br />
+      - Compatible with the KIT CORD-TEC for reduced weight and bulk.<br /><br />
+      Lifespan extended with spare parts:<br />
+      - front points available as accessories;<br />
+      - front sections available as accessories;<br />
+      - ANTISNOW DART available as accessory.<br /><br />
+      Specifications:<br />
+      - Number of points: 12;<br />
+      - Certification(s): CE, UIAA;<br />
+      - Weight: 820 g;<br />
+      - Multi-mount system: LEVERLOCK FIL.
+    </span>,
+    price: 837.00,
+    gender: 'Unisex',
+    color: 'Orange',
+    weight: '820 g',
+    features: [
+      '-'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    id: '089',
+    name: 'Petzl Ergonomic Ice Expeditions Axe',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.ergonomicIceFirst,
+      images.ergonomicIceSecond,
+      images.ergonomicIceThird,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>The ERGONOMIC ice axe is designed for steep ice and for dry tooling. The sharp angle of the handle is ideal for prolonged hanging and increases power when pulling. The double handle offers multiple grip modes and stable hand switching. At home on rock or ice, the DRY pick optimizes inverted positions and the weights facilitate slotting of the pick in cracks.</span>,
+    description: <span>
+      Features:<br />
+      - Multiple grip modes and stable hand switching, thanks to the double handle (high and low);<br />
+      - Lower handle is sharply angled for more comfort when hanging and more power for extremely difficult sections. The shape allows open-handed grip, limiting fatigue and optimizing rests;<br />
+      - Upper handle is over-molded and bi-material, offering excellent grip and insulation from the cold;<br />
+      - Hydroformed shaft for optimal grip in the middle of the shaft.<br /><br />
+      Efficient placement, hooking and wedging on any terrain:<br />
+      - Perfect shape and balance of the ice axe provide an exceptional swing;<br />
+      - Facilitated hooking, thanks to the curve under the head;<br />
+      - DRY pick is tapered at the tip (3.3 mm) and versatile across all terrain: rock, snow and ice. The 4 mm thickness of the pick makes it stronger when slotted and torqued. The serrated edge stabilizes inverted positions;<br />
+      - Inertia and striking quality are improved, thanks to the MASSELOTTE weights;<br />
+      - The shape of the weights is optimized for slotting the pick in cracks.<br /><br />
+      Modular construction:<br />
+      - Entirely modular head allows the technical aspects of the ice axe to be adjusted;<br />
+      - Compatible with Petzl accessories: ICE, PURICE, PURDRY, PANNE, MARTEAU;<br />
+      - Sold with MINI MARTEAU, to protect the head and allow the user to hammer a piton back in;<br />
+      - Without accessories, the ice axe is lighter, for dry tooling (only 550 g);<br />
+      - GRIPREST ERGONOMIC handrest is over-molded and adjustable to three positions, to adapt to all hand sizes, even while wearing gloves. The absence of a steel point on the lower part gives better protection if the axe comes out of position.<br /><br />
+      Specifications:<br />
+      - Pick type: 2;<br />
+      - Shaft type: 2;<br />
+      - Material(s): aluminum, steel, glass fiber reinforced plastic;<br />
+      - Certification(s): CE, UIAA;<br />
+      - Sold with DRY pick, MASSELOTTES, MINI MARTEAU and GRIPREST ERGONOMIC handrest;<br />
+      - Weight: 635 g.
+    </span>,
+    price: 1144.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '635g',
+    features: [
+      '-'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    id: '090',
+    name: 'Petzl Cordex Expeditions Plus',
+    type: 'Accessories',
+    brand: 'Petzl',
+    images: [
+      images.cordexPlusFirst,
+      images.cordexPlusSecond,
+      images.cordexPlusThird,
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>These medium weight belay/rappel gloves offer extra protection without sacrificing dexterity. Double-layer leather and padding protect the palm from heat generated during long rappels or lowers. Fingertips and other high-wear areas are reinforced for increased durability.</span>,
+    description: <span>
+      Features:<br />
+      - Ergonomic cut for high dexterity without being too tight;<br />
+      - Made of high quality leather for the perfect balance between durability and dexterity;<br />
+      - Palm is padded to protect from heat generated during long rappels or lowers;<br />
+      - Back is made of durable leather with abrasion-resistant stretch nylon at key flex areas;<br />
+      - Durable double layer of leather in high-wear areas: fingertips, palm, between thumb and index finger;<br />
+      - Neoprene cuff with Velcro closure;<br />
+      - Carabiner hole to attach gloves to harness.
+    </span>,
+    price: 210.00,
+    gender: 'Unisex',
+    color: 'Yellow',
+    weight: '156 g',
+    features: [
+      '-'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    id: '096',
+    name: 'Salewa North X Ice Expeditions Axe',
+    type: 'Accessories',
+    brand: 'Salewa',
+    images: [
+      images.northxFirst,
+      images.northxSecond,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>The North-X Axe Is A Versatile, Ergonomic Ice Tool With A Pick And Adze For Technical Mountaineering, Climbing In Steep Mixed Terrain, Ice Climbing And Glacier Crossings.Its Stand-Out Feature Is The Special Sliding, Easy-Adjust Hand Rest.</span>,
+    description: <span>
+      When Plunging In Steep Firn, The Hand Rest Slides Upwards As You Climb To Promote Energy-Saving Movement And A More Rapid Ascent. If You Are On Steep Rock Or Ice, It Locks When Loaded For Maximum Support. In Addition, The Elasticated Webbing Anchor Leash Integrated In The Moving Hand Rest Enables Fast And Secure Shaft-Placement For Self-Belaying.<br /><br /> The Hot-Forged Steel Pick And 20 Offset 7075 Aluminium Shaft Guarantee A Balanced Swing Action And Secure, Precise Placement On All Types Of Rock And Ice. And The Insulated Synthetic Grip Provides Effective Protection From The Cold A Real Bonus On Longer Routes. For Extra Safety On The Descent, The North-X Has A Replaceable Steel Tip At The Bottom Instead Of A Spike, As It Provides A Better Hold On Rock And Ice.
+    </span>,
+    price: 737.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    id: '097',
+    name: 'Salewa Carbonium Ascent Expeditions Poles',
+    type: 'Accessories',
+    brand: 'Salewa',
+    images: [
+      images.carboniumFirst,
+      images.carboniumSecond,
+      images.carboniumThird,
+    ],
+    size: [
+      68 + '-' + 142 + 'cm'
+    ],
+    shortDescription: <span>Be it mountaineering or trail running through rugged terrains Salewa Carbonium Ascent 2 Units is a lightweight, compact and robust 3-piece hybrid construction folding carbon pole. This versatile poles always provides optimal functionality and comfort in the mountain environment.</span>,
+    description: <span>
+      The bottom section is constructed with highly robust aluminium that offers stability and copes well during the rocky rugged terrains. Thanks to the ergonomic grip and extended grip zone that provides maximum hand ergonomic liberty while trekking or mountaineering. While, the carbon reinforced Powerlock system offers reliable locking and easy adjustment making it easier to use.<br /><br /> Without a doubt, Salewa Carbonium Ascent 2 Units is an ideal alpine pole for quick moving trips and troublesome trails. So buy it without thinking! The Carbonium Ascent Is A Versatile, Robust And Reliable 3-Piece Telescopic Carbon Pole For Mountaineering Use In All Types Of Terrain, Including In Extreme Conditions.Its Bottom Section Is Made From High-Strength Aluminium To Cope With Rocks And Scree.
+    </span>,
+    price: 519.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Expeditions',
+    sustainable: false,
+  },
+  {
+    id: '098',
+    name: 'Salewa Vayu 2.0 Climbing Helmet',
+    type: 'Accessories',
+    brand: 'Salewa',
+    images: [
+      images.vayu2First,
+      images.vayu2Second,
+      images.vayu2Third,
+    ],
+    size: [
+      59 + '-' + 63 + 'cm'
+    ],
+    shortDescription: <span>A equintessential climbing helmet Salewa Vayu 2.0 is lightweight, highly durable compact and suitable for every head shape. This versatile helmet always offer technical functionality and comfort in the mountain environment.</span>,
+    description: <span>
+      Thanks to the hybrid construction, the outer shell is made with ceramic-polymeric composite CNT (Carbon Nano Tech) reinforced with 30% carbon fibre mixture that provides optimal effective protection. Also, the interior coating of expanded polypropylene (EPP) and expanded polystyrene (EPS) ensures maximum shock absorption in the case of any mishaps.<br /><br /> The addition of large opening provides air flow that improves ventilation and keeps you comfortable. Finally, the innovation adjustment system with internal knob makes it easier to wear, the replaceable headlamp clips secures your light when it´s dark and lastly the comfortable chin guard offers optimal adjustment to any head shape.<br /><br /> So, without a doubt Salewa Vayu 2.0 is a must have climbing equipment when you are climbing mountains or trekking through rugged terrains. Buy it without thinking! A lightweight, hybrid construction helmet with a strong carbon reinforced outer shell that offers robust protection against rockfall. Its unique inner shell combines EPP and EPS for optimized impact absorption. With best-in-class ventilation and a new fitting system with magnetic buckle and adjustment dial for intuitive, single-handed operation.<br /><br />
+      Features:<br />
+      - Certifications: CE 12492, UIAA 106;<br />
+      - Circumference: L/XL ( 59 - 63 );<br />
+      - Materials Description: CNT (Carbon Nano Tech), EPP, EPS.
+    </span>,
+    price: 581.00,
+    gender: 'Unisex',
+    color: 'White',
+    weight: '280 g',
+    features: [
+      '-'
+    ],
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    id: '099',
+    name: 'Salewa MTN Spike Hiking Crampons',
+    type: 'Accessories',
+    brand: 'Salewa',
+    images: [
+      images.mtnSpikeFirst,
+      images.mtnSpikeSecond,
+      images.mtnSpikeThird,
+    ],
+    size: [
+      'M',
+      'L',
+      'XL'
+    ],
+    shortDescription: <span>Robust stainless steel spikes for safe grip on ice, packed snow and covered trails. For autumn & winter speed hiking on icy, snowy and mixed terrain.</span>,
+    description: <span>
+      The MTN Spike is designed for speed hiking in autumn & winter on icy, snowy and mixed terrain. Engineered to adapt to all types of footwear, it makes it possible to move rapidly over ice and snow-pack. The robust construction with eighteen stainless steel spikes delivers good traction. Supplied with a protective storage bag. Sizing Guide: EU: S=36-39, M=39-42, L=42-44, XL=44-47 UK: S=3.5-6, M=6-8, L=8-9.5, XL=9.5-12.<br /><br />
+      Features:<br />
+      - Excellent grip on ice thanks to 18 robust stainless steel spikes;<br />
+      - Secure traction and stability also for descents thanks to the large heel plate;<br />
+      - Stable fit thanks to rip-and-stick strap over the top of the foot;<br />
+      - Durable stainless steel chains withstand repeated torque;<br />
+      - Adapts to all types of footwear, quick & easy to slip on & off, secure fit thanks to tough elastomer harness;<br />
+      - With protective storage bag.
+    </span>,
+    price: 222.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: '375 g',
+    features: [
+      '-'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '100',
+    name: 'Salewa Rozes Warm Sleeping Camping Bag',
+    type: 'Accessories',
+    brand: 'Salewa',
+    images: [
+      images.rozesWarmFirst,
+    ],
+    size: [
+      'XS',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Robust stainless steel spikes for safe grip on ice, packed snow and covered trails. For autumn & winter speed hiking on icy, snowy and mixed terrain.</span>,
+    description: <span>
+      Features:<br />
+      - Inner pocket for values;<br />
+      - Open as a blanket;<br />
+      - Washable and easy care;<br />
+      - Optimized Shape;<br />
+      - One-handed draw strings use;<br />
+      - Pre-formed thermo collar;<br />
+      - Functionally cut hood;<br />
+      - Pre-shaped ergonomic foot section;<br />
+      - Foot section with zipper;<br />
+      - Zipper with anti-snagging slider;<br />
+      - Dry Bag Included;<br />
+      - PFC-free;<br />
+      - Cross-product connectable;<br />
+      - Responsive technology: Thermoregulation & Recovery;<br />
+      - DWR – Durable Water Repellent treatment;<br />
+      - Activities: Alpine Mountaineering, Hiking, Alpine Trekking.<br /><br />
+      Specifications:<br />
+      - Chamber construction: Layer construction;<br />
+      - Zipper length: Full-length two-way YKK-Zipper;<br />
+      - Body sizE: 185 cm;<br />
+      - Packing size: ø26x38cm;<br />
+      - Height: 210 cm;<br />
+      - Shoulder width: 75 cm;<br />
+      - Knee width: 53 cm;<br />
+      - Foot width: 32 cm;<br />
+      - Sleeping bag filling type: Synthetic;<br />
+      - Outside: Nylon double ripstop shiny ECO DWR 56BS;<br />
+      - Inside: Responsive soft touch ECO DWR 72;<br />
+      - Filling: Powerloft – high insulation Microfiber;<br />
+      - Weight: 1610 g;<br />
+      - Comfort Temperature: 2 °C;<br />
+      - Temperature Extreme: -21 °C;<br />
+      - Temperature Limit: -8 °C.
+    </span>,
+    price: 970.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: '1610 g',
+    features: [
+      '-'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  
 
   //* ------------------------------------------------------------ EQUIPMENT ----------------------------------------------------- *//
 
   {
     id: '020',
-    name: 'Columbia Ultra 2P Lightweight Hiking Tent',
+    name: 'Columbia Ultra 2P Lightweight Camping Tent',
     type: 'Equipment',
     brand: 'Columbia',
     images: [
@@ -2841,8 +3859,9 @@ const products = [
     size: [
       '2P',
     ],
+    shortDescription: <span>Lightweight camping tent for backpacking or cyclotourism, easy to pitch up. Ultra lightweight camping tent for 2 persons with rainfly for those who need light and compact tent once packed. Thanks to design this tent is very stable with optimum inner space. Nylon ripstop outer fabric is very resistant to tears, in addition to being extremely light. The water column is 3000 mm for the roof and the floor.</span>,
     description: <span>
-      Lightweight camping tent for backpacking or cyclotourism, easy to pitch up. Ultra lightweight camping tent for 2 persons with rainfly for those who need light and compact tent once packed. Thanks to design this tent is very stable with optimum inner space. Nylon ripstop outer fabric is very resistant to tears, in addition to being extremely light. The water column is 3000 mm for the roof and the floor. <br /> This tent has an easy and quick set up because you only have to assembly one preformed pole with another small one The inner tent can be used as a mosquito net independently. Inside it has pockets to store small belongings. The fastening system of the rainfly to the inner tent is made by Velcro loops,plastic hooks and aluminum buckles, which offers faster assembly and disassembly as well as less weight. For better visibility , zipper pullers are reflective as well as the guy ropes. The tent dimensions are (50+127+50) x225x92 cm and its weight is 1,65 kg. <br /><br />
+       This tent has an easy and quick set up because you only have to assembly one preformed pole with another small one The inner tent can be used as a mosquito net independently. Inside it has pockets to store small belongings. The fastening system of the rainfly to the inner tent is made by Velcro loops,plastic hooks and aluminum buckles, which offers faster assembly and disassembly as well as less weight. For better visibility , zipper pullers are reflective as well as the guy ropes. The tent dimensions are (50+127+50) x225x92 cm and its weight is 1,65 kg. <br /><br />
       Flysheet: <br />
       - 20D Nylon Ripstop Single silicon; <br />
       - PU 3000 mm. <br /><br />
@@ -2865,7 +3884,7 @@ const products = [
       - Total weight and dimensions of the pegs:0,080kg and 16xØ3 cm.
     </span>,
     price: 832.00,
-    gender: '',
+    gender: 'Unisex',
     color: 'Green',
     weight: '1.65 kg',
     features: [
@@ -2875,7 +3894,121 @@ const products = [
     ],
     activity: 'Camping',
     sustainable: false,
-  }, 
+  },
+  {
+    id: '021',
+    name: 'Black Diamond Climbing Cliff Cabana Double',
+    type: 'Equipment',
+    brand: 'Black Diamond',
+    images: [
+      images.cliffCabanaFirst,
+      images.cliffCabanaSecond,
+      images.cliffCabanaThird
+    ],
+    size: [
+      213 + 'x' + 130 + 'cm'
+    ],
+    shortDescription: <span>The worlds strongest, most reliable single-point suspension sleeping system, the two-person Black Diamond Cliff Cabana Double Portaledge makes for easy living when you and your partner way off the deck. Made from strong yet lightweight anodized aluminum and durable 210d nylon double ripstop, the Cliff Cabana is easy to set up and features 4 pull straps and a 6-point buckle system for quick and easy adjustments.</span>,
+    description: <span>
+      Features: <br />
+      - Precise engineering for strength, durability and ease of set-up and adjustment;<br />
+      - Frame is built from double-butted 6061 T-6 45 mm machined and anodized aluminum;<br />
+      - 4 pull straps tighten the floor;<br />
+      - 6-point buckle system for easy leveling;<br />
+      - Double ripstop 210d nylon ballistics.<br /><br />
+      Specifications:<br />
+      - Weight : 9 kg, 19 lb 13 oz;<br />
+      - Materials : Double-butted aluminum alloy frame, double ripstop 420d packcloth, Ballistic reinforcements;<br />
+      - Dimensions : 213 x 130 cm, 84 x 51 in.
+    </span>,
+    price: 2481.00,
+    gender: 'Men',
+    color: 'Black',
+    weight: '9 kg',
+    features: [
+      '-'
+    ],
+    activity: 'Climbing',
+    sustainable: false,
+  },
+  {
+    id: '094',
+    name: 'Salewa Litetrek Pro II Camping Tent',
+    type: 'Equipment',
+    brand: 'Salewa',
+    images: [
+      images.litetrekFirst,
+      images.litetrekSecond,
+      images.litetrekThird
+    ],
+    size: [
+      '2P',
+    ],
+    shortDescription: <span>A robust, spacious, compact, weather protective 2 people tent Salewa Litetrek Pro II is perfect for all your camping sojourns and alpine trekking. This lightweight tent provides technical functionality and comfort during all seasons in the wild expected environment conditions.</span>,
+    description: <span>
+      Thanks to the robust semi-geodesic construction provides ventilation and stability, the 100% self-supporting construction means that it can be easily set up in any exterior settings. Also, the tear-resistant polyester sheet, PU coated 70 D ripstop nylon floor makes it waterproof and perfect for unpredictable rain showers or varied weather patterns. The rear panels with zippers improve ventilation and reduces humidity inside the tent. Lastly, the large weatherproof vestibules have ample storage capacity for all your gear and cooking spree.<br /><br />
+      Features: <br />
+      - Area Inner Tent: 2.52 m²;<br />
+      - Area Vestibules Front: 0.56 m²;<br />
+      - Entrances: 1;<br />
+      - Height Inner Tent: 1 m;<br />
+      - Packing Size: 40 x 19cm;<br />
+      - Persons: 2 Persons;<br />
+      - Ventilations: 1;<br />
+      - Ventilation type: Ventilation panel with zippers;<br />
+      - Vestibule for gear storage and cooking: Yes;<br />
+      - Vestibules: 1;<br />
+      - Weight Max: 1980 g;<br />
+      - Weight Min: 1700 g.
+    </span>,
+    price: 1976.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '1700~1980 g',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: false,
+  },
+  {
+    id: '095',
+    name: 'Salewa Micra II Camping Tent',
+    type: 'Equipment',
+    brand: 'Salewa',
+    images: [
+      images.micra2First,
+      images.micra2Second,
+    ],
+    size: [
+      '2P',
+    ],
+    shortDescription: <span>A robust, spacious, compact, weather protective 2 people tent Salewa Micra II Tent is perfect for all your camping sojourns and alpine trekking. This lightweight tent provides technical functionality and comfort during all seasons in the wild expected environment conditions.</span>,
+    description: <span>
+      Thanks to the robust dome design construction provides ventilation and stability, the 100% self supporting construction means that it can be easily set up in any exterior settings. Also, the tear-resistant polyester sheet, with 4,000mm water column makes it waterproof and perfect for unpredictable rain showers or varied weather patterns. The rear panels with zippers improves ventilation and reduces humidity inside the tent. Lastly, the large weatherproof vestibules have ample storage capacity for all your gear and cooking spree.<br /><br />
+      Features: <br />
+      - Area Inner Tent: 2.5 m²;<br />
+      - Area Vestibules Front: 0.6 m²;<br />
+      - Entrances: 1;<br />
+      - Height Inner Tent: 0.9 m;<br />
+      - Packing Size: 40 x 20 cm;<br />
+      - Persons: 2 Persons;<br />
+      - Ventilations: 2;<br />
+      - Ventilation type: Side ventilation with zippers;<br />
+      - Vestibule for gear storage and cooking: Yes;<br />
+      - Vestibules: 1;<br />
+      - Weight Max: 2.5 kg.
+    </span>,
+    price: 1023.00,
+    gender: 'Unisex',
+    color: 'Yellow',
+    weight: 'max 2.5 kg',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: false,
+  },
 ]
 
 
@@ -3078,7 +4211,8 @@ const colorCategory = [
   'Green',
   'Yellow',
   'Red',
-  'Purple'
+  'Purple',
+  'Orange'
 ]
 
 const sizeCategory = [

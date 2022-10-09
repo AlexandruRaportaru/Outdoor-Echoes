@@ -8,7 +8,7 @@ import './Products.css';
 import 'rc-slider/assets/index.css';
 
 const Products = () => {
-  const [priceRange, setPriceRange] = useState([0, 3500]);
+  const [priceRange, setPriceRange] = useState([0, 3600]);
   const [filters, setFilters] = useState(defaultFilters);
   const [products, setProducts] = useState(data.products);
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -214,8 +214,8 @@ const Products = () => {
                 <Slider 
                   range
                   min={0}
-                  max={3500}
-                  defaultValue={[0, 3500]}
+                  max={3600}
+                  defaultValue={[0, 3600]}
                   onChange={(value) => handlePriceRange(value)}
                   className='price__slider-input'
                 />
