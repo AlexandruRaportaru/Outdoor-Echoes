@@ -70,7 +70,7 @@ const Selection = () => {
             >
             {
             Array(70).fill().map((idx, index) => {
-            const randomIndex = Math.floor(70 * Math.random());
+            const randomIndex = Math.floor(140 * Math.random());
             const product = data.products[randomIndex];
 
             return (

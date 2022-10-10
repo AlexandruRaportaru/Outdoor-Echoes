@@ -296,6 +296,44 @@ import sirentravellerThird from '../assets/merrell/sirentravellerThird.jpg';
 import northBanner from '../assets/north/northBanner.jpg';
 import northLogo from '../assets/north/northLogo.png';
 
+import ultraEnduranceFirst from '../assets/north/ultraEnduranceFirst.jpg';
+import ultraEnduranceSecond from '../assets/north/ultraEnduranceSecond.jpg';
+import ultraEnduranceThird from '../assets/north/ultraEnduranceThird.jpg';
+
+import youthChilkFirst from '../assets/north/youthChilkFirst.jpg';
+import youthChilkSecond from '../assets/north/youthChilkSecond.jpg';
+import youthChilkThird from '../assets/north/youthChilkThird.jpg';
+
+import resolveFirst from '../assets/north/resolveFirst.jpg';
+import resolveSecond from '../assets/north/resolveSecond.jpg';
+import resolveThird from '../assets/north/resolveThird.jpg';
+
+import grivolaFirst from '../assets/north/grivolaFirst.jpg';
+import grivolaSecond from '../assets/north/grivolaSecond.jpg';
+import grivolaThird from '../assets/north/grivolaThird.jpg';
+
+import thermoballFirst from '../assets/north/thermoballFirst.jpg';
+import thermoballSecond from '../assets/north/thermoballSecond.jpg';
+import thermoballThird from '../assets/north/thermoballThird.jpg';
+
+import resolveFullFirst from '../assets/north/resolveFullFirst.jpg';
+import resolveFullSecond from '../assets/north/resolveFullSecond.jpg';
+import resolveFullThird from '../assets/north/resolveFullThird.jpg';
+
+import motionFirst from '../assets/north/motionFirst.jpg';
+import motionSecond from '../assets/north/motionSecond.jpg';
+import motionThird from '../assets/north/motionThird.jpg';
+
+import fornetFirst from '../assets/north/fornetFirst.jpg';
+import fornetSecond from '../assets/north/fornetSecond.jpg';
+import fornetThird from '../assets/north/fornetThird.jpg';
+
+import resolveReflectiveFirst from '../assets/north/resolveReflectiveFirst.jpg';
+import resolveReflectiveSecond from '../assets/north/resolveReflectiveSecond.jpg';
+
+import chakalFirst from '../assets/north/chakalFirst.jpg';
+import chakalSecond from '../assets/north/chakalSecond.jpg';
+
 /* Osprey */
 import ospreyBanner from '../assets/osprey/ospreyBanner.jpg';
 import ospreyLogo from '../assets/osprey/ospreyLogo.png';
@@ -336,10 +374,6 @@ import aetherThird from '../assets/osprey/aetherThird.jpg';
 import raptor10lFirst from '../assets/osprey/raptor10lFirst.jpg';
 import raptor10lSecond from '../assets/osprey/raptor10lSecond.jpg';
 import raptor10lThird from '../assets/osprey/raptor10lThird.jpg';
-
-/* Patagonia */
-import patagoniaBanner from '../assets/patagonia/patagoniaBanner.jpg';
-import patagoniaLogo from '../assets/patagonia/patagoniaLogo.png';
 
 /* Petzl */
 import petzlBanner from '../assets/petzl/petzlBanner.jpg';
@@ -421,6 +455,46 @@ import rozesWarmFirst from '../assets/salewa/rozesWarmFirst.jpg';
 import salomonBanner from '../assets/salomon/salomonBanner.jpg';
 import salomonLogo from '../assets/salomon/salomonLogo.png';
 
+import supercross4First from '../assets/salomon/supercross4First.jpg';
+import supercross4Second from '../assets/salomon/supercross4Second.jpg';
+import supercross4Third from '../assets/salomon/supercross4Third.jpg';
+
+import hypulseFirst from '../assets/salomon/hypulseFirst.jpg';
+import hypulseSecond from '../assets/salomon/hypulseSecond.jpg';
+import hypulseThird from '../assets/salomon/hypulseThird.jpg';
+
+import alphacrossBlastFirst from '../assets/salomon/alphacrossBlastFirst.jpg';
+import alphacrossBlastSecond from '../assets/salomon/alphacrossBlastSecond.jpg';
+import alphacrossBlastThird from '../assets/salomon/alphacrossBlastThird.jpg';
+
+import xraiseFirst from '../assets/salomon/xraiseFirst.jpg';
+import xraiseSecond from '../assets/salomon/xraiseSecond.jpg';
+import xraiseThird from '../assets/salomon/xraiseThird.jpg';
+
+import crosshikeFirst from '../assets/salomon/crosshikeFirst.jpg';
+import crosshikeSecond from '../assets/salomon/crosshikeSecond.jpg';
+import crosshikeThird from '../assets/salomon/crosshikeThird.jpg';
+
+import quest4First from '../assets/salomon/quest4First.jpg';
+import quest4Second from '../assets/salomon/quest4Second.jpg';
+import quest4Third from '../assets/salomon/quest4Third.jpg';
+
+import crossrunFirst from '../assets/salomon/crossrunFirst.jpg';
+import crossrunSecond from '../assets/salomon/crossrunSecond.jpg';
+import crossrunThird from '../assets/salomon/crossrunThird.jpg';
+
+import sensePolesFirst from '../assets/salomon/sensePolesFirst.jpg';
+import sensePolesSecond from '../assets/salomon/sensePolesSecond.jpg';
+import sensePolesThird from '../assets/salomon/sensePolesThird.jpg';
+
+import xt6lFirst from '../assets/salomon/xt6lFirst.jpg';
+import xt6lSecond from '../assets/salomon/xt6lSecond.jpg';
+import xt6lThird from '../assets/salomon/xt6lThird.jpg';
+
+import trailLowFirst from '../assets/salomon/trailLowFirst.jpg';
+import trailLowSecond from '../assets/salomon/trailLowSecond.jpg';
+import trailLowThird from '../assets/salomon/trailLowThird.jpg';
+
 /* Sportiva */
 import sportivaBanner from '../assets/sportiva/sportivaBanner.jpg';
 import sportivaLogo from '../assets/sportiva/sportivaLogo.png';
@@ -467,6 +541,81 @@ import trangoicecubeThird from '../assets/sportiva/trangoicecubeThird.jpg';
 /* Summit */
 import summitBanner from '../assets/summit/summitBanner.jpg';
 import summitLogo from '../assets/summit/summitLogo.png';
+
+import nylonTarpFirst from '../assets/summit/nylonTarpFirst.jpg';
+import nylonTarpSecond from '../assets/summit/nylonTarpSecond.jpg';
+import nylonTarpThird from '../assets/summit/nylonTarpThird.jpg';
+
+import ultraSilFirst from '../assets/summit/ultraSilFirst.jpg';
+import ultraSilSecond from '../assets/summit/ultraSilSecond.jpg';
+
+import grasshopperFirst from '../assets/summit/grasshopperFirst.jpg';
+import grasshopperSecond from '../assets/summit/grasshopperSecond.jpg';
+
+import sparkSpivFirst from '../assets/summit/sparkSpivFirst.jpg';
+import sparkSpivSecond from '../assets/summit/sparkSpivSecond.jpg';
+import sparkSpivThird from '../assets/summit/sparkSpivThird.jpg';
+
+import etherLightFirst from '../assets/summit/etherLightFirst.jpg';
+import etherLightSecond from '../assets/summit/etherLightSecond.jpg';
+import etherLightThird from '../assets/summit/etherLightThird.jpg';
+
+import aerosDownFirst from '../assets/summit/aerosDownFirst.jpg';
+import aerosDownSecond from '../assets/summit/aerosDownSecond.jpg';
+import aerosDownThird from '../assets/summit/aerosDownThird.jpg';
+
+import deltalightFirst from '../assets/summit/deltalightFirst.jpg';
+
+import doubleFirst from '../assets/summit/doubleFirst.jpg';
+import doubleSecond from '../assets/summit/doubleSecond.jpg';
+
+import jungleFirst from '../assets/summit/jungleFirst.jpg';
+import jungleSecond from '../assets/summit/jungleSecond.jpg';
+import jungleThird from '../assets/summit/jungleThird.jpg';
+
+import hammockFirst from '../assets/summit/hammockFirst.jpg';
+import hammockSecond from '../assets/summit/hammockSecond.jpg';
+import hammockThird from '../assets/summit/hammockThird.jpg';
+
+/* Vaude */
+import vaudeBanner from '../assets/vaude/vaudeBanner.jpg';
+import vaudeLogo from '../assets/vaude/vaudeLogo.png';
+
+import lapitaFirst from '../assets/vaude/lapitaFirst.jpg';
+import lapitaSecond from '../assets/vaude/lapitaSecond.jpg';
+import lapitaThird from '../assets/vaude/lapitaThird.jpg';
+
+import skomerFirst from '../assets/vaude/skomerFirst.jpg';
+import skomerSecond from '../assets/vaude/skomerSecond.jpg';
+import skomerThird from '../assets/vaude/skomerThird.jpg';
+
+import casareaFirst from '../assets/vaude/casareaFirst.jpg';
+import casareaSecond from '../assets/vaude/casareaSecond.jpg';
+import casareaThird from '../assets/vaude/casareaThird.jpg';
+
+import rondaneFirst from '../assets/vaude/rondaneFirst.jpg';
+import rondaneSecond from '../assets/vaude/rondaneSecond.jpg';
+import rondaneThird from '../assets/vaude/rondaneThird.jpg';
+
+import mwpFirst from '../assets/vaude/mwpFirst.jpg';
+import mwpSecond from '../assets/vaude/mwpSecond.jpg';
+
+import zerumFirst from '../assets/vaude/zerumFirst.jpg';
+import zerumSecond from '../assets/vaude/zerumSecond.jpg';
+
+import minnieFirst from '../assets/vaude/minnieFirst.jpg';
+import minnieSecond from '../assets/vaude/minnieSecond.jpg';
+
+import santisFirst from '../assets/vaude/santisFirst.jpg';
+import santisSecond from '../assets/vaude/santisSecond.jpg';
+
+import selunFirst from '../assets/vaude/selunFirst.jpg';
+import selunSecond from '../assets/vaude/selunSecond.jpg';
+import selunThird from '../assets/vaude/selunThird.jpg';
+
+import taurusFirst from '../assets/vaude/taurusFirst.jpg';
+import taurusSecond from '../assets/vaude/taurusSecond.jpg';
+import taurusThird from '../assets/vaude/taurusThird.jpg';
 
 /* Creator */
 import creator1 from '../assets/creator/creator1.jpg';
@@ -789,6 +938,44 @@ export default {
   northBanner,
   northLogo,
 
+  ultraEnduranceFirst,
+  ultraEnduranceSecond,
+  ultraEnduranceThird,
+
+  youthChilkFirst,
+  youthChilkSecond,
+  youthChilkThird,
+
+  resolveFirst,
+  resolveSecond,
+  resolveThird,
+
+  grivolaFirst,
+  grivolaSecond,
+  grivolaThird,
+
+  thermoballFirst,
+  thermoballSecond,
+  thermoballThird,
+
+  resolveFullFirst,
+  resolveFullSecond,
+  resolveFullThird,
+
+  motionFirst,
+  motionSecond,
+  motionThird,
+
+  fornetFirst,
+  fornetSecond,
+  fornetThird,
+
+  resolveReflectiveFirst,
+  resolveReflectiveSecond,
+
+  chakalFirst,
+  chakalSecond,
+
 /* Osprey */
   ospreyBanner,
   ospreyLogo,
@@ -829,10 +1016,6 @@ export default {
   raptor10lFirst,
   raptor10lSecond,
   raptor10lThird,
-
-/* Patagonia */
-  patagoniaBanner,
-  patagoniaLogo,
 
 /* Petzl */
   petzlBanner,
@@ -914,6 +1097,46 @@ export default {
   salomonBanner,
   salomonLogo,
 
+  supercross4First,
+  supercross4Second,
+  supercross4Third,
+
+  hypulseFirst,
+  hypulseSecond,
+  hypulseThird,
+
+  alphacrossBlastFirst,
+  alphacrossBlastSecond,
+  alphacrossBlastThird,
+
+  xraiseFirst,
+  xraiseSecond,
+  xraiseThird,
+
+  crosshikeFirst,
+  crosshikeSecond,
+  crosshikeThird,
+
+  quest4First,
+  quest4Second,
+  quest4Third,
+
+  crossrunFirst,
+  crossrunSecond,
+  crossrunThird,
+
+  sensePolesFirst,
+  sensePolesSecond,
+  sensePolesThird,
+
+  xt6lFirst,
+  xt6lSecond,
+  xt6lThird,
+
+  trailLowFirst,
+  trailLowSecond,
+  trailLowThird,
+
 /* Sportiva */
   sportivaBanner,
   sportivaLogo,
@@ -960,6 +1183,81 @@ export default {
 /* Summit */
   summitBanner,
   summitLogo,
+
+  nylonTarpFirst,
+  nylonTarpSecond,
+  nylonTarpThird,
+
+  ultraSilFirst,
+  ultraSilSecond,
+
+  grasshopperFirst,
+  grasshopperSecond,
+
+  sparkSpivFirst,
+  sparkSpivSecond,
+  sparkSpivThird,
+
+  etherLightFirst,
+  etherLightSecond,
+  etherLightThird,
+
+  aerosDownFirst,
+  aerosDownSecond,
+  aerosDownThird,
+
+  deltalightFirst,
+
+  doubleFirst,
+  doubleSecond,
+
+  jungleFirst,
+  jungleSecond,
+  jungleThird,
+
+  hammockFirst,
+  hammockSecond,
+  hammockThird,
+
+  /* Vaude */
+  vaudeBanner,
+  vaudeLogo,
+
+  lapitaFirst,
+  lapitaSecond,
+  lapitaThird,
+
+  skomerFirst,
+  skomerSecond,
+  skomerThird,
+
+  casareaFirst,
+  casareaSecond,
+  casareaThird,
+
+  rondaneFirst,
+  rondaneSecond,
+  rondaneThird,
+
+  mwpFirst,
+  mwpSecond,
+
+  zerumFirst,
+  zerumSecond,
+
+  minnieFirst,
+  minnieSecond,
+
+  santisFirst,
+  santisSecond,
+
+  selunFirst,
+  selunSecond,
+  selunThird,
+
+  taurusFirst,
+  taurusSecond,
+  taurusThird,
 
 /* Creator */
   creator1,

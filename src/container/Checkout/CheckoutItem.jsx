@@ -45,9 +45,10 @@ const CheckoutItem = ({product, removeFromCart, adjustQty}) => {
             {(product.price * product.qty).toFixed(2)}
             <p style={{marginTop: '5px'}}> RON</p>
         </span>
-        <button onClick={() => removeFromCart(product.id, product.selectedSize)} className='app__checkout-content_products-section_item-delete'>
-            <MdDeleteForever className='flex__center'/>
-        </button>
+        <MdDeleteForever 
+            onClick={() => removeFromCart(product.id, product.selectedSize)} 
+            className='app__checkout-content_products-section_item-delete flex__center'
+        />
     </div>
   )
 }

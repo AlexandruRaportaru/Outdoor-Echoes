@@ -68,6 +68,7 @@
 
 .custom__button.disabled {
   background: rgb(128, 128, 128, 0.5);
+  color: var(--color-white);
   border: 1px solid rgb(128, 128, 128, 0.5);
   cursor: default;
 }
@@ -197,6 +198,12 @@
   letter-spacing: 0.25px;
   color: var(--color-purple);
   font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 @media screen and (min-width: 1920px) {

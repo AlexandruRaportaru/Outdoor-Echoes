@@ -52,7 +52,9 @@ const Footer = () => (
           <div className='app__footer-content_bottom-center_logo'>
             <Logo />
           </div>
-          <h5 className='p__text'>Made with love for hiking by Alex Raportaru</h5>
+          <h5 className='p__text'>
+            Made with love for hiking by <a href='https://alexandruraportaru.github.io/Portfolio-Website/' target='_blank' rel='noreferrer'>Alex Raportaru</a>
+          </h5>
         </div>
 
         <div className='app__footer-content_bottom-right footer3'>

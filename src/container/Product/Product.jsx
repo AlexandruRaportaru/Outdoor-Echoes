@@ -82,6 +82,10 @@ const Product = ({addToCart}) => {
     const handleAddToCart = () => {
         addToCart(product.id, currentSize, counter);
         modal.style.display = 'block';
+
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 4000);
     };
 
     const handleCloseModal = () => {

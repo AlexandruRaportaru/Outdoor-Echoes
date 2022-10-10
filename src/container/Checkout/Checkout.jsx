@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { connect } from 'react-redux';
 import CheckoutItem from './CheckoutItem';
-import { images } from '../../constants';
+import { images, data } from '../../constants';
 
 import './Checkout.css';
 
@@ -71,7 +71,7 @@ const Checkout = ({cartProducts}) => {
             modal.style.display = 'none';
 
             navigate('/');
-        }, 6000);
+        }, 4000);
     }
 
     
@@ -86,14 +86,9 @@ const Checkout = ({cartProducts}) => {
                 <div className='app__checkout-content_section-contact'>
                     <h1 className='app__checkout-content_section-contact_title p__headtext'>Contact and Billing</h1>
                     <div className='app__checkout-content_section-contact_details'>
-                        <input type='text' placeholder='First Name: *' />
-                        <input type='text' placeholder='Last Name: *' />
-                        <input type='text' placeholder='E-Mail: *' />
-                        <input type='number' placeholder='Phone Number: *' />
-                        <input type='text' placeholder='Address: *' />
-                        <input type='text' placeholder='Post Code: *' />
-                        <input type='text' placeholder='City: *' />
-                        <input type='text' placeholder='Country: *' />
+                        {data.contactDetails.map(contact => (
+                            <input type={contact.type} placeholder={contact.placeholder} />
+                        ))}
                     </div>
                 </div>
                 <div className='app__checkout-content_section-payment'>
@@ -122,7 +117,7 @@ const Checkout = ({cartProducts}) => {
                             <div className='app__checkout-content_section-payment_details-card_details'>
                                 <div>
                                     <label className='p__yanone'>Card number</label>
-                                    <input type='number' placeholder='1234 5678 9012 3456' />
+                                    <input type='text' placeholder='1234 5678 9012 3456' minLength={16} maxLength={16}/>
                                 </div>
                                 <div>
                                     <label className='p__yanone'>Card holder name</label>
@@ -130,11 +125,11 @@ const Checkout = ({cartProducts}) => {
                                 </div>
                                 <div>
                                     <label className='p__yanone'>Expiration date</label>
-                                    <input type='number' placeholder='MM/YYYY' />
+                                    <input type='text' placeholder='MM/YYYY' minLength={7} maxLength={7}/>
                                 </div>
                                 <div>
                                     <label className='p__yanone'>CVC/CVV/CID</label>
-                                    <input type='number' placeholder='3 digits' />
+                                    <input type='text' placeholder='3 digits' minLength={3} maxLength={3}/>
                                 </div>
                             </div>
                         </div>
@@ -171,26 +166,12 @@ const Checkout = ({cartProducts}) => {
                     <div className='app__checkout-content_products-shipping-section'>
                         <p className='p__yanone'>Shipping and Handling:</p>
                         <div className='app__checkout-content_products-shipping-section_options'>
-                            <div>
-                                <input type='checkbox' value='200' onClick={addInputValue}/>
-                                <label className='p__yanone'>International Delivery: <span>200.00 RON</span></label>
-                            </div>
-                            <div>
-                                <input type='checkbox' value='50' onClick={addInputValue}/>
-                                <label className='p__yanone'>Express Delivery: <span>50.00 RON</span></label>
-                            </div>
-                            <div>
-                                <input type='checkbox' value='25' onClick={addInputValue}/>
-                                <label className='p__yanone'>Local Delivery: <span>25.00 RON</span></label>
-                            </div>
-                            <div>
-                                <input type='checkbox' value='0' onClick={addInputValue}/>
-                                <label className='p__yanone'>Free Shipping: <span>0.00 RON</span></label>
-                            </div>
-                            <div>
-                                <input type='checkbox' value='0' onClick={addInputValue}/>
-                                <label className='p__yanone'>Local Pickup: <span>(Free)</span></label>
-                            </div>
+                            {data.shippingDetails.map(shipment => (
+                                <div>
+                                    <input type='checkbox' value={shipment.value} onClick={addInputValue}/>
+                                    <label className='p__yanone'>{shipment.label}<span>{shipment.price}</span></label>
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div className='app__checkout-content_products-shipping_total'>

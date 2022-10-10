@@ -26,7 +26,7 @@ const Cart = ({cartProducts, disableCart}) => {
   
             setTimeout(() => {
                 backgroundRef.current.style.display = 'block';
-            }, 310);
+            }, 400);
         } 
     }
     

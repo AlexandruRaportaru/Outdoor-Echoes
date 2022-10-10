@@ -134,15 +134,6 @@ const swiperImages = [
     slideParagraph: <span>The Osprey Anti-Gravity Suspension System <br/> makes even heavy loads seem lightweight.</span>
   },
   {
-    slideBrand: images.patagoniaBanner,
-    slideName: 'patagonia-banner',
-    slideLogo: images.patagoniaLogo,
-    logoSize: 15,
-    slideTitle: 'QUALITY GUARANTEE',
-    path: 'Patagonia',
-    slideParagraph: <span>Because we know prioritizing durability results <br/> in consuming less energy, wasting less <br/> water and creating less trash.</span>
-  },
-  {
     slideBrand: images.petzlBanner,
     slideName: 'petzl-banner',
     slideLogo: images.petzlLogo,
@@ -186,6 +177,15 @@ const swiperImages = [
     slideTitle: <span>Live the luxury <br/> in the wild</span>,
     path: 'Sea To Summit',
     slideParagraph: <span>The Telos two-person freestanding tent will radically change your <br/> perception of what an ultralight backpacking tent can be.</span>
+  },
+  {
+    slideBrand: images.vaudeBanner,
+    slideName: 'vaude-banner',
+    slideLogo: images.vaudeLogo,
+    logoSize: 20,
+    slideTitle: 'QUALITY GUARANTEE',
+    path: 'Vaude',
+    slideParagraph: <span>Because we know prioritizing durability results <br/> in consuming less energy, wasting less <br/> water and creating less trash.</span>
   },
 ]
 
@@ -256,7 +256,8 @@ const products = [
     ],
     shortDescription: <span>Moving quickly and smoothly all over the mountain has always been the goal of adidas’s beloved Terrex series. If you have been asking yourself why hiking practitioners around the world love these sneakers, look no further than the adidas Terrex Swift R2 trail running shoes.</span>,
     description: <span>
-       Terrex is widely recognized for the durability and adaptability of its products and the Swift R2 is no exception, with a ripstop mesh upper specially designed to keep your foot safe thanks to the delightful interaction between TPU reinforcements and a molded TPU toecap. Putting on these shoes is faster and easier than ever thanks to the Lace Bungee, which automatically fastens cables just by touching a button and pulling the safety device around them. <br /> In the sole unit, the legendary Traxion outsole, made of Continental™ compound rubber, provides phenomenal grip on steep terrain no matter how wet or difficult to get through. Thanks to a lightweight, soft EVA midsole, cushioning is of paramount importance in the Swift R2, providing greater comfort when speeding through complex terrain and climbing angled hills. Move swiftly through the mountains in these mens hiking shoes. The lightweight, breathable build features a speed lacing system. A rugged Traxion outsole with grippy Continental Rubber supports travel over any terrain, wet or dry.<br />Features: <br />
+       Terrex is widely recognized for the durability and adaptability of its products and the Swift R2 is no exception, with a ripstop mesh upper specially designed to keep your foot safe thanks to the delightful interaction between TPU reinforcements and a molded TPU toecap. Putting on these shoes is faster and easier than ever thanks to the Lace Bungee, which automatically fastens cables just by touching a button and pulling the safety device around them. <br /><br /> In the sole unit, the legendary Traxion outsole, made of Continental™ compound rubber, provides phenomenal grip on steep terrain no matter how wet or difficult to get through. Thanks to a lightweight, soft EVA midsole, cushioning is of paramount importance in the Swift R2, providing greater comfort when speeding through complex terrain and climbing angled hills. Move swiftly through the mountains in these mens hiking shoes. The lightweight, breathable build features a speed lacing system. A rugged Traxion outsole with grippy Continental Rubber supports travel over any terrain, wet or dry.<br /><br />
+       Features: <br />
     - Ripstop mesh upper for breathability and light weight; <br />
     - TPU overlays for durability and added support; <br />
     - Speed lacing construction for fast lacing and snug fit; Lace Bungee stows laces to help avoid tangling; <br />
@@ -287,15 +288,11 @@ const products = [
       46 + 'EU',
     ],
     description: <span>
-      Crafted Protective: <br />
-      - This multi-sport shoe´s durable textile upper and toasty fleece lining keep your feet dry and comfortable. <br /><br />
-      Warmth, Too: <br />
-      - Lightweight insulation keeps heat in, so you don´t get cold feet. <br /><br />
       Features: <br />
       - Textile upper; <br />
       - 100g critical insulation and fleece lining; <br /> 
       - Techlite™ lightweight midsole for long lasting comfort, superior cushioning, and high energy return; <br />
-      - Omni-Grip™ non-marking traction rubber. <br /><br />
+      - Omni-Grip™ non-marking traction rubber.
     </span>,
     price: 261.00,
     gender: 'Men',
@@ -739,6 +736,98 @@ const products = [
     activity: 'Hiking',
     sustainable: false,
   },
+  {
+    id: '101',
+    name: 'Salomon Supercross 4 Goretex Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'Salomon',
+    images: [
+      images.supercross4First,
+      images.supercross4Second,
+      images.supercross4Third
+    ],
+    size: [
+      41 + 'EU',
+      43 + 'EU',
+      45 + 'EU',
+    ],
+    shortDescription: <span>Defi antly powerful, grippy and serious about trail adventuring. A super-charged trail shoe that channels grip from the ground up.SUPERCROSS 4 GTX® is a no-compromise trail renegade with even bigger lugs and extra grooves for maximum mud shedding and powered grip.</span>,
+    description: <span>
+      Its tire-like outsole acts in fusion with the toughened, waterproof upper and Sensifi t construction for superior hold, fit and undeniable comfort.
+    </span>,
+    price: 623.00,
+    gender: 'Men',
+    color: 'Yellow',
+    weight: '300 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: false,
+  },
+  {
+    id: '106',
+    name: 'Salomon Quest 4 Goretex Hiking Boots',
+    type: 'Footwear',
+    brand: 'Salomon',
+    images: [
+      images.quest4First,
+      images.quest4Second,
+      images.quest4Third
+    ],
+    size: [
+      41 + 'EU',
+      42 + 'EU',
+      45 + 'EU',
+    ],
+    shortDescription: <span>The Salomon Quest 4 Goretex Hiking Boots are prepared to take you to explore the riskiest trails of the mountains with total safety, grip, stability, and additional support that this new version presents so you can feel more protected than ever during your hiking or mountaineering activities.</span>,
+    description: <span>
+      These trekking boots with high cut were designed with the Goretex membrane that has high water resistance, so you can keep walking even in the rain or in the middle of puddles and rivers. The foot will maintain completely dry since this technology also favors breathability and inner ventilation.<br /><br /> The Contagrip TC outsole provides maximum grip and durability thanks to the pattern of deep studs that has the best traction on soft, wet, or rocky surfaces. These hiking boots include an ADV C 4D Chassis, which improves stability and support and protects ankle joints, very necessary for long excursions or several days.<br /><br /> The upper features an aggressive design with printed laces that are held by the metal eyelets and it is made with leather and fabric materials that provide softness, breathability, and great abrasion resistance. The Stable & Supportive Backpacking Shoe That Delivers A Smooth Ride.<br /><br />
+      Specifications:<br />
+      - Drop: 12mm;<br />
+      - Weight: 655gr.<br /><br />
+      Technology:<br />
+      - Gore-Tex.
+    </span>,
+    price: 988.00,
+    gender: 'Men',
+    color: 'Brown',
+    weight: '655 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '121',
+    name: 'The North Face Ultra Endurance XF Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'The North Face',
+    images: [
+      images.ultraEnduranceFirst,
+      images.ultraEnduranceSecond,
+      images.ultraEnduranceThird
+    ],
+    size: [
+      41 + 'EU',
+      42 + 'EU',
+      44 + 'EU',
+    ],
+    shortDescription: <span>The North Face Ultra Endurance XF Hiking Shoes have been designed with maximum support and cushioning, ideal for more complex and sharp terrains where you need greater protection, and also provide breathability, durability, great traction, and fast-drying, characteristics necessary in trail running activities.</span>,
+    description: <span>
+      The EXTS outsole with 3mm studs gives maximum grip and traction in several terrains and surfaces and the XtraFoam midsole is responsible for offering excellent stability, firm support, and greater cushioning than regular foams. These trail running shoes come with an Ortholite Eco LT Hybrid insole that increases smooth step, odor control, and breathability. The upper is made with mesh so the foot stays fresh and the TPU toe cap without seams for greater protection and durability.<br /><br /> The Ultra Endurance Trail Shoe was purpose built for the most technical trails with superior cushioning and lightweight protection. A dynamic air mesh upper supports your foot and lets it breathe, while no-sew TPU toe and midfoot overlays ensure a natural fit. You’ll also be well looked after underfoot. A plant-based OrthoLite® Eco LT footbed eliminates sweat and odours. <br /><br /> A dual-density XtraFoam™ midsole provides incredible comfort and always regains its original shape. Our EXTS™ traction system together with 3 mm outsole lugs make these shoes super durable and grippy for all your trail adventures.
+    </span>,
+    price: 389.00,
+    gender: 'Men',
+    color: 'Grey',
+    weight: '300 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: false,
+  },
 
   //* ----------------------------------------------------------- FOOTWEAR WOMEN --------------------------------------------------------- *//
   {
@@ -759,7 +848,8 @@ const products = [
     ],
     shortDescription: <span>The coldest months of the year demand new tools for the job, and there is no place where this is more true than on the cold mountain trails. With an upper so revamped that it could pass for a completely new product, the adidas Free Hiker C.RDY hiking boots update the Free Hiker series’ excellent performance for those days when humidity and cold hit hardest.</span>,
     description: <span>
-       The 3-stripes brand blends a GORE-TEX® layer with an advanced high-cut design that seals the foot completely at the ankles, resulting in total insulation from cold and moisture that will keep your feet dry and safe at all times. A sealed zipper runs across the center of the instep to the high neck to ensure that wearing these boots is comfortable enough without reducing support, while abundant TPU reinforcements along the toe and midfoot increase durability and protection. <br /> The Free Hiker series fans will be pleased to know that the legendary Continental™ rubber outsole continues to provide phenomenal traction on rugged terrain. The boost™ midsole, on the other hand still has the smooth, competent cushioning that gave worldwide renown to it. Terrex Free Hiker COLD.RDY Hiking Boots. Hiking in cold or winter scenarios has never been so nice. This adidas Terrex Free Hiker shoe was specifically designed for ultimate comfort on long hikes. Its socklike Primeknit upper, paired with COLD.RDY technology and water-repellent insulation fit snugly around the foot for a comfortable, warm fit. In addition, thanks to the waterproof GORE-TEX membrane, even difficult wet conditions are no problem.<br /> Features: <br />
+       The 3-stripes brand blends a GORE-TEX® layer with an advanced high-cut design that seals the foot completely at the ankles, resulting in total insulation from cold and moisture that will keep your feet dry and safe at all times. A sealed zipper runs across the center of the instep to the high neck to ensure that wearing these boots is comfortable enough without reducing support, while abundant TPU reinforcements along the toe and midfoot increase durability and protection. <br /><br /> The Free Hiker series fans will be pleased to know that the legendary Continental™ rubber outsole continues to provide phenomenal traction on rugged terrain. The boost™ midsole, on the other hand still has the smooth, competent cushioning that gave worldwide renown to it. Terrex Free Hiker COLD.RDY Hiking Boots. Hiking in cold or winter scenarios has never been so nice. This adidas Terrex Free Hiker shoe was specifically designed for ultimate comfort on long hikes. Its socklike Primeknit upper, paired with COLD.RDY technology and water-repellent insulation fit snugly around the foot for a comfortable, warm fit. In addition, thanks to the waterproof GORE-TEX membrane, even difficult wet conditions are no problem.<br /><br />
+      Features: <br />
     - Continental™ Rubber outsole; <br />
     - External sleeve with zip; <br />
     - adidas Primeknit upper with GORE-TEX Duratherm; <br />
@@ -793,12 +883,6 @@ const products = [
       39 + 'EU',
     ],
     description: <span>
-      Trail Performance: <br />
-      - Fuel your inner fire with this low-cut technical hiker designed for a wide range of activities. <br /><br />
-      Underfoot Comfort: <br />
-      - Featuring extra-light, responsive TechLite+™ cushioning, Navic Fit™ secure lacing system, and a gripping outsole to tackle multiple terrains. <br /><br />
-      Rain-ready: <br />
-      - Waterproof-breathable protection takes you from trail to town in any weather. <br /><br />
       Features: <br />
       - Seamless mesh construction with custom metal hardware provides exceptional fit and support; <br />
       - OutDry™ breathable waterproof protection; <br /> 
@@ -1260,6 +1344,86 @@ const products = [
     activity: 'Hiking',
     sustainable: false,
   },
+  {
+    id: '102',
+    name: 'Salomon Hypulse Goretex Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'Salomon',
+    images: [
+      images.hypulseFirst,
+      images.hypulseSecond,
+      images.hypulseThird
+    ],
+    size: [
+      37 + 'EU',
+      38 + 'EU',
+      39 + 'EU',
+      40 + 'EU',
+    ],
+    shortDescription: <span>Salomon Hypulse Goretex Trail Running Shoes are the waterproof version of this model created for fans of the mountain since they can feel safer and more protected against any weather change and keep running throughout each trail.</span>,
+    description: <span>
+      The Goretex membrane is responsible for forming an impenetrable barrier against water while favors the moisture to escape with the intention that your feet maintain dry at all times. These waterproof shoes are made with a Contagrip outsole that gives great adherence to dry, hard, soft, or slippery surfaces. The midsole has a Fuze Surge foam, curved geometry, and Energy Blade TPU plate that provide dynamism, return of energy, stability, and softness.<br /><br /> The upper has a 3D mesh that allows breathability and circulation of air inside. These sneakers running come with the Sensifit system that wraps the foot to give you greater support, a protective toe cap, and Quicklace laces that allow you an easy and safe lacing. You´re officially addicted. Your runs have become so much fun you want to go faster and explore even further. Designed for both road and trail, HYPULSE GORE-TEX takes your running to the next level with a construction that provides comfortable, dynamic spring. A waterproof, breathable membrane keeps your feet happy regardless of the weather.<br /><br /> 
+      Faster and more comfortable:<br />
+      - Our lightweight Energy Blade underfoot along with Reverse Camber technology act like a springboard to absorb energy then return it to propel you forward.<br /><br />
+      Waterproof and breathable:<br />
+      - A Gore-Tex membrane features micropores that are small enough to keep rain and snow out yet large enough for perspiration vapor to escape. Ideal for wet weather running.<br /><br />
+      Trail ready features:<br />
+      - Make fast and easy adjustments with our Quicklace system. Sensifit provides a secure, snug fit. Contagrip sole provides all-weather grip on hard and soft surfaces.<br /><br />
+      Specifications:<br />
+      - Lining: Textile;<br />
+      - Outsole: Rubber;<br />
+      - Upper: Textile / Synthetic;<br />
+      - Weight: 249.0 g.<br /><br />
+      Energy Blade Trail running:<br />
+      - Energy Blade is a lightweight TPU plate built into the springy midsoles. Thanks to a unique synergy with the midsole foam and geometry, it activates forward propulsion and ensures smooth, stable transitions in all trail conditions.<br /><br />
+      GORE-TEX:<br />
+      - GORE-TEX keeps your feet dry -from the outside as well as from the inside.<br /><br />
+      Fuze Surge:<br />
+      - Comprised of one of our softest EVA compounds and natural materials, Fuze Surge foam is pillowy for instant comfort and responsive enough to keep rebound levels high. Engineered using less artificial polymers, this midsole compound delivers a more earth-conscious, smooth yet dynamic stride.<br /><br />
+    </span>,
+    price: 593.00,
+    gender: 'Women',
+    color: 'Purple',
+    weight: '249 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: false,
+  },
+  {
+    id: '105',
+    name: 'Salomon Cross Hike Mid Goretex 2 Hiking Boots',
+    type: 'Footwear',
+    brand: 'Salomon',
+    images: [
+      images.crosshikeFirst,
+      images.crosshikeSecond,
+      images.crosshikeThird
+    ],
+    size: [
+      37 + 'EU',
+      38 + 'EU',
+      40 + 'EU',
+    ],
+    shortDescription: <span>The Cross Hike 2 Mid Gore-Tex Is A Light And Nimble Hiker That Does The Seemingly Impossible: Keeps You Firmly Grounded, Featherlight And Fully Protected. Multi-Directional Deep Lugs Aggressively Bite The Ground, While A Higher Cut Ups The Ankle Support And Protection. Ready For Your Maddest Adventures - No Terrain Or Weather Is Too Tough.</span>,
+    description: <span>
+      Specifications:<br />
+      - Weight: 361gr;<br />
+      - Drop: 10mm.<br /><br />
+      Technology:<br />
+      - Gore-Tex.
+    </span>,
+    price: 889.00,
+    gender: 'Women',
+    color: 'Beige',
+    weight: '361 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
   
 
   //* ---------------------------------------------------------- UNISEX ------------------------------------------------------ *//
@@ -1283,7 +1447,7 @@ const products = [
     ],
     shortDescription: <span>Intending to lead the hiking marketplace is no small feat, but the adidas Terrex Free Hiker GTX trail running shoes will surely achieve this as the Terrex series’ natural evolution. Combining the best features of their high-performance running shoes with the advantages of their more outdoor-oriented designs, these sneakers do not look like anything you have seen so far in the scene.</span>,
     description: <span>
-       adidas´ sportiest products inspired the Terrex Free Hiker GTX’s upper, with a Primeknit design that has received anti-wear reinforcements to protect you from difficult terrain. But Primeknit’s outstanding features are not lost by that, with a sock-like design that fits your feet perfectly and maintains the lightweight breathability that it is so well known for. To achieve greater weather protection, adidas has also added a thin GORE-TEX® layer to create an all-around, tight waterproofing. <br /> The already characteristic Continental™ rubber outsole in the Terrex series blends with a boost™ midsole, thus completing a package with great cushioning and responsiveness as well as outstanding traction that will not be deterred by any obstacle. Various TPU reinforcements on the heel and toecap serve as additional protection against injuries and accidents. Move and explore. <br /> These lightweight hiking shoes deliver next-generation comfort and freedom of movement for hikes both long and short. The adidas Primeknit upper hugs your foot for flexible, all-terrain stability, while the Boost midsole delivers endless energy to keep you moving up or down the trail. A GORE-TEX membrane sheds water while letting your feet breathe for all-conditions wear. <br /><br /> Features: <br />
+       adidas´ sportiest products inspired the Terrex Free Hiker GTX’s upper, with a Primeknit design that has received anti-wear reinforcements to protect you from difficult terrain. But Primeknit’s outstanding features are not lost by that, with a sock-like design that fits your feet perfectly and maintains the lightweight breathability that it is so well known for. To achieve greater weather protection, adidas has also added a thin GORE-TEX® layer to create an all-around, tight waterproofing. <br /><br /> The already characteristic Continental™ rubber outsole in the Terrex series blends with a boost™ midsole, thus completing a package with great cushioning and responsiveness as well as outstanding traction that will not be deterred by any obstacle. Various TPU reinforcements on the heel and toecap serve as additional protection against injuries and accidents. Move and explore. <br /><br /> These lightweight hiking shoes deliver next-generation comfort and freedom of movement for hikes both long and short. The adidas Primeknit upper hugs your foot for flexible, all-terrain stability, while the Boost midsole delivers endless energy to keep you moving up or down the trail. A GORE-TEX membrane sheds water while letting your feet breathe for all-conditions wear. <br /><br /> Features: <br />
       - Regular fit; <br />
       - Lace closure; <br />
       - adidas Primeknit textile upper; <br />
@@ -1315,10 +1479,6 @@ const products = [
       'L',
     ],
     description: <span>
-      Cold Trail: <br />
-      - With the lightweight warmth of our thermal reflective lining, these gloves won´t stop you from your run. <br /><br />
-      Phone Friendly: <br />
-      - A silicone palm grip keeps that precious phone secure in your hand, while the touchscreen-compatible digits let you use it without having to expose your hands. <br /><br />
       Features: <br />
       - Omni-Heat™ thermal reflective; <br />
       - Silicone palm grip; <br />
@@ -1451,7 +1611,8 @@ const products = [
     ],
     shortDescription: <span>Get them hiking early. Hitting the trail feels great when kids have these adidas hiking shoes on their feet. They have the lightweight feel of a trail running shoe with the extra support and durability of a mid-height hiking boot to hook kids on exploring the outdoors. Reflective hits shine in low light. Their lugged rubber outsole grips all surfaces with confidence.</span>,
     description: <span>
-       Made with a series of recycled materials, this upper features at least 50% recycled content. This product represents just one of our solutions to help end plastic waste. <br /><br /> Features: <br />
+       Made with a series of recycled materials, this upper features at least 50% recycled content. This product represents just one of our solutions to help end plastic waste. <br /><br /> 
+       Features: <br />
       - Upper contains a minimum of 50% recycled content; <br /> 
       - Lace closure; <br /> 
       - Abrasion-resistant Textile upper with mud guard; <br /> 
@@ -1485,8 +1646,6 @@ const products = [
       35 + 'EU',
     ],
     description: <span>
-      Outdoor Play: <br />
-      - Designed with adventures in mind, these waterproof shoes with a cushy midsole and grippy outsole make playtime more epic. <br /><br />
       Features: <br />
       - Upper features a combination of suede leather, mesh and webbing; <br />
       - Waterproof seam-sealed membrane bootie construction; <br />
@@ -1739,6 +1898,141 @@ const products = [
     activity: 'Hiking',
     sustainable: true,
   },
+  {
+    id: '103',
+    name: 'Salomon Alphacross Blast Trail Running Shoes',
+    type: 'Footwear',
+    brand: 'Salomon',
+    images: [
+      images.alphacrossBlastFirst,
+      images.alphacrossBlastSecond,
+      images.alphacrossBlastThird
+    ],
+    size: [
+      32 + 'EU',
+      33 + 'EU',
+      34 + 'EU',
+      35 + 'EU',
+    ],
+    shortDescription: <span>Salomon Alphacross Blast Trail Running Shoes is a simple model ideal for occasional trail running training or for running in the park since it gives you great comfort, good fit, grip, and softness.</span>,
+    description: <span>
+      The Contagrip TD sole provides excellent durability and a good grip on wet or slippery terrains. These running shoes come with spike studs so you will have greater traction on soft or muddy surfaces. The EnergyCell midsole with EVA foam provides maximum cushioning in each step.<br /><br /> These trail running shoes have an upper made with ripstop fabric that is highly resistant to abrasions and the upper is welded and seamless, so they feel comfortable and soft. The Ortholite insole guarantees good breathability, reinforces cushioning, and keeps hygiene inside. Designed to be as versatile as possible, the Alphacross Blast gives your kids all the extra grip and protection they need for off-road exploration. We’ve also made sure the shoe is really comfortable for small feet with a soft lining, generous fit and spongy foam. Get ready for more intrepid family adventures.<br /><br />
+      Active grip:<br />
+      - The grippy Contagrip® sole is really reassuring and keeps your kids from slipping on uneven or muddy ground.<br /><br />
+      Lasting comfort:<br />
+      - This shoe is extra comfy with a soft lining, generous fit and spongy foam.<br /><br />
+      Versatile performance:<br />
+      - Effortlessly adapting to any off-road activities, this shoe will quickly become an outdoor wardrobe essential for your kids.<br /><br />
+      Specifications:<br />
+      - Inlay sole: Textile;<br />
+      - Lining: Textile 100%Polyester;<br />
+      - Outsole: Rubber;<br />
+      - Upper: Textile;<br />
+      - Drop: 10 in mm;<br />
+      - Heel stack height: 35.5 mm;<br />
+      - Forefoot stack height: 25.5 mm;<br />
+      - Weight: 215 g;<br />
+      - Anatomical fit: Generous fit;<br />
+      - Height: Low;<br />
+      - Waterproofness: None.
+    </span>,
+    price: 261.00,
+    gender: 'Kids',
+    color: 'Blue',
+    weight: '215 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Trail running',
+    sustainable: false,
+  },
+  {
+    id: '104',
+    name: 'Salomon X Raise Mid Goretex Junior Hiking Boots',
+    type: 'Footwear',
+    brand: 'Salomon',
+    images: [
+      images.xraiseFirst,
+      images.xraiseSecond,
+      images.xraiseThird
+    ],
+    size: [
+      32 + 'EU',
+      33 + 'EU',
+      35 + 'EU',
+    ],
+    shortDescription: <span>Stability, performance and waterproof protection for young feet. With a modern, sporty look, the X RAISE MID GORE-TEX junior combines stability, comfort and performance. Ideal for family hikes with a stable tripod design, supportive mid cut, strategic reinforcements and grippy Contagrip® lugs.</span>,
+    description: <span>
+      Not to mention waterproof GORE-TEX protection and a little extra bounce from our soft Fuze Surge foam midsole.
+    </span>,
+    price: 494.00,
+    gender: 'Kids',
+    color: 'Beige',
+    weight: '-',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '122',
+    name: 'The North Face Youth Chilkat Hiking Boots',
+    type: 'Footwear',
+    brand: 'The North Face',
+    images: [
+      images.youthChilkFirst,
+      images.youthChilkSecond,
+      images.youthChilkThird
+    ],
+    size: [
+      31 + 'EU',
+      33 + 'EU',
+      34 + 'EU',
+    ],
+    shortDescription: <span>The North Face Youth Chilkat boots have been designed for the snow rest, for the city or for hiking because they offer you thermal insulation, excellent grip, and comfort throughout the outdoor activity.</span>,
+    description: <span>
+      The TNF Winter Grip outsole provides an unbeatable grip and traction on wet and snowy terrains and with the TPR shell, these mountain boots for children feel lighter and more flexible. The EVA midsole gives stability and good cushioning. These snow boots for children have the Heatseeker insulation and the fleece lining so they feel warm on their feet. <br /><br /> The waterproof suede upper repels water from rain and snow so they feel dry at all times. Easy-to-lace, grippy and seriously weatherproof, these high-cut boots tick all the boxes for young explorers.
+    </span>,
+    price: 275.00,
+    gender: 'Kids',
+    color: 'Blue',
+    weight: '432 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '131',
+    name: 'VAUDE Lapita II Low STX Hiking Shoes',
+    type: 'Footwear',
+    brand: 'Vaude',
+    images: [
+      images.lapitaFirst,
+      images.lapitaSecond,
+      images.lapitaThird
+    ],
+    size: [
+      31 + 'EU',
+      32 + 'EU',
+      33 + 'EU',
+    ],
+    shortDescription: <span>Kids´ shoes for outdoor adventures, made of lightweight, robust materials, breathable inner lining, environmentally-friendly manufacturing. The Kids Lapita II Low STX kids shoes take comfort to a new level! They´re made of lightweight but robust textile materials combined with abrasion-resistant ripstop.</span>,
+    description: <span>
+      The upper material of these children´s shoes is waterproof and perfect for romping around in puddles or playing in rain-soaked grass.  In addition, there is a breathable inner lining and a removable, ergonomic footbed with size measurement. The treaded rubber outsole with flexible EVA midsole also ensures good traction on all court surfaces while maintaining comfort.<br /><br /> This makes the Kids Lapita II Low STX a real all-rounder and ideal for rough terrain, easy mountain hikes, forest kindergartens and everyday school life. The shoes are made from recycled materials - and in the membrane and lining, that means 100 % recycled. These children´s shoes are water resistant thanks to eco-friendly, PFC-free Eco Finish. The VAUDE Green Shape label stands for environmentally-friendly, functional products made from sustainable materials.
+    </span>,
+    price: 312.00,
+    gender: 'Kids',
+    color: 'Blue',
+    weight: '-',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
 
   //* --------------------------------------------------------- CLOTHING MEN ---------------------------------------------------------- *//
   {
@@ -1967,6 +2261,158 @@ const products = [
     ],
     activity: 'Hiking',
     sustainable: true,
+  },
+  {
+    id: '107',
+    name: 'Salomon Cross Trail Runnning Leggings',
+    type: 'Clothing',
+    brand: 'Salomon',
+    images: [
+      images.crossrunFirst,
+      images.crossrunSecond,
+      images.crossrunThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>Salomon Cross Run Leggings are designed for intense training, whether at the gym, for running in the city or the mountains, and for other sporty activities where you need a custom fit, breathability, and excellent durability.</span>,
+    description: <span>
+      These leggings with pockets are made with a combination of polyester and elastane, which provide great resistance to wear, elasticity, fast-drying, and breathability. The Advanced Skin Active Dry increases the absorption of moisture so you can always feel dry and comfortable.<br /><br /> This elastic fabric in 4 directions offers the muscle support that you need in long workouts. Its design includes two side mesh pockets for small items, a flat and elastic waistband, a back elastic hook, knit fabric n the tibia, and reflective details. Light muscle support? Stretch? Versatile storage? The men’s CROSS RUN tights have everything you need to run comfortably in cooler temperatures or while warming up for fast interval sessions. Not to mention a woven panel on the tibia to make the tights more resistant, and recycled polyester content.<br /><br />
+      Active comfort:<br />
+      - Tested in our labs, the main fabric delivers 4-way stretch for light muscle support and is made from recycled polyester fibers.<br /><br />
+      Optimized storage:<br />
+      - 2 strategic stretch pockets keep your gels, keys or smartphone close and secure on the move.<br /><br />
+      Versatile features:<br />
+      - Make these tights your own with an adjustable flat waist construction and back hook to stow a light tee (or hang the tights up to dry).<br /><br />
+      AdvancedSkin ActiveDry:<br />
+      - AdvancedSkin technical fabrics improve body comfort by keeping you dry, warm and protected when you need it and where you need it.<br /><br />
+      Waist adjustment:<br />
+      - Always a perfect fit with our infinitely adjustable waist adjustment. Can be adjusted individually to your waist size to discover pure freedom of movement.<br /><br />
+      2 side pockets:<br />
+      - Classic side-pocket construction to store your contents.<br /><br />
+      Specifications:<br />
+      - Body: 79% Polyester, 21% Elastane; Body insert: 100% Polyester.
+    </span>,
+    price: 231.00,
+    gender: 'Men',
+    color: 'Black',
+    weight: '-',
+    features: [
+      'Stretch',
+      'Reflective accents',
+    ],
+    activity: 'Trail running',
+    sustainable: true,
+  },
+  {
+    id: '123',
+    name: 'The North Face Resolve Full Zip Hiking Fleece',
+    type: 'Clothing',
+    brand: 'The North Face',
+    images: [
+      images.resolveFirst,
+      images.resolveSecond,
+      images.resolveThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>The North Face Resolve Full Zip Fleece provides the warmth, softness, and breathability you need for your hiking or mountaineering activities and you can use it as an intermediate layer or alone, according to the temperature of the area.</span>,
+    description: <span>
+      This fleece is made with polyester fabric that is highly breathable and fast-drying, as well as very flexible and comfortable to move. It comes with two zippered pockets for hands and elastic cuffs and hem to avoid the cold wind from entering. The perfect layering piece for hiking, our Resolve Fleece Jacket is warm, quick-drying and wicking.
+    </span>,
+    price: 223.00,
+    gender: 'Men',
+    color: 'Blue',
+    weight: '-',
+    features: [
+      '-',
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '124',
+    name: 'The North Face Grivola Hiking Pants',
+    type: 'Clothing',
+    brand: 'The North Face',
+    images: [
+      images.grivolaFirst,
+      images.grivolaSecond,
+      images.grivolaThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>The North Face Grivola Pants have been designed to be your companion during the expeditions to the mountains, for hiking in summer or spring, since they offer breathability, elasticity, comfort, and impermeability.</span>,
+    description: <span>
+      These trekking pants are made with SoftShell quality that combines polyester and elastane to offer excellent resistance to wear, freedom of movement, control of moisture, fast-drying, and slight repellence to water to keep you dry while you find refuge. They have a regular cut, belt loops for a custom fit, zippered pockets for hands, and preformed knees for easier movements. Crafted with plenty of stretch, the Grivola Trousers mean you can move freely wherever your legs take you.
+    </span>,
+    price: 494.00,
+    gender: 'Men',
+    color: 'Green',
+    weight: '-',
+    features: [
+      'Stretch',
+      'Windproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '125',
+    name: 'The North Face ThermoBall Hiking Jacket',
+    type: 'Clothing',
+    brand: 'The North Face',
+    images: [
+      images.thermoballFirst,
+      images.thermoballSecond,
+      images.thermoballThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>Adapt to changing conditions in this versatile 3-in-1 jacket, which pairs a breathable, waterproof outer layer with a removable insulated inner. Wear both together or separately - whatever your next hike requires.</span>,
+    description: <span>
+      Features:<br /><br />
+      Outer jacket:<br />
+      - Waterproof, breathable, seam-sealed DryVent™ 25L shell with WindWall™ windproof technology;<br />
+      - Zip-in-compatible integration with matching products from The North Face®;<br />
+      - Attached, fully adjustable hood;<br />
+      - Pit zips for underarm ventilation;<br />
+      - Exposed front zip;<br />
+      - Concealed zipped chest and hand pockets;<br />
+      - Velcro® adjustable cuff tabs and adjustable hem;<br />
+      - Media compatible.<br /><br />
+      Inner jacket:<br />
+      - Secure-zip covered hand pockets;<br />
+      - 10 g/ft² PrimaLoft®® Thermoball™ synthetic insulation throughout the body with PrimaLoft®® insulated sleeves and collar.<br /><br />
+      Benefits:<br />
+      - Lightweight fabrics help regulate body temperature and keep you comfortable;<br />
+      - Fabric that reduces air penetration to lock out chilly wind;<br />
+      - Waterproof fabric provides an impenetrable moisture barrier for guaranteed dryness;<br />
+      - Insulation reduces heat loss and increases warmth, even in the coldest temperatures.
+    </span>,
+    price: 1034.00,
+    gender: 'Men',
+    color: 'Red',
+    weight: '-',
+    features: [
+      'Stretch',
+      'Windproof',
+      'Waterproof',
+      'Thermal'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
   },
 
   //* ------------------------------------------------------------ CLOTHING WOMEN -------------------------------------------------------- *//
@@ -2202,6 +2648,146 @@ const products = [
     activity: 'Hiking',
     sustainable: true,
   },
+  {
+    id: '126',
+    name: 'The North Face Resolve Full Hiking Fleece',
+    type: 'Clothing',
+    brand: 'The North Face',
+    images: [
+      images.resolveFullFirst,
+      images.resolveFullSecond,
+      images.resolveFullThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Zip up our Resolve Fleece and keep the chill at bay on exposed mountain trails. This trusty fleece is made from 100% recycled fabric, making it an eco-friendly choice for all your adventures. Zipped pockets keep small valuables safe, and a full zip down the front gives you the versatility to let in more air when you need it. Layer it up with a jacket over the top for extra warmth, or wear it on its own on milder days.</span>,
+    description: <span>
+      Features: <br />
+      - Fabric:100% recycled polyester;<br />
+      - Full-zip fleece with zipped hand pockets;<br />
+      - TNF embroidered logo on the front and back.
+    </span>,
+    price: 223.00,
+    gender: 'Women',
+    color: 'Purple',
+    weight: '-',
+    features: [
+      '-',
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '127',
+    name: 'The North Face Motion Hiking Shorts Pants',
+    type: 'Clothing',
+    brand: 'The North Face',
+    images: [
+      images.motionFirst,
+      images.motionSecond,
+      images.motionThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>The Women´s Motion Pull-On Short is our durable and endlessly flexible short for next-level adventuring.</span>,
+    description: <span>
+      Features: <br />
+      - Standard fit;<br />
+      - Better Cotton Initiative;<br />
+      - Cotton twill with stretch;<br />
+      - Embroidered logo on left thigh.
+    </span>,
+    price: 116.00,
+    gender: 'Women',
+    color: 'Blue',
+    weight: '-',
+    features: [
+      'Stretch',
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '128',
+    name: 'The North Face Fornet Hiking Jacket',
+    type: 'Clothing',
+    brand: 'The North Face',
+    images: [
+      images.fornetFirst,
+      images.fornetSecond,
+      images.fornetThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Engineered for maximum comfort on the mountain, our Fornet Jacket is a versatile layer whatever the adventure.</span>,
+    description: <span>
+      Features: <br />
+      - Two front pockets with zipper;<br />
+      - Pit zips;<br />
+      - Adjustable cuffs with hooking loop;<br />
+      - Hem and hood with elasticated cord for adjustment;<br />
+      - TNF logo - DryVent™ logo on left arm above cuff.
+    </span>,
+    price: 741.00,
+    gender: 'Women',
+    color: 'Black',
+    weight: '-',
+    features: [
+      'Stretch',
+      'Windproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '132',
+    name: 'VAUDE Skomer Hiking Jacket',
+    type: 'Clothing',
+    brand: 'Vaude',
+    images: [
+      images.skomerFirst,
+      images.skomerSecond,
+      images.skomerThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Worn solo or as a midlayer, the Skomer Hiking Jacket simply looks great. The moisture-regulating, pleasantly smooth and easy-care stretch fabric offers a high degree of wearing comfort on hiking tours lasting several days. On windy days the hood and the covered zip offer protection from becoming chilled.</span>,
+    description: <span>
+      Paired with a waterproof functional jacket, the Skomer Hiking Jacket is the perfect midlayer, as it is highly breathable and quickly transports moisture to the outside during sweaty activities. The VAUDE Green Shape label stands for environmentally-friendly, functional products made from sustainable and bluesign® certified materials.<br /><br />
+      Features: <br />
+      - Multifunctional fleece jacket, perfect as a midlayer;<br />
+      - high breathability;<br />
+      - structured surface;<br />
+      - environmentally-friendly manufacturing;<br />
+      - front zip with back flap;<br />
+      - 2 front zip pockets;<br />
+      - attached hood;<br />
+      - contrast coloured lycra bindings;<br />
+      - adjustable hem;<br />
+      - contrasting flatlock seams.
+    </span>,
+    price: 445.00,
+    gender: 'Women',
+    color: 'Green',
+    weight: '-',
+    features: [
+      'Windproof'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
 
 
   //* ----------------------------------------------------------- CLOTHING KIDS -------------------------------------------------- *//
@@ -2315,6 +2901,157 @@ const products = [
     weight: '-',
     features: [
       '-',
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '129',
+    name: 'The North Face Resolve Reflective Hiking Jacket',
+    type: 'Clothing',
+    brand: 'The North Face',
+    images: [
+      images.resolveReflectiveFirst,
+      images.resolveReflectiveSecond,
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>Ensure your tranquility and the protection of your children with The North Face Resolve Reflect whose waterproof, breathable, and windproof fabrics will keep them safe from any weather changes so that the fun does never stops.</span>,
+    description: <span>
+      This hiking jacket for children has been made with DryVent fabric that repels water from rain and wind and expels moisture from the inside to avoid colds, so they will maintain dry at all times.<br /><br />
+      Features: <br />
+      - Standard fit;<br />
+      - Waterproof, breathable, fully seam sealed;<br />
+      - Reflective logo on left chest and back-right shoulder for enhanced visibility;<br />
+      - Secure-zip hand pockets;<br />
+      - Center front zip with Velcro® flap closure;<br />
+      - Fully encased-elastic cuffs;<br />
+      - Chin zip guard;<br />
+      - ID label;<br />
+      - Three-piece, fixed hood.
+    </span>,
+    price: 223.00,
+    gender: 'Kids',
+    color: 'Beige',
+    weight: '109 g',
+    features: [
+      'Reflective accents',
+      'Stretch',
+      'Waterproof',
+      'Windproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '130',
+    name: 'The North Face Chakal Hiking Pants',
+    type: 'Clothing',
+    brand: 'The North Face',
+    images: [
+      images.chakalFirst,
+      images.chakalSecond,
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>The North Face Chakal children’s pants have been designed for the practice of hiking, mountaineering, alpine skiing, and snowboarding because they give you the best thermal, waterproof, and breathable protection.</span>,
+    description: <span>
+      The DryVent fabric provides excellent moisture absorption and repels water and snow very well. With Heatseeker synthetic insulation, you will have enough warmth and lightness for your outdoor activity. These snowboarding pants for children come with zippered pockets with flap for the hands, knee articulation for better movement, ankle gaiter with clip to avoid the entry of terrain elements and reinforcement patches inside the boot for greater durability. <br /><br /> For budding skiers and snowboarders these snowsport trousers feature durable, breathable and waterproof fabric that stretches for greater range of motion. Lightweight synthetic insulation will keep him warm on the way up and down.<br /><br />
+      Features: <br />
+      - Waterproof, breathable, fully seam-sealed, stretchy DryVent™ 2L fabric;<br />
+      - Adjustable waist tabs with Velcro® closure;<br />
+      - Zipped handwarmer pockets and cargo pocket;<br />
+      - Zip-fly;<br />
+      - Darts at knees for enhanced mobility;<br />
+      - Ankle gaiters with gripper elastic to fend off debris;<br />
+      - Reinforced cuffs at hem and inner leg boot kick patches for added durability;<br />
+      - EZ grow leg at hem and inside lining to accommodate growth;<br />
+      - Heatseeker™ insulation provides lightweight warmth, even when wet.
+    </span>,
+    price: 313.00,
+    gender: 'Kids',
+    color: 'Blue',
+    weight: '534 g',
+    features: [
+      'Compressible',
+      'Stretch',
+      'Waterproof',
+      'Windproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '133',
+    name: 'VAUDE Casarea 3 In 1 II Hiking Jacket',
+    type: 'Clothing',
+    brand: 'Vaude',
+    images: [
+      images.casareaFirst,
+      images.casareaSecond,
+      images.casareaThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>Practical 3in1 children´s jacket for cold temperatures and unpredictable weather, waterproof, windproof and breathable, insulated reversible inner jacket, eco-friendly production.</span>,
+    description: <span>
+      What´s not to love in a jacket that adapts to whatever the day has in store? The Kids Casarea 3in1 Jacket II does just this! When it´s raining, a Ceplex Active membrane keeps the outer shell waterproof.
+    </span>,
+    price: 712.00,
+    gender: 'Kids',
+    color: 'Blue',
+    weight: '-',
+    features: [
+      'Thermal',
+      'Waterproof',
+      'Windproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '134',
+    name: 'VAUDE Rondane Hiking Pants',
+    type: 'Clothing',
+    brand: 'Vaude',
+    images: [
+      images.rondaneFirst,
+      images.rondaneSecond,
+      images.rondaneThird
+    ],
+    size: [
+      'S',
+      'M',
+      'L',
+    ],
+    shortDescription: <span>Windproof children´s softshell pants, with soft inner surface, width adjustable, made from a recycled material. Versatile, windproof and robust softshell pants for hiking, forest adventures, or school outings.</span>,
+    description: <span>
+      Reinforcements at the knees will help make sure they´ll enjoy these pants until they grow out of them. These comfortable outdoor pants are easy care, the predominantly recycled material is certified in accordance with the highest environmental standard bluesign®. We develop sophisticated outdoor apparel for children that is durable enough to be passed on from child to child. This product is made with water resistant Eco Finish that´s manufactured without the use of fluorocarbons (PFC). The VAUDE Green Shape label stands for environmentally - friendly, functional products made from sustainable materials.<br /><br />
+      Features:<br />
+      - abrasion;<br />
+      - proof reinforced knees;<br />
+      - windproof softshell;<br />
+      - 1 leg pocket with zip;<br />
+      - 2 side pockets;<br />
+      - waistband adjustable inside.
+    </span>,
+    price: 356.00,
+    gender: 'Kids',
+    color: 'Green',
+    weight: '-',
+    features: [
+      'Stretch',
+      'Reflective accents',
+      'Windproof'
     ],
     activity: 'Hiking',
     sustainable: true,
@@ -3842,7 +4579,532 @@ const products = [
     activity: 'Hiking',
     sustainable: true,
   },
-  
+  {
+    id: '108',
+    name: 'Salomon Sense Hiking Poles',
+    type: 'Accessories',
+    brand: 'Salomon',
+    images: [
+      images.sensePolesFirst,
+      images.sensePolesFirst,
+      images.sensePolesFirst,
+    ],
+    size: [
+      120 + 'cm',
+      125 + 'cm',
+      135 + 'cm'
+    ],
+    shortDescription: <span>The Salomon Sense poles are ultra light, comfortable, solid, and flexible and they have been designed for trail running and mountain skiing. With the non-slip, comfortable, and soft grip, you can walk safely and firm steps.</span>,
+    description: <span>
+      The shaft of these trekking poles is made with carbon that is extremely light and measures 16mm. The strap is thin and breathable so you will not feel the annoying moisture. The small basket facilitates the use in trail running and in summer. The carbide tip resists on ice and hard snow. Summer pole for fast and light adventures. With a carbon shaft, long grip and small summer basket, the SENSE trekking pole is ultra light and easy to carry.
+    </span>,
+    price: 312.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '109',
+    name: 'Salomon XT 6L Hiking Backpack',
+    type: 'Accessories',
+    brand: 'Salomon',
+    images: [
+      images.xt6lFirst,
+      images.xt6lSecond,
+      images.xt6lThird,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>The Salomon XT 6L Backpack has been designed for a walk in the mountain, the city or to ride your bike because it keeps very stable on your back and feels comfortable, soft, and breathable so you can enjoy your hiking, mountaineering, trail running, or running activities.</span>,
+    description: <span>
+      This 10 l backpack is made of 100% polyester so it is highly durable, dries easily, and breathes very well. The shoulder straps are padded and the back has a fabric that favors ventilation so you do not have to feel that annoying moisture.<br /><br /> It includes a main compartment with a zipper, a top pocket, two zippered pockets on the shoulder straps to carry two bottles of 500 ml, a front elastic drawstring to hold your sticks or a waterproof jacket, and chest straps for a comfortable and customized fit that will give you better support so you can move through the mountains with total confidence with this backpack hiking.<br /><br />
+      Features: <br />
+      - Back Body: 100% Polyester; Body: 100% Polyamide; Lining: 100% Polyester; Foam 1: 100% Ethylene Vinyl Acetate; Foam 2: 100% Polyethylene; Pockets: 88% Polyamide, 12% Elastane;<br />
+      - Back Length: 41 Cm;<br />
+      - Dimensions: 42 X 23 X 3 L X W X D In Cm;<br />
+      - Volume: 6 Liters;<br />
+      - Weight: 310 G;<br />
+      - Back Body: 100% Polyester;<br />
+      - Body: 100% Polyamide;<br />
+      - Lining: 100% Polyester;<br />
+      - Foam 1: 100% Ethylene Vinyl Acetate;<br />
+      - Foam 2: 100% Polyethylene;<br />
+      - Pockets: 88% Polyamide, 12% Elastane.
+    </span>,
+    price: 346.00,
+    gender: 'Unisex',
+    color: 'White',
+    weight: 'max 0~10L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '110',
+    name: 'Salomon Trail Running Low',
+    type: 'Accessories',
+    brand: 'Salomon',
+    images: [
+      images.trailLowFirst,
+      images.trailLowSecond,
+      images.trailLowThird,
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Gravelly, snowy, thorny, grassy, whatever the loose, aggravating terrain you decide to forge, TRAIL GAITERS LOW will prevent it from reaching your feet. It connects easily to your shoes, and even helps protect your ankles.</span>,
+    description: <span>
+      Ease of use:<br />
+      - When the trail becomes more of a rubble pile, simply slide these gaiters over your shoes and Velcro® them closed.<br /><br />
+      Durability:<br />
+      - A bomb-proof strap under the foot, durable mesh around the ankle, and lightweight padding on the ankle bone mean more adventures.<br /><br />
+      Protection:<br />
+      - Scree fields can cause debris in the shoe:these low gaiters act as a barrier between the rough stuff and your feet.
+    </span>,
+    price: 149.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Trail running',
+    sustainable: false,
+  },
+  {
+    id: '111',
+    name: 'Sea To Summit Nylon Hiking Tarp',
+    type: 'Accessories',
+    brand: 'Sea To Summit',
+    images: [
+      images.nylonTarpFirst,
+      images.nylonTarpSecond,
+      images.nylonTarpThird,
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Our Nylon Tarp-Poncho features a seam taped hood with 3-panel hood construction and a wide brim. Made of lightweight but durable 70 denier nylon with fully taped seams. Designed to fully cover you and your pack in a downpour. Its also ideal for temperate climates when a waterproof jacket would be too sweaty. It comes packaged with an oval shaped stuff sack for best fit in a pack.</span>,
+    description: <span>
+      Features:<br />
+      - Lightweight waterproof fabric;<br />
+      - Accommodates a large backpack;<br />
+      - Easily converts from rainwear to a 2-person shelter;<br />
+      - Double stitched, tape sealed, 3-panel hood construction;<br />
+      - Comes in Royal Blue and Forest Green;<br />
+      - Can be used with our bug tents to create an ultralight shelter.<br /><br />
+      Specifications:<br />
+      - Length: 57 in (6.5 in packed)/140cm;<br />
+      - Width: 104 in (3.75 in packed)/260cm;<br />
+      - Height/Depth: (4.5 in packed)/;<br />
+      - Weight: 13 oz /370g.
+    </span>,
+    price: 202.00,
+    gender: 'Unisex',
+    color: 'Green',
+    weight: '370 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '112',
+    name: 'Sea To Summit Ultra Hiking Sil Nano',
+    type: 'Accessories',
+    brand: 'Sea To Summit',
+    images: [
+      images.ultraSilFirst,
+      images.ultraSilSecond,
+      images.ultraSilThird,
+    ],
+    size: [
+      'S',
+      'M',
+      'L'
+    ],
+    shortDescription: <span>Our 15D Poncho offers an even smaller packed size and weight for situations when you don’t need the versatility of our tarp poncho. Made from our tape seamed 15D Nano Ultra-Sil®, the 15D Poncho is ideal for use in hot climates where a regular raincoat just won’t offer enough ventilation. Also works brilliantly as an emergency rain cover at the football!</span>,
+    description: <span>
+      Features:<br />
+      - Made from 15D Ultra-Sil® Nano Fabric;<br />
+      - Waterproof seams – double stitched and tape seamed;<br />
+      - Press studs offer the alternative of closing sides when in use.<br /><br />
+      Specifications:<br />
+      - Dimensions Weight;<br />
+      - 140 x 118cm 145g.
+    </span>,
+    price: 316.00,
+    gender: 'Unisex',
+    color: 'Yellow',
+    weight: '145 g',
+    features: [
+      'Waterproof'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '113',
+    name: 'Sea To Summit Hiking Grasshopper',
+    type: 'Accessories',
+    brand: 'Sea To Summit',
+    images: [
+      images.grasshopperFirst,
+      images.grasshopperSecond,
+      images.grasshopperThird,
+    ],
+    size: [
+      'S-M',
+      'M-L',
+    ],
+    shortDescription: <span>A budget priced gaiter without losing attention to detail. Made from hard-wearing 600D ripstop Polyester, they are secure with easy access via front opening. The Grasshopper Gaiters are incredible value as they are very robust, easy to put on and easily adjusted.</span>,
+    description: <span>
+      Features:<br />
+      - Awesome value budget gaiter;<br />
+      - Secure, easy access front Velcro® opening;<br />
+      - 600D ripstop Polyester;<br />
+      - 316 stainless steel lace hook.
+    </span>,
+    price: 134.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '145 g',
+    features: [
+      '-'
+    ],
+    activity: 'Hiking',
+    sustainable: false,
+  },
+  {
+    id: '114',
+    name: 'Sea To Summit Spark SPIV Sleeping Camping Bag',
+    type: 'Accessories',
+    brand: 'Sea To Summit',
+    images: [
+      images.sparkSpivFirst,
+      images.sparkSpivSecond,
+      images.sparkSpivThird,
+    ],
+    size: [
+      'S-M',
+      'M-L',
+    ],
+    shortDescription: <span>Ultra-light and technical, our Spark™ Series bags are designed to keep you as warm as possible while minimising packed weight and size.</span>,
+    description: <span>
+      - The Spark™ Series spans everything from an ultralight liner to an expedition weight mid-winter bag. While the end usage is very different, they reflect a design ethos of matching weather conditions to the lightest bag possible.<br /><br />
+      - The secret to the impressive performance is a combination of premium materials and careful design. The RDS 850+ Loft premium goose down, light-gauge #3 YKK zip and high performance 10D Nylon shell and 7D lining fabrics, set the stage for superior performance. These materials are combined with a contoured mummy design for efficient insulation, and that mummy design is then tweaked for each model to best fit the use scenario.<br /><br />
+      - Our ULTRA-DRY Down™ water-repellent treatment protects the down from external moisture and condensation from the inside of the bag, virtually eliminating the negative effects moisture has on down. All Sea to Summit Down Sleeping Bags use Responsible Down Standard (RDS) certified down. The ULTRADRY Down™ protection also makes the Spark™ an impressive hard-alpine or adventure racing bag, where every gram is counted and down has never been a viable option.<br /><br />
+      Features:<br />
+      - Vertical box baffles in the torso area accommodates extra down and boosts warmth around the core, vertical baffles on chest optimises positions -of down to prevent it moving during use;<br />
+      - Lower part of the bag uses a sewn through horizontal baffle construction to minimise weight;<br />
+      - ½ zip with two sliders aids access and allows ventilation from mid-section of bag;<br />
+      - Updated sizing provides extra room for both shoulders and hips while still maintaining insulation efficiency;<br />
+      - Draft tube prevents heat loss through the zipper;<br />
+      - Includes hood draft collar.<br /><br />
+      Specifications:<br />
+      - Insulation Type: Down;<br />
+      - Down: RDS 90/10 Premium Goose Down;<br />
+      - Fabric: 10D Nylon Shell;<br />
+      - Fill Power: ULTRA-DRY Down® 850+ Loft;<br />
+      - Fill Weight: Regular: 300g, Long: 345g;<br />
+      - Shape: Contoured Mummy;<br />
+      - Temp Rating: EN 4°c Comfort to -2°c Lower;<br />
+      - Weight: Regular: 490g, Long: 560g.
+    </span>,
+    price: 2244.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: true,
+  },
+  {
+    id: '115',
+    name: 'Sea To Summit Ether Light Women Camping Mat',
+    type: 'Accessories',
+    brand: 'Sea To Summit',
+    images: [
+      images.etherLightFirst,
+      images.etherLightSecond,
+      images.etherLightThird,
+    ],
+    size: [
+      168 + 'x' + 55 + 'cm'
+    ],
+    shortDescription: <span>With an R-value over 6, the 10cm thick EtherLightXT Extreme air mat redefines lightweight sleeping comfort for winter adventures around the globe.</span>,
+    description: <span>
+      Sea to Summit’s Air Sprung Cells are the reason you will sleep better on this air mat. Each Air Sprung Cell deforms independently and allows the mat to conform to your body shape. This provides support and comfort by more evenly dispersing pressure across the mat’s surface.<br /><br /> For the extra thick (XT) EtherLight design, many TPU loops are used to connect the top and bottom fabric layers to the Air Sprung Cell dot weld pattern. These loops allow the top and bottom layers to be positioned further apart which creates larger pockets of air when inflated—perfect for side sleepers. This design also requires less fabric overall which means great stability and comfort for less weight.<br /><br /> Dual-density layers of THERMOLITE insulation fill the Air Sprung Cells and work together to prevent convective heat transfer and boost warmth while remaining lightweight and packable. When the mercury drops, the EtherLightXT Extreme’s 6.2 (women’s 6.3) ASTM R-value will keep you cushioned and insulated from the cold hard lumps and bumps beneath. Extra thick and exceptionally warm—10cm of backpacking sleeping comfort for extreme conditions.<br /><br />
+      Features:<br />
+      - ASTM R-value 6.2 is designed for cold-weather use;<br />
+      - Dual-density layers of THERMOLITE insulation;<br />
+      - Extra thick (XT) Air Sprung Cell construction for 10cm stable comfort;<br />
+      - Lightweight, quiet and grippy 30/40D Nylon face fabric;<br />
+      - Field repairable with included self-adhesive patches;<br />
+      - Ultra-Fresh anti-microbial treatment added to the TPU formula prevents internal mould growth;<br />
+      - Pillow Lock attaches an Aeros pillow to mat;<br />
+      - Quick and easy inflation, deflation and adjustment with the multi-function, high flow-rate valve and supplied Airstream Pump Sack.
+    </span>,
+    price: 822.00,
+    gender: 'Women',
+    color: 'Black',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: false,
+  },
+  {
+    id: '116',
+    name: 'Sea To Summit Aeros Down Deluxe Camping Pillow',
+    type: 'Accessories',
+    brand: 'Sea To Summit',
+    images: [
+      images.aerosDownFirst,
+      images.aerosDownSecond,
+      images.aerosDownThird,
+    ],
+    size: [
+      42 + 'x' + 28 + 'x' + 12 + 'cm'
+    ],
+    shortDescription: <span>By using ultralight materials to construct a down cushion-top over a TPU air bladder, our Aeros™ Down Pillow is the lightest fully-featured down pillow on the market.</span>,
+    description: <span>
+      - Light, warm and comfortable, the premium down cushion-top is made from the same exceptionally light and transparent 10D fabric used in our Spark™ sleeping bags.<br /><br />
+      - Differentially cut horizontal baffles reduce down migration and prevent the down compressing, even when the air bladder is fully inflated. The cushion-top wraps over the front of the pillow for neck comfort. The rest of the pillow case is made from lightweight 20D fabric.<br /><br />
+      - Our Aeros™ bladders use a unique long-lasting anti-hydrolysis TPU film which prevents material breakdown from moisture exposure. Extremely light, the bladder’s horizontal baffles create a 3D surface that cradles the head for additional support. The multi-function mini-valve provides easy inflation, deflation and fine tuning.<br /><br />
+      Features:<br />
+      - Premium down cushion-top for comfort and warmth;<br />
+      - Ultralight and high-strength TPU bladder;<br />
+      - Differentially cut baffles allow maximum down loft;<br />
+      - Technical fabrics for lightweight performance;<br />
+      - Multi-function mini-valve for easy inflate, deflate and fine tuning;<br />
+      - Store and transport in compact 20D stuff sack.
+    </span>,
+    price: 258.00,
+    gender: 'Unisex',
+    color: 'Grey',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: false,
+  },
+  {
+    id: '117',
+    name: 'Sea To Summit DeltaLight Camping 2.2 Set',
+    type: 'Accessories',
+    brand: 'Sea To Summit',
+    images: [
+      images.deltalightFirst,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>A lightweight and compact dinnerware set for two that nests inside our Alpha™ and Sigma™ 2.7L pots. The entire set nests and stows inside a lightweight storage pouch. The Camp Set 2.2 includes one of each color of the DeltaLight™ Bowls, Insul Mugs and Delta Cutlery Sets.</span>,
+    description: <span>
+      Made with BPA-free, glass reinforced polypropylene, our DeltaLight™ bowls, Insul Mugs and Cutlery Sets are durable, lightweight, easy-care and microwave and dishwasher safe.<br /><br />
+      Features:<br />
+      - Nests inside Alpha and Sigma Pots 2.7L for compact packability;<br />
+      - Lightweight, durable and easy-care;<br />
+      - BPA-free, food grade material;<br />
+      - Comes with a lightweight Nylon storage pouch;<br />
+      - Two color configuration allows easy set identification;<br />
+      - Delta Cutlery Sets stow inside the DeltaLight™ Bowls and the spoon’s curve allows you to scrape the bowl clean;<br />
+      - Generous volumes in our DeltaLight™ Insul Mug and Bowls;<br />
+      - Graded measuring scale in our DeltaLight™ Insul Mugs.
+    </span>,
+    price: 129.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: true,
+  },
+  {
+    id: '135',
+    name: 'VAUDE M WP Hiking First Aid Kit',
+    type: 'Accessories',
+    brand: 'Vaude',
+    images: [
+      images.mwpFirst,
+      images.mwpSecond,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>Comprehensive first aid kit, small pack size, small pack size, made of waterproof material. The VAUDE First Aid Kit M Waterproof has a compact pack size and is made of robust, completely waterproof fabric. It will keep its contents dry and is very durable. It comes with everything you need for the initial treatment of minor wounds and injuries. </span>,
+    description: <span>
+      In terms of size and contents, it´s perfect for 1-2 people. For ease of use, it includes an integrated organization bag with easy-to-understand pictograms. The First Aid Kit M also has room for your own medicine and is just the right size to fit comfortably in a corner of your backpack. The VAUDE Green Shape label stands for environmentally-friendly, functional products made from sustainable materials.
+    </span>,
+    price: 109.00,
+    gender: 'Unisex',
+    color: 'Yellow',
+    weight: '-',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '136',
+    name: 'VAUDE Zerum 48L Backpack',
+    type: 'Accessories',
+    brand: 'Vaude',
+    images: [
+      images.zerumFirst,
+      images.zerumSecond,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>Our very light backpack of medium size for trekkings and globetrotters weighs less than 1200 g. The background and sides of this model are in 70D RIP-Stop Silicone and Light and in Robust 200D. The Tergolight porting system, the weight of which has been optimized, can be adjusted individually on the bearer´s back and provides stable and comfort.</span>,
+    description: <span>
+      The adjustable and completely removable adjustable pocket and completely space for things that must stay at hand. Below is hidden another flap that allows you to compress the main compartment and close it cleanly when you do not use the pocket. The pocket-radius can also be used as a banana bag. The side compression straps as well as the package bag under the flap, easily handy, allow the volume of the main compartment to be adjusted.<br /><br /> The front compartment with airy mesh inserts is perfect for wet items, such as the rain jacket or the double-roof, because it allows humidity to evaporate. Anything that should be easily accessible can be stored in the large side pocket in a net with its closing elastic. The gourd and the hat remain accessible without it being necessary to remove the backpack. A very resistant and multifunction rope serves as a functional bar to attach the sticks and other pieces of equipment.<br /><br />
+      Features:<br />
+      - slightly rigid back, individually adjustable;<br />
+      - light belt with zipped pocket;<br />
+      - Pocket in the flap;<br />
+      - Adjustable flap height;<br />
+      - Rabat can be removed to gain lightness;<br />
+      - Removable flap can be used as a banana bag;<br />
+      - Hood closure with removable flap;<br />
+      - lateral compression belts;<br />
+      - 1 side stretch pocket;<br />
+      - 1 side stretch pocket for the bottle;<br />
+      - Large stretch front pocket;<br />
+      - Fixing possibilities for equipment;<br />
+      - Fixing for telescopic sticks;<br />
+      - Light silicone material;<br />
+      - Increased the ground;<br />
+      - Extra light curls all over the backpack;<br />
+      - output for the hydration system;<br />
+      - chest belt with fixing for the outlet of the hydration system.
+    </span>,
+    price: 720.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: 'max 50L',
+    features: [
+      '-'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '137',
+    name: 'VAUDE Minnie 5L Hiking Backpack',
+    type: 'Accessories',
+    brand: 'Vaude',
+    images: [
+      images.minnieFirst,
+      images.minnieSecond,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>Compact children´s backpack, comfortable fit, reflective elements, environmentally-friendly manufacturing. The Minnie 5 children´s backpack is entering a new season - and once again is setting new standards in terms of design that´s perfect for small children.</span>,
+    description: <span>
+      This compact, environmentally-friendly backpack has softly padded, anatomic Easy Fit shoulder straps that are carried crossed and fixed with Velcro - perfect for children´s hands! In addition, there´s an outside pocket, reflective print elements and a front zip pocket for their most important essentials.<br /><br /> Its compact size makes the Minnie 5 the ideal companion for very young adventurers - whether they´re on their way to kindergarten or ready to head out on their first mountain tour. This backpack is made of recycled material and is produced with Eco Finish, an environmentally friendly water-repellent material without the use of fluorocarbons (PFC). The VAUDE Green Shape label stands for environmentally-friendly, functional products made from sustainable and bluesign® certified materials.
+    </span>,
+    price: 103.00,
+    gender: 'Kids',
+    color: 'Blue',
+    weight: 'max 5L',
+    features: [
+      'Frameless'
+    ],
+    activity: 'Hiking',
+    sustainable: true,
+  },
+  {
+    id: '138',
+    name: 'VAUDE Santis 450 Sleeping Camping Bag',
+    type: 'Accessories',
+    brand: 'Vaude',
+    images: [
+      images.santisFirst,
+      images.santisSecond,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>Pleasantly warm synthetic sleeping bag for mountain climbers and trekkers, comfortable stretch zone at the knees, arm openings for cooking, reading and belaying, eco-friendly manufacturing. Warm mummy sleeping bag with synthetic fill for mountaineers and trekkers who prefer backpacking in summer. The high stretch knee section and somewhat wider shoulder section offer full mobility and comfort.</span>,
+    description: <span>
+      An added benefit for activities such as reading and cooking in cold temperatures is an additional arm opening in the shoulder section (an opening for the other arm is possible through the main zip closure). This opening can also be used for the rope when bivouacking in the wall. The pleasantly warm insulation (450 g) is easy to take care of and quick to dry.<br /><br /> It also effectively retains heat even when damp. Made from very lightweight materials, the bag weighs little and can be packed down small. The VAUDE Green Shape label stands for environmentally friendly, functional products made from sustainable materials.
+    </span>,
+    price: 824.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: '450 g',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: true,
+  },
+  {
+    id: '139',
+    name: 'VAUDE Selun 1300 SYN Sleeping Camping Bag',
+    type: 'Accessories',
+    brand: 'Vaude',
+    images: [
+      images.selunFirst,
+      images.selunSecond,
+      images.selunThird,
+    ],
+    size: [
+      'one-size',
+    ],
+    description: <span>
+      Features:<br />
+      - Very warm synthetic fill mummy bag for mountain sports and trekking;<br />
+      - nearly seam-free for maximum heat retention;<br />
+      - with large security pocket in the footbox;<br />
+      - made from recycled materials, with Primaloft® insulation;<br />
+      - body contoured mummy cut for optimal heat management;<br />
+      - Baffle-free -free construction prevents moisture from entering and improves warmth retention;<br />
+      - contoured hood;<br />
+      - warmth collar;<br />
+      - Safety pocket inside the footbox to store your valuables or temperature sensitive electronics securely;<br />
+      - footbox;<br />
+      - Easy-exit -exit zipper makes it a breeze to open your sleeping bag;<br />
+      - long side zip down to the foot section;<br />
+      - exceptionally soft and skin;<br />
+      - friendly fabric with bluesign® standard;<br />
+      - lightweight fabrics with water repellent treatment;<br />
+      - Compression stuff sack included.
+    </span>,
+    price: 966.00,
+    gender: 'Unisex',
+    color: 'Green',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: true,
+  },
 
   //* ------------------------------------------------------------ EQUIPMENT ----------------------------------------------------- *//
 
@@ -4009,6 +5271,134 @@ const products = [
     activity: 'Camping',
     sustainable: false,
   },
+  {
+    id: '118',
+    name: 'Sea To Summit Double Camping',
+    type: 'Equipment',
+    brand: 'Sea To Summit',
+    images: [
+      images.doubleFirst,
+      images.doubleSecond,
+    ],
+    size: [
+      '2P',
+    ],
+    shortDescription: <span>A unique design, which maximises coverage while minimising weight and packed size.</span>,
+    description: <span>
+      Features: <br />
+      - Helps prevent contraction and spread diseases such as malaria, Japanese encephalitis and dengue fever;<br />
+      - Fine woven 80 hole/cm² mesh;<br />
+      - High visibility black mesh gives excellent vision through netting;<br />
+      - Off-centre hanging point gives practical headroom;<br />
+      - Soft multifilament Polyester for lightweight strength and compactness;<br />
+      - Also available in untreated mesh.<br /><br />
+      Specifications:<br />
+      - Mosquito Net Double Standard: 1.7 x 2.4 x 1.3m, 340g.
+    </span>,
+    price: 129.00,
+    gender: 'Unisex',
+    color: 'Black',
+    weight: '340 g',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: false,
+  },
+  {
+    id: '119',
+    name: 'Sea To Summit Jungle Hammock Camping Set',
+    type: 'Equipment',
+    brand: 'Sea To Summit',
+    images: [
+      images.jungleFirst,
+      images.jungleSecond,
+      images.jungleThird,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>Our easy-to-use Jungle Hammock is constructed using breathable, lightweight 70 denier ripstop Nylon, high-tenacity monofilament netting, Dyneema® webbing and corrosion-resistant anodised 6061 Aluminium buckles. Perfect for humid environments, the Jungle Hammock Set comes with straps and can be used anywhere from the backpacking trail to the wilderness.</span>,
+    description: <span>
+      Features: <br />
+      - Lightweight and easy-to-use quick-connect buckle system;<br />
+      - Durable and high-strength monofilament insect netting;<br />
+      - Dry and compact storage, in a highly effective compression sack.<br /><br />
+      Specifications:<br />
+      - Dimension: Lenght 260 cm, Height/Depth 145 cm, Width 145 cm;<br />
+      - Weight: 775 g.
+    </span>,
+    price: 741.00,
+    gender: 'Unisex',
+    color: 'Green',
+    weight: '775 g',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: false,
+  },
+  {
+    id: '120',
+    name: 'Sea To Summit Hammock Camping Tarp 15D',
+    type: 'Equipment',
+    brand: 'Sea To Summit',
+    images: [
+      images.hammockFirst,
+      images.hammockSecond,
+      images.hammockThird,
+    ],
+    size: [
+      'one-size',
+    ],
+    shortDescription: <span>Complement your lightweight, compact hammock set-up with a tarp that provides excellent coverage without adding excess weight or bulk.</span>,
+    description: <span>
+      Features: <br />
+      - Using Ultra-Sil® Nano 15D fabric we get a massive 1110´ x 92´ tarp at only 11.6 oz/330g;<br />
+      - Our unique 5-point design has a single tie-out point on one side, providing enough room to cook under while sitting in the hammock;<br />
+      - Two tie-out points on the opposite side can be pegged close to the ground for protection against prevailing wind and rain.<br /><br />
+      Specifications:<br />
+      - Length: 11 ft 10 in/3.6 m;<br />
+      - Width: 9 ft 2 in/2.8 m;<br />
+      - Weight: 11.7 oz/330g.
+    </span>,
+    price: 527.00,
+    gender: 'Unisex',
+    color: 'Blue',
+    weight: '330 g',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: false,
+  },
+  {
+    id: '140',
+    name: 'VAUDE Taurus Camping Tent',
+    type: 'Equipment',
+    brand: 'Vaude',
+    images: [
+      images.taurusFirst,
+      images.taurusSecond,
+      images.taurusThird,
+    ],
+    size: [
+      '2P',
+    ],
+    shortDescription: <span>Tripod tent for camping or hiking tours, 3-season (for snow-free months), easy set up, good ventilation. Gets you toured up and ready to go! The perfect 3-season introductory tent to the wonderful world of hiking and camping. Well ventilated and a cinch to pitch.</span>,
+    description: <span>
+      The durable outer tent is made from weather-proof PU coated polyester that can stand up in a downpour, while keeping you well aired inside with ridge ventilation. The additional pin solution creates more foot room and increases the tent´s wind stability.<br /><br />
+    </span>,
+    price: 955.00,
+    gender: 'Unisex',
+    color: 'Red',
+    weight: '-',
+    features: [
+      '-'
+    ],
+    activity: 'Camping',
+    sustainable: true,
+  },
 ]
 
 
@@ -4043,37 +5433,32 @@ const brands = {
   Merrell: {
     name: 'Merrell',
     logo: images.merrellLogo,
-    logoSize: 40
+    logoSize: 42
   },
   'The North Face': {
     name: 'The North Face',
     logo: images.northLogo,
-    logoSize: 34
+    logoSize: 15
   },
   Osprey: {
     name: 'Osprey',
     logo: images.ospreyLogo,
     logoSize: 13
   },
-  Patagonia: {
-    name: 'Patagonia',
-    logo: images.patagoniaLogo,
-    logoSize: 35
-  },
   Petzl: {
     name: 'Petzl',
     logo: images.petzlLogo,
-    logoSize: 34
+    logoSize: 13
   },
   Salewa: {
     name: 'Salewa',
     logo: images.salewaLogo,
-    logoSize: 34
+    logoSize: 17
   },
   Salomon: {
     name: 'Salomon',
     logo: images.salomonLogo,
-    logoSize: 40
+    logoSize: 27
   },
   'La Sportiva': {
     name: 'La Sportiva',
@@ -4083,12 +5468,14 @@ const brands = {
   'Sea To Summit': {
     name: 'Sea To Summit',
     logo: images.summitLogo,
-    logoSize: 40
-  }
-}
-
-/* const adidasProducts = products.filter((product) => product.productBrand === "Adidas"); */
-
+    logoSize: 38
+  },
+  Vaude: {
+    name: 'Vaude',
+    logo: images.vaudeLogo,
+    logoSize: 35
+  },
+};
 
 
 const creatorImages = [
@@ -4263,12 +5650,77 @@ const brandsCategory = [
   'Mammut',
   'Merrell',
   'Osprey',
-  'Patagonia',
   'Petzl',
   'Salewa',
   'Salomon',
   'Sea To Summit',
-  'The North Face'
+  'The North Face',
+  'Vaude',
+]
+
+
+const contactDetails = [
+  {
+    type: 'text',
+    placeholder: 'First Name:'
+  },
+  {
+    type: 'text',
+    placeholder: 'Last Name:'
+  },
+  {
+    type: 'text',
+    placeholder: 'E-Mail:'
+  },
+  {
+    type: 'number',
+    placeholder: 'Phone Number:'
+  },
+  {
+    type: 'text',
+    placeholder: 'Address:'
+  },
+  {
+    type: 'text',
+    placeholder: 'Post code:'
+  },
+  {
+    type: 'text',
+    placeholder: 'City:'
+  },
+  {
+    type: 'text',
+    placeholder: 'Country:'
+  }
+]
+
+
+const shippingDetails = [
+  {
+    value: 200,
+    label: 'International Delivery: ',
+    price: '200.00 RON'
+  },
+  {
+    value: 50,
+    label: 'Express Delivery: ',
+    price: '50.00 RON'
+  },
+  {
+    value: 25,
+    label: 'Local Delivery: ',
+    price: '25.00 RON'
+  },
+  {
+    value: 0,
+    label: 'Free Delivery: ',
+    price: '0.00 RON'
+  },
+  {
+    value: 0,
+    label: 'Local Pickup: ',
+    price: 'Free'
+  }
 ]
 
 
@@ -4287,5 +5739,7 @@ export default {
   colorCategory,
   sizeCategory,
   featuresCategory,
-  brandsCategory
+  brandsCategory,
+  contactDetails,
+  shippingDetails
 };

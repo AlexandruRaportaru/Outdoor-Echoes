@@ -110,8 +110,18 @@
     margin: 20px 0;
 }
 
-.app__checkout-content_section-button button {
+.app__checkout-content_section-button .custom__button {
     width: 100%;
+    background: var(--color-purple);
+    color: var(--color-white);
+    border: 1px solid var(--color-purple);
+}
+
+.app__checkout-content_section-button .custom__button:hover {
+    box-shadow:  0 0 1em 0 var(--color-purple);
+    color: var(--color-yellow);
+    background: var(--color-purple);
+    border: 1px solid var(--color-purple);
 }
 
 .app__checkout-content_section-payment_details-paypal input,
@@ -174,20 +184,16 @@
 }
 
 .app__checkout-content_products-section_item-price {
-    margin: 0 20px;
+    margin: 0 25px;
 }
 
 .app__checkout-content_products-section_item-delete {
-    padding: 5px;
     background: var(--color-purple);
-    border: 1px solid var(--color-white);
-    border-radius: 10px;
     color: var(--color-white);
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .app__checkout-content_products-section_item-delete:hover {
-    border: 1px solid var(--color-yellow);
     color: var(--color-yellow);
 }
 
@@ -283,4 +289,14 @@
     color: var(--color-yellow);
     font-size: 30px;
     margin-left: 20px;
+}
+
+.app__checkout-content_section-contact_details input::placeholder,
+.app__checkout-content_section-payment_details-card_details input::placeholder {
+    color: rgb(128, 128, 128, 0.5);
+}
+
+.app__checkout-content_section-contact_details input,
+.app__checkout-content_section-payment_details-card_details input{
+    color: var(--color-purple);
 }

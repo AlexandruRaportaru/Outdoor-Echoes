@@ -135,6 +135,18 @@
     margin: 20px 0 2px 0;
 }
 
+.app__product-content_characteristics-details_accessibility .custom__button {
+    background: var(--color-purple);
+    color: var(--color-white);
+}
+
+.app__product-content_characteristics-details_accessibility .custom__button:hover {
+    background: var(--color-purple);
+    color: var(--color-yellow);
+    border: 1px solid var(--color-purple);
+    box-shadow:  0 0 1em 0 var(--color-purple);
+}
+
 .app__product-content_characteristics-details_info {
     font-family: var(--font-menu);
     color: var(--color-green);
