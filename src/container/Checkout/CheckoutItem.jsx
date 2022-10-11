@@ -7,19 +7,22 @@ const CheckoutItem = ({product, removeFromCart, adjustQty}) => {
     const [quantity, setQuantity] = useState(product.qty);
 
     const handleQuantityChange = (e) => {
+        e.preventDefault();
         setQuantity(e.target.value);
         adjustQty(product.id, e.target.value, product.selectedSize);
     };
 
-    const handleDecrementCount = () => {
+    const handleDecrementCount = (e) => {
         if(quantity > 1) {
+            e.preventDefault();
             setQuantity(quantity - 1);
             adjustQty(product.id, quantity - 1, product.selectedSize);
         }  
     }; 
 
-    const handleIncrementCount = () => {    
+    const handleIncrementCount = (e) => {    
         if(quantity < 100) {
+            e.preventDefault();
             setQuantity(quantity + 1);
             adjustQty(product.id, quantity + 1, product.selectedSize);
         }   
@@ -36,19 +39,23 @@ const CheckoutItem = ({product, removeFromCart, adjustQty}) => {
             </div>
             <p>{product.price.toFixed(2)} RON</p>
         </div>
-        <div className='custom__quantity flex__center'>
-            <button className="flex__center" onClick={handleDecrementCount}>-</button>
-            <div onChange={handleQuantityChange}>{quantity}</div>
-            <button className="flex__center" onClick={handleIncrementCount}>+</button>
+        <div className='flex__center'>
+            <div className='custom__quantity'>
+                <button className="flex__center" onClick={handleDecrementCount}>-</button>
+                <div onChange={handleQuantityChange}>{quantity}</div>
+                <button className="flex__center" onClick={handleIncrementCount}>+</button>
+            </div>
         </div>
         <span className='app__checkout-content_products-section_item-price'>
             {(product.price * product.qty).toFixed(2)}
-            <p style={{marginTop: '5px'}}> RON</p>
+            <span style={{marginTop: '5px'}}> RON</span>
         </span>
-        <MdDeleteForever 
-            onClick={() => removeFromCart(product.id, product.selectedSize)} 
-            className='app__checkout-content_products-section_item-delete flex__center'
-        />
+        <div className='flex__center'>
+            <MdDeleteForever 
+                onClick={() => removeFromCart(product.id, product.selectedSize)} 
+                className='app__checkout-content_products-section_item-delete flex__center'
+            />
+        </div>
     </div>
   )
 }

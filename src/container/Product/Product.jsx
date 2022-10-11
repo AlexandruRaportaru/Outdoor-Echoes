@@ -97,15 +97,15 @@ const Product = ({addToCart}) => {
     <div className='app__product'>
         <div className='app__product-title'>
             <h1 className='p__logo'>
-                <Link to={`/products`} >
+                <Link className='link' to={`/products`} >
                     Products
                 </Link>
                 /
-                <Link to={`/products/gender_${product.gender}`} >
+                <Link className='link' to={`/products/gender_${product.gender}`} >
                     {product.gender}
                 </Link>
                 /
-                <Link to={`/products/type_${product.type}`} >
+                <Link className='link' to={`/products/type_${product.type}`} >
                     {product.type}
                 </Link>
             </h1>

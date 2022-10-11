@@ -8,7 +8,13 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
-const Blogs = () => (
+const Blogs = () => {
+  const handleHandDisplay = () => {
+    const handSwipe = document.querySelector('.swipe__hand-blogs');
+    handSwipe.style.display = 'none';
+  }
+
+return (
   <div className='app__blogs'>
     <h1 className='app__blogs-title title'>Useful Links</h1>
     <div className='app__blogs-content'>
@@ -24,6 +30,7 @@ const Blogs = () => (
           }}
           modules={[EffectCube]}
           className='app__blogs-wrapper_swiper'
+          onSlideChange={handleHandDisplay}
           >
           {data.blogs.map((blog, index) => (
             <SwiperSlide key={index} className='app__blogs-wrapper_swiper-slide'>
@@ -50,10 +57,13 @@ const Blogs = () => (
               </a>
             </SwiperSlide>
           ))}
+          <div className='swipe__hand-blogs'>
+            <img src={images.swipe} alt='swipe'/>
+          </div>
         </Swiper>
       </div>
     </div> 
   </div>
-);
+)};
 
 export default Blogs;

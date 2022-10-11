@@ -116,7 +116,7 @@
 .app__navbar-icons {
     display: flex;
     align-self: stretch;
-    margin: 0 8px;
+    margin: 0 0 0 8px;
 }
 
 .app__navbar-icons__contact,
@@ -136,6 +136,34 @@
     padding-right: 0.5rem;
     height: 100%;
     cursor: pointer;
+}
+
+.app__navbar-icons a:before,
+.app__navbar-icons a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: var(--color-white);
+    transition: .5s;
+    opacity: 0;
+}
+
+.app__navbar-icons a:before {
+    top: 0;
+	left: 0;
+}
+
+.app__navbar-icons a:after {
+    bottom: 0;
+	right: 0;
+}
+
+.app__navbar-icons a:hover:before,
+.app__navbar-icons a:hover:after {
+    opacity: 1;
+    width: 100%;
+    transition: .5s;
 }
 
 .app__navbar-icons span {

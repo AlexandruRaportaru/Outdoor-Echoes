@@ -7,7 +7,13 @@ import './Creator.css';
 import 'swiper/css';
 import "swiper/css/effect-cards";
 
-const Creator = () => (
+const Creator = () => {
+  const handleSwipeDisplay = () => {
+    const handSwipe = document.querySelector('.swipe__hand-creator');
+    handSwipe.style.display = 'none';
+  }
+
+  return (
   <div className='app__creator section__padding'>
     <h1 className='app__creator-title title'>Creator's Word</h1>
     <div className='app__creator-wrapper'>
@@ -17,6 +23,7 @@ const Creator = () => (
         grabCursor={true}
         modules={[EffectCards]}
         className='app__creator-wrapper_swiper'
+        onSlideChange={handleSwipeDisplay}
         >
         {data.creatorImages.map((image, index) => (
           <SwiperSlide key={index} className='app__creator-wrapper_swiper-slide'>
@@ -26,12 +33,12 @@ const Creator = () => (
             <div className='creator__swiper-background purple__bg'></div>
           </SwiperSlide>
         ))}
-        <div className='swipe__hand'>
+        <div className='swipe__hand-creator'>
           <img src={images.swipe} alt='swipe'/>
         </div>
       </Swiper>
       
-      
+    
       <div className='app__creator-wrapper_content'>
         <h1 className='p__logo'>What We Belive In</h1>
         <div>
@@ -45,6 +52,6 @@ const Creator = () => (
       </div>
     </div>
   </div>
-);
+)};
 
 export default Creator;

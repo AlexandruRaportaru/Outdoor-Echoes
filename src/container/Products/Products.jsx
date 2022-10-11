@@ -123,11 +123,11 @@ const Products = () => {
     <div className='app__products'>
       <div className='app__products-title'>
         <h1 className='p__logo'>
-          <Link to='/' >
+          <Link className='link' to='/' >
             Home
           </Link>
           /
-          <Link to='/products' >
+          <Link className='link' to='/products' >
             Products
           </Link>
         </h1>

@@ -5453,7 +5453,7 @@ const brands = {
   Salewa: {
     name: 'Salewa',
     logo: images.salewaLogo,
-    logoSize: 17
+    logoSize: 15
   },
   Salomon: {
     name: 'Salomon',
@@ -5508,7 +5508,7 @@ const blogs = [
     blogLink: 'https://www.cotswoldoutdoor.com/the-knowledge/waterproof-buying-guide.html?from=home',
     blogImage: images.rain,
     blogName: '',
-    blogHeadtext: 'Waterproof buying guide',
+    blogHeadtext: 'Waterproof guide',
     blogText: 'Find out everything you need to know about this outdoor essential.'
   },
   {

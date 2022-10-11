@@ -46,6 +46,47 @@ const Checkout = ({cartProducts}) => {
     }
 
 
+
+    function handleChosingPayment() {
+        const checkboxes = document.querySelectorAll('.app__checkout-content_section-payment_details input[type="checkbox"]');
+        const cardDetails = document.querySelector('.app__checkout-content_section-payment_details-card_details');
+        const cardInput = document.querySelector('.app__checkout-content_section-payment_details-card_option input');
+        
+        let limit = 0;
+  
+        checkboxes.forEach(checkbox => {
+          if(checkbox.checked === true) {
+            limit = limit + 1;
+          }
+        })
+  
+        if (limit > 0) {
+          checkboxes.forEach(checkbox => {
+            if(checkbox.checked === false) {
+              checkbox.setAttribute('disabled', '');
+            }
+          })
+        } else {
+          checkboxes.forEach(checkbox => {
+              checkbox.removeAttribute('disabled');
+          })
+        }
+
+        if(cardInput.checked === true) {
+            const mediaQuery = window.matchMedia('(max-width: 1150px)')
+            
+            if (mediaQuery.matches) {
+                cardDetails.style.display = 'block';
+            } else {
+                cardDetails.style.display = 'grid';
+            }
+        } else {
+            cardDetails.style.display = 'none';
+        }
+    }
+
+
+
     useEffect(() => {
         let subTotal = 0;
 
@@ -96,16 +137,16 @@ const Checkout = ({cartProducts}) => {
                     <div className='app__checkout-content_section-payment_details'>
                         <div className='app__checkout-content_section-payment_details-paypal'>
                             <div className='flex__center'>
-                                <input type='radio'/>
-                                <p className='p__yanone'>Paypal</p>
+                                <input type='checkbox' onClick={handleChosingPayment}/>
+                                <label className='p__yanone'>Paypal</label>
                             </div>
                             <img src={images.paypal} alt='Paypal Logo'/>
                         </div>
                         <div className='app__checkout-content_section-payment_details-card'>
                             <div className='app__checkout-content_section-payment_details-card_option'>
                                 <div className='flex__center'>
-                                    <input type='radio'/>
-                                    <p className='p__yanone'>Credit / Debit card</p>
+                                    <input type='checkbox' onClick={handleChosingPayment}/>
+                                    <label className='p__yanone'>Credit / Debit card</label>
                                 </div>
                                 <div className='flex__center'>
                                     <img src={images.visa} alt='Visa Logo'/>
