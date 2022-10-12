@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination} from 'swiper';
 import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from 'react-icons/bs';
@@ -44,21 +44,21 @@ const Selection = () => {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
               },
-              620: {
+              680: {
                 slidesPerView: 3,
                 slidesPerGroup: 3,
               },
               1150: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+              },
+              1500: {
                 slidesPerView: 5,
                 slidesPerGroup: 5,
               },
-              1500: {
+              2000: {
                 slidesPerView: 6,
                 slidesPerGroup: 6,
-              },
-              2000: {
-                slidesPerView: 7,
-                slidesPerGroup: 7,
               }
             }}
             onInit={(swiper) => {

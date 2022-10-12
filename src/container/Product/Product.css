@@ -332,6 +332,10 @@
     .app__product-content_characteristics-details_size div {
         margin-right: 15px;
     }
+
+    .app__product-modal_content {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -406,5 +410,17 @@
 
     .app__product-content_description p {
         font-size: 14px;
+    }
+
+    .app__product-modal_content {
+        width: 75%;
+    }
+    
+    .app__product-modal_content img {
+        width: 75px;
+    }
+    
+    .app__product-modal_content h1 {
+        font-size: 20px;
     }
 }

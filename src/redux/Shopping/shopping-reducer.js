@@ -27,6 +27,7 @@ const shopReducer = (state = INITIAL_STATE, action) => {
                         ) 
                     : [...state.cart, {...item, qty: action.payload.counter, selectedSize: action.payload.size}]
             };
+
         case actionTypes.REMOVE_FROM_CART:
             return {
                 ...state,
@@ -34,6 +35,7 @@ const shopReducer = (state = INITIAL_STATE, action) => {
                     return !(item.id  === action.payload.id && item.selectedSize === action.payload.size)
                 })
             };
+
         case actionTypes.ADJUST_QUANTITY:
             return {
                 ...state,
@@ -43,11 +45,13 @@ const shopReducer = (state = INITIAL_STATE, action) => {
                         : item
                 )
             };
-        case actionTypes.LOAD_CURRENT_ITEM:
+
+        case actionTypes.EMPTY_CART:
             return {
                 ...state,
-                currentItem: action.payload 
+                item: [] 
             };
+
         default: 
             return state;
     }

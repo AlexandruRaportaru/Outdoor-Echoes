@@ -1,16 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
+import { emptyCart } from '../../redux/Shopping/shopping-actions';
 import { connect } from 'react-redux';
 import CheckoutItem from './CheckoutItem';
 import { images, data } from '../../constants';
+import { BsCartX } from 'react-icons/bs';
 
 import './Checkout.css';
+
+const cartFromLocalStorage = JSON.parse(localStorage.getItem('cartProducts'))
 
 const Checkout = ({cartProducts}) => {
     const [subTotalPrice, setSubTotalPrice] = useState(0);
     const [totalPrice, setTotalPrice] = useState(subTotalPrice);
     const [currentShipping, setCurrentShipping] = useState(0);
     const modal = document.querySelector('.app__checkout-modal');
+
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cartProducts))
+    }, [cartProducts, subTotalPrice, totalPrice, currentShipping])
 
 
     function addInputValue(e) {
@@ -21,7 +30,7 @@ const Checkout = ({cartProducts}) => {
           if(checkbox.checked === true) {
             limit = limit + 1;
           }
-        })
+        });
   
         if (limit > 0) {
           checkboxes.forEach(checkbox => {
@@ -33,7 +42,7 @@ const Checkout = ({cartProducts}) => {
           checkboxes.forEach(checkbox => {
               checkbox.removeAttribute('disabled');
           })
-        }
+        };
 
 
         const shippingPrice = +e.target.value;
@@ -42,8 +51,8 @@ const Checkout = ({cartProducts}) => {
             setCurrentShipping(0);
         } else {
             setCurrentShipping(shippingPrice);
-        }
-    }
+        };
+    };
 
 
 
@@ -58,7 +67,7 @@ const Checkout = ({cartProducts}) => {
           if(checkbox.checked === true) {
             limit = limit + 1;
           }
-        })
+        });
   
         if (limit > 0) {
           checkboxes.forEach(checkbox => {
@@ -70,7 +79,7 @@ const Checkout = ({cartProducts}) => {
           checkboxes.forEach(checkbox => {
               checkbox.removeAttribute('disabled');
           })
-        }
+        };
 
         if(cardInput.checked === true) {
             const mediaQuery = window.matchMedia('(max-width: 1150px)')
@@ -82,8 +91,8 @@ const Checkout = ({cartProducts}) => {
             }
         } else {
             cardDetails.style.display = 'none';
-        }
-    }
+        };
+    };
 
 
 
@@ -95,24 +104,26 @@ const Checkout = ({cartProducts}) => {
         });
 
         setSubTotalPrice(subTotal);
-    }, [cartProducts, subTotalPrice])
+    }, [cartProducts, subTotalPrice]);
 
 
     useEffect(() => {
         setTotalPrice(subTotalPrice + currentShipping);
-    }, [subTotalPrice, currentShipping])
+    }, [subTotalPrice, currentShipping]);
 
 
     
     const navigate = useNavigate();
     const handlePlaceOrder = () => {
         modal.style.display = 'block';
+        
 
         setTimeout(() => {
             modal.style.display = 'none';
-
             navigate('/');
         }, 4000);
+
+        emptyCart();
     }
 
     
@@ -128,7 +139,7 @@ const Checkout = ({cartProducts}) => {
                     <h1 className='app__checkout-content_section-contact_title p__headtext'>Contact and Billing</h1>
                     <div className='app__checkout-content_section-contact_details'>
                         {data.contactDetails.map(contact => (
-                            <input type={contact.type} placeholder={contact.placeholder} />
+                            <input key={contact.placeholder} type={contact.type} placeholder={contact.placeholder} />
                         ))}
                     </div>
                 </div>
@@ -193,9 +204,18 @@ const Checkout = ({cartProducts}) => {
                 <div className='app__checkout-content_products-section'>
                     <h1 className='app__checkout-content_products-section_title p__headtext'>Shopping Basket</h1>
                     <div style={{marginTop: '20px'}}>
-                        {cartProducts.map(product => (
+                        {cartProducts.length > 0 
+                        ? cartProducts.map(product => (
                             <CheckoutItem key={`${product.id}_${product.selectedSize}`} product={product}/>
-                        ))}
+                        )) 
+                        : <div className='app__checkout-content_products-section_empty'>
+                            <div className='flex__center'>
+                                <BsCartX className='app__checkout-content_products-section_empty-icon'/>
+                                <h1 className='title'>Your cart is currently empty.</h1>
+                            </div>
+                        </div>
+                        }
+                        
                     </div>
                     <div className='app__checkout-content_products-section_subtotal'>
                         <p className='p__yanone'>Subtotal:</p>
@@ -208,7 +228,7 @@ const Checkout = ({cartProducts}) => {
                         <p className='p__yanone'>Shipping and Handling:</p>
                         <div className='app__checkout-content_products-shipping-section_options'>
                             {data.shippingDetails.map(shipment => (
-                                <div>
+                                <div key={shipment.label}>
                                     <input type='checkbox' value={shipment.value} onClick={addInputValue}/>
                                     <label className='p__yanone'>{shipment.label}<span>{shipment.price}</span></label>
                                 </div>
@@ -237,7 +257,8 @@ const Checkout = ({cartProducts}) => {
 
 const mapStateToProps = state => {
     return {
-        cartProducts: state.shop.cart
+        cartProducts: state.shop.cart,
+        emptyCart: state.shop.cart
     }
 }
 

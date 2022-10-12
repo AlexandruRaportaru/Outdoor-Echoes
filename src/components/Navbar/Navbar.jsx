@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { FaUserAlt, FaSearch } from 'react-icons/fa';
 import { MdOutlineContactSupport } from 'react-icons/md';
 import { Menu, Logo, Cart} from '../../components';
@@ -8,20 +9,44 @@ import './Navbar.css';
 
 
 const Navbar = ({disableCart}) => {
+  const [inputValue, setInputValue] = useState(''); 
   const placeholderRef = useRef();
+  const searchOptionsRef = useRef();
 
   const handleInputChange = (e) => {
-
-    if (e.currentTarget.value === '') {
-      placeholderRef.current.style.display = 'inline-flex';
+    if (e.currentTarget.value === '' && e.currentTarget !== document.activeElement) {
+      searchOptionsRef.current.style.display = 'none';
     } else {
       placeholderRef.current.style.display = 'none';
     }
+
+    if (e.currentTarget !== document.activeElement) {
+      placeholderRef.current.style.display = 'inline-flex';
+    }
+
+    setInputValue(e.target.value);
   }
+
+
 
   const handleInputClick = (e) => {
     placeholderRef.current.style.display = 'none';
+    searchOptionsRef.current.style.display = 'block';
   }
+
+
+
+  const handleSearchProduct = (searchTerm) => {
+    setInputValue(searchTerm);
+  }
+
+
+
+  const navigate = useNavigate();
+  const handleOpenProduct = (productId) => {
+    navigate(`/product/${productId}`)
+  }
+  
 
   return (
     <nav className='app__navbar box1'>
@@ -33,7 +58,7 @@ const Navbar = ({disableCart}) => {
 
       <div className='app__navbar-search flex__center box3'>
         <form method='get' action='/search'>
-          <input type='search' autoComplete='off' onChange={handleInputChange} onClick={handleInputClick}/>
+          <input type='search' value={inputValue} onChange={handleInputChange} onClick={handleInputClick}/>
           <div className='app__navbar-search__placeholder' ref={placeholderRef}>
             <span className='app__navbar-search__placeholder-static' style={{position: 'relative'}}>SEARCH FOR </span>
             <span className='app__navbar-search__placeholder-dots'>...</span>
@@ -45,10 +70,30 @@ const Navbar = ({disableCart}) => {
                 ))}
               </ul>
           </div>
-          <button type='submit' className='flex__center'>
+          <button type='submit' className='flex__center' onClick={() => handleSearchProduct(inputValue)}>
             <FaSearch style={{color: 'var(--color-purple)'}} fontSize={20} />
           </button>
         </form>
+        <div className='app__navbar-search_products' ref={searchOptionsRef}>
+          <div className='app__navbar-search_products-container'>
+            {data.products.filter(product => {
+              const searchTerm = inputValue.toLowerCase();
+              const fullName = product.name.toLowerCase();
+
+              return searchTerm && fullName.includes(searchTerm);
+            })
+            .map(product => (
+              <div key={product.name} className='app__navbar-search_products-container_card' onClick={() => handleOpenProduct(product.id)}>
+                <div className='app__navbar-search_products-container_card-image'>
+                  <img src={product.images[0]} alt={product.name} />
+                </div>
+                <div className='app__navbar-search_products-container_card-text'>
+                  <h1 className='p__headtext'>{product.name}</h1>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
         
       <div className='app__navbar-icons box4'>

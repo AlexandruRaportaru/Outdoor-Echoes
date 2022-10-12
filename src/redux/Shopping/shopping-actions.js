@@ -32,9 +32,13 @@ export const adjustQty = (itemID, value, itemSIZE) => {
     }
 } 
 
-export const loadCurrentItem = (item) => {
+export const emptyCart = (item) => {
     return {
-        type: actionTypes.LOAD_CURRENT_ITEM,
-        payload: item
+        type: actionTypes.EMPTY_CART,
+        payload: {
+            id: 0,
+            quantity: 0,
+            size: 0
+        }
     }
 } 
