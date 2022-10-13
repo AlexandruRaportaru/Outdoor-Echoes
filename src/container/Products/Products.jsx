@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, Link, useNavigate } from "react-router-dom";
+import ReactPaginate from 'react-paginate';
 import Slider from 'rc-slider';
 import { data } from '../../constants';
 import { Collapsible } from '../../components';
@@ -116,6 +117,25 @@ const Products = () => {
     );
     setProducts(allProducts);
   }
+
+
+
+  const [currentItems, setCurrentItems] = useState([]);
+  const [pageCount, setPageCount] = useState(0);
+  const [itemOffset, setItemOffset] = useState(0);
+  const itemsPerPage = 32;
+
+  useEffect(() => {
+    const endOffset = itemOffset + itemsPerPage;
+    setCurrentItems(products.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(products.length / itemsPerPage));
+  }, [itemOffset, itemsPerPage, products]);
+
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % products.length;
+    setItemOffset(newOffset);
+  };
 
   
 
@@ -242,21 +262,36 @@ const Products = () => {
           </div>
         </div>
 
-        <div className='app__products-content_results'>
-          {products.map(product => (
-            <div key={product.name} className='app__products-content_results-card' onClick={() => handleOpenProduct(product.id)}>
-              <div className='app__products-content_results-card_sustainable'>
-                {product.sustainable ? <p>Sustainable</p> : ''}
+        <div>
+          <div className='app__products-content_results'>
+            {currentItems.map(product => (
+              <div key={product.name} className='app__products-content_results-card' onClick={() => handleOpenProduct(product.id)}>
+                <div className='app__products-content_results-card_sustainable'>
+                  {product.sustainable ? <p>Sustainable</p> : ''}
+                </div>
+                <div className='app__products-content_results-card_image'>
+                  <img src={product.images[0]} alt={product.name} />
+                </div>
+                <div className='app__products-content_results-card_text'>
+                  <h1 className='p__headtext'>{product.name}</h1>
+                  <p>{(product.price).toFixed(2)} RON</p>
+                </div>
               </div>
-              <div className='app__products-content_results-card_image'>
-                <img src={product.images[0]} alt={product.name} />
-              </div>
-              <div className='app__products-content_results-card_text'>
-                <h1 className='p__headtext'>{product.name}</h1>
-                <p>{(product.price).toFixed(2)} RON</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <ReactPaginate
+            nextLabel=">"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={3}
+            pageCount={pageCount}
+            previousLabel="<"
+            renderOnZeroPageCount={null}
+            containerClassName='pagination flex__center'
+            pageLinkClassName='page-num p__yanone'
+            previousClassName='page-prev p__yanone'
+            nextLinkClassName='page-next p__yanone'
+            activeLinkClassName='page-active'
+          />
         </div>
 
       </div>

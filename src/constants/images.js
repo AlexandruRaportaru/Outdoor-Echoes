@@ -29,6 +29,8 @@ import visa from '../assets/visa.png';
 import americanexpress from '../assets/americanexpress.png';
 import code from '../assets/code.png';
 import checked from '../assets/checked.gif';
+import error from '../assets/error.gif';
+import exclamation from '../assets/exclamation.png';
 
 
 
@@ -675,6 +677,8 @@ export default {
   americanexpress,
   code,
   checked,
+  error,
+  exclamation,
 
 /* Adidas */
   adidasBanner,

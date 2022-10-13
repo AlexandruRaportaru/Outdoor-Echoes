@@ -6,6 +6,7 @@ import Blogs from './Blogs/Blogs';
 import Products from './Products/Products';
 import Product from './Product/Product';
 import Checkout from './Checkout/Checkout';
+import Error from './Error/Error';
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   Products,
   Product,
   Checkout,
+  Error
 };

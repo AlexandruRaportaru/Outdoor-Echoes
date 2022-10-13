@@ -72,7 +72,7 @@ const Header = () => {
               <img src={images.discount} alt='discount' className='app__header-wrapper__content-discount__image'/>
               <img src={images.discountLogo} alt='discount-logo' className='app__header-wrapper__content-discount__logo'/>
               <div className='discount-background purple__bg'></div>
-              <a href='/' className='custom__button'>SHOP NOW</a>
+              <Link to={'/error'} className='custom__button'>SHOP NOW</Link>
             </div>
 
             <div className='app__header-wrapper__content-facebook'>

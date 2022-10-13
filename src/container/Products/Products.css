@@ -186,6 +186,38 @@
     overflow: hidden;
 }
 
+.pagination {
+    background: var(--color-blue);
+    height: 60px;
+    gap: 5px;
+}
+
+.page-num,
+.page-next {
+    padding: 8px 13px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 16px !important;
+    border: 1px solid var(--color-blue);
+}
+
+.page-prev {
+    padding: 6px 13px;
+    cursor: pointer;
+    font-size: 16px !important;
+    border: 1px solid var(--color-blue);
+}
+
+.page-num:hover,
+.page-prev:hover,
+.page-next:hover {
+    border: 1px solid rgb(0, 67, 100, 0.5);
+    color: rgb(0, 67, 100, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 0.2em 0 var(--color-purple);
+}
+
 
 @media screen and (max-width: 1150px) {
     .app__products-title h1 {

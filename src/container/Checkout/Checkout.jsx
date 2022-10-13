@@ -8,18 +8,13 @@ import { BsCartX } from 'react-icons/bs';
 
 import './Checkout.css';
 
-const cartFromLocalStorage = JSON.parse(localStorage.getItem('cartProducts'))
-
-const Checkout = ({cartProducts}) => {
+const Checkout = ({cartProducts, emptyCart}) => {
     const [subTotalPrice, setSubTotalPrice] = useState(0);
     const [totalPrice, setTotalPrice] = useState(subTotalPrice);
     const [currentShipping, setCurrentShipping] = useState(0);
-    const modal = document.querySelector('.app__checkout-modal');
+    const [openedModal, setOpenedModal] = useState(false);
+    
 
-
-    useEffect(() => {
-        localStorage.setItem('cart', JSON.stringify(cartProducts))
-    }, [cartProducts, subTotalPrice, totalPrice, currentShipping])
 
 
     function addInputValue(e) {
@@ -82,13 +77,7 @@ const Checkout = ({cartProducts}) => {
         };
 
         if(cardInput.checked === true) {
-            const mediaQuery = window.matchMedia('(max-width: 1150px)')
-            
-            if (mediaQuery.matches) {
-                cardDetails.style.display = 'block';
-            } else {
-                cardDetails.style.display = 'grid';
-            }
+            cardDetails.style.display = 'grid';
         } else {
             cardDetails.style.display = 'none';
         };
@@ -98,7 +87,7 @@ const Checkout = ({cartProducts}) => {
 
     useEffect(() => {
         let subTotal = 0;
-
+       
         cartProducts.forEach(item => {
             subTotal += item.qty * item.price;
         });
@@ -114,16 +103,15 @@ const Checkout = ({cartProducts}) => {
 
     
     const navigate = useNavigate();
-    const handlePlaceOrder = () => {
-        modal.style.display = 'block';
+    const handlePlaceOrder = (e) => {
+        e.preventDefault();
+        setOpenedModal(true);
         
-
         setTimeout(() => {
-            modal.style.display = 'none';
+            setOpenedModal(false);
+            emptyCart();
             navigate('/');
         }, 4000);
-
-        emptyCart();
     }
 
     
@@ -242,14 +230,16 @@ const Checkout = ({cartProducts}) => {
                 </div>
             </div>
         </form>
-        <div className='app__checkout-modal'>
-            <div className='app__checkout-modal_content'>
-                <div className='flex__center'>
-                    <img src={images.checked} alt='Checked'/>
-                    <h1 className='title'>Your order have been placed.</h1>
+        {openedModal && 
+            <div className='app__checkout-modal'>
+                <div className='app__checkout-modal_content'>
+                    <div className='flex__center'>
+                        <img src={images.checked} alt='Checked'/>
+                        <h1 className='title'>Your order have been placed.</h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     </div>
   )
 }
@@ -258,8 +248,13 @@ const Checkout = ({cartProducts}) => {
 const mapStateToProps = state => {
     return {
         cartProducts: state.shop.cart,
-        emptyCart: state.shop.cart
     }
 }
 
-export default connect(mapStateToProps)(Checkout)
+const mapDispatchToProps = dispatch => {
+    return {
+        emptyCart: () => dispatch(emptyCart())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Checkout)

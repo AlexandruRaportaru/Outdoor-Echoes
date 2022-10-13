@@ -5724,6 +5724,16 @@ const shippingDetails = [
 ]
 
 
+const footerLinks = [
+  'About us',
+  'Shipping',
+  'Returns',
+  'Reviews',
+  'Discounts',
+  'My Account'
+]
+
+
 export default { 
   productsExamples, 
   menus, 
@@ -5741,5 +5751,6 @@ export default {
   featuresCategory,
   brandsCategory,
   contactDetails,
-  shippingDetails
+  shippingDetails,
+  footerLinks,
 };

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { FaUserAlt, FaSearch } from 'react-icons/fa';
 import { MdOutlineContactSupport } from 'react-icons/md';
 import { Menu, Logo, Cart} from '../../components';
@@ -13,17 +13,16 @@ const Navbar = ({disableCart}) => {
   const placeholderRef = useRef();
   const searchOptionsRef = useRef();
 
+
+
   const handleInputChange = (e) => {
-    if (e.currentTarget.value === '' && e.currentTarget !== document.activeElement) {
+    if (e.currentTarget.value === '') {
+      placeholderRef.current.style.display = 'inline-flex';
       searchOptionsRef.current.style.display = 'none';
     } else {
       placeholderRef.current.style.display = 'none';
+      searchOptionsRef.current.style.display = 'block';
     }
-
-    if (e.currentTarget !== document.activeElement) {
-      placeholderRef.current.style.display = 'inline-flex';
-    }
-
     setInputValue(e.target.value);
   }
 
@@ -48,13 +47,14 @@ const Navbar = ({disableCart}) => {
   }
   
 
+
   return (
     <nav className='app__navbar box1'>
       <Menu />
 
-      <a href='/' aria-label='Go to HomePage' className='app__navbar-logo box2'>
+      <Link to={'/'} aria-label='Go to HomePage' className='app__navbar-logo box2'>
         <Logo/>
-      </a>
+      </Link>
 
       <div className='app__navbar-search flex__center box3'>
         <form method='get' action='/search'>
@@ -98,16 +98,16 @@ const Navbar = ({disableCart}) => {
         
       <div className='app__navbar-icons box4'>
         <div className='app__navbar-icons__contact'>
-          <a href='true'>
+          <Link to={'/error'}>
             <MdOutlineContactSupport style={{color: 'var(--color-yellow)'}} fontSize={24}/>
             <span className='p__text'>CONTACT US</span>
-          </a>
+          </Link>
         </div>
         <div className='app__navbar-icons__login'>
-          <a href='true'>
+          <Link to={'/error'}>
             <FaUserAlt style={{color: 'var(--color-yellow)'}} fontSize={24}/>
             <span className='p__text'>SIGN IN</span>
-          </a>
+          </Link>
         </div>
       </div>
 

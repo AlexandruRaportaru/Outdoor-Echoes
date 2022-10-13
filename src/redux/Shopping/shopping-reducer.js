@@ -49,7 +49,7 @@ const shopReducer = (state = INITIAL_STATE, action) => {
         case actionTypes.EMPTY_CART:
             return {
                 ...state,
-                item: [] 
+                cart: [] 
             };
 
         default: 

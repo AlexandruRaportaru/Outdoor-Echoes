@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs';
-import { images } from '../../constants';
+import { data, images } from '../../constants';
 
 import './Footer.css';
 
@@ -60,12 +61,9 @@ const Footer = () => (
         <div className='app__footer-content_bottom-right footer3'>
           <h4 className='title'>ABOUT</h4>
           <div className='app__footer-content_bottom-right_links'>
-            <a href="/" className='p__text'>About us</a>
-            <a href="/" className='p__text'>Shipping</a>
-            <a href="/" className='p__text'>Returns</a>
-            <a href="/" className='p__text'>Reviews</a>
-            <a href="/" className='p__text'>Events</a>
-            <a href="/" className='p__text'>My Account</a>
+            {data.footerLinks.map((link, index) => (
+              <Link key={index} to={'/error'} className='p__text'>{link}</Link>
+            ))}
           </div>
           <div className='app__footer-content_bottom-right_icons'>
             <a href='https://www.facebook.com/login/'>
