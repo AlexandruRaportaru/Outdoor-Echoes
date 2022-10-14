@@ -640,11 +640,7 @@ import creator18 from '../assets/creator/creator18.jpg';
 import creator19 from '../assets/creator/creator19.jpg';
 import creator20 from '../assets/creator/creator20.jpg';
 
-
-
-
-
-export default {
+const images = {
   quote,
   headerBackground,
   discount,
@@ -1283,3 +1279,5 @@ export default {
   creator19,
   creator20,
 };
+
+export default images;

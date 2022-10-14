@@ -16,7 +16,7 @@ function preventDefaultForScrollKeys(e) {
 let supportsPassive = false;
   try {
     window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-      get: () => { supportsPassive = true; } 
+      get: () => ( supportsPassive = true) 
     }));
   } catch(e) {}
 
