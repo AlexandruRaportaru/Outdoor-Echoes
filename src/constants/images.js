@@ -27,7 +27,6 @@ import maestro from '../assets/maestro.png';
 import mastercard from '../assets/mastercard.png';
 import visa from '../assets/visa.png';
 import americanexpress from '../assets/americanexpress.png';
-import code from '../assets/code.png';
 import checked from '../assets/checked.gif';
 import error from '../assets/error.gif';
 import exclamation from '../assets/exclamation.png';
@@ -675,7 +674,6 @@ export default {
   mastercard,
   visa,
   americanexpress,
-  code,
   checked,
   error,
   exclamation,
