@@ -4,58 +4,48 @@ import { ImManWoman, ImHome3 } from 'react-icons/im';
 import { FaLayerGroup } from 'react-icons/fa';
 import { GiLightBackpack, GiCampingTent } from 'react-icons/gi';
 
-const productsExamples = [
-  'A T-SHIRT',
-  'LEGGINGS',
-  'A JACKET',
-  'SUNGLASSES',
-  'A FLEECE',
-  'SNOW BOOTS',
-  'A BACKPACK'
-]
-
 const menus = [
   {
-    title: 'Home',
+    title: 'Acasă',
     path: '/',
     icon: <ImHome3 style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
+    className: 'flex justify-start items-center h-12 py-1 px-7 text-yellow text-xl font-menu hover:bg-white hover:font-bold menu-category'
   },
   {
-    title: 'Products',
+    title: 'Produse',
     path: '/products',
     icon: <FaLayerGroup style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
+    className: 'flex justify-start items-center h-12 py-1 px-7 text-yellow text-xl font-menu hover:bg-white hover:font-bold menu-category'
   },
   {
-    title: 'Men',
+    title: 'Bărbați',
     path: '/products/gender_Men',
     icon: <IoIosMan style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
+    className: 'flex justify-start items-center h-12 py-1 px-7 text-yellow text-xl font-menu hover:bg-white hover:font-bold menu-category'
   },
   {
-    title: 'Women',
+    title: 'Femei',
     path: '/products/gender_Women',
     icon: <IoIosWoman style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
+    className: 'flex justify-start items-center h-12 py-1 px-7 text-yellow text-xl font-menu hover:bg-white hover:font-bold menu-category'
   },
   {
-    title: 'Kids',
+    title: 'Copii',
     path: '/products/gender_Kids',
     icon: <ImManWoman style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
+    className: 'flex justify-start items-center h-12 py-1 px-7 text-yellow text-xl font-menu hover:bg-white hover:font-bold menu-category'
   },
   {
-    title: 'Accessories',
+    title: 'Accesorii',
     path: '/products/type_Accessories',
     icon: <GiLightBackpack style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
+    className: 'flex justify-start items-center h-12 py-1 px-7 text-yellow text-xl font-menu hover:bg-white hover:font-bold menu-category'
   },
   {
-    title: 'Equipment',
+    title: 'Echipament',
     path: '/products/type_Equipment',
     icon: <GiCampingTent style={{margin: '0 15px 4px 0'}}/>,
-    className: 'menu-category'
+    className: 'flex justify-start items-center h-12 py-1 px-7 text-yellow text-xl font-menu hover:bg-white hover:font-bold menu-category'
   }
 ]
 
@@ -196,7 +186,7 @@ const activitiesCards = [
     cardActivity: images.runningCard,
     cardName: 'running-card',
     cardHeight: 400,
-    cardTitle: 'Running',
+    cardTitle: 'Alergare',
     cardClass: 'card1',
     path: 'Trail running',
   },
@@ -212,7 +202,7 @@ const activitiesCards = [
     cardActivity: images.hikingCard,
     cardName: 'hiking-card',
     cardHeight: 500,
-    cardTitle: 'Hiking',
+    cardTitle: 'Drumeție',
     cardClass: 'card3',
     path: 'Hiking',
   },
@@ -220,7 +210,7 @@ const activitiesCards = [
     cardActivity: images.climbingCard,
     cardName: 'climbing-card',
     cardHeight: 450,
-    cardTitle: 'Climbing',
+    cardTitle: 'Escaladă',
     cardClass: 'card4',
     path: 'Climbing',
   },
@@ -228,7 +218,7 @@ const activitiesCards = [
     cardActivity: images.expeditionsCard,
     cardName: 'expeditions-card',
     cardHeight: 400,
-    cardTitle: 'Expeditions',
+    cardTitle: 'Expediții',
     cardClass: 'card5',
     path: 'Expeditions',
   },
@@ -5735,7 +5725,6 @@ const footerLinks = [
 
 
 const data = { 
-  productsExamples, 
   menus, 
   swiperImages, 
   activitiesCards,

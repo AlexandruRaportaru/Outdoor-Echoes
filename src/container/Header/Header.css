@@ -1,311 +1,85 @@
-.app__header {
-    position: relative;
-    box-shadow: inset 0 0 10em var(--color-purple);
+.header img {
+    height: 85vh;
 }
 
-.app__header-image {
-    object-fit: cover;
-    width: 100%;
-    height: 675px;
-    position: absolute;
-    z-index: -4;
+.content {
+    margin-left: 5rem;
+    top: 5rem;
 }
 
-.app__header-background {
-    height: 675px;
-    z-index: -3;
-    opacity: 0.3;
+.content h1 {
+    font-size: 5vw;
+    margin-bottom: 2rem;
 }
 
-.app__header-wrapper {
-    display: flex;
-    justify-content: space-between;
+.content p {
+    font-size: 2vw;
+    line-height: 40px;
+    margin-bottom: 10rem;
 }
 
-.app__header-wrapper__swiper {
-    border-radius: 10px;
-    margin: 0;
-}
-
-.app__header-wrapper__swiper-slide {
-    width: 100%;
-    position: relative;
-    -webkit-transform: translateZ(0);
-    display: flex;
-    flex-direction: column;
-}
-
-.app__header-wrapper__swiper-slide__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -2;
-}
-
-.app__header-wrapper__swiper-slide__logo {
-    margin: 25px 25px 0 auto;
-}
-
-.app__header-wrapper__swiper-slide h1,
-.app__header-wrapper__swiper-slide p {
-    margin: 30px auto 0 70px;
+.content h1,
+.content p {
     text-shadow: 1.5px 1.5px var(--color-purple);
+    letter-spacing: 1px;
 }    
 
-.app__header-wrapper__swiper-slide a {
-    margin: auto auto 50px auto;
-}
-
-.app__header-wrapper__swiper .swiper-left,
-.app__header-wrapper__swiper .swiper-right {
-    top: 275px;
-}
-
-.app__header-wrapper__swiper .swiper-left {
-    left: 20px;
-}
-  
-.app__header-wrapper__swiper .swiper-right {
-    right: 20px;
-}
-
-.swiper-background {
-    height: 100%;
-    z-index: -1;
-    opacity: 0.5;
-    border-radius: 10px;
-}
-
-.app__header-wrapper__content {
-    margin-left: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
-.app__header-wrapper__content-discount {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 390px;
-    margin-bottom: 30px;
-}
-
-.app__header-wrapper__content-discount__image {
-    border-radius: 10px;
-    position: absolute;
-    z-index: -2;
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
-
-.app__header-wrapper__content-discount__logo {
-    margin: 0 auto auto auto;
-    width: 180px;
-}
-
-.app__header-wrapper__content-discount a {
-    margin: auto auto 50px auto;
-}
-
-.discount-background {
-    border-radius: 10px;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.3;
-    top: 0;
-}
-
-.app__header-wrapper__content-facebook {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.app__header-wrapper__content-facebook__title {
-    font-family: var(--font-anton);
-    color: var(--color-white);
-    font-weight: 100;
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.app__header-wrapper__content-facebook__text {
-    font-family: var(--font-yanone);
-    color: var(--color-white);
-    font-weight: normal;
-    font-size: 16px;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.app__header-wrapper__content-facebook a {
-    display: flex;
-    padding-bottom: 6px;
-    align-items: baseline;
-    font-size: 20px;
-}
-
-.app__header-wrapper__content-facebook a:hover {
-    color: var(--color-blue);
-    border-color: var(--color-blue);
-}
-
-@media screen and (max-width: 1150px) {
-    .app__header-wrapper {
-        flex-direction: column;
-    }
-
-    .app__header-wrapper__swiper {
-        width: 100%;
-        height: 369px;
+@media screen and (max-width: 1280px) {
+    .content h1 {
+        font-size: 4vw;
+        margin-bottom: 1rem;
     }
     
-    .app__header-wrapper__swiper .swiper-left,
-    .app__header-wrapper__swiper .swiper-right {
-        top: 180px;
-    }
-
-    .app__header-wrapper__swiper-slide h1,
-    .app__header-wrapper__swiper-slide p {
-        margin: 15px auto 0 70px;
-    }    
-
-    .app__header-wrapper__content {
-        flex-direction: initial;
-        margin: 25px 0 0 0;
-    }
-
-    .app__header-wrapper__content-discount {
-        width: 100%;
-        height: 160px;
-        margin: 0;
-    }
-
-    .app__header-wrapper__content-discount__logo {
-        margin: 3px auto auto auto;
-        width: 64px;
-    }
-
-    .app__header-wrapper__content-discount a {
-        margin: auto auto 25px 25px;
+    .content p {
+        line-height: 30px;
+        margin-bottom: 5rem;
     }
 }
 
-@media screen and (max-width: 850px) {
-    .app__header-wrapper__swiper-slide h1,
-    .app__header-wrapper__swiper-slide p {
-        margin: 15px 70px 0 70px;
+@media screen and (max-width: 1024px) {
+    .header img {
+        height: 70vh;
+    }
+
+    .content {
+        margin-left: 3rem;
+        top: 3rem;
     }
     
-    .app__header-wrapper__swiper .swiper-left,
-    .app__header-wrapper__swiper .swiper-right {
-        top: 180px;
-    }
-
-    .app__header-wrapper__swiper .swiper-left {
-        left: 15px;
-    }
-
-    .app__header-wrapper__swiper .swiper-right {
-        right: 15px;
-    }
-
-    .app__header-wrapper__content {
-        flex-direction: initial;
-        margin-top: 25px;
-    }
-
-    .app__header-wrapper__content-facebook a {
-        font-size: 16px;
+    .content p {
+        line-height: 17px;
     }
 }
 
-@media screen and (max-width: 750px) {
-    .app__header-wrapper__content-facebook__text {
-        display: none;
+@media screen and (max-width: 768px) {
+    .content {
+        margin-left: 2rem;
+        top: 2rem;
+    }
+
+    .content h1 {
+        font-size: 4.5vw;
+        margin-bottom: 0.5rem;
+    }
+    
+    .content p {
+        font-size: 2.25vw;
+        line-height: 20px;
     }
 }
 
 @media screen and (max-width: 585px) {
-    .app__header-wrapper__swiper {
-        height: 315px;
+    .content {
+        margin-left: 1.5rem;
     }
-
-    .app__header-wrapper__swiper .swiper-left,
-    .app__header-wrapper__swiper .swiper-right {
-        font-size: 30px;
-        top: 140px;
+    
+    .content h1 {
+        font-size: 6vw;
+        margin-bottom: 0.5rem;
     }
-
-    .app__header-wrapper__swiper .swiper-left {
-        left: 10px;
-    }
-
-    .app__header-wrapper__swiper .swiper-right {
-        right: 10px;
-    }
-
-    .app__header-wrapper__swiper-slide__logo {
-        margin: 20px 20px 0 auto;
-    }
-
-    .app__header-wrapper__swiper-slide h1 {
-        margin: 0 30px 0 50px;
-    } 
-
-    .app__header-wrapper__swiper-slide p {
-        margin: 10px 30px 0 50px;
-    }
-
-    .app__header-wrapper__swiper-slide a {
-        margin: auto auto 25px auto;
-    }
-
-    .app__header-wrapper__content{
-        flex-direction: column;
-    }
-
-    .app__header-wrapper__content-facebook {
-        flex-direction: inherit;
-        margin-top: 12.5px;
-    }
-
-    .app__header-wrapper__content-facebook__title {
-        font-size: 20px;
-        margin-bottom: 9px;
-    }
-
-    .app__header-wrapper__content-facebook__text {
-        display: block;
-        font-size: 14px;
-        margin-bottom: 9px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .app__header-wrapper__swiper-slide__logo {
-        margin: 15px 15px 0 auto;
-    }
-
-    .app__header-wrapper__swiper-slide h1,
-    .app__header-wrapper__swiper-slide p {
-        margin: 0 30px 0 30px;
-    }
-
-    .app__header-wrapper__content-facebook__title {
-        margin-bottom: 1px;
-    }
-
-    .app__header-wrapper__content-facebook__text {
-        margin-bottom: 2px;
+    
+    .content p {
+        font-size: 4vw;
+        line-height: 20px;
     }
 }
