@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+@import '/node_modules/tailwindcss/base';
+@import '/node_modules/tailwindcss/components';
+@import '/node_modules/tailwindcss/utilities';
 
 :root {
   --font-logo: 'Michroma', sans-serif;
@@ -13,8 +16,8 @@
   
   --color-yellow: #FAED26;
   --color-blue: #007DBC;
-  --color-purple: #46344E;
-  --color-grey: #5A5560;
+  --color-purple: #212529;
+  --color-grey: #f0eeec;
   --color-white: #ffffff;
   --color-green: #3E9309;
 }

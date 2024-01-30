@@ -61,7 +61,7 @@ const Cart = ({cartProducts, disableCart}) => {
                 <div className='app__navbar-cart__count p__text'>{cartCount}</div>
                 <FaShoppingCart style={{color: 'var(--color-purple)'}} fontSize={24}/>
             </div>
-            <span className='p__text'>MY BASKET</span>
+            <span className='p__text'>COȘUL MEU</span>
         </Link>
   
         <div className={toggleCart ? 'app__navbar-smallCart active' : 'app__navbar-smallCart'}>
