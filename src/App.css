@@ -203,13 +203,11 @@
 .swiper-right {
   position: absolute;
   font-size: 40px;
-  color: var(--color-white);
   cursor: pointer;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  opacity: 0.5;
 }
 
 .swiper-left_product,
