@@ -15,7 +15,6 @@ const Products = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleText, setToggleText] = useState('OPEN');
   const sliderBackgroundRef = useRef();
-  const { id } = useParams();
 
 
   const navigate = useNavigate();
@@ -53,35 +52,8 @@ const Products = () => {
   }
 
 
-  // TO DO: getFilteredData from here should be removed!!!!!!
-  
+  const { id } = useParams();
   useEffect(() => {
-    const getFilteredData = () => {
-      const selectedGenders = Object.keys(filters.gender).filter(data => filters.gender[data] === true);
-      const selectedActivity = Object.keys(filters.activity).filter(data => filters.activity[data] === true);
-      const selectedType = Object.keys(filters.type).filter(data => filters.type[data] === true);
-      const selectedColor = Object.keys(filters.color).filter(data => filters.color[data] === true);
-      const selectedFeatures = Object.keys(filters.features).filter(data => filters.features[data] === true);
-      const selectedBrand = Object.keys(filters.brand).filter(data => filters.brand[data] === true);
-  
-      const allProducts = data.products.filter(product => 
-        (selectedGenders.includes(product.gender) || selectedGenders.length === 0)
-        && 
-        (selectedActivity.includes(product.activity) || selectedActivity.length === 0)
-        && 
-        (selectedType.includes(product.type) || selectedType.length === 0)
-        && 
-        (selectedColor.includes(product.color) || selectedColor.length === 0)
-        && 
-        (selectedFeatures.filter(x => product.features.includes(x)).length === selectedFeatures.length || selectedFeatures.length === 0)
-        &&
-        (product.price >= priceRange[0] && product.price <= priceRange[1])
-        &&
-        (selectedBrand.includes(product.brand) || selectedBrand.length === 0)
-      );
-      setProducts(allProducts);
-    }
-
     if(id) {
       const category = id.split('_')[0];
       const value = id.split('_')[1];
@@ -90,7 +62,7 @@ const Products = () => {
       setFilters(newDefaltFilters);
       getFilteredData();
     }
-  }, [id, filters, priceRange])
+  }, [id])
   
 
 
