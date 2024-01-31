@@ -5,22 +5,20 @@ import { data } from '../../constants';
 import './Activities.css';
 
 const Activities = () => (
-  <div className='relative text-center py-12 px-6 app__activities'>
-    <h1 className='text-left italic mb-4 title'>Our activities</h1>
-    
-    <div className='app__activities-cards flex justify-center items-center'>
+  <div className='app__activities'>
+    <h1 className='app__activities-title title'>Our activities</h1>
+    <div className='app__activities-cards'>
       {data.activitiesCards.map(activity => 
-        <div key={activity.cardTitle} className={`relative w-full m-2.5 app__activities-cards_content ${activity.cardClass}`}>
+        <div key={activity.cardTitle} className={`app__activities-cards_content ${activity.cardClass}`}>
           <img 
             src={activity.cardActivity} 
             alt={activity.cardName} 
             style={{height: `${activity.cardHeight}px`}}
-            className='w-full object-cover'
           />
-          <div className='h-full top-0 z-10 opacity-40 purple__bg'></div>
-          <div className='w-full h-full absolute top-0 z-20 flex flex-col justify-evenly items-center'>
-            <h1 className='text-white p__headtext'>{activity.cardTitle}</h1>
-            <Link to={`/products/activity_${activity.path}`} className='custom__button'>Descoperă</Link>
+          <div className='app__activities-cards_content-background purple__bg'></div>
+          <div className='app__activities-cards_content-text'>
+            <h1 className='p__headtext'>{activity.cardTitle}</h1>
+            <Link to={`/products/activity_${activity.path}`} className='custom__button'>Shop Now</Link>
           </div>
         </div>
       )}

@@ -4,7 +4,7 @@
     padding: 10px 20px;
     border: unset;
     border-bottom: 1px solid #dbdbdb;
-    color: var(--color-grey);
+    color: var(--color-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,7 @@
 .collapsible .collapse h3 {
     background: var(--color-purple);
     text-align: start;
-    color: var(--color-grey);
+    color: var(--color-white);
     font-size: 22px;
     letter-spacing: 1px;
     font-weight: normal;
@@ -23,14 +23,14 @@
     background: var(--color-purple);
     border: unset;
     cursor: pointer;
-    color: var(--color-grey);
+    color: var(--color-white);
     font-size: 18px;
 }
 
 .options {
     height: 0px;
     overflow: hidden;
-    background: var(--color-grey);
+    background: var(--color-white);
 }
 
 @media screen and (max-width: 1150px) {
