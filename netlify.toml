@@ -1,0 +1,11 @@
+[build]
+base = "/"
+command = "npm run build"
+commandOrigin = "config"
+publish = "/opt/build/repo/build"
+publishOrigin = "config"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

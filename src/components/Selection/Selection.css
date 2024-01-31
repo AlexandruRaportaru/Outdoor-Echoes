@@ -1,38 +1,14 @@
-.app__selection {
-    position: relative;
-    padding: 30px 25px 0 25px;
-    background: var(--color-white);
-}
-
-.app__selection-title {
-    text-align: right;
-}
-
-.app__selection-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .app__selection-wrapper__swiper {
-    border-radius: 10px;
-    margin: 0;
-    padding: 50px;
+    padding: 50px !important;
 }
 
 .app__selection-wrapper__swiper-slide {
-    width: 100%;
-    position: relative;
     -webkit-transform: translateZ(0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: rgb(33, 37, 41) 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    border-radius: 10px;
 }
 
 .app__selection-wrapper__swiper-slide:hover {
@@ -42,27 +18,12 @@
 
 .app__selection-wrapper__swiper .swiper-left,
 .app__selection-wrapper__swiper .swiper-right {
-    top: 230px;
-    opacity: 1;
-    color: var(--color-yellow);
-}
-
-.app__selection-wrapper__swiper .swiper-left {
-    left: 18px;
-}
-
-.app__selection-wrapper__swiper .swiper-right {
-    right: 18px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .app__selection-wrapper__swiper-slide__image {
-    width: 100%;
     z-index: -2;
     padding: 10px;
-}
-
-.app__selection-wrapper__swiper-slide__image img {
-    width: 100%;
 }
 
 .app__selection-wrapper__swiper-slide__logo {
@@ -97,32 +58,18 @@
     text-shadow: 0.5px 0.5px var(--color-purple);
 }    
 
-.selection__swiper-background {
-    height: 100%;
-    z-index: -1;
-    opacity: 0.2;
-    border-radius: 10px;
-}
-
-@media screen and (min-width: 1920px) {
-    .app__selection-wrapper__swiper .swiper-left,
-    .app__selection-wrapper__swiper .swiper-right {
-        top: 300px;
-    }
-}
-
 @media screen and (max-width: 585px) {
     .app__selection-wrapper__swiper {
         margin-top: 10px;
-        padding: 15px 15px 50px 15px;
+        padding: 15px;
     }
 
     .app__selection-wrapper__swiper .swiper-left {
-        left: 0;
+        left: 0.2rem;
     }
 
     .app__selection-wrapper__swiper .swiper-right {
-        right: 0;
+        right: 0.2rem;
     }
 
     .app__selection-wrapper__swiper-slide {

@@ -1,28 +1,14 @@
-import quote from '../assets/quote.png';
 import headerBackground from '../assets/headerBackground.jpg';
-import discount from '../assets/discount.jpg';
-import discountLogo from '../assets/discountLogo.png';
 import expeditionsCard from '../assets/expeditionsCard.jpg';
 import runningCard from '../assets/runningCard.jpg';
 import hikingCard from '../assets/hikingCard.jpg';
 import campingCard from '../assets/campingCard.jpg';
 import climbingCard from '../assets/climbingCard.jpg';
-import rain from '../assets/rain.jpg';
-import boot from '../assets/boot.jpg';
-import weather from '../assets/weather.jpg';
-import todo from '../assets/todo.jpg';
-import night from '../assets/night.jpg';
-import trail from '../assets/trail.jpg';
-import tent from '../assets/tent.jpg';
-import benefits from '../assets/benefits.jpg';
-import cube from '../assets/cube.gif';
 import newsletter from '../assets/newsletter.jpg';
 import hiker from '../assets/hiker.gif';
 import delivery from '../assets/delivery.png';
 import spring from '../assets/spring.png';
 import paypal from '../assets/paypal.png';
-import swipe from '../assets/swipe.gif';
-import click from '../assets/click.gif';
 import maestro from '../assets/maestro.png';
 import mastercard from '../assets/mastercard.png';
 import visa from '../assets/visa.png';
@@ -618,54 +604,18 @@ import taurusFirst from '../assets/vaude/taurusFirst.jpg';
 import taurusSecond from '../assets/vaude/taurusSecond.jpg';
 import taurusThird from '../assets/vaude/taurusThird.jpg';
 
-/* Creator */
-import creator1 from '../assets/creator/creator1.jpg';
-import creator2 from '../assets/creator/creator2.jpg';
-import creator3 from '../assets/creator/creator3.jpg';
-import creator4 from '../assets/creator/creator4.jpg';
-import creator5 from '../assets/creator/creator5.jpg';
-import creator6 from '../assets/creator/creator6.jpg';
-import creator7 from '../assets/creator/creator7.jpg';
-import creator8 from '../assets/creator/creator8.jpg';
-import creator9 from '../assets/creator/creator9.jpg';
-import creator10 from '../assets/creator/creator10.jpg';
-import creator11 from '../assets/creator/creator11.jpg';
-import creator12 from '../assets/creator/creator12.jpg';
-import creator13 from '../assets/creator/creator13.jpg';
-import creator14 from '../assets/creator/creator14.jpg';
-import creator15 from '../assets/creator/creator15.jpg';
-import creator16 from '../assets/creator/creator16.jpg';
-import creator17 from '../assets/creator/creator17.jpg';
-import creator18 from '../assets/creator/creator18.jpg';
-import creator19 from '../assets/creator/creator19.jpg';
-import creator20 from '../assets/creator/creator20.jpg';
-
 const images = {
-  quote,
   headerBackground,
-  discount,
-  discountLogo,
   expeditionsCard,
   runningCard,
   hikingCard,
   campingCard,
   climbingCard,
-  rain,
-  boot,
-  weather,
-  todo,
-  night,
-  trail,
-  tent,
-  benefits,
-  cube,
   newsletter,
   hiker,
   delivery,
   spring,
   paypal,
-  swipe,
-  click,
   maestro,
   mastercard,
   visa,
@@ -1256,28 +1206,6 @@ const images = {
   taurusFirst,
   taurusSecond,
   taurusThird,
-
-/* Creator */
-  creator1,
-  creator2,
-  creator3,
-  creator4,
-  creator5,
-  creator6,
-  creator7,
-  creator8,
-  creator9,
-  creator10,
-  creator11,
-  creator12,
-  creator13,
-  creator14,
-  creator15,
-  creator16,
-  creator17,
-  creator18,
-  creator19,
-  creator20,
 };
 
 export default images;

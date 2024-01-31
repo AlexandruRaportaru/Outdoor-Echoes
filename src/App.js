@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header, Activities, Intro, Creator, Blogs, Products, Product, Checkout, Error} from './container';
+import { Header, Activities, Products, Product, Checkout, Error} from './container';
 import { Navbar, Selection, Newsletter, Footer } from './components';
 import { ScrollToTop } from "./utils";
 
@@ -28,9 +28,6 @@ const HomePage = () => (
     <Header />
     <Activities />
     <Selection />
-    <Intro />
-    <Creator />
-    <Blogs />
     <Newsletter />
     <Footer />
   </div>

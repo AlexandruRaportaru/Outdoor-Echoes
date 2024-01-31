@@ -21,9 +21,9 @@ const Selection = () => {
 
   return (
     <>
-      <div className='app__selection'>
-        <h1 className='app__selection-title title'>Our recommendation</h1>
-        <div className='app__selection-wrapper'>
+      <div className='relative py-12 px-6'>
+        <h1 className='title italic text-right'>Recomandările noastre</h1>
+        <div className='flex justify-between'>
           <Swiper 
             modules={[Navigation, Pagination]}
             navigation={{
@@ -34,7 +34,7 @@ const Selection = () => {
             speed={800}
             loopFillGroupWithBlank={true}
             loop
-            className='app__selection-wrapper__swiper'
+            className='app__selection-wrapper__swiper relative'
             breakpoints={{
               280: {
                 slidesPerView: 1,
@@ -74,31 +74,28 @@ const Selection = () => {
             const product = data.products[randomIndex];
 
             return (
-              <SwiperSlide key={`product-${index}`} className='app__selection-wrapper__swiper-slide' onClick={() => handleOpenProduct(product.id)}>
-                <img 
-                  src={data.brands[product.brand].logo} 
-                  alt={product.name} 
-                  className='app__selection-wrapper__swiper-slide__logo' 
-                  style={{width: `${data.brands[product.brand].logoSize}%`}}
-                />
-                <div className='app__selection-wrapper__swiper-slide__image'>
+              <SwiperSlide 
+                key={`product-${index}`} 
+                className='relative flex flex-col items-center cursor-pointer rounded-lg app__selection-wrapper__swiper-slide' 
+                onClick={() => handleOpenProduct(product.id)}
+              >
+                <div className='w-full app__selection-wrapper__swiper-slide__image'>
                   <img 
                     src={product.images[0]} 
                     alt={product.name} 
-                    className='app__selection-wrapper__swiper-slide__image'
+                    className='w-full app__selection-wrapper__swiper-slide__image'
                   />
                 </div>
                 <div className='app__selection-wrapper__swiper-slide__text'>
                   <h1 className='p__headtext'>{product.name}</h1>
                   <p>{(product.price).toFixed(2)} RON</p>
                 </div>
-                <div className='selection__swiper-background purple__bg'></div>
               </SwiperSlide>
             )})}
-            <div className='swiper-left' ref={swiperPrevRef}>
+            <div className='left-8 top-1/2 opacity-100 rounded-lg text-yellow bg-dark swiper-left' ref={swiperPrevRef}>
               <BsFillArrowLeftSquareFill />
             </div>
-            <div className='swiper-right' ref={swiperNextRef}>
+            <div className='right-8 top-1/2 opacity-100 rounded-lg text-yellow bg-dark swiper-right' ref={swiperNextRef}>
               <BsFillArrowRightSquareFill />
             </div>
           </Swiper>

@@ -6,7 +6,7 @@ import './Activities.css';
 
 const Activities = () => (
   <div className='relative text-center py-12 px-6 app__activities'>
-    <h1 className='text-left italic mb-4 title'>Our activities</h1>
+    <h1 className='text-left italic mb-4 title'>Activități</h1>
     
     <div className='app__activities-cards flex justify-center items-center'>
       {data.activitiesCards.map(activity => 
