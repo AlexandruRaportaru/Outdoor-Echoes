@@ -21,9 +21,9 @@ const Selection = () => {
 
   return (
     <>
-      <div className='relative py-12 px-6'>
-        <h1 className='title italic text-right'>Our recommendation</h1>
-        <div className='flex justify-between'>
+      <div className='app__selection'>
+        <h1 className='app__selection-title title'>Our recommendation</h1>
+        <div className='app__selection-wrapper'>
           <Swiper 
             modules={[Navigation, Pagination]}
             navigation={{
@@ -74,11 +74,7 @@ const Selection = () => {
             const product = data.products[randomIndex];
 
             return (
-              <SwiperSlide 
-                key={`product-${index}`} 
-                className='w-full relative flex flex-col items-center cursor-pointer rounded-lg app__selection-wrapper__swiper-slide' 
-                onClick={() => handleOpenProduct(product.id)}
-              >
+              <SwiperSlide key={`product-${index}`} className='app__selection-wrapper__swiper-slide' onClick={() => handleOpenProduct(product.id)}>
                 <img 
                   src={data.brands[product.brand].logo} 
                   alt={product.name} 
@@ -96,13 +92,13 @@ const Selection = () => {
                   <h1 className='p__headtext'>{product.name}</h1>
                   <p>{(product.price).toFixed(2)} RON</p>
                 </div>
-                <div className='selection__swiper-background'></div>
+                <div className='selection__swiper-background purple__bg'></div>
               </SwiperSlide>
             )})}
-            <div className='left-4 top-1/2 opacity-100 rounded-lg text-yellow bg-dark swiper-left' ref={swiperPrevRef}>
+            <div className='swiper-left' ref={swiperPrevRef}>
               <BsFillArrowLeftSquareFill />
             </div>
-            <div className='right-4 top-1/2 opacity-100 rounded-lg text-yellow bg-dark swiper-right' ref={swiperNextRef}>
+            <div className='swiper-right' ref={swiperNextRef}>
               <BsFillArrowRightSquareFill />
             </div>
           </Swiper>
