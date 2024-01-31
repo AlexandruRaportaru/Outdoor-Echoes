@@ -5734,7 +5734,7 @@ const footerLinks = [
 ]
 
 
-const data = { 
+export default { 
   productsExamples, 
   menus, 
   swiperImages, 
@@ -5754,5 +5754,3 @@ const data = {
   shippingDetails,
   footerLinks,
 };
-
-export default data;
