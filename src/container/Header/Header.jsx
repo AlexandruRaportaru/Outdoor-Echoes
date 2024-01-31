@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { images } from '../../constants';
 
 import './Header.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 
 const Header = () => {
   return (

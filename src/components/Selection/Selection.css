@@ -14,6 +14,7 @@
 .app__selection-wrapper__swiper-slide:hover {
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
+    box-shadow: inset 0 0 1em 0 var(--color-white), 0 0 2.1em 0 var(--color-purple);
 }
 
 .app__selection-wrapper__swiper .swiper-left,

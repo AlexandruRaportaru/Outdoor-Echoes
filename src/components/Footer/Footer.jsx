@@ -40,7 +40,7 @@ const Footer = () => (
           </div>
           <div>
             <h5 className='p__logo'>Email:</h5>
-            <a href="mailto:alexandru.c.raportaru@gmail.com" className='p__text'>info@mountainechoes.com</a>
+            <a href="mailto:alexandru.c.raportaru@gmail.com" className='p__text'>info@outdoorechoes.com</a>
           </div>
         </div>
 

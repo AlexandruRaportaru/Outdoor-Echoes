@@ -7,8 +7,8 @@ const Logo = () => (
   <div className='logo'>
     <GiHiking className='logo__icon'/>
     
-    <div className='logo__text text-center'>
-      <p className='p__logo flex__center'>mountain</p>
+    <div className='logo__text'>
+      <p className='p__logo flex__center'>outdoor</p>
       <span>
         <p className='p__logo'>ECHO</p>
         <div className='logo__text-letter'>

@@ -604,7 +604,8 @@ import taurusFirst from '../assets/vaude/taurusFirst.jpg';
 import taurusSecond from '../assets/vaude/taurusSecond.jpg';
 import taurusThird from '../assets/vaude/taurusThird.jpg';
 
-const images = {
+
+export default {
   headerBackground,
   expeditionsCard,
   runningCard,
@@ -1207,5 +1208,3 @@ const images = {
   taurusSecond,
   taurusThird,
 };
-
-export default images;

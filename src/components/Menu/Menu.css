@@ -1,27 +1,109 @@
 .app__navbar-menu {
+    align-self: stretch;
+    margin-right: 20px;
+    box-shadow: 1px 0 var(--color-grey);
     min-width: 4.5rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .app__navbar-smallMenu {
+    position: fixed;
+    background: var(--color-purple);
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    top: 0;
+    left: -100%;
     transition: 850ms;
+    z-index: 10;
 }
 
 .app__navbar-smallMenu.active {
+    left: 0;
     transition: 350ms;
+}
+
+.app__navbar-smallMenu_items {
+    width: 100%;
+}
+
+.app__navbar-toggle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px var(--color-grey);
+}
+
+.app__navbar-menu__close {
+    align-self: stretch;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 20px;
 }
 
 .icons-smallMenu {
     visibility: hidden;
 }
 
+.menu-category {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    padding: 5px 30px;
+    color: var(--color-yellow);
+    font-size: 18px;
+    font-family: var(--font-menu);
+}
+
 .menu-category:hover {
+    background: #ffffff;
     color: var(--color-blue);
+    font-weight: bold;
+    box-shadow: inset 0 0 1em 0 var(--color-purple);
+    text-shadow: 3px 3px var(--color-yellow);
+}
+
+.app__navbar-smallMenu_items-social {
+    padding: 17.5px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 27.5px;
+    background: var(--color-yellow);
+    color: var(--color-purple);
+    bottom: 0;
 }
 
 .app__navbar-smallMenu_items-social a:hover {
     color: var(--color-blue);
     transform: scale(1.3);
     transition: all .2s ease-in-out;
+}
+
+.app__navbar-menu__background {
+    background: var(--color-purple);
+    opacity: 0.5;
+    width: calc(100% - 280px);
+    position: absolute;
+    left: 280px;
+    top: 0;
+    height: 100vh;
+    display: none;
+    z-index: 1000;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 585px) {
