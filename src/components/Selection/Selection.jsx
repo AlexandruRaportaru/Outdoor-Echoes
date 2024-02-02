@@ -76,7 +76,7 @@ const Selection = () => {
             return (
               <SwiperSlide 
                 key={`product-${index}`} 
-                className='relative flex flex-col items-center cursor-pointer rounded-lg app__selection-wrapper__swiper-slide' 
+                className='relative flex flex-col items-center cursor-pointer rounded-lg p-5 gap-y-3 app__selection-wrapper__swiper-slide' 
                 onClick={() => handleOpenProduct(product.id)}
               >
                 <div className='w-full app__selection-wrapper__swiper-slide__image'>
@@ -86,9 +86,9 @@ const Selection = () => {
                     className='w-full app__selection-wrapper__swiper-slide__image'
                   />
                 </div>
-                <div className='app__selection-wrapper__swiper-slide__text'>
+                <div className='flex flex-col justify-between items-center h-full gap-y-3 text-center'>
                   <h1 className='p__headtext'>{product.name}</h1>
-                  <p>{(product.price).toFixed(2)} RON</p>
+                  <p className='font-menu text-lg font-bold tracking-wider text-blue'>{(product.price).toFixed(2)} RON</p>
                 </div>
               </SwiperSlide>
             )})}

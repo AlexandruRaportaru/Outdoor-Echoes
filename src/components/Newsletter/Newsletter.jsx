@@ -5,17 +5,17 @@ import './Newsletter.css';
 
 const Newsletter = () => {
   return (
-    <div className='app__newsletter'>
-        <img src={images.newsletter} alt='newsletter' className='app__newsletter-banner'/>
-        <div className='app__newsletter-background purple__bg'></div>
-        <div className='app__newsletter-content'>
-            <h1 className='p__headtext'>Join and receive exclusive benefits</h1>
-            <div className='app__newsletter-content_gif'>
-                <img src={images.hiker} alt='hiker'/>
+    <div className='relative flex flex-col items-center h-96 app__newsletter'>
+        <img src={images.newsletter} alt='newsletter' className='absolute h-full w-full app__newsletter-banner'/>
+        <div className='h-full opacity-5 app__newsletter-background purple__bg'></div>
+        <div className='flex flex-col justify-center items-start h-full py-10 app__newsletter-content'>
+            <h1 className='text-center p__headtext'>Abonează-te pentru a avea beneficii!</h1>
+            <div className='flex mt-5 ml-20 app__newsletter-content_gif'>
+                <img src={images.hiker} alt='hiker' className='w-16 h-full'/>
             </div>
-            <form method='post' className='app__newsletter-content_input'>
-                <input type='text' placeholder='Enter your email...'/>
-                <button type='submit' className='custom__button'>SUBSCRIBE</button>
+            <form method='post' className='flex justify-center items-center w-full'>
+                <input type='email' className='text-dark w-1/2 border-r-0 h-10 font-menu text-lg px-2' placeholder='Adresa de email...'/>
+                <button type='submit' className='h-10 custom__button'>ABONEAZĂ-TE</button>
             </form>
         </div>
     </div>

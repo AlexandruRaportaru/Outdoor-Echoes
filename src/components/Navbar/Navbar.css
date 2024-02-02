@@ -1,74 +1,14 @@
 .app__navbar {
     -webkit-box-shadow: 0 0 0.75rem 0.15rem rgb(26 42 52 / 70%);
     box-shadow: 0 0 0.75rem 0.15rem rgb(26 42 52 / 70%);
-    display: flex;
-    width: 100%;
-    align-items: center;
-    background-color: var(--color-purple);
-}
-
-.app__navbar-logo {
-    margin-bottom: 6px;
-}
-
-.app__navbar-search {
-    width: 100%;
-    padding: 14px 15px;
-    position: relative;
-}
-
-.app__navbar-search form {
-    display: flex;
-    width: 100%;
-    position: relative;
 }
 
 .app__navbar-search input {
-    position: relative;
-    line-height: 1.2rem;
-    font-size: 1.4rem;
-    padding: 5px 10px;
-    max-height: 3.6rem;
     border: 0.1rem solid var(--color-purple);
-    border-right: none;
-    background: var(--color-grey);
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    width: 100%;
-    font-family: var(--font-text);
-}
-
-.app__navbar-search input:focus {
-    outline: none;
 }
 
 .app__navbar-search button {
-    padding: 8px 15px;
     border: 0.1rem solid var(--color-purple);
-    background: var(--color-yellow);
-    cursor: pointer;
-}
-
-.app__navbar-search_products {
-    display: none;
-    width: 100%;
-    position: absolute;
-    bottom: -300px;
-    z-index: 2;
-    top: 68px;
-    overflow-y: scroll;
-    background: var(--color-white);
-}
-
-.app__navbar-search_products-container {
-    padding: 30px;
-    background: var(--color-white);
-    gap: 10px 20px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .app__navbar-search_products-container_card {
@@ -115,17 +55,8 @@
     text-align: center;
 }
 
-.app__navbar-icons {
-    display: flex;
-    align-self: stretch;
-    margin: 0 0 0 8px;
-}
-
 .app__navbar-icons__contact,
 .app__navbar-icons__login {
-    display: flex;
-    position: relative;
-    flex-direction: column;
     min-width: 88px;
 }
 
@@ -206,14 +137,6 @@
 }
 
 @media screen and (max-width: 685px) {
-    .app__navbar-search__placeholder-dynamic{
-        display: none;
-    }
-
-    .app__navbar-search__placeholder-dots{
-        display: block;
-    }
-
     .app__navbar-search_products {
         width: 192%;
     }
@@ -226,7 +149,6 @@
     }
 
     .box2 {
-        grid-column-start: 2;
         grid-column-end: 5;
     }
 
@@ -241,14 +163,6 @@
     }
 
     .box4 {
-        display: none;
-    }
-
-    .app__navbar-search__placeholder-dynamic{
-        display: block;
-    }
-
-    .app__navbar-search__placeholder-dots{
         display: none;
     }
 }

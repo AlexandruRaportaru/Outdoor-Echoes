@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import { images } from '../../constants';
 
 import './Header.css';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
 
 const Header = () => {
   return (
@@ -15,7 +12,7 @@ const Header = () => {
         <div className='bg-dark absolute top-0 left-0 w-full h-full z-20 opacity-20'></div>
         <div className='absolute z-30 content'>
           <h1 className='font-anton text-white'>EXPLOREAZĂ ÎMPREJURIMILE</h1>
-          <p className='font-yanone text-white font-bold'>Pentru a sparge recorduri sau pentru a doborî bariere.<br/> Toți facem asta, cu un anume motiv. Doar tu poți să-ți descoperi calea.</p>
+          <p className='font-yanone text-white font-bold'>Pentru a doborî recorduri sau a sparge barierele.<br/> Toată lumea merge acolo dintr-un alt motiv.<br/> Numai tu îți poți descoperi traseul.</p>
           <Link to={`/products`} className='custom__button'>DESCOPERĂ</Link>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import logo from '../assets/logo.png';
 import headerBackground from '../assets/headerBackground.jpg';
 import expeditionsCard from '../assets/expeditionsCard.jpg';
 import runningCard from '../assets/runningCard.jpg';
@@ -606,6 +607,7 @@ import taurusThird from '../assets/vaude/taurusThird.jpg';
 
 
 export default {
+  logo,
   headerBackground,
   expeditionsCard,
   runningCard,

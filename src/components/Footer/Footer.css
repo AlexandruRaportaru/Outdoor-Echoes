@@ -1,266 +1,58 @@
-.app__footer {
-    width: 100%;
-    box-shadow: inset 0 0 10em var(--color-purple);
-    height: 500px;
-}
-
-.app__footer-content_services {
-    height: 20%;
-    display: flex;
-    justify-content: space-around;
-    background: var(--color-yellow);
-    padding: 20px;
-}
-
-.app__footer-content_services div {
-    width: 30%;
-}
-
-.app__footer-content_services img {
-    width: 80px;
-    margin-right: 20px;
-}
-
-.app__footer-content_services p {
-    color: var(--color-purple);
-}
-
-.app__footer-content_bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.app__footer-content_bottom a,
-.app__footer-content_bottom p {
-    color: var(--color-purple);
-}
-
-.app__footer-content_bottom-left {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.app__footer-content_bottom-left a:hover {
-    text-decoration: underline;
-}
-
-.app__footer-content_bottom h4 {
-    margin-bottom: 10px;
-    text-align: start;
-}
-
-.app__footer-content_bottom-left h5 {
-    margin-top: 15px;
-    color: var(--color-blue)
-}
-
-.app__footer-content_bottom-left p,
-.app__footer-content_bottom-left a {
+.app__footer-center a {
     font-size: 14px;
     line-height: 18px;
 }
 
-.app__footer-content_bottom-center {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-self: flex-end;
-}
-
-.app__footer-content_bottom-center .p__text {
+.app__footer-center_logo .p__text {
     line-height: 25px;
 }
 
-.app__footer-content_bottom-center h5 {
+.app__footer-center_logo h5 {
     font-size: 22px;
     color: var(--color-blue);
     font-weight: normal;
-    margin-top: 30px;
 }
 
-.app__footer-content_bottom-center_logo {
-    margin-top: 30px;
-}
-
-.app__footer-content_bottom-center a {
-    text-decoration: underline;
-    color: var(--color-purple);
-}
-
-.app__footer-content_bottom-right {
-    width: 30%;
-    text-align: end;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.app__footer-content_bottom-right_links {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
-    font-weight: bold;
-}
-
-.app__footer-content_bottom-right_links a {
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--color-blue);
-}
-
-.app__footer-content_bottom-right_links a:hover {
-    text-decoration: underline;
-}
-
-.app__footer-content_bottom-right_icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 150px;
-    margin-top: 20px;
-}
-
-.app__footer-content_bottom-right_icons a:hover {
+.app__footer-content_end a:hover {
     color: var(--color-blue);
     transform: scale(1.3);
     transition: all .2s ease-in-out;
 }
 
 @media screen and (max-width: 1000px) {
-    .app__footer {
-        height: 750px;
-    }
-
-    .app__footer-content_services {
-        align-items: center;
-        text-align: center;
-    }
-
-    .app__footer-content_services img {
+    .app__footer-top img {
         width: 80px;
-        margin: 0 0 10px 0;
     }
 
-    .app__footer-content_services .paypal {
-        margin-bottom: 15px;
-    }
-
-    .app__footer-content_services div {
-        flex-direction: column;
-    }
-
-    .app__footer-content_bottom {
-        display: grid !important;
-        grid-template-rows: repeat(2);
-        width: 100%;
-        justify-content: space-around;
+    .app__footer-center {
         padding: 30px 25px !important;
         gap: 20px;
+        flex-wrap: wrap;
     }
 
-    .footer1 {
-        grid-column-start: 1;
+    .app__footer-center_logo {
         width: 50%;
-    }
-
-    .footer2 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        width: 100%;
-        height: -webkit-fill-available;
-    }
-
-    .footer3 {
-        grid-column-start: 2;
-        width: 50%;
-        justify-self: flex-end;
-        height: -webkit-fill-available;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 585px) {
-    .app__footer {
-        position: relative;
-        height: 100%;
+    .app__footer-top img {
+        width: 50px;
+        margin: 0 10px 0 0;
     }
 
-    .app__footer-content_services {
-        display: grid;
-        grid-template-columns: repeat(2);
-        width: 100%;
-        justify-content: space-between;
-        gap: 10px 20px;
+    .app__footer-center_logo {
+        width: 50%;
     }
 
-    .app__footer-content_services div {
-        width: auto;
-    }
-
-    .service1 {
-        grid-column-start: 1;
-    }
-
-    .service2 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-    }
-
-    .service3 {
-        grid-column-start: 2;
-    }
-
-    .app__footer-content_bottom {
-        display: flex !important;
-        flex-direction: column;
-    }
-
-    .app__footer-content_bottom-left h5 {
-        font-size: 10px;
-    }
-
-    .app__footer-content_bottom-left p,
-    .app__footer-content_bottom-left a {
-        font-size: 10px;
-        line-height: 12px;
-    }
-
-    .app__footer-content_bottom-left,
-    .app__footer-content_bottom-center,
-    .app__footer-content_bottom-right {
-        width: 100%;
-        align-items: center !important;
-        text-align: center;
-    }
-
-    .app__footer-content_bottom-center {
-        order: 3;
-    }
-
-    .app__footer-content_bottom-center .p__text {
+    .app__footer-center_logo .p__text {
         line-height: 25px;
     }
     
-    .app__footer-content_bottom-center h5 {
+    .app__footer-center_logo h5 {
         font-size: 14px;
-        color: var(--color-blue);
         font-weight: normal;
         margin-top: 15px;
-    }
-    
-    .app__footer-content_bottom-center_logo {
-        margin-top: 15px;
-    }
-
-    .app__footer-content_bottom-right_links a {
-        font-size: 12px;
-        line-height: 18px;
-        color: var(--color-blue);
     }
 }

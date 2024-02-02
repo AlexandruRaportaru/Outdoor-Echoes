@@ -1,4 +1,3 @@
-import Logo from './Logo/Logo';
 import Navbar from './Navbar/Navbar';
 import Menu from './Menu/Menu';
 import Cart from './Cart/Cart';
@@ -9,7 +8,6 @@ import Collapsible from './Collapsible/Collapsible';
 
 
 export {
-  Logo,
   Navbar,
   Menu,
   Cart,
