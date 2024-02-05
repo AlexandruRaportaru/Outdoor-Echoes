@@ -7,14 +7,13 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     -webkit-transform: scale(1);
 	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .app__selection-wrapper__swiper-slide:hover {
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
-    box-shadow: inset 0 0 1em 0 var(--color-white), 0 0 1.1em 0 var(--color-purple);
 }
 
 .app__selection-wrapper__swiper .swiper-left,

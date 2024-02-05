@@ -1,18 +1,6 @@
 .app__product {
-    box-shadow: inset 0 0 10em var(--color-purple);
     background: var(--color-white);
-}
-
-.app__product-title {
-    text-align: center;
-    background: var(--color-yellow);
-    width: 100%;
-}
-
-.app__product-title h1 {
-    padding: 40px 0;
-    color: var(--color-purple);
-    font-size: 25px;
+    border-bottom: 2px solid rgb(70, 52, 78, 0.3);
 }
 
 .app__product-content {
@@ -48,8 +36,6 @@
 .app__product-content_characteristics-swiper .swiper-right_product {
     right: 20px;
 }
-
-
 
 .app__product-content_characteristics-details_logo {
     display: flex;

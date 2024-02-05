@@ -27,6 +27,14 @@
   background: var(--color-yellow);
 }
 
+.bg-green {
+  background: var(--color-green);
+}
+
+.bg-blue {
+  background: var(--color-blue);
+}
+
 .text-dark {
   color: var(--color-purple) !important;
 }
@@ -41,6 +49,10 @@
 
 .text-blue {
   color: var(--color-blue);
+}
+
+.text-green {
+  color: var(--color-green);
 }
 
 .font-text {
@@ -61,6 +73,14 @@
 
 .z-60 {
   z-index: 60;
+}
+
+.w-68 {
+  width: 17rem;
+}
+
+.-left-68 {
+  left: -17rem;
 }
 
 .flex__center {

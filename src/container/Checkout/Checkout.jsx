@@ -118,7 +118,6 @@ const Checkout = ({cartProducts, emptyCart}) => {
 
   return (
     <div className='app__checkout'>
-        <h1 className='app__checkout-title title'>Checkout</h1>
         <form 
             className='app__checkout-content' 
         >

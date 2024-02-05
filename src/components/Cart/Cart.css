@@ -1,5 +1,5 @@
 .app__navbar-cart {
-    display: flex;
+    /* display: flex;
     position: relative;
     flex-direction: column;
     min-width: 88px;
@@ -7,7 +7,7 @@
     justify-content: center;
     align-self: stretch;
     position: relative;
-    background: var(--color-yellow);
+    background: var(--color-yellow); */
     border-bottom: 1px solid var(--color-purple);
 }
 
@@ -212,10 +212,6 @@
         display: none;
     }
 
-    .app__navbar-cart {
-        min-width: 64px;
-    }
-
     .app__navbar-cart__count {
         top: 12px;
         right: 4px;
@@ -225,10 +221,7 @@
 @media screen and (max-width: 585px) {
     .app__navbar-cart {
         grid-column-start: 6; 
-        min-width: 0;
-        max-width: 60px;
-        padding: 0 15px;
-        justify-self: end;
+        padding: 0 5px;
     }
 
     .app__navbar-smallCart_items-content_empty-icon {

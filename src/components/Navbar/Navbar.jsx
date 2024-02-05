@@ -48,7 +48,7 @@ const Navbar = ({disableCart}) => {
             value={inputValue} 
             onChange={handleInputChange} 
             onClick={handleInputClick} 
-            placeholder='Caută produs sau referință' 
+            placeholder='Caută produs ...' 
             title='Caută produs sau referință' 
             className='relative font-bold uppercase w-full leading-5 text-xl py-1.5 px-2.5 max-h-14 border-r-0 tracking-wider font-menu'
           />

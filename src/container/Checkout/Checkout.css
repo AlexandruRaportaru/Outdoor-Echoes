@@ -1,11 +1,6 @@
 .app__checkout {
-    box-shadow: inset 0 0 10em var(--color-purple);
     background: var(--color-white);
     padding: 60px;
-}
-
-.app__checkout-title {
-    text-align: center;
 }
 
 .app__checkout-content {

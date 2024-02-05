@@ -95,22 +95,6 @@ const Product = ({addToCart}) => {
 
   return (
     <div className='app__product'>
-        <div className='app__product-title'>
-            <h1 className='p__logo'>
-                <Link className='link' to={`/products`} >
-                    Products
-                </Link>
-                /
-                <Link className='link' to={`/products/gender_${product.gender}`} >
-                    {product.gender}
-                </Link>
-                /
-                <Link className='link' to={`/products/type_${product.type}`} >
-                    {product.type}
-                </Link>
-            </h1>
-        </div>
-        
         <div className='app__product-content'>
             <div className='app__product-content_characteristics'>
                 <div className="app__product-content_characteristics-swiper">

@@ -32,14 +32,14 @@ const Menu = () => {
   
   return (
     <>
-      <Link to='#' className='flex justify-center items-center cursor-pointer self-stretch text-center mr-5 text-base bg-yellow app__navbar-menu' onClick={handleMenuVisible}>
+      <Link to='#' className='flex justify-center items-center cursor-pointer self-stretch text-center mr-5 text-base bg-yellow min-w-max px-5 app__navbar-menu' onClick={handleMenuVisible}>
         <div className='flex flex-col items-center'>
           <FiMenu color='var(--color-purple)' fontSize={30}/>
           <p className='p__text text-dark font-bold'>MENIU</p>
         </div>
       </Link>
 
-      <div className={toggleMenu ? 'fixed w-72 flex justify-center bg-dark h-screen top-0 left-0 z-50 app__navbar-smallMenu active' : 'fixed w-72 flex justify-center bg-dark h-screen top-0 -left-full z-40 app__navbar-smallMenu'}>
+      <div className={toggleMenu ? 'fixed w-68 flex justify-center bg-dark h-screen top-0 left-0 z-50 app__navbar-smallMenu active' : 'fixed w-68 flex justify-center bg-dark h-screen top-0 -left-full z-40 app__navbar-smallMenu'}>
         <ul className='w-full'>
           <li className='flex justify-between items-center h-16 mb-2.5 shadow-xl'>
             <Link to='#' className='flex flex-col items-center self-stretch text-base cursor-pointer py-2.5 px-5' onClick={handleMenuHidden}>

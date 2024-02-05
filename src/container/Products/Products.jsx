@@ -13,7 +13,7 @@ const Products = () => {
   const [filters, setFilters] = useState(defaultFilters);
   const [products, setProducts] = useState(data.products);
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [toggleText, setToggleText] = useState('OPEN');
+  const [toggleText, setToggleText] = useState('DESCHIDE');
   const sliderBackgroundRef = useRef();
 
 
@@ -33,12 +33,12 @@ const Products = () => {
   const handleFiltersVisible = () => {
     if(toggleMenu) {
       setToggleMenu(false);
-      setToggleText('OPEN');
+      setToggleText('DESCHIDE');
       
       sliderBackgroundRef.current.style.display = 'none';
     } else {
       setToggleMenu(true);
-      setToggleText('CLOSE');
+      setToggleText('ÎNCHIDE');
 
       setTimeout(() => {
         sliderBackgroundRef.current.style.display = 'block';
@@ -141,121 +141,113 @@ const Products = () => {
 
   return (
     <div className='app__products'>
-      <div className='app__products-title'>
-        <h1 className='p__logo'>
-          <Link className='link' to='/' >
-            Home
-          </Link>
-          /
-          <Link className='link' to='/products' >
-            Products
-          </Link>
-        </h1>
-      </div>
       <div className='app__products-content_filters-background' onClick={handleFiltersHidden} ref={sliderBackgroundRef}></div>
-      <div className='app__products-content'>
+      <div className='flex justify-center app__products-content'>
         <div className={toggleMenu ? 'app__products-content_filters active' : 'app__products-content_filters'}>
-          <Link to='#' className={toggleMenu ? 'app__products-content_filters-toggle active' : 'app__products-content_filters-toggle'} onClick={handleFiltersVisible}>
+          <Link to='#' className={toggleMenu ? 'hidden app__products-content_filters-toggle active' : 'hidden app__products-content_filters-toggle'} onClick={handleFiltersVisible}>
             <p toggletext={toggleText} >{toggleText}</p>
-            <p style={{marginBottom: '5px'}}>FILTERS</p>
+            <p style={{marginBottom: '5px'}}>FILTRELE</p>
           </Link>
-          <div className={toggleMenu ? 'app__products-content_filters-slider active' : 'app__products-content_filters-slider'}>
+          <div className={toggleMenu ? 'flex items-center justify-center w-60 bg-dark h-20 text-center text-yellow text-2xl border-b border-white block font-yanone' : 'hidden'}>FILTRARE</div>
+          <div className={toggleMenu ? 'bg-dark h-full w-60 overflow-y-auto app__products-content_filters-slider active' : 'bg-dark h-full w-60 overflow-y-auto app__products-content_filters-slider'}>
             <Collapsible title='GENDER'>
               {data.genderCategory.map(gender => {
                 return (
-                <div key={gender} className='option'>
+                <div key={gender} className='py-2.5 px-3 flex justify-start items-center option'>
                   <input 
                     checked={filters.gender[gender]} 
                     type='checkbox' 
-                    className='input__checkbox' 
+                    className='w-4 h-4 input__checkbox' 
                     onChange={() => handleFilter('gender', gender)}
                   />
-                  <span className='p__text'>{gender} ({counted('gender', gender)})</span>
+                  <span className='ml-2.5 text-dark p__text'>{gender} ({counted('gender', gender)})</span>
                 </div>
                 )})}
             </Collapsible>
 
             <Collapsible title='ACTIVITY'>
               {data.activityCategory.map(activity => (
-                <div key={activity} className='option'>
+                <div key={activity} className='py-2.5 px-3 flex justify-start items-center option'>
                   <input 
                     checked={filters.activity[activity]} 
                     type='checkbox' 
-                    className='input__checkbox' 
+                    className='w-4 h-4 input__checkbox' 
                     onChange={() => handleFilter('activity', activity)}
                   />
-                  <span className='p__text'>{activity} ({counted('activity', activity)})</span>
+                  <span className='ml-2.5 text-dark p__text'>{activity} ({counted('activity', activity)})</span>
                 </div>
               ))}
             </Collapsible>
 
             <Collapsible title='TYPE'>
               {data.typeCategory.map(type => (
-                <div key={type} className='option'>
+                <div key={type} className='py-2.5 px-3 flex justify-start items-center option'>
                   <input 
                     checked={filters.type[type]}
                     type='checkbox' 
-                    className='input__checkbox' 
+                    className='w-4 h-4 input__checkbox' 
                     onChange={() => handleFilter('type', type)}
                   />
-                  <span className='p__text'>{type} ({counted('type', type)})</span>
+                  <span className='ml-2.5 text-dark p__text'>{type} ({counted('type', type)})</span>
                 </div>
               ))}
             </Collapsible>
 
             <Collapsible title='COLOR'>
               {data.colorCategory.map(color => (
-                <div key={color} className='option'>
+                <div key={color} className='py-2.5 px-3 flex justify-start items-center option'>
                   <input 
                     type='checkbox' 
-                    className='input__checkbox' 
+                    className='w-4 h-4 input__checkbox' 
                     onChange={() => handleFilter('color', color)}
                   />
-                  <span className='p__text'>{color} ({counted('color', color)})</span>
+                  <span className='ml-2.5 text-dark p__text'>{color} ({counted('color', color)})</span>
                 </div>
               ))}
             </Collapsible>
 
             <Collapsible title='FEATURES'>
               {data.featuresCategory.map(feature => (
-                <div key={feature} className='option'>
+                <div key={feature} className='py-2.5 px-3 flex justify-start items-center option'>
                   <input 
                     type='checkbox' 
-                    className='input__checkbox' 
+                    className='w-4 h-4 input__checkbox' 
                     onChange={() => handleFilter('features', feature)}
                   />
-                  <span className='p__text'>{feature} ({counted('features', feature)})</span>
+                  <span className='ml-2.5 text-dark p__text'>{feature} ({counted('features', feature)})</span>
                 </div>
               ))}
             </Collapsible>
 
             <Collapsible title='PRICE'>
-              <div className='price__slider'>
-                <Slider 
-                  range
-                  min={0}
-                  max={3600}
-                  defaultValue={[0, 3600]}
-                  onChange={(value) => handlePriceRange(value)}
-                  className='price__slider-input'
-                />
-              </div>
-              <div className='price__range'>
-                <span className='p__text'>{priceRange[0]} RON</span>
-                <span className='p__text'>{priceRange[1]} RON</span>
+              <div className='flex flex-col justify-center items-center py-2.5 px-3 gap-y-2.5'>
+                <div className='w-10/12 price__slider'>
+                  <Slider 
+                    range
+                    min={0}
+                    max={3600}
+                    defaultValue={[0, 3600]}
+                    onChange={(value) => handlePriceRange(value)}
+                    className='price__slider-input'
+                  />
+                </div>
+                <div className='flex justify-between w-11/12 price__range'>
+                  <span className='text-dark p__text'>{priceRange[0]} RON</span>
+                  <span className='text-dark p__text'>{priceRange[1]} RON</span>
+                </div>
               </div>
             </Collapsible>
 
             <Collapsible title='BRANDS'>
               {data.brandsCategory.map(brand => (
-                <div key={brand} className='option'>
+                <div key={brand} className='py-2.5 px-3 flex justify-start items-center option'>
                   <input 
                     checked={filters.brand[brand]} 
                     type='checkbox' 
-                    className='input__checkbox' 
+                    className='w-4 h-4 input__checkbox' 
                     onChange={() => handleFilter('brand', brand)}
                   />
-                  <span className='p__text'>{brand} ({counted('brand', brand)})</span>
+                  <span className='ml-2.5 text-dark p__text'>{brand} ({counted('brand', brand)})</span>
                 </div>
               ))}
             </Collapsible>
@@ -263,18 +255,18 @@ const Products = () => {
         </div>
 
         <div>
-          <div className='app__products-content_results'>
+          <div className='w-full grid grid-cols-4 gap-5 align-start justify-evenly p-20 app__products-content_results'>
             {currentItems.map(product => (
-              <div key={product.name} className='app__products-content_results-card' onClick={() => handleOpenProduct(product.id)}>
-                <div className='app__products-content_results-card_sustainable'>
-                  {product.sustainable ? <p>Sustainable</p> : ''}
+              <div key={product.name} className='h-auto relative flex flex-col items-center cursor-pointer border border-gray-300 app__products-content_results-card' onClick={() => handleOpenProduct(product.id)}>
+                <div className='w-full app__products-content_results-card_sustainable'>
+                  {product.sustainable ? <p className='bg-green font-menu text-left ml-5 mt-5 text-xs absolute text-yellow p-1'>Sustainable</p> : ''}
                 </div>
-                <div className='app__products-content_results-card_image'>
-                  <img src={product.images[0]} alt={product.name} />
+                <div className='w-full p-5 app__products-content_results-card_image'>
+                  <img src={product.images[0]} alt={product.name} className='w-full border-b border-gray-300'/>
                 </div>
-                <div className='app__products-content_results-card_text'>
+                <div className='flex flex-col justify-between items-center text-center gap-y-3 h-full px-5 pb-5 app__products-content_results-card_text'>
                   <h1 className='p__headtext'>{product.name}</h1>
-                  <p>{(product.price).toFixed(2)} RON</p>
+                  <p className='font-menu text-lg font-bold tracking-wider text-blue'>{(product.price).toFixed(2)} RON</p>
                 </div>
               </div>
             ))}
@@ -286,14 +278,13 @@ const Products = () => {
             pageCount={pageCount}
             previousLabel="<"
             renderOnZeroPageCount={null}
-            containerClassName='pagination flex__center'
-            pageLinkClassName='page-num p__yanone'
-            previousClassName='page-prev p__yanone'
-            nextLinkClassName='page-next p__yanone'
-            activeLinkClassName='page-active'
+            containerClassName='flex justify-center items-center bg-blue h-16 gap-3'
+            pageLinkClassName='py-2 px-3.5 cursor-pointer page-num p__yanone'
+            previousClassName='py-1.5 px-3.5 cursor-pointer page-prev p__yanone'
+            nextLinkClassName='py-2 px-3.5 cursor-pointer page-next p__yanone'
+            activeLinkClassName='bg-yellow text-dark rounded-full page-active'
           />
         </div>
-
       </div>
     </div>
   )

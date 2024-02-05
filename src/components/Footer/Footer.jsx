@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsFacebook, BsInstagram } from 'react-icons/bs';
-import { data, images } from '../../constants';
+import { images } from '../../constants';
 
 import './Footer.css';
 
@@ -43,7 +43,7 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className='flex flex-col justify-center items-center gap-y-10 text-center w-1/4 app__footer-center_logo'>
+        <div className='flex flex-col justify-center items-center gap-y-8 text-center w-1/4 app__footer-center_logo'>
           <h5 className='p__text'>"The mountains are calling and<br/> I must go." - John Muir</h5>
           <img src={images.logo} alt='header-cover' className='w-2/3'/>
         </div>
@@ -51,10 +51,6 @@ const Footer = () => (
 
     <div className='flex justify-between items-center bg-yellow p-5 app__footer-end'>
       <p>&copy; {currentYear} Mountain Echoes</p>
-
-      <h5>Made with love for hiking by 
-        <a href='https://alexandruraportaru.github.io/Portfolio-Website/' target='_blank' rel='noreferrer'> Alex Raportaru</a>
-      </h5>
 
       <div className='flex justify-between items-center w-16 app__footer-content_end'>
         <a href='https://www.facebook.com/login/'>

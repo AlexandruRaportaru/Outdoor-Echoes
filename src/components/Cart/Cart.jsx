@@ -56,8 +56,8 @@ const Cart = ({cartProducts, disableCart}) => {
 
     return (
       <>
-        <Link to='#' className='app__navbar-cart' onClick={handleCartVisible}>
-            <div className='app__navbar-cart__icon'>
+        <Link to='#' className='relative flex flex-col justify-center items-center self-stretch bg-yellow min-w-max px-2.5 app__navbar-cart' onClick={handleCartVisible}>
+            <div className='flex flex-col justify-center items-center app__navbar-cart__icon'>
                 <div className='app__navbar-cart__count p__text'>{cartCount}</div>
                 <FaShoppingCart style={{color: 'var(--color-purple)'}} fontSize={24}/>
             </div>
@@ -67,10 +67,10 @@ const Cart = ({cartProducts, disableCart}) => {
         <div className={toggleCart ? 'app__navbar-smallCart active' : 'app__navbar-smallCart'}>
             <ul className='app__navbar-smallCart_items'>
                 <li className='app__navbar-smallCart_items-visible'>
-                    <h1>SHOPPING CART</h1>
+                    <h1>COȘUL MEU</h1>
                     <Link to='#' className='app__navbar-cart__close' onClick={handleCartHidden}>
                         <AiOutlineClose color='var(--color-yellow)' fontSize={30}/>
-                        <p className='p__text'>CLOSE</p>
+                        <p className='p__text'>ÎNCHIDE</p>
                     </Link>
                 </li>
                 
@@ -78,9 +78,9 @@ const Cart = ({cartProducts, disableCart}) => {
                     {cartProducts.length === 0 
                         ? (<div className='app__navbar-smallCart_items-content_empty flex__center'>
                             <BsCartX className='app__navbar-smallCart_items-content_empty-icon'/>
-                            <h1 className='title'>Your cart is currently empty.</h1>
-                            <p className='p__yanone'>Before proceed to checkout you must add some products to your shopping cart.
-                                <br/>You will find a lot of interesting products on our "Products" page.</p>
+                            <h1 className='title'>COȘUL TĂU DE CUMPĂRĂTURI ESTE GOL</h1>
+                            <p className='p__yanone'>Înainte de a continua, trebuie să adaugi produse în coș.
+                                <br/>Poți găsi mai multe produse interesante în pagina "Produse".</p>
                         </div>) 
                         : cartProducts.map(prod => (
                                 <CartItem key={`${prod.id}_${prod.selectedSize}`} product={prod}/>
